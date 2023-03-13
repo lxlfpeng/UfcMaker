@@ -34,6 +34,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install Scrapy==2.8.0
         pip install PyRSS2Gen
+        pip install Pillow
         pip install googletrans==4.0.0-rc1
     #执行Python文件
     - name: run python

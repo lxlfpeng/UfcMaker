@@ -164,6 +164,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
                 item['backLocal'] = images[item['back']]['path']
             if 'cover' in item and item['cover'] in images.keys():
                 item['coverLocal'] = images[item['cover']]['path']
+        logging.warning(item)        
         # image_paths = [x['path'] for ok, x in results if ok]
         # if len(image_paths)>0:
         #     if isinstance(item,UfcPassItem):
