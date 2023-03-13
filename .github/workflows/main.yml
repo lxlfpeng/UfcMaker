@@ -38,7 +38,7 @@ jobs:
     #执行Python文件
     - name: run python
       run: |
-        python run.py
+        python run.py --email_pass ${{ secrets.EMAIL_TOKEN }}
     #Git提交并推送到仓库
     - name: commit and push
       run: |

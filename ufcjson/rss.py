@@ -10,6 +10,8 @@ class RssMaker:
         self.description = description
 
     def makeRss(self, rssList, path):
+        if len(rssList)==0:
+            return
         rssItems = []
         for content in rssList:
             rssItem = PyRSS2Gen.RSSItem(
