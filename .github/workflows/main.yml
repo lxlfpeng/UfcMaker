@@ -71,7 +71,7 @@ jobs:
         #启用后，强制同步，即强制覆盖目的端仓库,正常可以关掉
         debug: true
         #不同仓库名进行映射
-        mappings: "UfcMaker=>UfcMaker"
+        #mappings: "UfcMaker=>UfcMaker"
         #git超时设置，超时后会自动重试git操作
         timeout: '600s'           
     
