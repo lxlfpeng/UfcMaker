@@ -130,37 +130,38 @@ class ImagesDownloadPipeline(ImagesPipeline):
         return f"full/{image_guid}.webp" 
     
     def item_completed(self, results, item, info):
-        images={x['url']:x for ok, x in results if ok}
-        if len(images.keys())==0:
+        images = {x['url']: x for ok, x in results if ok}
+        print("下载图片内容",results)
+        if len(images.keys()) == 0:
             return item
-        if isinstance(item,UfcPassItem):
-             if item['banner'] in images.keys() :
-                  item['bannerLocal']=images[item['banner']]['path']              
-        if isinstance(item,UfcPassCardItem):
-            if item['redPlayerBack'] in images.keys() :
-                  item['redPlayerBackLocal']=images[item['redPlayerBack']]['path']    
-            if item['bluePlayerBack'] in images.keys() :
-                  item['bluePlayerBackLocal']=images[item['bluePlayerBack']]['path']              
-        if isinstance(item,UfcComingItem):
-             if item['banner'] in images.keys() :
-                  item['bannerLocal']=images[item['banner']]['path']           
-        if isinstance(item,UfcComingBannerItem):
-            if item['redPlayerCover'] in images.keys() :
-                  item['redPlayerCoverLocal']=images[item['redPlayerCover']]['path']    
-            if item['bluePlayerCover'] in images.keys() :
-                  item['bluePlayerCoverLocal']=images[item['bluePlayerCover']]['path']            
-        if isinstance(item,UfcComingCardItem):
-            if item['redPlayerBack'] in images.keys() :
-                  item['redPlayerBackLocal']=images[item['redPlayerBack']]['path']    
-            if item['bluePlayerBack'] in images.keys() :
-                  item['bluePlayerBackLocal']=images[item['bluePlayerBack']]['path']  
+        if isinstance(item, UfcPassItem):
+            if item['banner'] in images.keys():
+                item['bannerLocal'] = images[item['banner']]['path']
+        if isinstance(item, UfcPassCardItem):
+            if item['redPlayerBack'] in images.keys():
+                item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
+            if item['bluePlayerBack'] in images.keys():
+                item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
+        if isinstance(item, UfcComingItem):
+            if item['banner'] in images.keys():
+                item['bannerLocal'] = images[item['banner']]['path']
+        if isinstance(item, UfcComingBannerItem):
+            if item['redPlayerCover'] in images.keys():
+                item['redPlayerCoverLocal'] = images[item['redPlayerCover']]['path']
+            if item['bluePlayerCover'] in images.keys():
+                item['bluePlayerCoverLocal'] = images[item['bluePlayerCover']]['path']
+        if isinstance(item, UfcComingCardItem):
+            if item['redPlayerBack'] in images.keys():
+                item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
+            if item['bluePlayerBack'] in images.keys():
+                item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
 
-        if isinstance(item, UfcRankingPlayer) :
+        if isinstance(item, UfcRankingPlayer):
             #print("图片下载完毕:",images.keys())
-            if item['back'] in images.keys() :
-                  item['backLocal']=images[item['back']]['path']      
-            if 'cover'in item and item['cover'] in images.keys() :
-                  item['coverLocal']=images[item['cover']]['path']                      
+            if item['back'] in images.keys():
+                item['backLocal'] = images[item['back']]['path']
+            if 'cover' in item and item['cover'] in images.keys():
+                item['coverLocal'] = images[item['cover']]['path']
         # image_paths = [x['path'] for ok, x in results if ok]
         # if len(image_paths)>0:
         #     if isinstance(item,UfcPassItem):
