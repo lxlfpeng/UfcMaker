@@ -10,9 +10,9 @@ parser.add_argument("--email_pass", type=str,default="", help='input email_pass'
 email_pass=parser.parse_args().email_pass
 
 #启动爬虫
-os.system("scrapy crawl eventpass")
 os.system("scrapy crawl upcoming")
-os.system("scrapy crawl ranking")
+#os.system("scrapy crawl eventpass")
+#os.system("scrapy crawl ranking")
 
 # should=True
 # path='./ufc_athlete_data.json'
