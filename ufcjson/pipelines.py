@@ -95,7 +95,7 @@ class UfcRssMakerPipeline:
             title=item['redPlayerName']+"VS"+item['bluePlayerName']
             self.rssList.append({'title':title,
             'link':"",
-            'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+            'description':self.rssMaker.get_html_str(title,item['redPlayerBack'],item['bluePlayerBack'])})
        return item   
     def close_spider(self, spider):
         if isinstance(spider, UpcomingSpider):
