@@ -44,8 +44,9 @@ jobs:
       run: |
         git config --global user.email "565289282@qq.com"
         git config --global user.name "lxlfpeng"
-        git commit -m "update"
-        git push -f origin master
+        git add .
+        git commit -m "update" -a
+        git push
     #推送仓库到Gitee
     # - name: push2gitee
     #   #用到了hub-mirror-action 文档:https://github.com/Yikun/hub-mirror-action
