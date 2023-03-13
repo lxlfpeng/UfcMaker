@@ -22,7 +22,7 @@ jobs:
     steps:
     #使用checkout@v2拉取代码  
     - name: checkout actions
-      uses: actions/checkout@v2 # Checking out the repo
+      uses: actions/checkout@v3 # Checking out the repo
     #配置python环境这里用的是3.7的环境
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
