@@ -48,32 +48,32 @@ jobs:
         git commit -m "update" -a
         git push
     #推送仓库到Gitee
-    # - name: push2gitee
-    #   #用到了hub-mirror-action 文档:https://github.com/Yikun/hub-mirror-action
-    #   uses: Yikun/hub-mirror-action@master
-    #   with:
-    #     #源端账户名(github)
-    #     src: github/lxlfpeng
-    #     #目的端账户名(gitee)
-    #     dst: gitee/DaPengDePeng
-    #     #GiteeSSH密钥对中的私钥，https://gitee.com/profile/sshkeys
-    #     dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-    #     #Gitee账户的私人令牌，https://gitee.com/profile/personal_access_tokens
-    #     dst_token: ${{ secrets.GITEE_TOKEN }}
-    #     #账户类型指定个人账户,如果是组织，指定组织即可，默认为用户user
-    #     account_type: user
-    #     #使用https方式进行clone，也可以使用ssh  
-    #     clone_style: "https"
-    #     #静态同步列表，在此填写需要同步的仓库名称，可填写多个
-    #     static_list: "MakeJson"
-    #     #启用后，强制同步，即强制覆盖目的端仓库
-    #     force_update: true
-    #     #启用后，强制同步，即强制覆盖目的端仓库,正常可以关掉
-    #     debug: true
-    #     #不同仓库名进行映射
-    #     mappings: "MakeJson=>make-json"
-    #     #git超时设置，超时后会自动重试git操作
-    #     timeout: '600s'           
+    - name: push2gitee
+      #用到了hub-mirror-action 文档:https://github.com/Yikun/hub-mirror-action
+      uses: Yikun/hub-mirror-action@master
+      with:
+        #源端账户名(github)
+        src: github/lxlfpeng
+        #目的端账户名(gitee)
+        dst: gitee/DaPengDePeng
+        #GiteeSSH密钥对中的私钥，https://gitee.com/profile/sshkeys
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        #Gitee账户的私人令牌，https://gitee.com/profile/personal_access_tokens
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        #账户类型指定个人账户,如果是组织，指定组织即可，默认为用户user
+        account_type: user
+        #使用https方式进行clone，也可以使用ssh  
+        clone_style: "https"
+        #静态同步列表，在此填写需要同步的仓库名称，可填写多个
+        static_list: "UfcMaker"
+        #启用后，强制同步，即强制覆盖目的端仓库
+        force_update: true
+        #启用后，强制同步，即强制覆盖目的端仓库,正常可以关掉
+        debug: true
+        #不同仓库名进行映射
+        #mappings: "MakeJson=>make-json"
+        #git超时设置，超时后会自动重试git操作
+        timeout: '600s'           
     
     #推送仓库到Gitee另外一种实现  
     # - name: push2giteeother
