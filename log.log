@@ -1,0 +1,1938 @@
+2023-03-13 06:20:53 [scrapy.middleware] WARNING: Disabled ImagesDownloadPipeline: ImagesPipeline requires installing Pillow 4.0.0 or later
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SANDHAGEN_CORY_R_09-17.png?itok=pK9jPC9a',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Cory Sandhagen',
+ 'bluePlayerOdds': '-155',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/cory-sandhagen',
+ 'bluePlayerRank': '#5',
+ 'cardType': 'Main',
+ 'fightId': '10385',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/e4995e09-5df4-428a-8d77-62468730d5f3%252FVERA_MARLON_L_04-30.png?itok=hH5wvR7X',
+ 'redPlayerCountry': 'Ecuador',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/EC.PNG',
+ 'redPlayerCountryEmoji': '🇪🇨',
+ 'redPlayerName': 'Marlon Vera',
+ 'redPlayerOdds': '+135',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/marlon-vera',
+ 'redPlayerRank': '#4',
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/69523%252Fprofile-galery%252Ffullbodyright-picture%252FKUNITSKAYA_YANA_R_07-10.png?itok=hcAq6Ji9',
+ 'bluePlayerCountry': 'Russia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/RU.PNG',
+ 'bluePlayerCountryEmoji': '🇷🇺',
+ 'bluePlayerName': 'Yana Santos',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/yana-kunitskaya',
+ 'bluePlayerRank': '#6',
+ 'cardType': 'Main',
+ 'fightId': '10387',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/eb047275-366a-4dc9-9996-2e019a719775%252FHOLM_HOLLY_L_05-21.png?itok=IumhQhzO',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Holly Holm',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/holly-holm',
+ 'redPlayerRank': '#3',
+ 'weightClass': "Women's Bantamweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-01/LANDWEHR_NATE_R_10-16.png?itok=E2VTu4-Q',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Nate Landwehr',
+ 'bluePlayerOdds': '+135',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/nate-landwehr',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10389',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/CACERES_ALEX_L_12-17.png?itok=-t8PqiHQ',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Alex Caceres',
+ 'redPlayerOdds': '-155',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/alex-caceres',
+ 'redPlayerRank': '#15',
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/6030f81d-ff01-4d29-993d-5b60e335eb83%252FBARBER_MAYCEE_R_07-02.png?itok=mkTuO5fa',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Maycee Barber',
+ 'bluePlayerOdds': '-195',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/maycee-barber',
+ 'bluePlayerRank': '#13',
+ 'cardType': 'Main',
+ 'fightId': '10395',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/69617%252Fprofile-galery%252Ffullbodyleft-picture%252FLEE_ANDREA_L_05-15.png?VersionId=null&itok=t3AnGYeq',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Andrea Lee',
+ 'redPlayerOdds': '+165',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/andrea-lee',
+ 'redPlayerRank': '#11',
+ 'weightClass': "Women's Flyweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71764%252Fprofile-galery%252Ffullbodyright-picture%252FDURAEV_ALBERT_R_10-30.png?itok=aA-8RHY0',
+ 'bluePlayerCountry': 'Russia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/RU.PNG',
+ 'bluePlayerCountryEmoji': '🇷🇺',
+ 'bluePlayerName': 'Albert Duraev',
+ 'bluePlayerOdds': '+150',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/albert-duraev',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10390',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-02/b7a07374-ccdc-4987-a0bb-2735d419841e%252FNJOKUANI_CHIDI_L_02-05.png?itok=2Iou0gWn',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Chidi Njokuani',
+ 'redPlayerOdds': '-175',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/chidi-njokuani',
+ 'redPlayerRank': None,
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/71653%252Fprofile-galery%252Ffullbodyright-picture%252FLUTZ_TUCKER_R_05-15.png?VersionId=null&itok=XJ48wT6e',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Tucker Lutz',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/tucker-lutz',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10391',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/PINEDA_DANIEL_L_06-26.png?itok=2QkLtlsS',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Daniel Pineda',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/daniel-pineda',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/ALEXANDER_LUCAS_R_10-15.png?itok=sc9tUS1T',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Lucas Alexander',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/lucas-alexander',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10392',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/PETERSON_STEVEN_L_06-12.png?itok=7h3Ijrik',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Steven Peterson',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/steven-peterson',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/71829%252Fprofile-galery%252Ffullbodyright-picture%252FPARSONS_PRESTON_R_07-17.png?itok=VJciwbwX',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Preston Parsons',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/preston-parsons',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10397',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/69418%252Fprofile-galery%252Ffullbodyleft-picture%252FGILES_TREVIN_L_07-10.png?itok=AiAU18r7',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Trevin Giles',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/trevin-giles',
+ 'redPlayerRank': None,
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/26072938-9740-4739-941b-edf37c82385b%252FKAPE_MANEL_R_06-11.png?itok=KcZerymb',
+ 'bluePlayerCountry': 'Portugal',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PT.PNG',
+ 'bluePlayerCountryEmoji': '🇵🇹',
+ 'bluePlayerName': 'ManelKape',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/manel-kape',
+ 'bluePlayerRank': '#9',
+ 'cardType': 'Prelims',
+ 'fightId': '10388',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-12/ddba18e7-dbe8-4d2b-85d0-72f18c6efc3b%252FPEREZ_ALEX_L_12-11.png?itok=HoCmGZlA',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Alex Perez',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/alex-perez',
+ 'redPlayerRank': '#6',
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71848%252Fprofile-galery%252Ffullbodyright-picture%252FDA_SILVA_DANIEL_R_10-23.png?itok=DY7rMfkZ',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'DanieldaSilva',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/daniel-da-silva',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10394',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71758%252Fprofile-galery%252Ffullbodyleft-picture%252FVERGARA_CJ_L_11-06.png?itok=wGQmTEOq',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'CJ Vergara',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/cj-vergara',
+ 'redPlayerRank': None,
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/WALKER_BROGAN_R_08-06.png?itok=vNmsTzrF',
+ 'bluePlayerCountry': 'Guam',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GU.PNG',
+ 'bluePlayerCountryEmoji': '🇬🇺',
+ 'bluePlayerName': 'Brogan Walker',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/brogan-walker',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10393',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/71741_profile-galery_fullbodyleft-picture_NA_LIANG_L_04-24.png?VersionId=null&itok=CzvH1ra1',
+ 'redPlayerCountry': 'China',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CN.PNG',
+ 'redPlayerCountryEmoji': '🇨🇳',
+ 'redPlayerName': 'Liang Na',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/liang-na',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Flyweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:53 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/SALVADOR_VINICIUS_R_12-10.png?itok=NhhBGdpJ',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Vinicius Salvador',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/vinicius-salvador',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10431',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-02/0550b04c-ff35-4087-a89a-89edb8f54395%252FALTAMIRANO_VICTOR_L_02-26.png?itok=FKrdEUK8',
+ 'redPlayerCountry': 'Mexico',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MX.PNG',
+ 'redPlayerCountryEmoji': '🇲🇽',
+ 'redPlayerName': 'Victor Altamirano',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/victor-altamirano',
+ 'redPlayerRank': None,
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/Henry_Cejudo/CEJUDO_HENRY_R-PRINT.png?itok=e9YmvCv2',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Henry Cejudo',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/henry-cejudo',
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/STERLING_ALJAMAIN_L_BELT_10-22.png?itok=I-4cFC5o',
+ 'redPlayerCountry': 'Jamaica',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/JM.PNG',
+ 'redPlayerCountryEmoji': '🇯🇲',
+ 'redPlayerName': 'Aljamain Sterling',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/aljamain-sterling',
+ 'weightClass': 'Bantamweight Title Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/BLAYDES_CURTIS_R_09-25.png?itok=hdzIQ23a',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Curtis Blaydes',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/curtis-blaydes',
+ 'bluePlayerRank': '#4',
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PAVLOVICH_SERGEI_L_12-03.png?itok=LDinGfYN',
+ 'redPlayerCountry': 'Russia',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/RU.PNG',
+ 'redPlayerCountryEmoji': '🇷🇺',
+ 'redPlayerName': 'Sergei Pavlovich',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/sergei-pavlovich',
+ 'redPlayerRank': '#3',
+ 'weightClass': 'Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/SIMON_RICKY_R_07-16.png?itok=MqhZ3eYo',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Ricky Simon',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/ricky-simon',
+ 'bluePlayerRank': '#10',
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SONG_YADONG_L_09-17.png?itok=Gkz_K12p',
+ 'redPlayerCountry': 'China',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CN.PNG',
+ 'redPlayerCountryEmoji': '🇨🇳',
+ 'redPlayerName': 'Yadong Song',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/yadong-song',
+ 'redPlayerRank': '#8',
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/67453%252Fprofile-galery%252Ffullbodyright-picture%252FDARIUSH_BENEIL_R_05-15.png?VersionId=null&itok=81tvut2L',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Beneil Dariush',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/beneil-dariush',
+ 'bluePlayerRank': '#4',
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/OLIVEIRA_CHARLES_L_10-22.png?itok=bTVAThp8',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Charles Oliveira',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/charles-oliveira',
+ 'redPlayerRank': '#1',
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/PEARCE_JONATHAN_R_12-03.png?itok=QWEGtO61',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Jonathan Pearce',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/jonathan-pearce',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=to2Y8N6C',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Bryce Mitchell',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/bryce-mitchell',
+ 'redPlayerRank': '#11',
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-01/a650ff52-69d0-43c7-bc9a-1ca8f6eb3623%252FJOURDAIN_CHARLES_R_01-22.png?itok=OndrqoAx',
+ 'bluePlayerCountry': 'Canada',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CA.PNG',
+ 'bluePlayerCountryEmoji': '🇨🇦',
+ 'bluePlayerName': 'Charles Jourdain',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/charles-jourdain',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-10/GRACIE_KRON_R.png?VersionId=e2YLeub30w8ZQgddxXxvJaVuNll26j23&itok=fZiJFCdP',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Kron Gracie',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/kron-gracie',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/69468%252Fprofile-galery%252Ffullbodyright-picture%252FJANDIROBA_VIRNA_R_06-19.png?VersionId=null&itok=wJqJh0Hu',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Virna Jandiroba',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/virna-jandiroba',
+ 'bluePlayerRank': '#9',
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=4OrpIblv',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Marina Rodriguez',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/marina-rodriguez',
+ 'redPlayerRank': '#5',
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/USMAN_KAMARU_R_04-24.png?itok=HlkrG_t6',
+ 'bluePlayerCountry': 'Nigeria',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/NG.PNG',
+ 'bluePlayerCountryEmoji': '🇳🇬',
+ 'bluePlayerName': 'Kamaru Usman',
+ 'bluePlayerOdds': '-230',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/kamaru-usman',
+ 'cardType': 'Main',
+ 'fightId': '10329',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/EDWARDS_LEON_L_BELTMOCK.png?itok=z3X0HW4D',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Leon Edwards',
+ 'redPlayerOdds': '+195',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/leon-edwards',
+ 'weightClass': 'Welterweight Title Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CLARK_DEVIN_R_02-04.png?itok=8Xz5XPfU',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Devin Clark',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/devin-clark',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/b9c07939-a212-4617-b5e9-6a87319f9d41%252FNZECHUKWU_KENNEDY_L_03-05.png?itok=FnNQWrx4',
+ 'redPlayerCountry': 'Nigeria',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/NG.PNG',
+ 'redPlayerCountryEmoji': '🇳🇬',
+ 'redPlayerName': 'Kennedy Nzechukwu',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/kennedy-nzechukwu',
+ 'redPlayerRank': None,
+ 'weightClass': 'Light Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/PETROSYAN_ARMEN_R_02-26.png?itok=crYLzkEW',
+ 'bluePlayerCountry': 'Armenia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/AM.PNG',
+ 'bluePlayerCountryEmoji': '🇦🇲',
+ 'bluePlayerName': 'Armen Petrosyan',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/armen-petrosyan',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71857%252Fprofile-galery%252Ffullbodyleft-picture%252FPETROSKI_ANDRE_L_10-30.png?itok=31e2_I89',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Andre Petroski',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/andre-petroski',
+ 'redPlayerRank': None,
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/ZHUMAGULOV_ZHALGAS_R.png?itok=YqaVsHOS',
+ 'bluePlayerCountry': 'Kazakhstan',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/KZ.PNG',
+ 'bluePlayerCountryEmoji': '🇰🇿',
+ 'bluePlayerName': 'ZhalgasZhumagulov',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/zhalgas-zhumagulov',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/68367%252Fprofile-galery%252Ffullbodyleft-picture%252FMANESS_NATE_L_09-18.png?itok=1OdKLwa_',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Nate Maness',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/nate-maness',
+ 'redPlayerRank': None,
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc',
+ 'bluePlayerCountry': 'Peru',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PE.PNG',
+ 'bluePlayerCountryEmoji': '🇵🇪',
+ 'bluePlayerName': 'Rolando Bedoya',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/rolando-bedoya',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/WILLIAMS_KHAOS_L_06-19.png?itok=xnfBanpw',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'KhaosWilliams',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/khaos-williams',
+ 'redPlayerRank': None,
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/4316b261-55dd-4df7-9146-e7bd0f943da8%252FFIZIEV_RAFAEL_R_07-09.png?itok=gLIhg3yb',
+ 'bluePlayerCountry': 'Azerbaijan',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/UNIVERSAL.PNG',
+ 'bluePlayerCountryEmoji': '🏳',
+ 'bluePlayerName': 'RafaelFiziev',
+ 'bluePlayerOdds': '-230',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/rafael-fiziev',
+ 'bluePlayerRank': '#6',
+ 'cardType': 'Main',
+ 'fightId': '10330',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/GAETHJE_JUSTIN_L_05-07.png?itok=5h6LLZH2',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Justin Gaethje',
+ 'redPlayerOdds': '+195',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/justin-gaethje',
+ 'redPlayerRank': '#3',
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/2db6c27c-649a-42d6-aacf-614360619156%252FBARBERENA_BRYAN_R_07-02.png?itok=6L1ruYhR',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Bryan Barberena',
+ 'bluePlayerOdds': '+310',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/bryan-barberena',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10429',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/7766e61a-a763-44d0-a3bd-69447d5e5923%252FNELSON_GUNNAR_L_03-19.png?itok=6mEhYAG-',
+ 'redPlayerCountry': 'Iceland',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/IS.PNG',
+ 'redPlayerCountryEmoji': '🇮🇸',
+ 'redPlayerName': 'Gunnar Nelson',
+ 'redPlayerOdds': '-380',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/gunnar-nelson',
+ 'redPlayerRank': None,
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/71718%252Fprofile-galery%252Ffullbodyright-picture%252FONEILL_CASEY_R_06-19.png?itok=BvV_Qkwc',
+ 'bluePlayerCountry': 'Australia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/AU.PNG',
+ 'bluePlayerCountryEmoji': '🇦🇺',
+ 'bluePlayerName': "Casey O'Neill",
+ 'bluePlayerOdds': '-175',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/casey-oneill',
+ 'bluePlayerRank': '#12',
+ 'cardType': 'Main',
+ 'fightId': '10419',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/MAIA_JENNIFER_L_02_20.png?itok=kz1gaAv3',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Jennifer Maia',
+ 'redPlayerOdds': '+150',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/jennifer-maia',
+ 'redPlayerRank': '#8',
+ 'weightClass': "Women's Flyweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/f96a00f5-d4d6-4757-b7e6-be495674de43%252FDOLIDZE_ROMAN_R_06-18.png?itok=ODSCiowo',
+ 'bluePlayerCountry': 'Georgia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GE.PNG',
+ 'bluePlayerCountryEmoji': '🇬🇪',
+ 'bluePlayerName': 'Roman Dolidze',
+ 'bluePlayerOdds': '+225',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/roman-dolidze',
+ 'bluePlayerRank': '#9',
+ 'cardType': 'Main',
+ 'fightId': '10314',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/VETTORI_MARVIN_L_09-03.png?itok=QVnzbVp8',
+ 'redPlayerCountry': 'Italy',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/IT.PNG',
+ 'redPlayerCountryEmoji': '🇮🇹',
+ 'redPlayerName': 'Marvin Vettori',
+ 'redPlayerOdds': '-265',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/marvin-vettori',
+ 'redPlayerRank': '#4',
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/ALLEN_ARNOLD_R_10-29.png?itok=kYI9aG5h',
+ 'bluePlayerCountry': 'United Kingdom',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'bluePlayerCountryEmoji': '🇬🇧',
+ 'bluePlayerName': 'Arnold Allen',
+ 'bluePlayerOdds': '+135',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/arnold-allen',
+ 'bluePlayerRank': '#4',
+ 'cardType': 'Main',
+ 'fightId': '10396',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/49b91c96-87a8-43ce-af9b-f9cac2c394d0%252FHOLLOWAY_MAX_L_07-02.png?itok=nnBuuQgs',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Max Holloway',
+ 'redPlayerOdds': '-155',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/max-holloway',
+ 'redPlayerRank': '#2',
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/MUNOZ_JOHNNY_R_11-05.png?itok=1HJVewBS',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Johnny Munoz',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/johnny-munoz',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': None,
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/bbda7ecc-c4ca-4dd9-82b0-0f56ad910fc5%252FSANTOS_DANIEL_L_04-09.png?itok=jBPNmi8H',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Daniel Santos',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/daniel-santos',
+ 'redPlayerRank': None,
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/091ac2c0-d3bc-4658-8e31-759d225319e1%252FAMIRKHANI_MAKWAN_R_03-19.png?itok=jIdRAAEq',
+ 'bluePlayerCountry': 'Finland',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/FI.PNG',
+ 'bluePlayerCountryEmoji': '🇫🇮',
+ 'bluePlayerName': 'Makwan Amirkhani',
+ 'bluePlayerOdds': '+390',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/makwan-amirkhani',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10347',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/2b830d04-ea6c-42e5-94c9-6dfa4a5dcbeb%252FSHORE_JACK_L_03-19.png?itok=ErA45IAm',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Jack Shore',
+ 'redPlayerOdds': '-490',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/jack-shore',
+ 'redPlayerRank': '#15',
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/68948%252Fprofile-galery%252Ffullbodyright-picture%252FMORALES_OMAR_R_09-25.png?itok=nkM5tapo',
+ 'bluePlayerCountry': 'Venezuela',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/VE.PNG',
+ 'bluePlayerCountryEmoji': '🇻🇪',
+ 'bluePlayerName': 'OmarMorales',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/omar-morales',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10430',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71807%252Fprofile-galery%252Ffullbodyleft-picture%252FDUNCAN_CHRIS_L.png?itok=BJw4UgGA',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Chris Duncan',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/chris-duncan',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc',
+ 'bluePlayerCountry': 'Israel',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/IL.PNG',
+ 'bluePlayerCountryEmoji': '🇮🇱',
+ 'bluePlayerName': 'Yanal Ashmoz',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/yanal-ashmoz',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10350',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/PATTERSON_SAM_L.png?itok=8N0XXdOn',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Sam Patterson',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/sam-patterson',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/FILHO_JAFEL_R.png?itok=S-giFBfC',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Jafel Filho',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/jafel-filho',
+ 'bluePlayerRank': None,
+ 'cardType': 'Prelims',
+ 'fightId': '10349',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/911ce7a0-a97f-497c-9a2d-b3bbfa3e50d8%252FMOKAEV_MUHAMMAD_L_03-19.png?itok=QZSQVqHf',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Muhammad Mokaev',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/muhammad-mokaev',
+ 'redPlayerRank': '#12',
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/71505%252Fprofile-galery%252Ffullbodyright-picture%252FQUARANTILLO_BILLY_R_07-17.png?itok=U5ezuIe0',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Billy Quarantillo',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/billy-quarantillo',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10434',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/BARBOZA_EDSON_L_05-15.png?VersionId=null&itok=CaF7pqSn',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Edson Barboza',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/edson-barboza',
+ 'redPlayerRank': '#14',
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-12/67433%252Fprofile-galery%252Ffullbodyright-picture%252FMURZAKANOV_AZAMAT_R_12-04.png?itok=r8xyF5eM',
+ 'bluePlayerCountry': 'Russia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/RU.PNG',
+ 'bluePlayerCountryEmoji': '🇷🇺',
+ 'bluePlayerName': 'AzamatMurzakanov',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/azamat-murzakanov',
+ 'bluePlayerRank': '#15',
+ 'cardType': 'Main',
+ 'fightId': '10435',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/JACOBY_DUSTIN_L_07-16.png?itok=CDkMFD8p',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Dustin Jacoby',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/dustin-jacoby',
+ 'redPlayerRank': '#13',
+ 'weightClass': 'Light Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/4b091966-d11e-4f56-9c6e-309d1005b9a8%252FCUTELABA_ION_R_05-14.png?itok=jeHOhQst',
+ 'bluePlayerCountry': 'Moldova',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MD.PNG',
+ 'bluePlayerCountryEmoji': '🇲🇩',
+ 'bluePlayerName': 'Ion Cutelaba',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/ion-cutelaba',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10426',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/BOSER_TANNER_L_09-17.png?itok=Aa5SeYok',
+ 'redPlayerCountry': 'Canada',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CA.PNG',
+ 'redPlayerCountryEmoji': '🇨🇦',
+ 'redPlayerName': 'Tanner Boser',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/tanner-boser',
+ 'redPlayerRank': None,
+ 'weightClass': 'Light Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71441%252Fprofile-galery%252Ffullbodyright-picture%252FGUTIERREZ_CHRIS_R_10-09.png?itok=xwMSAYWi',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Chris Gutierrez',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/chris-gutierrez',
+ 'bluePlayerRank': '#13',
+ 'cardType': 'Main',
+ 'fightId': '10436',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/e4a08b07-c67d-41ae-9540-bfb0a1180c05%252FMUNHOZ_PEDRO_L_07-02.png?itok=-YGYAzvT',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Pedro Munhoz',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/pedro-munhoz',
+ 'redPlayerRank': '#9',
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/ADESANYA_ISRAEL_R_02_25.png?itok=nYftjStZ',
+ 'bluePlayerCountry': 'Nigeria',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/NG.PNG',
+ 'bluePlayerCountryEmoji': '🇳🇬',
+ 'bluePlayerName': 'Israel Adesanya',
+ 'bluePlayerOdds': '-155',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/israel-adesanya',
+ 'cardType': 'Main',
+ 'fightId': '10377',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/PEREIRA_ALEX_L_BELTMOCK.png?itok=f4ZmooY2',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Alex Pereira',
+ 'redPlayerOdds': '+135',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/alex-pereira',
+ 'weightClass': 'Middleweight Title Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc',
+ 'bluePlayerCountry': None,
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/UNIVERSAL.PNG',
+ 'bluePlayerCountryEmoji': '🏳',
+ 'bluePlayerName': 'Gabriel Santos',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/gabriel-santos',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10317',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71581%252Fprofile-galery%252Ffullbodyleft-picture%252FMURPHY_LERONE_L_10-30.png?itok=oUQ5oooC',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Lerone Murphy',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/lerone-murphy',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/8a167d4e-2ad7-484f-a43f-b965d32758ae%252FTODOROVIC_DUSKO_R_05-21.png?itok=jPp4L4IG',
+ 'bluePlayerCountry': 'Serbia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/RS.PNG',
+ 'bluePlayerCountryEmoji': '🇷🇸',
+ 'bluePlayerName': 'DuškoTodorović',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/dusko-todorovic',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10352',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Christian Leroy Duncan',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/christian-leroy-duncan',
+ 'redPlayerRank': None,
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/GORDON_MALCOLM_R_10-22.png?itok=xzhmctmA',
+ 'bluePlayerCountry': 'Canada',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CA.PNG',
+ 'bluePlayerCountryEmoji': '🇨🇦',
+ 'bluePlayerName': 'Malcolm Gordon',
+ 'bluePlayerOdds': '+310',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/malcolm-gordon',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10321',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/8295e9d4-4fb2-411f-85f3-7382417b632d%252FHADLEY_JAKE_L_05-14.png?itok=M5mj2yI5',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Jake Hadley',
+ 'redPlayerOdds': '-380',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/jake-hadley',
+ 'redPlayerRank': None,
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/69717%252Fprofile-galery%252Ffullbodyright-picture%252FCAROLINA_LUANA_R_05-01.png?VersionId=null&itok=o6CiwZQE',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Luana Carolina',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/luana-carolina',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10319',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/d51b6872-b671-4770-97f7-e7a3e44e7a56%252FWOOD_JOANNE_L_03-26.png?itok=_d_gfC-z',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Joanne Wood',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/joanne-wood',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Flyweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/28488d7e-91d8-4b86-a0c0-40b81f40b314%252FBROWN_TJ_R_06-25.png?itok=1pjnB2oX',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'TJ Brown',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/tj-brown',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10437',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/ALGEO_BILL_L_09-17.png?itok=QkbNkR8y',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Bill Algeo',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/bill-algeo',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/67870%252Fprofile-galery%252Ffullbodyright-picture%252FHERMAN_ED_R_08-07.png?itok=FwsPP0XV',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Ed Herman',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/ed-herman',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10438',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2020-09/CUMMINGS_ZAK_L_08-29.png?VersionId=VorcNgcbl5TkQqViGDWVqs3LhalA6ZX_&itok=8xgDz8oT',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Zak Cummings',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/zak-cummings',
+ 'redPlayerRank': None,
+ 'weightClass': 'Light Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/ac0b2eb7-b40d-4235-ac6e-6e8d67dbad71%252FGARCIA_RAFA_R_04-16.png?itok=YYmFjh26',
+ 'bluePlayerCountry': 'Mexico',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MX.PNG',
+ 'bluePlayerCountryEmoji': '🇲🇽',
+ 'bluePlayerName': 'Rafa Garcia',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/rafa-garcia',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10439',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/GUIDA_CLAY_L_12-03.png?itok=z47Ue3Ui',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'ClayGuida',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/clay-guida',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/b9bd212d-6963-46fb-8912-9fc03744f386%252FRODRIGUEZ_PIERA_R_04-09.png?itok=fLs0HtUv',
+ 'bluePlayerCountry': 'Venezuela',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/VE.PNG',
+ 'bluePlayerCountryEmoji': '🇻🇪',
+ 'bluePlayerName': 'Piera Rodriguez',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/piera-rodriguez',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10440',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/ROBERTSON_GILLIAN_L_09-17.png?itok=MBHxwJS0',
+ 'redPlayerCountry': 'Canada',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CA.PNG',
+ 'redPlayerCountryEmoji': '🇨🇦',
+ 'redPlayerName': 'Gillian Robertson',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/gillian-robertson',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/68347%252Fprofile-galery%252Ffullbodyright-picture%252FMASVIDAL_JORGE_R_04-24.png?VersionId=null&itok=qVNmL-ve',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Jorge Masvidal',
+ 'bluePlayerOdds': '+360',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/jorge-masvidal',
+ 'bluePlayerRank': '#11',
+ 'cardType': 'Main',
+ 'fightId': '10378',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BURNS_GILBERT_L_02_04.png?itok=jFVtdIfi',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Gilbert Burns',
+ 'redPlayerOdds': '-450',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/gilbert-burns',
+ 'redPlayerRank': '#5',
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/YANEZ_ADRIAN_R_07-24.png?itok=vHJSHKX6',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'AdrianYanez',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/adrian-yanez',
+ 'bluePlayerRank': '#12',
+ 'cardType': 'Main',
+ 'fightId': '10381',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/96838c46-0a5d-403d-b53d-46178b380f21%252FFONT_ROB_L_04-30.png?itok=TGZq2Q81',
+ 'redPlayerCountry': 'Puerto Rico',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PR.PNG',
+ 'redPlayerCountryEmoji': '🇵🇷',
+ 'redPlayerName': 'RobFont',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/rob-font',
+ 'redPlayerRank': '#6',
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/ab389ca7-72c2-4b19-9e6f-1cd88f826a2a%252FPONZINIBBIO_SANTIAGO_R_05-21.png?itok=HdGL16_T',
+ 'bluePlayerCountry': 'Argentina',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/AR.PNG',
+ 'bluePlayerCountryEmoji': '🇦🇷',
+ 'bluePlayerName': 'Santiago Ponzinibbio',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/santiago-ponzinibbio',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10379',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/HOLLAND_KEVIN_L_12-03.png?itok=ib4iAyAT',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Kevin Holland',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/kevin-holland',
+ 'redPlayerRank': None,
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_CHRISTIAN_R_10-29.png?itok=7eHFH2mz',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Christian Rodriguez',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/christian-rodriguez',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10380',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/ROSAS_JR_RAUL_L_12-10.png?itok=6gLVeqCB',
+ 'redPlayerCountry': 'Mexico',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MX.PNG',
+ 'redPlayerCountryEmoji': '🇲🇽',
+ 'redPlayerName': 'Raul Rosas Jr.',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/raul-rosas-jr',
+ 'redPlayerRank': None,
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/KLEIN_LUDOVIT_R_07-23.png?itok=PlgAeFCg',
+ 'bluePlayerCountry': 'Slovakia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/SK.PNG',
+ 'bluePlayerCountryEmoji': '🇸🇰',
+ 'bluePlayerName': 'Ludovit Klein',
+ 'bluePlayerOdds': '-155',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/ludovit-klein',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10351',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/HERBERT_JAI_L_06-26.png?itok=xvwYjJFq',
+ 'redPlayerCountry': 'United Kingdom',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/GB.PNG',
+ 'redPlayerCountryEmoji': '🇬🇧',
+ 'redPlayerName': 'Jai Herbert',
+ 'redPlayerOdds': '+135',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/jai-herbert',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-11/MACEDO_VERONICA_R.png?VersionId=Q90NYGELDPWOn9ZhrWAUJ3geaut.ulfX&itok=dcdNKKTI',
+ 'bluePlayerCountry': 'Poland',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PL.PNG',
+ 'bluePlayerCountryEmoji': '🇵🇱',
+ 'bluePlayerName': 'Veronica Macedo',
+ 'bluePlayerOdds': '+340',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/veronica-macedo',
+ 'bluePlayerRank': None,
+ 'cardType': 'EarlyPrelims',
+ 'fightId': '10353',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/MILLER_JULIANA_L_08-06.png?itok=OKw5RDVa',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Juliana Miller',
+ 'redPlayerOdds': '-425',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/juliana-miller',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Flyweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/NICOLAU_MATHEUS_R_12-03.png?itok=uUbqxza2',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Matheus Nicolau',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/matheus-nicolau',
+ 'bluePlayerRank': '#5',
+ 'cardType': 'Main',
+ 'fightId': '10441',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/71607%252Fprofile-galery%252Ffullbodyleft-picture%252FROYVAL_BRANDON_L_08-21.png?itok=PVbSEn9w',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Brandon Royval',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/brandon-royval',
+ 'redPlayerRank': '#4',
+ 'weightClass': 'Flyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GOMES_DENISE_R_09-17.png?itok=Zz312vP-',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Denise Gomes',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/denise-gomes',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10442',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BRASIL_BRUNA_L.png?itok=MpvX9VvH',
+ 'redPlayerCountry': 'Brazil',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'redPlayerCountryEmoji': '🇧🇷',
+ 'redPlayerName': 'Bruna Brasil',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/bruna-brasil',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc',
+ 'bluePlayerCountry': 'Peru',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PE.PNG',
+ 'bluePlayerCountryEmoji': '🇵🇪',
+ 'bluePlayerName': 'Gaston Bolanos',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/gaston-bolanos',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10443',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2020-07/PHILLIPS_AARON_L_07-15.png?VersionId=PGS17TicwR11rgRXMwocVF3sNk5GK.IX&itok=ywuZhvah',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Aaron Phillips',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/aaron-phillips',
+ 'redPlayerRank': None,
+ 'weightClass': 'Bantamweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ZELLHUBER_DANIEL_R_09-17.png?itok=A69lRmC6',
+ 'bluePlayerCountry': 'Mexico',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MX.PNG',
+ 'bluePlayerCountryEmoji': '🇲🇽',
+ 'bluePlayerName': 'Daniel Zellhuber',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/daniel-zellhuber',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10444',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/c4136bbb-43b6-46cc-959b-7b298ac6ca49%252FVANNATA_LANDO_L_04-23.png?itok=N96dMcGb',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Lando Vannata',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/lando-vannata',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/68475%252Fprofile-galery%252Ffullbodyright-picture%252FGASTELUM_KELVIN_R_04-17.png?VersionId=null&itok=z6md8hjM',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Kelvin Gastelum',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/kelvin-gastelum',
+ 'bluePlayerRank': '#15',
+ 'cardType': 'Main',
+ 'fightId': '10420',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/f78dd9ae-c44e-46fb-a9d2-beef3be4b5ff%252FCURTIS_CHRIS_L_06-25.png?itok=lzkT64Ba',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'ChrisCurtis',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/chris-curtis',
+ 'redPlayerRank': '#14',
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/JINGLIANG_LI_R_09-10.png?itok=nUYnuUT9',
+ 'bluePlayerCountry': 'China',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CN.PNG',
+ 'bluePlayerCountryEmoji': '🇨🇳',
+ 'bluePlayerName': 'Li Jingliang',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/li-jingliang',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10407',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/68797%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIESA_MICHAEL_L_08-07.png?itok=aK6287Or',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Michael Chiesa',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/michael-chiesa',
+ 'redPlayerRank': '#13',
+ 'weightClass': 'Welterweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/71666%252Fprofile-galery%252Ffullbodyright-picture%252FPINHEIRO_LUANA_R_05-01.png?VersionId=null&itok=LTGhruDe',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'LuanaPinheiro',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/luana-pinheiro',
+ 'bluePlayerRank': '#14',
+ 'cardType': 'Main',
+ 'fightId': '10408',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/WATERSON-GOMEZ_MICHELLE_L_07-16.png?itok=uBIb2rlD',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'MichelleWaterson-Gomez',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/michelle-waterson',
+ 'redPlayerRank': '#10',
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/e273df3c-9095-46b1-85f8-029aa2ce4a3c%252FSHERMAN_CHASE_R_04-23.png?itok=9rTu-93f',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Chase Sherman',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/chase-sherman',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10409',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BARNETT_CHRIS_L_09-10.png?itok=tKgwx1SU',
+ 'redPlayerCountry': 'Spain',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/ES.PNG',
+ 'redPlayerCountryEmoji': '🇪🇸',
+ 'redPlayerName': 'Chris Barnett',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/chris-barnett',
+ 'redPlayerRank': None,
+ 'weightClass': 'Heavyweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/PUDILOVA_LUCIE_R_08-20.png?itok=oJtmZ9dI',
+ 'bluePlayerCountry': 'Czechia',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CZ.PNG',
+ 'bluePlayerCountryEmoji': '🇨🇿',
+ 'bluePlayerName': 'Lucie Pudilova',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/lucie-pudilova',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10445',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/EDWARDS_JOSELYNE_L_07-30.png?itok=flUI6pe1',
+ 'redPlayerCountry': 'Panama',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/PA.PNG',
+ 'redPlayerCountryEmoji': '🇵🇦',
+ 'redPlayerName': 'Joselyne Edwards',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/joselyne-edwards',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Bantamweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/PYFER_JOE_R_09-17.png?itok=Nf_b1MDj',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Joe Pyfer',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/joe-pyfer',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10382',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/MEERSCHAERT_GERALD_L_08-13.png?itok=qxEAEHX2',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Gerald Meerschaert',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/gerald-meerschaert',
+ 'redPlayerRank': None,
+ 'weightClass': 'Middleweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/59f822bc-2f1d-494f-a1aa-42b8bd36ddf7%252FGODINEZ_LOOPY_R_05-07.png?itok=7oFM9Frx',
+ 'bluePlayerCountry': 'Mexico',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/MX.PNG',
+ 'bluePlayerCountryEmoji': '🇲🇽',
+ 'bluePlayerName': 'LoopyGodinez',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/loopy-godinez',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10421',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/CALVILLO_CYNTHIA_L_09-25.png?itok=U3hrjcy8',
+ 'redPlayerCountry': 'United States',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'redPlayerCountryEmoji': '🇺🇸',
+ 'redPlayerName': 'Cynthia Calvillo',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/cynthia-calvillo',
+ 'redPlayerRank': '#15',
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-02/3a465ee0-cb19-4d43-bfa8-9621482d86cd%252FMOTTA_NIKOLAS_R_02-19.png?itok=b8RrIqcf',
+ 'bluePlayerCountry': 'Brazil',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/BR.PNG',
+ 'bluePlayerCountryEmoji': '🇧🇷',
+ 'bluePlayerName': 'Nikolas Motta',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/nikolas-motta',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10422',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/BAHAMONDES_IGNACIO_L_04-10.png?itok=f2krqySi',
+ 'redPlayerCountry': 'Chile',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CL.PNG',
+ 'redPlayerCountryEmoji': '🇨🇱',
+ 'redPlayerName': 'Ignacio Bahamondes',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/ignacio-bahamondes',
+ 'redPlayerRank': None,
+ 'weightClass': 'Lightweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/GARCIA_STEVE_R_10-29.png?itok=FIBydkkH',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'Steve Garcia',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/steve-garcia',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10410',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/NUERDANBIEKE_SHAYILLAN_L_05-22.png?itok=IWMIO5js',
+ 'redPlayerCountry': 'China',
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/CN.PNG',
+ 'redPlayerCountryEmoji': '🇨🇳',
+ 'redPlayerName': 'Shayilan Nuerdanbieke',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/shayilan-nuerdanbieke',
+ 'redPlayerRank': None,
+ 'weightClass': 'Featherweight Bout'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
+2023-03-13 06:20:54 [scrapy.core.scraper] ERROR: Error processing {'bluePlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/47e86545-9708-4b8a-af07-568ab301c45e%252FHUGHES_SAM_R_05-21.png?itok=bwlX3DFm',
+ 'bluePlayerCountry': 'United States',
+ 'bluePlayerCountryCode': '/themes/custom/ufc/assets/img/flags/US.PNG',
+ 'bluePlayerCountryEmoji': '🇺🇸',
+ 'bluePlayerName': 'SamHughes',
+ 'bluePlayerOdds': '-',
+ 'bluePlayerPage': 'https://www.ufc.com/athlete/sam-hughes',
+ 'bluePlayerRank': None,
+ 'cardType': 'Main',
+ 'fightId': '10423',
+ 'redPlayerBack': 'https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM',
+ 'redPlayerCountry': None,
+ 'redPlayerCountryCode': '/themes/custom/ufc/assets/img/flags/UNIVERSAL.PNG',
+ 'redPlayerCountryEmoji': '🏳',
+ 'redPlayerName': 'Jaqueline Amorim',
+ 'redPlayerOdds': '-',
+ 'redPlayerPage': 'https://www.ufc.com/athlete/jaqueline-amorim',
+ 'redPlayerRank': None,
+ 'weightClass': "Women's Strawweight Bout"}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/twisted/internet/defer.py", line 893, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/utils/defer.py", line 304, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/runner/work/UfcMaker/UfcMaker/ufcjson/pipelines.py", line 98, in process_item
+    'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/site-packages/scrapy/item.py", line 79, in __getitem__
+    return self._values[key]
+KeyError: 'redPlayerBackLocal'
