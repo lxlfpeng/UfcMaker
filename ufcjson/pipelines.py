@@ -91,12 +91,11 @@ class UfcRssMakerPipeline:
         self.rssMaker=RssMaker( title="UFC赛程",link='https://www.ufc.com/events#events-list-upcoming',description="新的UFC赛程")
         self.rssList=[]
     def process_item(self, item, spider):
-        
-    #    if isinstance(item,UfcComingCardItem):
-    #         title=item['redPlayerName']+"VS"+item['bluePlayerName']
-    #         self.rssList.append({'title':title,
-    #         'link':"",
-    #         'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
+       if isinstance(item,UfcComingCardItem):
+            title=item['redPlayerName']+"VS"+item['bluePlayerName']
+            self.rssList.append({'title':title,
+            'link':"",
+            'description':self.rssMaker.get_html_str(title,item['redPlayerBackLocal'],item['bluePlayerBackLocal'])})
        return item   
     def close_spider(self, spider):
         if isinstance(spider, UpcomingSpider):
@@ -132,8 +131,8 @@ class ImagesDownloadPipeline(ImagesPipeline):
     
     def item_completed(self, results, item, info):
         images = {x['url']: x for ok, x in results if ok}
-        logging.warning("下载图片内容成功")
-        logging.warning(images)
+        #logging.warning("下载图片内容成功")
+        #logging.warning(images)
         if len(images.keys()) == 0:
             return item
         if isinstance(item, UfcPassItem):
@@ -164,7 +163,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
                 item['backLocal'] = images[item['back']]['path']
             if 'cover' in item and item['cover'] in images.keys():
                 item['coverLocal'] = images[item['cover']]['path']
-        logging.warning(item)        
+        #logging.warning(item)        
         # image_paths = [x['path'] for ok, x in results if ok]
         # if len(image_paths)>0:
         #     if isinstance(item,UfcPassItem):
