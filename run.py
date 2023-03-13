@@ -22,3 +22,4 @@ import time
 
 #cmdline.execute("scrapy crawl ranking".split())
 cmdline.execute("scrapy crawl upcoming".split())
+cmdline.execute("scrapy crawl eventpass".split())
