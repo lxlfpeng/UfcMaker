@@ -119,5 +119,6 @@ class UfcRankingPlayer(scrapy.Item):
     ranking=scrapy.Field()
     backLocal=scrapy.Field()
     rankName=scrapy.Field()
+    weight=scrapy.Field()
 
 

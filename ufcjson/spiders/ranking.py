@@ -30,7 +30,7 @@ class RankingSpider(scrapy.Spider):
     def parse(self, response):
         info = response.xpath('//div[@class="view-grouping"]')
         #info=info[0:1]
-        for index,i in enumerate(info):
+        for weight,i in enumerate(info):
             # item=UfcRankingItem()
             rankName=i.xpath('.//div[@class="view-grouping-header"]/text()').extract_first()
             playeras=i.xpath('.//a')
@@ -39,6 +39,7 @@ class RankingSpider(scrapy.Spider):
             for index,p in enumerate(playeras):
                 player=UfcRankingPlayer()
                 #players.append(player)
+                player['weight']=weight
                 player['rankName']=rankName
                 player['name']=p.xpath('./text()').extract_first()
                 player['ranking']=index
