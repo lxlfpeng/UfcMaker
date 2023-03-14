@@ -248,7 +248,7 @@ class JsonWriterPipeline(object):
           self.json_exporter.export_item(item)
         if isinstance(item,UfcComingItem):
           self.json_exporter.export_item(item)
-        if isinstance(item,UfcRankingItem):
+        if isinstance(spider, RankingSpider) and isinstance(item,UfcRankingPlayer):
           self.json_exporter.export_item(item)
         if isinstance(spider, AthleteSpider) and isinstance(item,UfcRankingPlayer):
           self.json_exporter.export_item(item)          
@@ -324,7 +324,7 @@ class JsonWriterTranslatorPipeline(object):
                 self.translate(i,'weightClass')
             self.json_exporter.export_item(item)
 
-        if isinstance(spider, AthleteSpider) and isinstance(item,UfcRankingPlayer):
+        if isinstance(item,UfcRankingPlayer):
           self.translate(item,'historys')  
           self.translate(item,'name')
           self.translate(item,'weightClass')
