@@ -79,7 +79,7 @@ class UpcomingSpider(scrapy.Spider):
                 if len(odds)==2:
                     itemd['redPlayerOdds']=odds[0]
                     itemd['bluePlayerOdds']=odds[1]
-                rank=d.xpath('.//div[@class="c-listing-fight__ranks-row"]/div[@class="js-listing-fight__corner-rank c-listing-fight__corner-rank"]')
+                rank=d.xpath('.//div[@class="c-listing-fight__ranks-row"]/div')
                 if len(rank)==2:
                     itemd['redPlayerRank']=rank[0].xpath('./span/text()').extract_first() 
                     itemd['bluePlayerRank']=rank[1].xpath('./span/text()').extract_first()
