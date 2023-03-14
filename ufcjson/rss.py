@@ -36,8 +36,8 @@ class RssMaker:
         rss.write_xml(open(path, "w", encoding='utf-8'), encoding='utf-8')
 
     def get_html_str(self,bTitle, bRedCover, bBlueCover):
-        bRedCover = "https://gitee.com/DaPengDePeng/make-json/raw/master/"+bRedCover
-        bBlueCover = "https://gitee.com/DaPengDePeng/make-json/raw/master/"+bBlueCover
+        bRedCover = bRedCover
+        bBlueCover = bBlueCover
         html = """
         <!DOCTYPE html>
         <html>
