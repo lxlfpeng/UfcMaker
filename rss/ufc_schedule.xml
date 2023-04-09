@@ -1,501 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Sat, 08 Apr 2023 05:51:45 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Alex PereiraVSIsrael Adesanya</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Alex PereiraVSIsrael Adesanya&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PEREIRA_ALEX_L_BELT_04-08.png?itok=anD_XOxa"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ADESANYA_ISRAEL_R_04-08.png?itok=C9Q8nln-" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Gilbert BurnsVSJorge Masvidal</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Gilbert BurnsVSJorge Masvidal&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/BURNS_GILBERT_L_04-08.png?itok=3L-cNZrm"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MASVIDAL_JORGE_R_04-08.png?itok=wVAws_LB" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>RobFontVSAdrianYanez</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;RobFontVSAdrianYanez&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/FONT_ROB_L_04-08.png?itok=jt-d_jpj"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/YANEZ_ADRIAN_R_04-08.png?itok=q1ymy3g7" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Kevin HollandVSSantiago Ponzinibbio</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Kevin HollandVSSantiago Ponzinibbio&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HOLLAND_KEVIN_L_04-08.png?itok=zmgmV4z0"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PONZINIBBIO_SANTIAGO_R_04-08.png?itok=AtkXuZkK" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Raul Rosas Jr.VSChristian Rodriguez</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Raul Rosas Jr.VSChristian Rodriguez&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ROSAS_JR_RAUL_L_04-08.png?itok=BI3Vsgww"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/RODRIGUEZ_CHRISTIAN_R_04-08.png?itok=Wpo0J4pw" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>ChrisCurtisVSKelvin Gastelum</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;ChrisCurtisVSKelvin Gastelum&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/CURTIS_CHRIS_L_04-08.png?itok=j61QRzP1"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GASTELUM_KELVIN_R_04-08.png?itok=oDoWzwLW" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>MichelleWaterson-GomezVSLuanaPinheiro</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;MichelleWaterson-GomezVSLuanaPinheiro&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/WATERSON-GOMEZ_MICHELLE_L_04-08.png?itok=xAGA8yVy"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PINHEIRO_LUANA_R_04-08.png?itok=KuJ6uFoM" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Gerald MeerschaertVSJoe Pyfer</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Gerald MeerschaertVSJoe Pyfer&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MEERSCHAERT_GERALD_L_04-08.png?itok=IMgPrj8I"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PYFER_JOE_R_04-08.png?itok=vN0qD2-Y" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Karl WilliamsVSChase Sherman</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Karl WilliamsVSChase Sherman&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/WILLIAMS_KARL_L_04-08.png?itok=sJhuHzvr"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/SHERMAN_CHASE_R_04-08.png?itok=SCP_xf6h" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Cynthia CalvilloVSLoopyGodinez</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Cynthia CalvilloVSLoopyGodinez&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/CALVILLO_CYNTHIA_L_04-08.png?itok=d0kxAFOM"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GODINEZ_LOOPY_R_04-08.png?itok=7-zmxANI" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Ignacio BahamondesVSTrey Ogden</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Ignacio BahamondesVSTrey Ogden&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/BAHAMONDES_IGNACIO_L_04-08.png?itok=dJyJXV5W"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OGDEN_TREY_R_04-08.png?itok=2O0xZAYe" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Shayilan NuerdanbiekeVSSteve Garcia</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Shayilan NuerdanbiekeVSSteve Garcia&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/NUERDANBIEKE_SHAYILAN_L_04-08.png?itok=cc6NVmjo"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GARCIA_STEVE_R_04-08.png?itok=zPTRvt5W" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Jaqueline AmorimVSSamHughes</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Jaqueline AmorimVSSamHughes&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/AMORIM_JAQUELINE_L_04-08.png?itok=DlEk3fCa"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HUGHES_SAM_R_04-08.png?itok=26o3lmn5" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Sergei PavlovichVSCurtis Blaydes</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Sergei PavlovichVSCurtis Blaydes&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PAVLOVICH_SERGEI_L_12-03.png?itok=LDinGfYN"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/BLAYDES_CURTIS_R_09-25.png?itok=hdzIQ23a" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Yadong SongVSRicky Simon</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Yadong SongVSRicky Simon&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SONG_YADONG_L_09-17.png?itok=Gkz_K12p"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/SIMON_RICKY_R_07-16.png?itok=MqhZ3eYo" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Brad TavaresVSBruno Silva</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Brad TavaresVSBruno Silva&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/6481a732-f020-448e-aca7-7ca200468da2%252FTAVARES_BRAD_L_07-02.png?itok=FcnO48hU"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/SILVA_BRUNO_R_08-13.png?itok=m56F_f3q" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Bobby GreenVSJared Gordon</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Bobby GreenVSJared Gordon&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/fe6e241f-4c8a-428f-bec3-119db5803311%252FGREEN_BOBBY_L_02-26.png?itok=MOPGKprI"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/GORDON_JARED_R_12-10.png?itok=eGTjhaBs" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Iasmin LucindoVSBrogan Walker</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Iasmin LucindoVSBrogan Walker&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/LUCINDO_IASMIN_L_08-13.png?itok=uRukGe-M"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/WALKER_BROGAN_R_08-06.png?itok=vNmsTzrF" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>JeremiahWellsVSMatthew Semelsberger</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;JeremiahWellsVSMatthew Semelsberger&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/WELLS_JEREMIAH_L_06-26.png?itok=zOor__zb"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/SEMELSBERGER_MATTHEW_R_07-30.png?itok=GBkW9Eu3" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Ricky GlennVSChristos Giagos</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Ricky GlennVSChristos Giagos&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/69092%252Fprofile-galery%252Ffullbodyleft-picture%252FGLENN_RICKY_L_06-19.png?VersionId=null&amp;itok=S361bFIR"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/e51f6ef6-ba05-492e-ba31-81db9e3c1054%252FGIAGOS_CHRISTOS_R_06-25.png?itok=c4ONHK9P" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>RaniYahyaVSMontel Jackson</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;RaniYahyaVSMontel Jackson&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/YAHYA_RANI_L_07-31.png?itok=Z4Y_AS6Y"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/9dd231f7-39cb-41c5-86b9-c1967c49ebfe%252FJACKSON_MONTEL_R_09-18.png?itok=zPZvKq0T" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Karol RosaVSNorma Dumont</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Karol RosaVSNorma Dumont&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/68454%252Fprofile-galery%252Ffullbodyleft-picture%252FROSA_KAROL_L_10-02.png?itok=4saERqm7"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/DUMONT_NORMA_R_09-10.png?itok=nST94EVI" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Aljamain SterlingVSHenry Cejudo</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Aljamain SterlingVSHenry Cejudo&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/STERLING_ALJAMAIN_L_BELT_10-22.png?itok=I-4cFC5o"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/Henry_Cejudo/CEJUDO_HENRY_R-PRINT.png?itok=e9YmvCv2" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Mohammed UsmanVSJunior Tafa</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Mohammed UsmanVSJunior Tafa&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/USMAN_MOHAMMAD_L_08-06.png?itok=LCIsThP_"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&amp;itok=fiyOmUkc" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Francis MarshallVSWilliam Gomis</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Francis MarshallVSWilliam Gomis&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MARSHALL_FRANCIS_L_12-03.png?itok=Ojco3DYs"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GOMIS_WILLIAM_R_09-03.png?itok=UPe4hA26" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Priscila CachoeiraVSKarine Silva</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Priscila CachoeiraVSKarine Silva&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/CACHOEIRA_PRISCILA_L_08-06.png?itok=cv_HRk3i"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/SILVA_KARINE_R_06-04.png?itok=LdsgwYHV" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Brady HiestandVSBatgerelDanaa</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Brady HiestandVSBatgerelDanaa&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/HIESTAND_BRADY_L.png?itok=x-yx7XSL"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/d420b8b0-bac0-4265-a3b4-43b0b4381648%252FBATGERAL_DANAA_R_06-11.png?itok=K0ylS_TM" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Charles OliveiraVSBeneil Dariush</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Charles OliveiraVSBeneil Dariush&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/OLIVEIRA_CHARLES_L_10-22.png?itok=bTVAThp8"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/67453%252Fprofile-galery%252Ffullbodyright-picture%252FDARIUSH_BENEIL_R_05-15.png?VersionId=null&amp;itok=81tvut2L" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Jessica AndradeVSXiaonan Yan</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Jessica AndradeVSXiaonan Yan&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/9e1322ed-8b10-40f2-b0fc-575fb206c20c%252FANDRADE_JESSICA_L_04-23.png?itok=OzhG2sDi"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/XIAONAN_YAN_R_10-01.png?itok=mcoz_wCm" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Bryce MitchellVSJonathan Pearce</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Bryce MitchellVSJonathan Pearce&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=to2Y8N6C"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/PEARCE_JONATHAN_R_12-03.png?itok=QWEGtO61" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Kron GracieVSCharles Jourdain</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Kron GracieVSCharles Jourdain&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-10/GRACIE_KRON_R.png?VersionId=e2YLeub30w8ZQgddxXxvJaVuNll26j23&amp;itok=fZiJFCdP"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-01/a650ff52-69d0-43c7-bc9a-1ca8f6eb3623%252FJOURDAIN_CHARLES_R_01-22.png?itok=OndrqoAx" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Max HollowayVSArnold Allen</title><link></link><description>
+<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Sun, 09 Apr 2023 05:51:33 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Max HollowayVSArnold Allen</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -511,87 +15,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Kennedy NzechukwuVSDevin Clark</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Kennedy NzechukwuVSDevin Clark&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/b9c07939-a212-4617-b5e9-6a87319f9d41%252FNZECHUKWU_KENNEDY_L_03-05.png?itok=FnNQWrx4"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CLARK_DEVIN_R_02-04.png?itok=8Xz5XPfU" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Andre PetroskiVSArmen Petrosyan</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Andre PetroskiVSArmen Petrosyan&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71857%252Fprofile-galery%252Ffullbodyleft-picture%252FPETROSKI_ANDRE_L_10-30.png?itok=31e2_I89"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/PETROSYAN_ARMEN_R_02-26.png?itok=crYLzkEW" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>KhaosWilliamsVSRolando Bedoya</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;KhaosWilliamsVSRolando Bedoya&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/WILLIAMS_KHAOS_L_06-19.png?itok=xnfBanpw"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&amp;itok=fiyOmUkc" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Marina RodriguezVSVirna Jandiroba</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Marina RodriguezVSVirna Jandiroba&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=4OrpIblv"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/69468%252Fprofile-galery%252Ffullbodyright-picture%252FJANDIROBA_VIRNA_R_06-19.png?VersionId=null&amp;itok=wJqJh0Hu" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Nate ManessVSZhalgasZhumagulov</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Nate ManessVSZhalgasZhumagulov&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/68367%252Fprofile-galery%252Ffullbodyleft-picture%252FMANESS_NATE_L_09-18.png?itok=1OdKLwa_"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/ZHUMAGULOV_ZHALGAS_R.png?itok=YqaVsHOS" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Edson BarbozaVSBilly Quarantillo</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Edson BarbozaVSBilly Quarantillo</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -607,7 +31,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Dustin JacobyVSAzamatMurzakanov</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Dustin JacobyVSAzamatMurzakanov</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -623,7 +47,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Tanner BoserVSIon Cutelaba</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Tanner BoserVSIon Cutelaba</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -639,7 +63,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Pedro MunhozVSChris Gutierrez</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Pedro MunhozVSChris Gutierrez</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -655,23 +79,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Daniel SantosVSJohnny Munoz</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Daniel SantosVSJohnny Munoz&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/bbda7ecc-c4ca-4dd9-82b0-0f56ad910fc5%252FSANTOS_DANIEL_L_04-09.png?itok=jBPNmi8H"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/MUNOZ_JOHNNY_R_11-05.png?itok=1HJVewBS" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>ClayGuidaVSRafa Garcia</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>ClayGuidaVSRafa Garcia</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -687,7 +95,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Bill AlgeoVSTJ Brown</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Bill AlgeoVSTJ Brown</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -703,7 +111,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Brandon RoyvalVSMatheus Nicolau</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Brandon RoyvalVSMatheus Nicolau</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -719,7 +127,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Zak CummingsVSEd Herman</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Zak CummingsVSEd Herman</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -735,39 +143,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Arman TsarukyanVSRenato Moicano</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Arman TsarukyanVSRenato Moicano&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/7b15cc81-3b65-488e-8237-3991bc19710a%252FTSARUKYAN_ARMAN_L_06-25.png?itok=FmR45BHx"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/MOICANO_RENATO_R_11-12.png?itok=ejfBAyDC" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Jairzinho RozenstruikVSJailton Almeida</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Jairzinho RozenstruikVSJailton Almeida&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/1eb95f06-585c-4565-ad55-8a0ca3d84ac8%252FROZENSTRUIK_JAIRZINHO_L_06-04.png?itok=q1WMebpw"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/ALMEIDA_JAILTON_R.png?itok=f7hKu15I" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Gillian RobertsonVSPiera Rodriguez</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Gillian RobertsonVSPiera Rodriguez</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -783,7 +159,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Lando VannataVSDaniel Zellhuber</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Lando VannataVSDaniel Zellhuber</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -799,7 +175,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Bruna BrasilVSDenise Gomes</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Bruna BrasilVSDenise Gomes</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -815,7 +191,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Aaron PhillipsVSGaston Bolanos</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Aaron PhillipsVSGaston Bolanos</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -831,135 +207,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Caio BorralhoVSMichal Oleksiejczuk</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Caio BorralhoVSMichal Oleksiejczuk&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/ca0bd13d-ee9d-448a-832c-0c7a6d405556%252FBARRALHO_CAIO_L_04-16.png?itok=VT2c83c_"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/OLEKSIEJCZUK_MICHAL_R_12-17.png?itok=Xk5dGTi4" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Rodolfo VieiraVSCody Brundage</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Rodolfo VieiraVSCody Brundage&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/71554%252Fprofile-galery%252Ffullbodyleft-picture%252FVIEIRA_RODOLFO_L_07-17.png?itok=YaqxkGev"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BRUNDAGE_CODY_R_12-17.png?itok=AuqDrOE0" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Emily DucoteVSPolyana Viana</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Emily DucoteVSPolyana Viana&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/DUCOTE_EMILY_L_12-03.png?itok=n8JG5-cc"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/VIANA_POLYANA_R_05-21.png?itok=6Taz-duf" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Marcos Rogerio de LimaVSWaldo Cortes Acosta</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Marcos Rogerio de LimaVSWaldo Cortes Acosta&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/ROGERIO-DE-LIMA_MARCOS_L_10-29.png?itok=tt0iCTSd"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/CORTES-ACOSTA_WALDO_R_10-29.png?itok=tvt6wmUp" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Anthony SmithVSJohnny Walker</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Anthony SmithVSJohnny Walker&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/SMITH_ANTHONY_L_07-30.png?itok=Ou4if5jX"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2018-11/WALKER_JOHNNY_R.png?VersionId=SY7oF13rtW8nHdliuqZtk5_MlsZdU4V0&amp;itok=6129chDl" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>IanMachadoGarryVSDaniel Rodriguez</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;IanMachadoGarryVSDaniel Rodriguez&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/GARRY_IAN_L_03-05.png?itok=Zz89N0IX"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/RODRIGUEZ_DANIEL_R_09-10.png?itok=gppnF7Bh" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Cody StamannVSDouglas Silva de Andrade</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Cody StamannVSDouglas Silva de Andrade&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/ufc-fighter-container/67655/profile-galery/fullbodyleft-picture/STAMANN_CODY_L.png?VersionId=hDeXNViuRQsWFBlGjbY6nvWoBVVjBkwq&amp;itok=A-cRlqVy"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/67854%252Fprofile-galery%252Ffullbodyright-picture%252FDSILVA_DOUGLAS_R_10-02.png?itok=I7kZd0TF" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Tim MeansVSAlexMorono</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Tim MeansVSAlexMorono&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/b49fecbb-30bc-4c0b-b6a5-a7c158db1834%252FMEANS_TIM_L_06-18.png?itok=CgxmpsXS"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/MORONO_ALEX_R_07-30.png?itok=9TvE0sfU" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Joselyne EdwardsVSLucie Pudilova</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Joselyne EdwardsVSLucie Pudilova</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -975,7 +223,87 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Josh QuinlanVSAnge Loosa</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Arman TsarukyanVSRenato Moicano</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Arman TsarukyanVSRenato Moicano&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/7b15cc81-3b65-488e-8237-3991bc19710a%252FTSARUKYAN_ARMAN_L_06-25.png?itok=FmR45BHx"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/MOICANO_RENATO_R_11-12.png?itok=ejfBAyDC" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Caio BorralhoVSMichal Oleksiejczuk</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Caio BorralhoVSMichal Oleksiejczuk&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/ca0bd13d-ee9d-448a-832c-0c7a6d405556%252FBARRALHO_CAIO_L_04-16.png?itok=VT2c83c_"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/OLEKSIEJCZUK_MICHAL_R_12-17.png?itok=Xk5dGTi4" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Rodolfo VieiraVSCody Brundage</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Rodolfo VieiraVSCody Brundage&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/71554%252Fprofile-galery%252Ffullbodyleft-picture%252FVIEIRA_RODOLFO_L_07-17.png?itok=YaqxkGev"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BRUNDAGE_CODY_R_12-17.png?itok=AuqDrOE0" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Emily DucoteVSPolyana Viana</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Emily DucoteVSPolyana Viana&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/DUCOTE_EMILY_L_12-03.png?itok=n8JG5-cc"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/VIANA_POLYANA_R_05-21.png?itok=6Taz-duf" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Marcos Rogerio de LimaVSWaldo Cortes Acosta</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Marcos Rogerio de LimaVSWaldo Cortes Acosta&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/ROGERIO-DE-LIMA_MARCOS_L_10-29.png?itok=tt0iCTSd"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/CORTES-ACOSTA_WALDO_R_10-29.png?itok=tvt6wmUp" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Josh QuinlanVSAnge Loosa</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -991,7 +319,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Martin BudayVSJake Collier</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Martin BudayVSJake Collier</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1007,7 +335,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Julian ErosaVSFernando Padilla</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Julian ErosaVSFernando Padilla</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1023,7 +351,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>NatanLevyVSPete Rodriguez</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>NatanLevyVSPete Rodriguez</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1039,71 +367,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Bryan BattleVSGabriel Green</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Bryan BattleVSGabriel Green&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/BATTLE_BRYAN_L_12-17.png?itok=KCjOKPLL"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/GREEN_GABE_R_04-30.png?itok=gHHC-dZk" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Matt BrownVSCourt McGee</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Matt BrownVSCourt McGee&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/23ab2c3a-7261-4edf-bad9-b273176b7259%252FBROWN_MATT_L_03-26.png?itok=0bCC9_0Z"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/MCGEE_COURT_R_05-22.png?VersionId=null&amp;itok=TKsVL8m2" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Jessica-Rose ClarkVSTainara Lisboa</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Jessica-Rose ClarkVSTainara Lisboa&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/69670%252Fprofile-galery%252Ffullbodyleft-picture%252FCLARK_JESSICA-ROSE_L_10-23.png?itok=KdnMZDz1"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Ji Yeon KimVSMandyBöhm</title><link></link><description>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-	        &lt;meta charset="utf-8" /&gt;
-        &lt;/head&gt;
-	    &lt;body &gt;
-	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
-                &lt;h1&gt;Ji Yeon KimVSMandyBöhm&lt;/h1&gt;
-	            &lt;div style="display: flex;flex-direction: column;"&gt;
-	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/KIM_JI_YEON_L_02-04.png?itok=wVcCL94g"  loading="lazy" /&gt;
-	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BOHM_MANDY_R_02-04.png?itok=_tZdEGI_" loading="lazy" /&gt;
-	            &lt;/div&gt;
-            &lt;/div&gt;
-	    &lt;/body&gt;
-        &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Cody DurdenVSCharles Johnson</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Cody DurdenVSCharles Johnson</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1119,7 +383,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Stephanie EggerVSIrina Alekseeva</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Stephanie EggerVSIrina Alekseeva</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1135,7 +399,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Brian KelleherVSJourney Newson</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Brian KelleherVSJourney Newson</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1151,7 +415,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Hailey CowanVSJamey-Lyn Horth</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Hailey CowanVSJamey-Lyn Horth</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1167,7 +431,519 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Carlos UlbergVSIhor Potieria</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Sergei PavlovichVSCurtis Blaydes</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Sergei PavlovichVSCurtis Blaydes&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PAVLOVICH_SERGEI_L_12-03.png?itok=LDinGfYN"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/BLAYDES_CURTIS_R_09-25.png?itok=hdzIQ23a" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Yadong SongVSRicky Simon</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Yadong SongVSRicky Simon&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SONG_YADONG_L_09-17.png?itok=Gkz_K12p"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/SIMON_RICKY_R_07-16.png?itok=MqhZ3eYo" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Brad TavaresVSBruno Silva</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Brad TavaresVSBruno Silva&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/6481a732-f020-448e-aca7-7ca200468da2%252FTAVARES_BRAD_L_07-02.png?itok=FcnO48hU"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/SILVA_BRUNO_R_08-13.png?itok=m56F_f3q" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Bobby GreenVSJared Gordon</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Bobby GreenVSJared Gordon&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/fe6e241f-4c8a-428f-bec3-119db5803311%252FGREEN_BOBBY_L_02-26.png?itok=MOPGKprI"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/GORDON_JARED_R_12-10.png?itok=eGTjhaBs" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Iasmin LucindoVSBrogan Walker</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Iasmin LucindoVSBrogan Walker&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/LUCINDO_IASMIN_L_08-13.png?itok=uRukGe-M"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/WALKER_BROGAN_R_08-06.png?itok=vNmsTzrF" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>JeremiahWellsVSMatthew Semelsberger</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;JeremiahWellsVSMatthew Semelsberger&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/WELLS_JEREMIAH_L_06-26.png?itok=zOor__zb"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/SEMELSBERGER_MATTHEW_R_07-30.png?itok=GBkW9Eu3" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Ricky GlennVSChristos Giagos</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Ricky GlennVSChristos Giagos&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/69092%252Fprofile-galery%252Ffullbodyleft-picture%252FGLENN_RICKY_L_06-19.png?VersionId=null&amp;itok=S361bFIR"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/e51f6ef6-ba05-492e-ba31-81db9e3c1054%252FGIAGOS_CHRISTOS_R_06-25.png?itok=c4ONHK9P" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>RaniYahyaVSMontel Jackson</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;RaniYahyaVSMontel Jackson&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/YAHYA_RANI_L_07-31.png?itok=Z4Y_AS6Y"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/9dd231f7-39cb-41c5-86b9-c1967c49ebfe%252FJACKSON_MONTEL_R_09-18.png?itok=zPZvKq0T" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Karol RosaVSNorma Dumont</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Karol RosaVSNorma Dumont&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/68454%252Fprofile-galery%252Ffullbodyleft-picture%252FROSA_KAROL_L_10-02.png?itok=4saERqm7"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/DUMONT_NORMA_R_09-10.png?itok=nST94EVI" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Jairzinho RozenstruikVSJailton Almeida</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Jairzinho RozenstruikVSJailton Almeida&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/1eb95f06-585c-4565-ad55-8a0ca3d84ac8%252FROZENSTRUIK_JAIRZINHO_L_06-04.png?itok=q1WMebpw"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/ALMEIDA_JAILTON_R.png?itok=f7hKu15I" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Aljamain SterlingVSHenry Cejudo</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Aljamain SterlingVSHenry Cejudo&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/STERLING_ALJAMAIN_L_BELT_10-22.png?itok=I-4cFC5o"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/Henry_Cejudo/CEJUDO_HENRY_R-PRINT.png?itok=e9YmvCv2" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Mohammed UsmanVSJunior Tafa</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Mohammed UsmanVSJunior Tafa&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/USMAN_MOHAMMAD_L_08-06.png?itok=LCIsThP_"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&amp;itok=fiyOmUkc" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Francis MarshallVSWilliam Gomis</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Francis MarshallVSWilliam Gomis&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MARSHALL_FRANCIS_L_12-03.png?itok=Ojco3DYs"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GOMIS_WILLIAM_R_09-03.png?itok=UPe4hA26" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Priscila CachoeiraVSKarine Silva</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Priscila CachoeiraVSKarine Silva&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/CACHOEIRA_PRISCILA_L_08-06.png?itok=cv_HRk3i"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/SILVA_KARINE_R_06-04.png?itok=LdsgwYHV" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Brady HiestandVSBatgerelDanaa</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Brady HiestandVSBatgerelDanaa&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/HIESTAND_BRADY_L.png?itok=x-yx7XSL"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/d420b8b0-bac0-4265-a3b4-43b0b4381648%252FBATGERAL_DANAA_R_06-11.png?itok=K0ylS_TM" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Anthony SmithVSJohnny Walker</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Anthony SmithVSJohnny Walker&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/SMITH_ANTHONY_L_07-30.png?itok=Ou4if5jX"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2018-11/WALKER_JOHNNY_R.png?VersionId=SY7oF13rtW8nHdliuqZtk5_MlsZdU4V0&amp;itok=6129chDl" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>IanMachadoGarryVSDaniel Rodriguez</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;IanMachadoGarryVSDaniel Rodriguez&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/GARRY_IAN_L_03-05.png?itok=Zz89N0IX"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/RODRIGUEZ_DANIEL_R_09-10.png?itok=gppnF7Bh" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Cody StamannVSDouglas Silva de Andrade</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Cody StamannVSDouglas Silva de Andrade&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/ufc-fighter-container/67655/profile-galery/fullbodyleft-picture/STAMANN_CODY_L.png?VersionId=hDeXNViuRQsWFBlGjbY6nvWoBVVjBkwq&amp;itok=A-cRlqVy"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/67854%252Fprofile-galery%252Ffullbodyright-picture%252FDSILVA_DOUGLAS_R_10-02.png?itok=I7kZd0TF" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Tim MeansVSAlexMorono</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Tim MeansVSAlexMorono&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/b49fecbb-30bc-4c0b-b6a5-a7c158db1834%252FMEANS_TIM_L_06-18.png?itok=CgxmpsXS"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/MORONO_ALEX_R_07-30.png?itok=9TvE0sfU" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Charles OliveiraVSBeneil Dariush</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Charles OliveiraVSBeneil Dariush&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/OLIVEIRA_CHARLES_L_10-22.png?itok=bTVAThp8"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/67453%252Fprofile-galery%252Ffullbodyright-picture%252FDARIUSH_BENEIL_R_05-15.png?VersionId=null&amp;itok=81tvut2L" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Jessica AndradeVSXiaonan Yan</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Jessica AndradeVSXiaonan Yan&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/9e1322ed-8b10-40f2-b0fc-575fb206c20c%252FANDRADE_JESSICA_L_04-23.png?itok=OzhG2sDi"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/XIAONAN_YAN_R_10-01.png?itok=mcoz_wCm" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Bryce MitchellVSJonathan Pearce</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Bryce MitchellVSJonathan Pearce&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=to2Y8N6C"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/PEARCE_JONATHAN_R_12-03.png?itok=QWEGtO61" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Kron GracieVSCharles Jourdain</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Kron GracieVSCharles Jourdain&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-10/GRACIE_KRON_R.png?VersionId=e2YLeub30w8ZQgddxXxvJaVuNll26j23&amp;itok=fZiJFCdP"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-01/a650ff52-69d0-43c7-bc9a-1ca8f6eb3623%252FJOURDAIN_CHARLES_R_01-22.png?itok=OndrqoAx" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Bryan BattleVSGabriel Green</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Bryan BattleVSGabriel Green&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/BATTLE_BRYAN_L_12-17.png?itok=KCjOKPLL"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/GREEN_GABE_R_04-30.png?itok=gHHC-dZk" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Matt BrownVSCourt McGee</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Matt BrownVSCourt McGee&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/23ab2c3a-7261-4edf-bad9-b273176b7259%252FBROWN_MATT_L_03-26.png?itok=0bCC9_0Z"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-05/MCGEE_COURT_R_05-22.png?VersionId=null&amp;itok=TKsVL8m2" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Jessica-Rose ClarkVSTainara Lisboa</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Jessica-Rose ClarkVSTainara Lisboa&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/69670%252Fprofile-galery%252Ffullbodyleft-picture%252FCLARK_JESSICA-ROSE_L_10-23.png?itok=KdnMZDz1"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Ji Yeon KimVSMandyBöhm</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Ji Yeon KimVSMandyBöhm&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/KIM_JI_YEON_L_02-04.png?itok=wVcCL94g"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/BOHM_MANDY_R_02-04.png?itok=_tZdEGI_" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Kennedy NzechukwuVSDevin Clark</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Kennedy NzechukwuVSDevin Clark&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/b9c07939-a212-4617-b5e9-6a87319f9d41%252FNZECHUKWU_KENNEDY_L_03-05.png?itok=FnNQWrx4"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CLARK_DEVIN_R_02-04.png?itok=8Xz5XPfU" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Andre PetroskiVSArmen Petrosyan</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Andre PetroskiVSArmen Petrosyan&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/71857%252Fprofile-galery%252Ffullbodyleft-picture%252FPETROSKI_ANDRE_L_10-30.png?itok=31e2_I89"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/PETROSYAN_ARMEN_R_02-26.png?itok=crYLzkEW" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>KhaosWilliamsVSRolando Bedoya</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;KhaosWilliamsVSRolando Bedoya&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/WILLIAMS_KHAOS_L_06-19.png?itok=xnfBanpw"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&amp;itok=fiyOmUkc" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Marina RodriguezVSVirna Jandiroba</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Marina RodriguezVSVirna Jandiroba&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=4OrpIblv"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/69468%252Fprofile-galery%252Ffullbodyright-picture%252FJANDIROBA_VIRNA_R_06-19.png?VersionId=null&amp;itok=wJqJh0Hu" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Nate ManessVSZhalgasZhumagulov</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Nate ManessVSZhalgasZhumagulov&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/68367%252Fprofile-galery%252Ffullbodyleft-picture%252FMANESS_NATE_L_09-18.png?itok=1OdKLwa_"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/ZHUMAGULOV_ZHALGAS_R.png?itok=YqaVsHOS" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Carlos UlbergVSIhor Potieria</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1183,7 +959,7 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item><item><title>Mackenzie DernVSAngela Hill</title><link></link><description>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Mackenzie DernVSAngela Hill</title><link></link><description>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
         &lt;head&gt;
@@ -1199,4 +975,36 @@
             &lt;/div&gt;
 	    &lt;/body&gt;
         &lt;/html&gt;
-        </description><pubDate>Sat, 08 Apr 2023 05:51:45 GMT</pubDate></item></channel></rss>
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Daniel SantosVSJohnny Munoz</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Daniel SantosVSJohnny Munoz&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/bbda7ecc-c4ca-4dd9-82b0-0f56ad910fc5%252FSANTOS_DANIEL_L_04-09.png?itok=jBPNmi8H"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/MUNOZ_JOHNNY_R_11-05.png?itok=1HJVewBS" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item><item><title>Amanda NunesVSJulianna Peña</title><link></link><description>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+	        &lt;meta charset="utf-8" /&gt;
+        &lt;/head&gt;
+	    &lt;body &gt;
+	        &lt;div style="display: flex;flex-direction: column;justify-content:center;align-items:center;"&gt;
+                &lt;h1&gt;Amanda NunesVSJulianna Peña&lt;/h1&gt;
+	            &lt;div style="display: flex;flex-direction: column;"&gt;
+	      	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-12/0bc89f79-fead-4048-98a4-daa3e10d1d04%252FNUNES_AMANDA_L_BELT_12-11.png?itok=tUZ7bARy"  loading="lazy" /&gt;
+	    	        &lt;img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/40c89ff2-df46-4220-bdd3-1cbb87fb6e61%252FPENA_JULIANNA_R_12-11.png?itok=GBz7JkyB" loading="lazy" /&gt;
+	            &lt;/div&gt;
+            &lt;/div&gt;
+	    &lt;/body&gt;
+        &lt;/html&gt;
+        </description><pubDate>Sun, 09 Apr 2023 05:51:33 GMT</pubDate></item></channel></rss>
