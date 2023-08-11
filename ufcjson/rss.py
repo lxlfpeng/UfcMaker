@@ -31,7 +31,7 @@ class RssMaker:
             return
         rssItems = []
         for content in rssList:
-            rssItem = CDATARSS.RSSItem(
+            rssItem = CDATARSS(
                 title=content['title'],
                 link=content['link'],
                 description=content['description'],
