@@ -219,13 +219,13 @@ class JsonWriterPipeline(object):
         pass
     def open_spider(self,spider):
         if isinstance(spider, UpcomingSpider):
-            self.make_json_file('ufc_coming_data.json',spider)
+            self.make_json_file('./json/ufc_coming_data.json',spider)
         if isinstance(spider, EventpassSpider):
-            self.make_json_file('ufc_pass_data.json',spider)
+            self.make_json_file('./json/ufc_pass_data.json',spider)
         if isinstance(spider, RankingSpider):
-            self.make_json_file('ufc_ranking_data.json',spider)
+            self.make_json_file('./json/ufc_ranking_data.json',spider)
         if isinstance(spider, AthleteSpider):
-            self.make_json_file('ufc_athlete_data_temp.json',spider)
+            self.make_json_file('./json/ufc_athlete_data_temp.json',spider)
         # else:
         #    self.make_json_file('未命名.json')
 
@@ -261,8 +261,8 @@ class JsonWriterPipeline(object):
             # 关闭文件
             self.json_file.close()
         if isinstance(spider, AthleteSpider):
-            shutil.copyfile('ufc_athlete_data_temp.json','ufc_athlete_data.json')
-            os.remove('ufc_athlete_data_temp.json')           
+            shutil.copyfile('./json/ufc_athlete_data_temp.json','./json/ufc_athlete_data.json')
+            os.remove('./json/ufc_athlete_data_temp.json')           
 
 class JsonWriterTranslatorPipeline(object):
     # 构造方法（初始化对象时执行的方法）
@@ -271,18 +271,18 @@ class JsonWriterTranslatorPipeline(object):
     def open_spider(self,spider):    
         #读取所有的翻译
         self.translate_total={}
-        self.translate_file_path='./ufc_translat.json'
+        self.translate_file_path='./json/ufc_translat.json'
         if os.path.exists(self.translate_file_path):
             with open(self.translate_file_path,'r', encoding="utf-8") as file:
                 self.translate_total = json.load(file)
         if isinstance(spider, UpcomingSpider):
-            self.make_json_file('ufc_coming_data_zh.json',spider)
+            self.make_json_file('./json/zh/ufc_coming_data.json',spider)
         if isinstance(spider, EventpassSpider):
-            self.make_json_file('ufc_pass_data_zh.json',spider)
+            self.make_json_file('./json/zh/ufc_pass_data.json',spider)
         if isinstance(spider, RankingSpider):
-            self.make_json_file('ufc_ranking_data_zh.json',spider)
+            self.make_json_file('./json/zh/ufc_ranking_data.json',spider)
         if isinstance(spider, AthleteSpider):
-            self.make_json_file('ufc_athlete_data_zh.json',spider)
+            self.make_json_file('./json/zh/ufc_athlete_data.json',spider)
 
     def make_json_file(self,file_name,spider):
         self.json_file = open(file_name, 'wb')

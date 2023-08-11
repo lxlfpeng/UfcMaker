@@ -10,7 +10,7 @@ class AthleteSpider(scrapy.Spider):
     def __init__(self):
         self.page=0
         self.old_add={}
-        path='./ufc_athlete_data.json'
+        path='./json/ufc_athlete_data.json'
         if os.path.exists(path):
             print("文件存在")
             with open(path, encoding='utf-8') as a:

@@ -12,7 +12,7 @@ class RankingSpider(scrapy.Spider):
     start_urls = ["https://www.ufc.com/rankings"]
     def __init__(self):
         self.old={}
-        path='./ufc_ranking_data.json'
+        path='./json/ufc_ranking_data.json'
         if os.path.exists(path):
             with open(path,'r', encoding='utf-8') as a:
                 try:
