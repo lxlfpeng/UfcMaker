@@ -76,6 +76,10 @@ class UfcComingCardItem(scrapy.Item):
     weightClass = scrapy.Field()                    # 级别
     matchupStats = scrapy.Field()                   # 扩展信息
 
+    mainCardTimestamp= scrapy.Field() 
+    address= scrapy.Field()
+    fightName= scrapy.Field()
+
     redPlayerName = scrapy.Field()
     redPlayerPage = scrapy.Field()
     redPlayerOdds = scrapy.Field()

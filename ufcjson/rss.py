@@ -2,6 +2,23 @@ import PyRSS2Gen
 import datetime
 import os
 
+class NoOutput:
+    def __init__(self):
+        pass
+    def publish(self, handler):
+        pass
+# 用于解决PyRSS2Gen的desc转义字符的问题 https://stackoverflow.com/questions/5371704/python-generated-rss-outputting-raw-html/5400662#5400662
+class CDATARSS(PyRSS2Gen.RSSItem):
+    def __init__(self, **kwargs):
+        PyRSS2Gen.RSSItem.__init__(self, **kwargs)
+
+    def publish(self, handler):
+        self.do_not_autooutput_description = self.description
+        self.description = NoOutput() # This disables the Py2GenRSS "Automatic" output of the description, which would be escaped.
+        PyRSS2Gen.RSSItem.publish(self, handler)
+
+    def publish_extensions(self, handler):
+        handler._write('<%s><![CDATA[%s]]></%s>' % ("description", self.do_not_autooutput_description, "description"))
 
 class RssMaker:
     def __init__(self, title, link, description):
@@ -14,7 +31,7 @@ class RssMaker:
             return
         rssItems = []
         for content in rssList:
-            rssItem = PyRSS2Gen.RSSItem(
+            rssItem = CDATARSS.RSSItem(
                 title=content['title'],
                 link=content['link'],
                 description=content['description'],
@@ -35,24 +52,40 @@ class RssMaker:
         # 将内容进行写入
         rss.write_xml(open(path, "w", encoding='utf-8'), encoding='utf-8')
 
-    def get_html_str(self,bTitle, bRedCover, bBlueCover):
-        bRedCover = bRedCover
-        bBlueCover = bBlueCover
-        html = """
-        <!DOCTYPE html>
-        <html>
-        <head>
-	        <meta charset="utf-8" />
-        </head>
-	    <body >
-	        <div style="display: flex;flex-direction: column;justify-content:center;align-items:center;">
-                <h1>{title}</h1>
-	            <div style="display: flex;flex-direction: column;">
-	      	        <img src="{redCover}"  loading="lazy" />
-	    	        <img src="{blueCover}" loading="lazy" />
-	            </div>
-            </div>
-	    </body>
-        </html>
-        """.format(title=bTitle, redCover=bRedCover, blueCover=bBlueCover)
+    def get_html_str(self,item):
+        html="""<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> {redPlayerName}</p>
+                  <p><strong>Nationality:</strong>{redPlayerCountry}</p>
+                  <p><strong>CountryFlag:</strong>{redPlayerCountryEmoji}</p>
+                  <p><strong>Rank:</strong> {redPlayerRank}</p>
+                  <p><strong>odds:</strong> {redPlayerOdds}</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="{redPlayerBack}" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> {bluePlayerName}</p>
+                  <p><strong>Nationality:</strong>{bluePlayerCountry}</p>
+                  <p><strong>CountryFlag:</strong>{bluePlayerCountryEmoji}</p>
+                  <p><strong>Rank:</strong> {bluePlayerRank}</p>
+                  <p><strong>odds:</strong> {bluePlayerOdds}</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="{bluePlayerBack}" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>""".format(redPlayerBack=item['redPlayerBack'], 
+                             redPlayerName=item["redPlayerName"], 
+                             redPlayerCountry=item["redPlayerCountry"], 
+                             redPlayerCountryEmoji=item["redPlayerCountryEmoji"], 
+                             redPlayerRank=item["redPlayerRank"], 
+                             redPlayerOdds=item["redPlayerOdds"], 
+                             bluePlayerBack=item["bluePlayerBack"], 
+                             bluePlayerName=item["bluePlayerName"], 
+                             bluePlayerCountry=item["bluePlayerCountry"], 
+                             bluePlayerCountryEmoji=item["bluePlayerCountryEmoji"], 
+                             bluePlayerRank=item["bluePlayerRank"], 
+                             bluePlayerOdds=item["bluePlayerOdds"])
         return html

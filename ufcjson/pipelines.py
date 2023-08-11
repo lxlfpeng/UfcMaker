@@ -38,6 +38,7 @@ import shutil
 import os
 from googletrans import Translator
 import logging
+import datetime
 class UfcjsonPipeline:
     def process_item(self, item, spider):
        if isinstance(item,UfcPassItem):
@@ -92,10 +93,14 @@ class UfcRssMakerPipeline:
         self.rssList=[]
     def process_item(self, item, spider):
        if isinstance(item,UfcComingCardItem):
-            title=item['redPlayerName']+"VS"+item['bluePlayerName']
+            # 将时间戳转换为datetime对象
+            dt_object = datetime.datetime.fromtimestamp(int(item['mainCardTimestamp']))
+            # 格式化为字符串
+            formatted_time = dt_object.strftime("%Y-%m-%d")
+            title=formatted_time+" "+item['fightName']+" ("+item['redPlayerName']+" VS "+item['bluePlayerName'] +") 级别："+item['weightClass']+" 举办地:"+item['address']
             self.rssList.append({'title':title,
             'link':"",
-            'description':self.rssMaker.get_html_str(title,item['redPlayerBack'],item['bluePlayerBack'])})
+            'description':self.rssMaker.get_html_str(item)})
        return item   
     def close_spider(self, spider):
         if isinstance(spider, UpcomingSpider):

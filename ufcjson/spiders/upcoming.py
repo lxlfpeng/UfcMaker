@@ -54,6 +54,9 @@ class UpcomingSpider(scrapy.Spider):
                 itemd = UfcComingCardItem()
                 all.append(itemd)
                 itemd['cardType']=cardType
+                itemd['mainCardTimestamp']=item['mainCardTimestamp']
+                itemd['address']=item['address']
+                itemd['fightName']=item['fightName']                
                 itemd['weightClass']=d.xpath('.//div[@class="c-listing-fight__class-text"]/text()').extract_first()
                 itemd['redPlayerPage']=d.xpath('.//div[@class="c-listing-fight__corner-name c-listing-fight__corner-name--red"]//a/@href').extract_first()
                 redPlayerName=d.xpath('.//div[@class="c-listing-fight__corner-name c-listing-fight__corner-name--red"]//a/text()').extract_first().replace('\n','').replace(' ','')
