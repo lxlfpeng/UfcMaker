@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Thu, 24 Aug 2023 05:51:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>2023-08-26 UFCFightNight (Max Holloway VS Chan Sung Jung) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Fri, 25 Aug 2023 05:51:27 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>2023-08-26 UFCFightNight (Max Holloway VS Chan Sung Jung) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Max Holloway</p>
@@ -22,191 +22,30 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/180de421-2768-406b-b05d-98a3a835ea17%252FJUNG_CHAN_SUNG_R_04-09.png?itok=F1pX-ljD" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Anthony Smith VS Ryan Spann) 级别：Light Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Ciryl Gane VS Serghei Spivac) 级别：Heavyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Anthony Smith</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #8</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>Name:</strong> Ciryl Gane</p>
+                  <p><strong>Nationality:</strong>France</p>
+                  <p><strong>CountryFlag:</strong>🇫🇷</p>
+                  <p><strong>Rank:</strong> #2</p>
+                  <p><strong>odds:</strong> -180</p>
                   <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/SMITH_ANTHONY_L_05-13.png?itok=EnKNDz5S" alt="Image Red"/>
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GANE_CYRIL_L_09-03.png?itok=gVX1ZOmk" alt="Image Red"/>
                   </div>                  
 	        </div>
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Ryan Spann</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #10</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>Name:</strong> Serghei Spivac</p>
+                  <p><strong>Nationality:</strong>Moldova</p>
+                  <p><strong>CountryFlag:</strong>🇲🇩</p>
+                  <p><strong>Rank:</strong> #7</p>
+                  <p><strong>odds:</strong> +150</p>
                   <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/SPANN_RYAN_R_03-11.png?itok=vABIYzwJ" alt="Image Blue"/>
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SPIVAC_SERGHEI_R_02-04.png?itok=Hkoz0-ZP" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Giga Chikadze VS Alex Caceres) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Giga Chikadze</p>
-                  <p><strong>Nationality:</strong>Georgia</p>
-                  <p><strong>CountryFlag:</strong>🇬🇪</p>
-                  <p><strong>Rank:</strong> #9</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/69723%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIKADZE_GIGA_L_05-01.png?itok=lY98AbUf" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Alex Caceres</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #15</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CACERES_ALEX_R_12-17.png?itok=KN52n9Sx" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Israel Adesanya VS Sean Strickland) 级别：Middleweight Title Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Israel Adesanya</p>
-                  <p><strong>Nationality:</strong>Nigeria</p>
-                  <p><strong>CountryFlag:</strong>🇳🇬</p>
-                  <p><strong>Rank:</strong> C</p>
-                  <p><strong>odds:</strong> -455</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ADESANYA_ISRAEL_L_BELT_07-02.png?itok=BtT6rsSt" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Sean Strickland</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #5</p>
-                  <p><strong>odds:</strong> +350</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/STRICKLAND_SEAN_R_12-17.png?itok=Pi__aMly" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Junior Tafa VS Parker Porter) 级别：Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Junior Tafa</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/TAFA_JUNIOR_L_04-22.png?itok=syHhTUpY" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Parker Porter</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PORTER_PARKER_R_02-11.png?itok=R_5MaSuw" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Waldo Cortes Acosta VS Lukasz Brzeski) 级别：Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Waldo Cortes Acosta</p>
-                  <p><strong>Nationality:</strong>Dominican Republic</p>
-                  <p><strong>CountryFlag:</strong>🇩🇴</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/CORTES-ACOSTA_WALDO_L_10-29.png?itok=TfiGQEYd" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Lukasz Brzeski</p>
-                  <p><strong>Nationality:</strong>Poland</p>
-                  <p><strong>CountryFlag:</strong>🇵🇱</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/BRZESKI_LUKASZ_R_03-11.png?itok=gHP4f2bk" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Tai Tuivasa VS Alexander Volkov) 级别：Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Tai Tuivasa</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> #6</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/TUIVASA_TAI_L_09-03.png?itok=6SElOz8Y" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Alexander Volkov</p>
-                  <p><strong>Nationality:</strong>Russia</p>
-                  <p><strong>CountryFlag:</strong>🇷🇺</p>
-                  <p><strong>Rank:</strong> #8</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/d9d8b16e-8631-4e5a-a961-5e382f175f71%252FVOLKOV_ALEXANDER_R_06-04.png?itok=y_O52fWg" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Justin Tafa VS Austen Lane) 级别：Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Justin Tafa</p>
-                  <p><strong>Nationality:</strong>New Zealand</p>
-                  <p><strong>CountryFlag:</strong>🇳🇿</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/TAFA_JUSTIN_L_02-11.png?itok=J8Ul-fHx" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Austen Lane</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/LANE_AUSTEN_R_06-24.png?itok=317Rz9Ul" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Tyson Pedro VS Anton Turkalj) 级别：Light Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Tyson Pedro</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PEDRO_TYSON_L_02-11.png?itok=WievseKk" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Anton Turkalj</p>
-                  <p><strong>Nationality:</strong>Sweden</p>
-                  <p><strong>CountryFlag:</strong>🇸🇪</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/TURKALJ_ANTON_R_03-11.png?itok=DVydAsr7" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Alexa Grasso VS Valentina Shevchenko) 级别：Women's Flyweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Alexa Grasso VS Valentina Shevchenko) 级别：Women's Flyweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Alexa Grasso</p>
@@ -229,589 +68,37 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/ufc-fighter-container/69442/profile-galery/fullbodyright-picture/SHEVCHENKO_VALENTINA_R.png?VersionId=ERLTtQDGUAfYDzaX7hAMNgCRu_AkXh9Q&itok=r1ANWk7m" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Toshiomi Kazama VS Garrett Armfield) 级别：Bantamweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Anthony Smith VS Ryan Spann) 级别：Light Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Toshiomi Kazama</p>
-                  <p><strong>Nationality:</strong>Japan</p>
-                  <p><strong>CountryFlag:</strong>🇯🇵</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/KAZAMA_TOSHIOMI_L_02-04.png?itok=bU9fVjAp" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Garrett Armfield</p>
+                  <p><strong>Name:</strong> Anthony Smith</p>
                   <p><strong>Nationality:</strong>United States</p>
                   <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>Rank:</strong> #8</p>
                   <p><strong>odds:</strong> -</p>
                   <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ARMFIELD_GARRETT_R_02-25.png?itok=0I-cMGps" alt="Image Blue"/>
-                  </div>                                    
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/SMITH_ANTHONY_L_05-13.png?itok=EnKNDz5S" alt="Image Red"/>
+                  </div>                  
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Chidi Njokuani VS Michal Oleksiejczuk) 级别：Middleweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Chidi Njokuani</p>
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Ryan Spann</p>
                   <p><strong>Nationality:</strong>United States</p>
                   <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>Rank:</strong> #10</p>
                   <p><strong>odds:</strong> -</p>
                   <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/NJOKUANI_CHIDI_L_03-25.png?itok=L8Xpia7D" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Michal Oleksiejczuk</p>
-                  <p><strong>Nationality:</strong>Poland</p>
-                  <p><strong>CountryFlag:</strong>🇵🇱</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-02/OLEKSIEJCZUK_MICHAL_R.png?VersionId=TUavc2NWwGiSJHJlD0ddXY_8IIhjb2gs&itok=DcqnMB21" alt="Image Blue"/>
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/SPANN_RYAN_R_03-11.png?itok=vABIYzwJ" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Song Kenan VS Rolando Bedoya) 级别：Welterweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Song Kenan</p>
-                  <p><strong>Nationality:</strong>China</p>
-                  <p><strong>CountryFlag:</strong>🇨🇳</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/KENAN_SONG_L_03-05.png?itok=fc9tBs6g" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Rolando Bedoya</p>
-                  <p><strong>Nationality:</strong>Peru</p>
-                  <p><strong>CountryFlag:</strong>🇵🇪</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BEDOYA_ROLANDO_R_05-06.png?itok=Sj1x6EnK" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Billy Goff VS Yusaku Kinoshita) 级别：Welterweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Billy Goff</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Yusaku Kinoshita</p>
-                  <p><strong>Nationality:</strong>Japan</p>
-                  <p><strong>CountryFlag:</strong>🇯🇵</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/KINOSHITA_YUSAKU_R_02-04.png?itok=2LnXPFiT" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Carlos Ulberg VS Da Woon Jung) 级别：Light Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Carlos Ulberg</p>
-                  <p><strong>Nationality:</strong>New Zealand</p>
-                  <p><strong>CountryFlag:</strong>🇳🇿</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/ULBERG_CARLOS_L_05-13.png?itok=xJR2ep61" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Da Woon Jung</p>
-                  <p><strong>Nationality:</strong>South Korea</p>
-                  <p><strong>CountryFlag:</strong>🇰🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/JUNG_DA-UN_R_07-16.png?itok=t9tBsPlc" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Jack Jenkins VS ChepeMariscal) 级别：Featherweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Jack Jenkins</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/JENKINS_JACK_L_02-11.png?itok=FOuiy7sy" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> ChepeMariscal</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MARISCAL_CHEPE_R_06-24.png?itok=SHjTM3dm" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Jamie Mullarkey VS John Makdessi) 级别：Lightweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Jamie Mullarkey</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MULLARKEY_JAMIE_L_06-03.png?itok=GItunSFT" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> John Makdessi</p>
-                  <p><strong>Nationality:</strong>Canada</p>
-                  <p><strong>CountryFlag:</strong>🇨🇦</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MAKDESSI_JOHN_R_09-03.png?itok=tHXhKDzG" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Kelvin Gastelum VS Shavkat Rakhmonov) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Kelvin Gastelum</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #11</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/GASTELUM_KELVIN_L_04-08.png?itok=zIgqz6wX" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Shavkat Rakhmonov</p>
-                  <p><strong>Nationality:</strong>Kazakhstan</p>
-                  <p><strong>CountryFlag:</strong>🇰🇿</p>
-                  <p><strong>Rank:</strong> #6</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAKHMONOV_SHAVKHAT_R_03-05.png?itok=FQ91A0pB" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Kevin Holland VS JackDellaMaddalena) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Kevin Holland</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #13</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HOLLAND_KEVIN_L_04-08.png?itok=zmgmV4z0" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> JackDellaMaddalena</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> #14</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/d75c0915-5770-4d94-9550-0e3ac4e63734%252FDELLA_MADDALENA_JACK_R_06-11.png?itok=xiVb8A7m" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Daniel Rodriguez VS Santiago Ponzinibbio) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Daniel Rodriguez</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/RODRIGUEZ_DANIEL_L_05-13.png?itok=KlyoMgj_" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Santiago Ponzinibbio</p>
-                  <p><strong>Nationality:</strong>Argentina</p>
-                  <p><strong>CountryFlag:</strong>🇦🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PONZINIBBIO_SANTIAGO_R_04-08.png?itok=AtkXuZkK" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Rinya Nakamura VS Fernie Garcia) 级别：Bantamweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Rinya Nakamura</p>
-                  <p><strong>Nationality:</strong>Japan</p>
-                  <p><strong>CountryFlag:</strong>🇯🇵</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/NAKAMURA_RINYA_L_02-04.png?itok=jA1J-duK" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Fernie Garcia</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71836%252Fprofile-galery%252Ffullbodyright-picture%252FGARCIA_FERNIE_R.png?itok=hePyWWUm" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Seungwoo Choi VS Jarno Errens) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Seungwoo Choi</p>
-                  <p><strong>Nationality:</strong>South Korea</p>
-                  <p><strong>CountryFlag:</strong>🇰🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/2b069c1d-9d95-4599-b34e-c489d5f2f0bf%252FCHOI_SEUNGWOO_L_06-11.png?itok=_H0fMc86" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Jarno Errens</p>
-                  <p><strong>Nationality:</strong>Netherlands</p>
-                  <p><strong>CountryFlag:</strong>🇳🇱</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ERRENS_JARNO_R_09-03.png?itok=px7lJgUx" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Shane Young VS Gabriel Miranda) 级别：Featherweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Shane Young</p>
-                  <p><strong>Nationality:</strong>New Zealand</p>
-                  <p><strong>CountryFlag:</strong>🇳🇿</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/YOUNG_SHANE_L_02-11.png?itok=aq15s4jG" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Gabriel Miranda</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MIRANDA_GABRIEL_R_09-03.png?itok=8pDCm5PQ" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Raul Rosas Jr. VS Terrence Mitchell) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Raul Rosas Jr.</p>
-                  <p><strong>Nationality:</strong>Mexico</p>
-                  <p><strong>CountryFlag:</strong>🇲🇽</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ROSAS_JR_RAUL_L_04-08.png?itok=BI3Vsgww" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Terrence Mitchell</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/MITCHELL_TERRENCE_R_07-08.png?itok=Bt3Aef0D" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Daniel Zellhuber VS Christos Giagos) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Daniel Zellhuber</p>
-                  <p><strong>Nationality:</strong>Mexico</p>
-                  <p><strong>CountryFlag:</strong>🇲🇽</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ZELLHUBER_DANIEL_L_09-17.png?itok=Xol_9UmI" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Christos Giagos</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GIAGOS_CHRISTOS_R_04-22.png?itok=Uh7kjtL8" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Fernando Padilla VS Kyle Nelson) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Fernando Padilla</p>
-                  <p><strong>Nationality:</strong>Mexico</p>
-                  <p><strong>CountryFlag:</strong>🇲🇽</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PADILLA_FERNANDO_L_04-29.png?itok=eCm0SzfE" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Kyle Nelson</p>
-                  <p><strong>Nationality:</strong>Canada</p>
-                  <p><strong>CountryFlag:</strong>🇨🇦</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/NELSON_KYLE_R_02-04.png?itok=HOjQZJDL" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Cynthia Calvillo VS Elise Reed) 级别：Catchweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Cynthia Calvillo</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/CALVILLO_CYNTHIA_L_04-08.png?itok=d0kxAFOM" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Elise Reed</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/REED_ELISE_R_02-11.png?itok=efmlrBX0" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (ChrisCurtis VS Anthony Hernandez) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> ChrisCurtis</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #14</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/CURTIS_CHRIS_L_06-10.png?itok=b6geSYiw" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Anthony Hernandez</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/HERNANDEZ_ANTHONY_R_05-20.png?itok=cYPqQ4x4" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (LoopyGodinez VS SamHughes) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> LoopyGodinez</p>
-                  <p><strong>Nationality:</strong>Mexico</p>
-                  <p><strong>CountryFlag:</strong>🇲🇽</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/a885816c-0eb2-46c0-955b-d940d144d4f5%252FGODINEZ_LOOPY_L_05-07.png?itok=bJHTZSt2" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> SamHughes</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HUGHES_SAM_R_04-08.png?itok=26o3lmn5" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Islam Makhachev VS Charles Oliveira) 级别：Lightweight Title Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Islam Makhachev</p>
-                  <p><strong>Nationality:</strong>Russia</p>
-                  <p><strong>CountryFlag:</strong>🇷🇺</p>
-                  <p><strong>Rank:</strong> C</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/MAKHACHEV_ISLAM_L_BELT_02-11.png?itok=QEusdPGv" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Charles Oliveira</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> #1</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/OLIVEIRA_CHARLES_R_06-10.png?itok=84b97WXd" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Ciryl Gane VS Serghei Spivac) 级别：Heavyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Ciryl Gane</p>
-                  <p><strong>Nationality:</strong>France</p>
-                  <p><strong>CountryFlag:</strong>🇫🇷</p>
-                  <p><strong>Rank:</strong> #2</p>
-                  <p><strong>odds:</strong> -185</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GANE_CYRIL_L_09-03.png?itok=gVX1ZOmk" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Serghei Spivac</p>
-                  <p><strong>Nationality:</strong>Moldova</p>
-                  <p><strong>CountryFlag:</strong>🇲🇩</p>
-                  <p><strong>Rank:</strong> #7</p>
-                  <p><strong>odds:</strong> +154</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SPIVAC_SERGHEI_R_02-04.png?itok=Hkoz0-ZP" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Edgar Chairez VS DanielLacerda) 级别：Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Edgar Chairez</p>
-                  <p><strong>Nationality:</strong>Mexico</p>
-                  <p><strong>CountryFlag:</strong>🇲🇽</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/CHAIREZ_EDGAR_L_07-08.png?itok=CLw_OFhu" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> DanielLacerda</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/LACERDA_DANIEL_R_03-25.png?itok=63V2_P_9" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Tracy Cortez VS Jasmine Jasudavicius) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Tracy Cortez</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #14</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/bc4fa7a0-48a8-4e41-a781-7017b65b8695%252FCORTEZ_TRACY_L_05-07.png?itok=sK-fu9de" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Jasmine Jasudavicius</p>
-                  <p><strong>Nationality:</strong>Canada</p>
-                  <p><strong>CountryFlag:</strong>🇨🇦</p>
-                  <p><strong>Rank:</strong> #15</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/JASUDAVICIUS_JASMINE_R_06-10.png?itok=aNInyrN7" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Paulo Costa VS Khamzat Chimaev) 级别：Middleweight Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Paulo Costa</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> #6</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/COSTA_PAULO_L_08-20.png?itok=Zrk8lq-3" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Khamzat Chimaev</p>
-                  <p><strong>Nationality:</strong>Sweden</p>
-                  <p><strong>CountryFlag:</strong>🇸🇪</p>
-                  <p><strong>Rank:</strong> #4</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71660%252Fprofile-galery%252Ffullbodyright-picture%252FCHIMAEV_KHAMZAT_R_10-30.png?itok=vBiGaKoz" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Nassourdine Imavov VS Ikram Aliskerov) 级别：Middleweight Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Nassourdine Imavov</p>
-                  <p><strong>Nationality:</strong>France</p>
-                  <p><strong>CountryFlag:</strong>🇫🇷</p>
-                  <p><strong>Rank:</strong> #12</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/IMAVOV_NASSOURDINE_L_06-10.png?itok=Ya52zGJg" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Ikram Aliskerov</p>
-                  <p><strong>Nationality:</strong>Russia</p>
-                  <p><strong>CountryFlag:</strong>🇷🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/ALISKEROV_IKRAM_R_05-06.png?itok=tp_Oq4T7" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Manon Fiorot VS Rose Namajunas) 级别：Women's Flyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Manon Fiorot VS Rose Namajunas) 级别：Women's Flyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Manon Fiorot</p>
                   <p><strong>Nationality:</strong>France</p>
                   <p><strong>CountryFlag:</strong>🇫🇷</p>
                   <p><strong>Rank:</strong> #2</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>odds:</strong> -198</p>
                   <div style="height: 200px;overflow: hidden;">
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-06/71739%252Fprofile-galery%252Ffullbodyleft-picture%252FFIOROT_MANON_L_06-05.png?itok=PuknV_L_" alt="Image Red"/>
                   </div>                  
@@ -822,19 +109,19 @@
                   <p><strong>Nationality:</strong>United States</p>
                   <p><strong>CountryFlag:</strong>🇺🇸</p>
                   <p><strong>Rank:</strong> #2</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>odds:</strong> +164</p>
                   <div style="height: 200px;overflow: hidden;">
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-04/69149%252Fprofile-galery%252Ffullbodyright-picture%252FNAMAJUNAS_ROSE_R_04-24.png?itok=CKrFw66v" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (BenoîtSaint-Denis VS Thiago Moises) 级别：Lightweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (BenoîtSaint-Denis VS Thiago Moises) 级别：Lightweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> BenoîtSaint-Denis</p>
                   <p><strong>Nationality:</strong>France</p>
                   <p><strong>CountryFlag:</strong>🇫🇷</p>
                   <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>odds:</strong> -125</p>
                   <div style="height: 200px;overflow: hidden;">
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-11/85045%252Fprofile-galery%252Ffullbodyleft-picture%252FSAINT-DENIS_BENOIT_L_10-30.png?itok=41do2UTF" alt="Image Red"/>
                   </div>                  
@@ -845,12 +132,12 @@
                   <p><strong>Nationality:</strong>Brazil</p>
                   <p><strong>CountryFlag:</strong>🇧🇷</p>
                   <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
+                  <p><strong>odds:</strong> +105</p>
                   <div style="height: 200px;overflow: hidden;">
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/69361%252Fprofile-galery%252Ffullbodyright-picture%252FMOISES_THIAGO_R_07-17.png?itok=Q57APnFK" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Volkan Oezdemir VS AzamatMurzakanov) 级别：Light Heavyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Volkan Oezdemir VS AzamatMurzakanov) 级别：Light Heavyweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Volkan Oezdemir</p>
@@ -873,7 +160,467 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MURZAKANOV_AZAMAT_R_04-15.png?itok=kUrUJvL9" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-12 UFC295 (Jon Jones VS Stipe Miocic) 级别：Heavyweight Title Bout 举办地:New York,NY,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (William Gomis VS Lucas Almeida) 级别：Featherweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> William Gomis</p>
+                  <p><strong>Nationality:</strong>France</p>
+                  <p><strong>CountryFlag:</strong>🇫🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -175</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GOMIS_WILLIAM_L_09-03.png?itok=FqR-a6qY" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Lucas Almeida</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> +145</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ALMEIDA_LUCAS_R_06-17.png?itok=fY9gUhZt" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Kelvin Gastelum VS Shavkat Rakhmonov) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Kelvin Gastelum</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #11</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/GASTELUM_KELVIN_L_04-08.png?itok=zIgqz6wX" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Shavkat Rakhmonov</p>
+                  <p><strong>Nationality:</strong>Kazakhstan</p>
+                  <p><strong>CountryFlag:</strong>🇰🇿</p>
+                  <p><strong>Rank:</strong> #6</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAKHMONOV_SHAVKHAT_R_03-05.png?itok=FQ91A0pB" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Kevin Holland VS JackDellaMaddalena) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Kevin Holland</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #13</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HOLLAND_KEVIN_L_04-08.png?itok=zmgmV4z0" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> JackDellaMaddalena</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> #14</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/d75c0915-5770-4d94-9550-0e3ac4e63734%252FDELLA_MADDALENA_JACK_R_06-11.png?itok=xiVb8A7m" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Daniel Rodriguez VS Santiago Ponzinibbio) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Daniel Rodriguez</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/RODRIGUEZ_DANIEL_L_05-13.png?itok=KlyoMgj_" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Santiago Ponzinibbio</p>
+                  <p><strong>Nationality:</strong>Argentina</p>
+                  <p><strong>CountryFlag:</strong>🇦🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PONZINIBBIO_SANTIAGO_R_04-08.png?itok=AtkXuZkK" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Raul Rosas Jr. VS Terrence Mitchell) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Raul Rosas Jr.</p>
+                  <p><strong>Nationality:</strong>Mexico</p>
+                  <p><strong>CountryFlag:</strong>🇲🇽</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ROSAS_JR_RAUL_L_04-08.png?itok=BI3Vsgww" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Terrence Mitchell</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/MITCHELL_TERRENCE_R_07-08.png?itok=Bt3Aef0D" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Taylor Lapilus VS Muin Gafurov) 级别：Bantamweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Taylor Lapilus</p>
+                  <p><strong>Nationality:</strong>France</p>
+                  <p><strong>CountryFlag:</strong>🇫🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -205</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/9f92213e-5187-4305-a238-d655f9c18880%252Ftaylor-lapilus_503753_LeftFullBodyImage.png?itok=DM1sBgYw" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Muin Gafurov</p>
+                  <p><strong>Nationality:</strong>Tajikistan</p>
+                  <p><strong>CountryFlag:</strong>🇹🇯</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> +170</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/GAFUROV_MUIN_R_06-03.png?itok=Z9nhvpVK" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Daniel Zellhuber VS Christos Giagos) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Daniel Zellhuber</p>
+                  <p><strong>Nationality:</strong>Mexico</p>
+                  <p><strong>CountryFlag:</strong>🇲🇽</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ZELLHUBER_DANIEL_L_09-17.png?itok=Xol_9UmI" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Christos Giagos</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GIAGOS_CHRISTOS_R_04-22.png?itok=Uh7kjtL8" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Fernando Padilla VS Kyle Nelson) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Fernando Padilla</p>
+                  <p><strong>Nationality:</strong>Mexico</p>
+                  <p><strong>CountryFlag:</strong>🇲🇽</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PADILLA_FERNANDO_L_04-29.png?itok=eCm0SzfE" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Kyle Nelson</p>
+                  <p><strong>Nationality:</strong>Canada</p>
+                  <p><strong>CountryFlag:</strong>🇨🇦</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/NELSON_KYLE_R_02-04.png?itok=HOjQZJDL" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Cynthia Calvillo VS Elise Reed) 级别：Catchweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Cynthia Calvillo</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/CALVILLO_CYNTHIA_L_04-08.png?itok=d0kxAFOM" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Elise Reed</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/REED_ELISE_R_02-11.png?itok=efmlrBX0" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (ChrisCurtis VS Anthony Hernandez) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> ChrisCurtis</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #14</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/CURTIS_CHRIS_L_06-10.png?itok=b6geSYiw" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Anthony Hernandez</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/HERNANDEZ_ANTHONY_R_05-20.png?itok=cYPqQ4x4" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (LoopyGodinez VS SamHughes) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> LoopyGodinez</p>
+                  <p><strong>Nationality:</strong>Mexico</p>
+                  <p><strong>CountryFlag:</strong>🇲🇽</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/a885816c-0eb2-46c0-955b-d940d144d4f5%252FGODINEZ_LOOPY_L_05-07.png?itok=bJHTZSt2" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> SamHughes</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/HUGHES_SAM_R_04-08.png?itok=26o3lmn5" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Edgar Chairez VS DanielLacerda) 级别：Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Edgar Chairez</p>
+                  <p><strong>Nationality:</strong>Mexico</p>
+                  <p><strong>CountryFlag:</strong>🇲🇽</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/CHAIREZ_EDGAR_L_07-08.png?itok=CLw_OFhu" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> DanielLacerda</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/LACERDA_DANIEL_R_03-25.png?itok=63V2_P_9" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-17 UFCFightNight (Tracy Cortez VS Jasmine Jasudavicius) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Tracy Cortez</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #14</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/bc4fa7a0-48a8-4e41-a781-7017b65b8695%252FCORTEZ_TRACY_L_05-07.png?itok=sK-fu9de" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Jasmine Jasudavicius</p>
+                  <p><strong>Nationality:</strong>Canada</p>
+                  <p><strong>CountryFlag:</strong>🇨🇦</p>
+                  <p><strong>Rank:</strong> #15</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/JASUDAVICIUS_JASMINE_R_06-10.png?itok=aNInyrN7" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Islam Makhachev VS Charles Oliveira) 级别：Lightweight Title Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Islam Makhachev</p>
+                  <p><strong>Nationality:</strong>Russia</p>
+                  <p><strong>CountryFlag:</strong>🇷🇺</p>
+                  <p><strong>Rank:</strong> C</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/MAKHACHEV_ISLAM_L_BELT_02-11.png?itok=QEusdPGv" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Charles Oliveira</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> #1</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/OLIVEIRA_CHARLES_R_06-10.png?itok=84b97WXd" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Paulo Costa VS Khamzat Chimaev) 级别：Middleweight Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Paulo Costa</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> #6</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/COSTA_PAULO_L_08-20.png?itok=Zrk8lq-3" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Khamzat Chimaev</p>
+                  <p><strong>Nationality:</strong>Sweden</p>
+                  <p><strong>CountryFlag:</strong>🇸🇪</p>
+                  <p><strong>Rank:</strong> #4</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/71660%252Fprofile-galery%252Ffullbodyright-picture%252FCHIMAEV_KHAMZAT_R_10-30.png?itok=vBiGaKoz" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Rinya Nakamura VS Fernie Garcia) 级别：Bantamweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Rinya Nakamura</p>
+                  <p><strong>Nationality:</strong>Japan</p>
+                  <p><strong>CountryFlag:</strong>🇯🇵</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NAKAMURA_RINYA_L%298_26.png?itok=paE-Yei9" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Fernie Garcia</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/8a5825a6-9992-4c1b-bd4e-f521b24ae472%252FGARCIA_FERNIE_R_05-07.png?itok=Qz_ZsKkx" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-10-21 UFC294 (Nassourdine Imavov VS Ikram Aliskerov) 级别：Middleweight Bout 举办地:Abu Dhabi,United Arab Emirates</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Nassourdine Imavov</p>
+                  <p><strong>Nationality:</strong>France</p>
+                  <p><strong>CountryFlag:</strong>🇫🇷</p>
+                  <p><strong>Rank:</strong> #12</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/IMAVOV_NASSOURDINE_L_06-10.png?itok=Ya52zGJg" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Ikram Aliskerov</p>
+                  <p><strong>Nationality:</strong>Russia</p>
+                  <p><strong>CountryFlag:</strong>🇷🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/ALISKEROV_IKRAM_R_05-06.png?itok=tp_Oq4T7" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Giga Chikadze VS Alex Caceres) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Giga Chikadze</p>
+                  <p><strong>Nationality:</strong>Georgia</p>
+                  <p><strong>CountryFlag:</strong>🇬🇪</p>
+                  <p><strong>Rank:</strong> #9</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CHIKADZE_GIGA_L_08_26.png?itok=zYeveuu2" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Alex Caceres</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #15</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CACERES_ALEX_R_12-17.png?itok=KN52n9Sx" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Junior Tafa VS Parker Porter) 级别：Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Junior Tafa</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/TAFA_JUNIOR_L.png?itok=Emku6ntV" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Parker Porter</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/PORTER_PARKER_R.png?itok=RbqKYNaf" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Waldo Cortes Acosta VS Lukasz Brzeski) 级别：Heavyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Waldo Cortes Acosta</p>
+                  <p><strong>Nationality:</strong>Dominican Republic</p>
+                  <p><strong>CountryFlag:</strong>🇩🇴</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CORTES-ACOSTA_WALDO_L.png?itok=taX_bGkw" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Lukasz Brzeski</p>
+                  <p><strong>Nationality:</strong>Poland</p>
+                  <p><strong>CountryFlag:</strong>🇵🇱</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BRZESKI_LUKASZ_R.png?itok=iSqv8gJG" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-12 UFC295 (Jon Jones VS Stipe Miocic) 级别：Heavyweight Title Bout 举办地:New York,NY,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Jon Jones</p>
@@ -896,260 +643,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-08/MIOCIC_STIPE_R.png?VersionId=U6C9AsRNLoWfpUJRthahfXGjZsNb5B0H&itok=rxe_OcKe" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (William Gomis VS Lucas Almeida) 级别：Featherweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> William Gomis</p>
-                  <p><strong>Nationality:</strong>France</p>
-                  <p><strong>CountryFlag:</strong>🇫🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/GOMIS_WILLIAM_L_09-03.png?itok=FqR-a6qY" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Lucas Almeida</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ALMEIDA_LUCAS_R_06-17.png?itok=fY9gUhZt" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-02 UFCFightNight (Taylor Lapilus VS Muin Gafurov) 级别：Bantamweight Bout 举办地:Paris,France</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Taylor Lapilus</p>
-                  <p><strong>Nationality:</strong>France</p>
-                  <p><strong>CountryFlag:</strong>🇫🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/9f92213e-5187-4305-a238-d655f9c18880%252Ftaylor-lapilus_503753_LeftFullBodyImage.png?itok=DM1sBgYw" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Muin Gafurov</p>
-                  <p><strong>Nationality:</strong>Tajikistan</p>
-                  <p><strong>CountryFlag:</strong>🇹🇯</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/GAFUROV_MUIN_R_06-03.png?itok=Z9nhvpVK" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (RafaelFiziev VS Mateusz Gamrot) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> RafaelFiziev</p>
-                  <p><strong>Nationality:</strong>Azerbaijan</p>
-                  <p><strong>CountryFlag:</strong>🇦🇿</p>
-                  <p><strong>Rank:</strong> #6</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/b3773873-9374-4236-8551-183b96c9498c%252FFIZIEV_RAFAEL_L_07-09.png?itok=jQ26Acqs" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Mateusz Gamrot</p>
-                  <p><strong>Nationality:</strong>Poland</p>
-                  <p><strong>CountryFlag:</strong>🇵🇱</p>
-                  <p><strong>Rank:</strong> #7</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/f9b84c7b-958a-4b52-90d3-9dc9704ea400%252FGAMROT_MATEUSZ_R_06-25.png?itok=heYogKTZ" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Bryce Mitchell VS Dan Ige) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Bryce Mitchell</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #11</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=to2Y8N6C" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Dan Ige</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #13</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/IGE_DAN_R_06-10.png?itok=1SZQGMu9" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Tim Means VS Andre Fialho) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Tim Means</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/MEANS_TIM_L_05-13.png?itok=1mXOvycd" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Andre Fialho</p>
-                  <p><strong>Nationality:</strong>Portugal</p>
-                  <p><strong>CountryFlag:</strong>🇵🇹</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/e3a138aa-c8fc-4050-b081-3422f240b542%252FFIALHO_ANDRE_R_06-11.png?itok=W-Db4sZy" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Bryan Battle VS AJ Fletcher) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Bryan Battle</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BATTLE_BRYAN_L_05-13.png?itok=2gvn1YMC" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> AJ Fletcher</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/c13412ad-cd38-4633-97bb-37db258132dd%252FFLETCHER_AJ_R_03-12.png?itok=44ZjHVgs" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (DanArgueta VS Miles Johns) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> DanArgueta</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ARGUETA_DAN_L_06-17.png?itok=ahhIaG-t" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Miles Johns</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-09/JOHNS_MILES_R.png?VersionId=psh06v.bbw1ul_9T_CGGoiTDy_C4BnNv&itok=AWTGFXsA" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Ricardo Ramos VS Charles Jourdain) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Ricardo Ramos</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAMOS_RICARDO_L_03-11.png?itok=jJ2epRB_" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Charles Jourdain</p>
-                  <p><strong>Nationality:</strong>Canada</p>
-                  <p><strong>CountryFlag:</strong>🇨🇦</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/JOURDAIN_CHARLES_R_05-06.png?itok=NWHhcwBD" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Aliaskhab Khizriev VS Jacob Malkoun) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Aliaskhab Khizriev</p>
-                  <p><strong>Nationality:</strong>Russia</p>
-                  <p><strong>CountryFlag:</strong>🇷🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/d7ee4bb6-d46d-4b69-a73a-8deaca834d8e%252FKHIZRIEV_ALIASKHAB_L_03-26.png?itok=KwdlUCEH" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Jacob Malkoun</p>
-                  <p><strong>Nationality:</strong>Australia</p>
-                  <p><strong>CountryFlag:</strong>🇦🇺</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/20980bb4-7bf3-4218-abb7-79ba970ae0c9%252FMALKOUN_JACOB_R_06-11.png?itok=j08yaHfo" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Mohammed Usman VS Jake Collier) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Mohammed Usman</p>
-                  <p><strong>Nationality:</strong>Nigeria</p>
-                  <p><strong>CountryFlag:</strong>🇳🇬</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> Jake Collier</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> None</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/COLLIER_JAKE_R_04_28.png?itok=a8B12kVI" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Marina Rodriguez VS MichelleWaterson-Gomez) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> Marina Rodriguez</p>
-                  <p><strong>Nationality:</strong>Brazil</p>
-                  <p><strong>CountryFlag:</strong>🇧🇷</p>
-                  <p><strong>Rank:</strong> #9</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=4OrpIblv" alt="Image Red"/>
-                  </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> MichelleWaterson-Gomez</p>
-                  <p><strong>Nationality:</strong>United States</p>
-                  <p><strong>CountryFlag:</strong>🇺🇸</p>
-                  <p><strong>Rank:</strong> #13</p>
-                  <p><strong>odds:</strong> -</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/WATERSON-GOMEZ_MICHELLE_R_07-16.png?itok=kpJGaSMP" alt="Image Blue"/>
-                  </div>                                    
-	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Curtis Blaydes VS Jailton Almeida) 级别：Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Curtis Blaydes VS Jailton Almeida) 级别：Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Curtis Blaydes</p>
@@ -1172,7 +666,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ALMEIDA_JAILTON_R_05-13.png?itok=XVbeO9gy" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Elves Brener VS Esteban Ribovics) 级别：Lightweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Elves Brener VS Esteban Ribovics) 级别：Lightweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Elves Brener</p>
@@ -1195,7 +689,30 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/RIBOVICS_ESTEBAN_R_07-08.png?itok=3V47dvLq" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (ElizeuZaleskidosSantos VS Rinat Fakhretdinov) 级别：Welterweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Toshiomi Kazama VS Garrett Armfield) 级别：Bantamweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Toshiomi Kazama</p>
+                  <p><strong>Nationality:</strong>Japan</p>
+                  <p><strong>CountryFlag:</strong>🇯🇵</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/KAZAMA_TOSHIOMI_L.png?itok=Pbq-S635" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Garrett Armfield</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/ARMFIELD_GARRETT_R.png?itok=nHAhe6CH" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (ElizeuZaleskidosSantos VS Rinat Fakhretdinov) 级别：Welterweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> ElizeuZaleskidosSantos</p>
@@ -1218,7 +735,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/FAKHRETDINOV_RINAT_R_07-01.png?itok=CgRM7PZG" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Angela Hill VS Denise Gomes) 级别：Women's Strawweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Angela Hill VS Denise Gomes) 级别：Women's Strawweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Angela Hill</p>
@@ -1241,7 +758,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/GOMES_DENISE_R_07-08.png?itok=nUo9yscV" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (RodrigoNascimento VS Dontale Mayes) 级别：Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (RodrigoNascimento VS Dontale Mayes) 级别：Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> RodrigoNascimento</p>
@@ -1264,7 +781,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MAYES_DONTALE_R_06-03.png?itok=jTcrTL_B" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Vitor Petrino VS Modestas Bukauskas) 级别：Light Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Vitor Petrino VS Modestas Bukauskas) 级别：Light Heavyweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Vitor Petrino</p>
@@ -1287,7 +804,30 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/BUKAUSKAS_MODESTAS_R_06-17.png?itok=LHtt2gVL" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Caio Borralho VS NursultonRuziboev) 级别：Middleweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Chidi Njokuani VS Michal Oleksiejczuk) 级别：Middleweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Chidi Njokuani</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NJOKUANI_CHIDI_L.png?itok=dnXWQUOj" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Michal Oleksiejczuk</p>
+                  <p><strong>Nationality:</strong>Poland</p>
+                  <p><strong>CountryFlag:</strong>🇵🇱</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OLEKSIEJCZUK_MICHAL_R_04_28.png?itok=XzpN4Xlw" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Caio Borralho VS NursultonRuziboev) 级别：Middleweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Caio Borralho</p>
@@ -1310,7 +850,7 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/RUZIBOEV_NURSULTON_R_07-01.png?itok=Vtp_r0Ij" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Rodolfo Vieira VS Armen Petrosyan) 级别：Middleweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-11-05 UFCFightNight (Rodolfo Vieira VS Armen Petrosyan) 级别：Middleweight Bout 举办地:São Paulo,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div  style="width: 50%; height: auto;">
 	              <h2>Red Player</h2>
                   <p><strong>Name:</strong> Rodolfo Vieira</p>
@@ -1333,4 +873,487 @@
                     <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/PETROSYAN_ARMEN_R_02-26.png?itok=crYLzkEW" alt="Image Blue"/>
                   </div>                                    
 	        </div>
-            </div>]]></description><pubDate>Thu, 24 Aug 2023 05:51:44 GMT</pubDate></item></channel></rss>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (RafaelFiziev VS Mateusz Gamrot) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> RafaelFiziev</p>
+                  <p><strong>Nationality:</strong>Azerbaijan</p>
+                  <p><strong>CountryFlag:</strong>🇦🇿</p>
+                  <p><strong>Rank:</strong> #6</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/b3773873-9374-4236-8551-183b96c9498c%252FFIZIEV_RAFAEL_L_07-09.png?itok=jQ26Acqs" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Mateusz Gamrot</p>
+                  <p><strong>Nationality:</strong>Poland</p>
+                  <p><strong>CountryFlag:</strong>🇵🇱</p>
+                  <p><strong>Rank:</strong> #7</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/f9b84c7b-958a-4b52-90d3-9dc9704ea400%252FGAMROT_MATEUSZ_R_06-25.png?itok=heYogKTZ" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Song Kenan VS Rolando Bedoya) 级别：Welterweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Song Kenan</p>
+                  <p><strong>Nationality:</strong>China</p>
+                  <p><strong>CountryFlag:</strong>🇨🇳</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/KENAN_SONG_L_03-05.png?itok=fc9tBs6g" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Rolando Bedoya</p>
+                  <p><strong>Nationality:</strong>Peru</p>
+                  <p><strong>CountryFlag:</strong>🇵🇪</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BEDOYA_ROLANDO_R.png?itok=yrpAc2F8" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Billy Goff VS Yusaku Kinoshita) 级别：Welterweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Billy Goff</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/GOFF_BILLY_L.png?itok=zvZoqu__" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Yusaku Kinoshita</p>
+                  <p><strong>Nationality:</strong>Japan</p>
+                  <p><strong>CountryFlag:</strong>🇯🇵</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/KINOSHITA_YUSAKU_R.png?itok=7Tk34IPY" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (NaLiang VS JJ Aldrich) 级别：Women's Flyweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> NaLiang</p>
+                  <p><strong>Nationality:</strong>China</p>
+                  <p><strong>CountryFlag:</strong>🇨🇳</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NA_LIANG_R_06-11.png?itok=k4pYuCTc" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> JJ Aldrich</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/ALDRICH_JJ_R_03-11.png?itok=KltMmOO3" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-08-26 UFCFightNight (Seungwoo Choi VS Jarno Errens) 级别：Featherweight Bout 举办地:Singapore</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Seungwoo Choi</p>
+                  <p><strong>Nationality:</strong>South Korea</p>
+                  <p><strong>CountryFlag:</strong>🇰🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/2b069c1d-9d95-4599-b34e-c489d5f2f0bf%252FCHOI_SEUNGWOO_L_06-11.png?itok=_H0fMc86" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Jarno Errens</p>
+                  <p><strong>Nationality:</strong>Netherlands</p>
+                  <p><strong>CountryFlag:</strong>🇳🇱</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/ERRENS_JARNO_R.png?itok=9a-OcflO" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Bryce Mitchell VS Dan Ige) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Bryce Mitchell</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #11</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=to2Y8N6C" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Dan Ige</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #13</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/IGE_DAN_R_06-10.png?itok=1SZQGMu9" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Tim Means VS Andre Fialho) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Tim Means</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/MEANS_TIM_L_05-13.png?itok=1mXOvycd" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Andre Fialho</p>
+                  <p><strong>Nationality:</strong>Portugal</p>
+                  <p><strong>CountryFlag:</strong>🇵🇹</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/e3a138aa-c8fc-4050-b081-3422f240b542%252FFIALHO_ANDRE_R_06-11.png?itok=W-Db4sZy" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Bryan Battle VS AJ Fletcher) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Bryan Battle</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BATTLE_BRYAN_L_05-13.png?itok=2gvn1YMC" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> AJ Fletcher</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/c13412ad-cd38-4633-97bb-37db258132dd%252FFLETCHER_AJ_R_03-12.png?itok=44ZjHVgs" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (DanArgueta VS Miles Johns) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> DanArgueta</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/ARGUETA_DAN_L_06-17.png?itok=ahhIaG-t" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Miles Johns</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-09/JOHNS_MILES_R.png?VersionId=psh06v.bbw1ul_9T_CGGoiTDy_C4BnNv&itok=AWTGFXsA" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Ricardo Ramos VS Charles Jourdain) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Ricardo Ramos</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAMOS_RICARDO_L_03-11.png?itok=jJ2epRB_" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Charles Jourdain</p>
+                  <p><strong>Nationality:</strong>Canada</p>
+                  <p><strong>CountryFlag:</strong>🇨🇦</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/JOURDAIN_CHARLES_R_05-06.png?itok=NWHhcwBD" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Aliaskhab Khizriev VS Jacob Malkoun) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Aliaskhab Khizriev</p>
+                  <p><strong>Nationality:</strong>Russia</p>
+                  <p><strong>CountryFlag:</strong>🇷🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-03/d7ee4bb6-d46d-4b69-a73a-8deaca834d8e%252FKHIZRIEV_ALIASKHAB_L_03-26.png?itok=KwdlUCEH" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Jacob Malkoun</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/20980bb4-7bf3-4218-abb7-79ba970ae0c9%252FMALKOUN_JACOB_R_06-11.png?itok=j08yaHfo" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Mohammed Usman VS Jake Collier) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Mohammed Usman</p>
+                  <p><strong>Nationality:</strong>Nigeria</p>
+                  <p><strong>CountryFlag:</strong>🇳🇬</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Jake Collier</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/COLLIER_JAKE_R_04_28.png?itok=a8B12kVI" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-23 UFCFightNight (Marina Rodriguez VS MichelleWaterson-Gomez) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Marina Rodriguez</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> #9</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=4OrpIblv" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> MichelleWaterson-Gomez</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #13</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/WATERSON-GOMEZ_MICHELLE_R_07-16.png?itok=kpJGaSMP" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Israel Adesanya VS Sean Strickland) 级别：Middleweight Title Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Israel Adesanya</p>
+                  <p><strong>Nationality:</strong>Nigeria</p>
+                  <p><strong>CountryFlag:</strong>🇳🇬</p>
+                  <p><strong>Rank:</strong> C</p>
+                  <p><strong>odds:</strong> -455</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ADESANYA_ISRAEL_L_BELT_07-02.png?itok=BtT6rsSt" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Sean Strickland</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> #5</p>
+                  <p><strong>odds:</strong> +350</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/STRICKLAND_SEAN_R_12-17.png?itok=Pi__aMly" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Tai Tuivasa VS Alexander Volkov) 级别：Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Tai Tuivasa</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> #6</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/TUIVASA_TAI_L_09-03.png?itok=6SElOz8Y" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Alexander Volkov</p>
+                  <p><strong>Nationality:</strong>Russia</p>
+                  <p><strong>CountryFlag:</strong>🇷🇺</p>
+                  <p><strong>Rank:</strong> #8</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/d9d8b16e-8631-4e5a-a961-5e382f175f71%252FVOLKOV_ALEXANDER_R_06-04.png?itok=y_O52fWg" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Justin Tafa VS Austen Lane) 级别：Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Justin Tafa</p>
+                  <p><strong>Nationality:</strong>New Zealand</p>
+                  <p><strong>CountryFlag:</strong>🇳🇿</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/TAFA_JUSTIN_L_02-11.png?itok=J8Ul-fHx" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Austen Lane</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/LANE_AUSTEN_R_06-24.png?itok=317Rz9Ul" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Tyson Pedro VS Anton Turkalj) 级别：Light Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Tyson Pedro</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/PEDRO_TYSON_L_02-11.png?itok=WievseKk" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Anton Turkalj</p>
+                  <p><strong>Nationality:</strong>Sweden</p>
+                  <p><strong>CountryFlag:</strong>🇸🇪</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/TURKALJ_ANTON_R_03-11.png?itok=DVydAsr7" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Carlos Ulberg VS Da Woon Jung) 级别：Light Heavyweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Carlos Ulberg</p>
+                  <p><strong>Nationality:</strong>New Zealand</p>
+                  <p><strong>CountryFlag:</strong>🇳🇿</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/ULBERG_CARLOS_L_05-13.png?itok=xJR2ep61" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Da Woon Jung</p>
+                  <p><strong>Nationality:</strong>South Korea</p>
+                  <p><strong>CountryFlag:</strong>🇰🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/JUNG_DA-UN_R_07-16.png?itok=t9tBsPlc" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Jack Jenkins VS ChepeMariscal) 级别：Featherweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Jack Jenkins</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/JENKINS_JACK_L_02-11.png?itok=FOuiy7sy" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> ChepeMariscal</p>
+                  <p><strong>Nationality:</strong>United States</p>
+                  <p><strong>CountryFlag:</strong>🇺🇸</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MARISCAL_CHEPE_R_06-24.png?itok=SHjTM3dm" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Jamie Mullarkey VS John Makdessi) 级别：Lightweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Jamie Mullarkey</p>
+                  <p><strong>Nationality:</strong>Australia</p>
+                  <p><strong>CountryFlag:</strong>🇦🇺</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MULLARKEY_JAMIE_L_06-03.png?itok=GItunSFT" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> John Makdessi</p>
+                  <p><strong>Nationality:</strong>Canada</p>
+                  <p><strong>CountryFlag:</strong>🇨🇦</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MAKDESSI_JOHN_R_09-03.png?itok=tHXhKDzG" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item><item><title>2023-09-10 UFC293 (Shane Young VS Gabriel Miranda) 级别：Featherweight Bout 举办地:Sydney Olympic Park,NSW,Australia</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>
+                  <p><strong>Name:</strong> Shane Young</p>
+                  <p><strong>Nationality:</strong>New Zealand</p>
+                  <p><strong>CountryFlag:</strong>🇳🇿</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/YOUNG_SHANE_L_02-11.png?itok=aq15s4jG" alt="Image Red"/>
+                  </div>                  
+	        </div>
+	        <div  style="width: 50%; height: auto;">
+	              <h2>Red Player</h2>                 
+                  <p><strong>Name:</strong> Gabriel Miranda</p>
+                  <p><strong>Nationality:</strong>Brazil</p>
+                  <p><strong>CountryFlag:</strong>🇧🇷</p>
+                  <p><strong>Rank:</strong> None</p>
+                  <p><strong>odds:</strong> -</p>
+                  <div style="height: 200px;overflow: hidden;">
+                    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MIRANDA_GABRIEL_R_09-03.png?itok=8pDCm5PQ" alt="Image Blue"/>
+                  </div>                                    
+	        </div>
+            </div>]]></description><pubDate>Fri, 25 Aug 2023 05:51:27 GMT</pubDate></item></channel></rss>
