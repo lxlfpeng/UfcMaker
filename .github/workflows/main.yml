@@ -32,7 +32,12 @@ jobs:
     - name: install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install Scrapy==2.8.0
+        pip uninstall Twisted
+        pip install Twisted==22.10.0 
+        pip install PyRSS2Gen==1.1
+        pip install Pillow==8.4.0
+        pip install googletrans==4.0.0-rc1
     #执行Python文件
     - name: run python
       run: |
