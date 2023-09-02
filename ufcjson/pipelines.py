@@ -81,10 +81,16 @@ class UfcDefaultPhotoPipeline:
 class UfcCountryCodePipeline:
     def process_item(self, item, spider):
        if isinstance(item,UfcPassCardItem) or isinstance(item,UfcComingCardItem):
-            red_images=item['redPlayerCountryCode'].split('/')
-            blue_images=item['bluePlayerCountryCode'].split('/')
-            item['redPlayerCountryEmoji']=country.get_country_flag_emoji(red_images[len(red_images)-1].replace('.PNG',''))
-            item['bluePlayerCountryEmoji']=country.get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
+            try:
+                red_images=item['redPlayerCountryCode'].split('/')
+                item['redPlayerCountryEmoji']=country.get_country_flag_emoji(red_images[len(red_images)-1].replace('.PNG',''))
+            except :
+                item['redPlayerCountryEmoji']='🏳'
+            try:
+                blue_images=item['bluePlayerCountryCode'].split('/')
+                item['bluePlayerCountryEmoji']=country.get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
+            except :
+                item['bluePlayerCountryEmoji']='🏳'
        return item   
 
 class UfcRssMakerPipeline:

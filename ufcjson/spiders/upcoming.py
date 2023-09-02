@@ -10,6 +10,7 @@ class UpcomingSpider(scrapy.Spider):
 
     def parse(self, response):
         info = response.xpath('//*[@id="events-list-upcoming"]//li[@class="l-listing__item"]')
+        #截取第一个战卡
         #info=info[0:1]
         for i in info:
             item =UfcComingItem()
@@ -30,8 +31,8 @@ class UpcomingSpider(scrapy.Spider):
                 bannerItem['redPlayerCover']=cover.xpath('.//img/@src').extract()[0]
                 bannerItem['bluePlayerCover']=cover.xpath('.//img/@src').extract()[1]
                 yield bannerItem 
-            
-            yield scrapy.Request(url=item['url'], callback=self.parse_detail,meta={'item': item})  # 将请求传递给调度器，重新请求
+            # 将请求传递给调度器，重新请求
+            yield scrapy.Request(url=item['url'], callback=self.parse_detail,meta={'item': item}) 
             
     def parse_detail(self, response):
         # 接收结构化数据
