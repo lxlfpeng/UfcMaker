@@ -4,10 +4,10 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+from send_email import EmilTools
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
-
+import os
 
 class UfcjsonSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -37,11 +37,10 @@ class UfcjsonSpiderMiddleware:
             yield i
 
     def process_spider_exception(self, response, exception, spider):
-        # Called when a spider or process_spider_input() method
-        # (from other spider middleware) raises an exception.
-
-        # Should return either None or an iterable of Request or item objects.
-        pass
+        email_pwd=os.environ['email_pwd']
+        if email_pwd is not None:
+            EmilTools().send_email(email_pwd,'UFC.Com数据抓取',str(spider)+str(exception))
+        return response
 
     def process_start_requests(self, start_requests, spider):
         # Called with the start requests of the spider, and works
