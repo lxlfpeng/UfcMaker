@@ -9,7 +9,7 @@ class UpcomingSpider(scrapy.Spider):
     start_urls = ["https://www.ufc.com/events#events-list-upcoming"]
 
     def parse(self, response):
-        info = response.xpath('//*[@id="events-list-upcoming"]//li[@class="l-listing__item"]')
+        info = response.xpath('//*[@id="events-list-upcoming"]//li[@class="l-listing__item"]').extract_first()
         #截取第一个战卡
         #info=info[0:1]
         for i in info:
