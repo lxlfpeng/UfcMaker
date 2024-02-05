@@ -37,10 +37,10 @@ class UfcjsonSpiderMiddleware:
             yield i
 
     def process_spider_exception(self, response, exception, spider):
-        email_pwd=os.environ['email_pwd']
+        email_pwd=os.environ.get('email_pwd','')
         if email_pwd is not None:
             EmilTools().send_email(email_pwd,'UFC.Com数据抓取',str(spider)+str(exception))
-        return response
+        return []
 
     def process_start_requests(self, start_requests, spider):
         # Called with the start requests of the spider, and works

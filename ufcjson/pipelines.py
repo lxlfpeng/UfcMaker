@@ -102,10 +102,11 @@ class UfcRssMakerPipeline:
             # 将时间戳转换为datetime对象
             dt_object = datetime.datetime.fromtimestamp(int(item['mainCardTimestamp']))
             # 格式化为字符串
-            formatted_time = dt_object.strftime("%Y-%m-%d")
+            formatted_time = dt_object.strftime("%m-%d")
             title=formatted_time+" "+item['fightName']+" ("+item['redPlayerName']+" VS "+item['bluePlayerName'] +") 级别："+item['weightClass']+" 举办地:"+item['address']
             self.rssList.append({'title':title,
             'link':"",
+            'time':dt_object,
             'description':self.rssMaker.get_html_str(item)})
        return item   
     def close_spider(self, spider):

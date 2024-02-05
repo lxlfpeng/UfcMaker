@@ -31,11 +31,12 @@ class RssMaker:
             return
         rssItems = []
         for content in rssList:
+            #print("输出的数据是---->",content)
             rssItem = CDATARSS(
                 title=content['title'],
                 link=content['link'],
                 description=content['description'],
-                pubDate=datetime.datetime.now())
+                pubDate=content['time'])
             rssItems.append(rssItem)
         rss = PyRSS2Gen.RSS2(
             title=self.title,
@@ -54,27 +55,16 @@ class RssMaker:
 
     def get_html_str(self,item):
         html="""<div style="display: flex;">
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>
-                  <p><strong>Name:</strong> {redPlayerName}</p>
-                  <p><strong>Nationality:</strong>{redPlayerCountry}</p>
-                  <p><strong>CountryFlag:</strong>{redPlayerCountryEmoji}</p>
-                  <p><strong>Rank:</strong> {redPlayerRank}</p>
-                  <p><strong>odds:</strong> {redPlayerOdds}</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="{redPlayerBack}" alt="Image Red"/>
+	        <div style="height: auto;">
+                  <p>{redPlayerName}<strong>姓名:</strong> {bluePlayerName}</p>
+                  <p>{redPlayerCountry}<strong>国籍:</strong>{bluePlayerCountry}</p>
+                  <p>{redPlayerCountryEmoji}<strong>国旗:</strong>{bluePlayerCountryEmoji}</p>
+                  <p>{redPlayerRank}<strong>排名:</strong>{bluePlayerRank}</p>
+                  <p>{redPlayerOdds}<strong>赔率:</strong>{bluePlayerOdds} </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="{redPlayerBack}" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="{bluePlayerBack}" alt="Image Blue"/>
                   </div>                  
-	        </div>
-	        <div  style="width: 50%; height: auto;">
-	              <h2>Red Player</h2>                 
-                  <p><strong>Name:</strong> {bluePlayerName}</p>
-                  <p><strong>Nationality:</strong>{bluePlayerCountry}</p>
-                  <p><strong>CountryFlag:</strong>{bluePlayerCountryEmoji}</p>
-                  <p><strong>Rank:</strong> {bluePlayerRank}</p>
-                  <p><strong>odds:</strong> {bluePlayerOdds}</p>
-                  <div style="height: 200px;overflow: hidden;">
-                    <img src="{bluePlayerBack}" alt="Image Blue"/>
-                  </div>                                    
 	        </div>
             </div>""".format(redPlayerBack=item['redPlayerBack'], 
                              redPlayerName=item["redPlayerName"], 
