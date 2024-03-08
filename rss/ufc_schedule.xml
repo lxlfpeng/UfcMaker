@@ -1,509 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Thu, 07 Mar 2024 05:51:32 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>03-10 UFC299 (Sean O'Malley VS Marlon Vera) 级别：Bantamweight Title Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Fri, 08 Mar 2024 05:51:23 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>05-04 UFC301 (TBD VS TBD) 级别：Middleweight Bout 举办地:Rio de Janeiro,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Sean O'Malley<strong>姓名:</strong> Marlon Vera</p>
-                  <p>United States<strong>国籍:</strong>Ecuador</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇪🇨</p>
-                  <p>C<strong>排名:</strong>#5</p>
-                  <p>-218<strong>赔率:</strong>+180 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/OMALLEY_SEAN_L_BELTMOCK.png?itok=P2dcGCFo" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/VERA_MARLON_R_03-25.png?itok=nCAuHak0" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Dustin Poirier VS BenoîtSaintDenis) 级别：Lightweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Dustin Poirier<strong>姓名:</strong> BenoîtSaintDenis</p>
-                  <p>United States<strong>国籍:</strong>France</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇫🇷</p>
-                  <p>#3<strong>排名:</strong>#12</p>
-                  <p>+142<strong>赔率:</strong>-170 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/POIRIER_DUSTIN_L_07-29.png?itok=u4FbgqzY" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-11/SAINT_DENIS_BENOIT_R_11-11.png?itok=ZUfQdtYs" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Kevin Holland VS Michael Page) 级别：Welterweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Kevin Holland<strong>姓名:</strong> Michael Page</p>
-                  <p>United States<strong>国籍:</strong>England</p>
-                  <p>🇺🇸<strong>国旗:</strong>🏳</p>
-                  <p>#13<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/HOLLAND_KEVIN_L_09-16.png?itok=Bwh-4wf5" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/PAGE_MICHAEL_R_01-28.png?itok=Oyd5meAj" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Gilbert Burns VS JackDellaMaddalena) 级别：Welterweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Gilbert Burns<strong>姓名:</strong> JackDellaMaddalena</p>
-                  <p>Brazil<strong>国籍:</strong>Australia</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇦🇺</p>
-                  <p>#4<strong>排名:</strong>#11</p>
-                  <p>+100<strong>赔率:</strong>-120 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/BURNS_GILBERT_L_04-08.png?itok=3L-cNZrm" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/DELLA_MADDALENA_JACK_R_09-16.png?itok=1AxB7ixY" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Petr Yan VS SongYadong) 级别：Bantamweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Petr Yan<strong>姓名:</strong> SongYadong</p>
-                  <p>Russia<strong>国籍:</strong>China</p>
-                  <p>🇷🇺<strong>国旗:</strong>🇨🇳</p>
-                  <p>#4<strong>排名:</strong>#7</p>
-                  <p>-135<strong>赔率:</strong>+114 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/YAN_PETR_L_03-11.png?itok=jd-o5lHa" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/SONG_YADONG_R_12-09.png?itok=6_0aQuIL" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Curtis Blaydes VS Jailton Almeida) 级别：Heavyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Curtis Blaydes<strong>姓名:</strong> Jailton Almeida</p>
-                  <p>United States<strong>国籍:</strong>Brazil</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
-                  <p>#5<strong>排名:</strong>#7</p>
-                  <p>-112<strong>赔率:</strong>-108 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/228e06d2-8a86-42c0-a743-1929f8126eb7%252FBLAYDES_CURTIS_L_03-26.png?itok=RpMIDZ5i" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/ALMEIDA_JAILTON_R_11-04.png?itok=Ur5dbMjg" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Katlyn Cerminara VS Maycee Barber) 级别：Women's Flyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Katlyn Cerminara<strong>姓名:</strong> Maycee Barber</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>#4<strong>排名:</strong>#6</p>
-                  <p>+142<strong>赔率:</strong>-170 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-05/fd6b4555-64bc-4a5f-8bb2-11a10b3eb5bb%252FCHOOKAGIAN_KATLYN_L_05-14.png?itok=N77QPyBj" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/BARBER_MAYCEE_R_06-24.png?itok=N5HJuNDa" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Mateusz Gamrot VS Rafael Dos Anjos) 级别：Lightweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Mateusz Gamrot<strong>姓名:</strong> Rafael Dos Anjos</p>
-                  <p>Poland<strong>国籍:</strong>Brazil</p>
-                  <p>🇵🇱<strong>国旗:</strong>🇧🇷</p>
-                  <p>#6<strong>排名:</strong>#11</p>
-                  <p>-345<strong>赔率:</strong>+275 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/GAMROT_MATEUSZ_L_09-23.png?itok=jnfBMnye" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/DOS_ANJOS_RAFAEL_R_08-12.png?itok=0jv7DzEg" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Pedro Munhoz VS Kyler Phillips) 级别：Bantamweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Pedro Munhoz<strong>姓名:</strong> Kyler Phillips</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>#13<strong>排名:</strong>None</p>
-                  <p>+185<strong>赔率:</strong>-225 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MUNHOZ_PEDRO_L_04-15.png?itok=lKtK8HIJ" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/PHILLIPS_KYLER_R_07-24.png?itok=5_28ayED" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Ion Cutelaba VS PhilipeLins) 级别：Light Heavyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Ion Cutelaba<strong>姓名:</strong> PhilipeLins</p>
-                  <p>Moldova<strong>国籍:</strong>Brazil</p>
-                  <p>🇲🇩<strong>国旗:</strong>🇧🇷</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/CUTELABA_ION_L_04-15.png?itok=9Ea0rXt7" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/LINS_PHILIPE_R_10-01.png?itok=6wHYbwrt" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (MichelPereira VS Michal Oleksiejczuk) 级别：Middleweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>MichelPereira<strong>姓名:</strong> Michal Oleksiejczuk</p>
-                  <p>Brazil<strong>国籍:</strong>Poland</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇵🇱</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-148<strong>赔率:</strong>+124 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-07/PEREIRA_MICHEL_L_07-10.png?itok=N5wegLen" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OLEKSIEJCZUK_MICHAL_R_04_28.png?itok=XzpN4Xlw" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Robelis Despaigne VS Josh Parisian) 级别：Heavyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Robelis Despaigne<strong>姓名:</strong> Josh Parisian</p>
-                  <p>Cuba<strong>国籍:</strong>United States</p>
-                  <p>🇨🇺<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/c18638d7-4ea3-4e84-8540-2542110b6402%252FPARISIAN_JOSH_R_06-25.png?itok=vph5Hoay" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (CJ Vergara VS AsuAlmabayev) 级别：Flyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>CJ Vergara<strong>姓名:</strong> AsuAlmabayev</p>
-                  <p>United States<strong>国籍:</strong>Kazakhstan</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇰🇿</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>+295<strong>赔率:</strong>-375 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/VERGARA_CJ_L_03-25.png?itok=2fU4bHF8" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/ALMABAYEV_ASSU_R_08-05.png?itok=LEdS4GKM" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Joanne Wood VS Maryna Moroz) 级别：Women's Flyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Joanne Wood<strong>姓名:</strong> Maryna Moroz</p>
-                  <p>Scotland<strong>国籍:</strong>Ukraine</p>
-                  <p>🏳<strong>国旗:</strong>🇺🇦</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/WOOD_JOANNE_L_03-18.png?itok=FRbCoaL5" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/MOROZ_MARYNA_R_08-19.png?itok=GJvU6LyO" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Amanda Ribas VS Rose Namajunas) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Amanda Ribas<strong>姓名:</strong> Rose Namajunas</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>#8<strong>排名:</strong>None</p>
-                  <p>+136<strong>赔率:</strong>-162 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/RIBAS_AMANDA_L_06-24.png?itok=lL75F3nj" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NAMAJUNAS_ROSE_R_09-02.png?itok=gHxmp9rq" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Karl Williams VS Junior Tafa) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Karl Williams<strong>姓名:</strong> Junior Tafa</p>
-                  <p>United States<strong>国籍:</strong>Australia</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇦🇺</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-198<strong>赔率:</strong>+164 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/WILLIAMS_KARL_L_05-13.png?itok=R52nPebO" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/TAFA_JUINIOR_R_04-22.png?itok=Bt5MwZlP" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Edmen Shahbazyan VS DuškoTodorović) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Edmen Shahbazyan<strong>姓名:</strong> DuškoTodorović</p>
-                  <p>United States<strong>国籍:</strong>Serbia</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇷🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/SHAHBAZYAN_EDMEN_L_05-20.png?itok=n9KI7LUc" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/TODOROVIC_DUSKO_R_03-18.png?itok=IyJG7C3x" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Payton Talbott VS Cameron Saaiman) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Payton Talbott<strong>姓名:</strong> Cameron Saaiman</p>
-                  <p>United States<strong>国籍:</strong>South Africa</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇿🇦</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>+100<strong>赔率:</strong>-120 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-11/TALBOTT_PAYTON_L_11-18.png?itok=HT9daebw" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/SAAIMAN_CAMERON_R_03-05.png?itok=aWwGKqK3" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Billy Quarantillo VS Gabriel Miranda) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Billy Quarantillo<strong>姓名:</strong> Gabriel Miranda</p>
-                  <p>United States<strong>国籍:</strong>Brazil</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-218<strong>赔率:</strong>+180 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/QUARANTILLO_BILLY_L_08-05.png?itok=xyC9v73c" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MIRANDA_GABRIEL_R_09-03.png?itok=8pDCm5PQ" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Fernando Padilla VS Luis Pajuelo) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Fernando Padilla<strong>姓名:</strong> Luis Pajuelo</p>
-                  <p>Mexico<strong>国籍:</strong>Peru</p>
-                  <p>🇲🇽<strong>国旗:</strong>🇵🇪</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PADILLA_FERNANDO_L_04-29.png?itok=eCm0SzfE" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Kurt Holobaugh VS Trey Ogden) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Kurt Holobaugh<strong>姓名:</strong> Trey Ogden</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/HOLOBAUGH_KURT_L_08-19.png?itok=E2wSouM7" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OGDEN_TREY_R_04-08.png?itok=2O0xZAYe" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Ricardo Ramos VS Julian Erosa) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Ricardo Ramos<strong>姓名:</strong> Julian Erosa</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAMOS_RICARDO_L_03-11.png?itok=jJ2epRB_" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/EROSA_JULIAN_R_12-17.png?itok=fAQpZ9yW" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Davey Grant VS Cody Gibson) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Davey Grant<strong>姓名:</strong> Cody Gibson</p>
-                  <p>United Kingdom<strong>国籍:</strong>United States</p>
-                  <p>🇬🇧<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-148<strong>赔率:</strong>+124 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/GRANT_DAVEY_L_07-22.png?itok=4oRTC5tM" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/GIBSON_CODY_R_08-19.png?itok=u7DHGLH-" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Stephanie Bruna VS Julia Polastri) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Stephanie Bruna<strong>姓名:</strong> Julia Polastri</p>
+                  <p>TBD<strong>姓名:</strong> TBD</p>
                   <p>None<strong>国籍:</strong>None</p>
                   <p>🏳<strong>国旗:</strong>🏳</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/71763%252Fprofile-galery%252Ffullbodyright-picture%252FPOLASTRI_JULIA_R.png?itok=4-kPiEIZ" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Jarno Errens VS Steven Nguyen) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Jarno Errens<strong>姓名:</strong> Steven Nguyen</p>
-                  <p>Netherlands<strong>国籍:</strong>None</p>
-                  <p>🇳🇱<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ERRENS_JARNO_L_09-03.png?itok=SISodCPF" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (MontserratRendon VS Dariya Zheleznykova) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 04 May 2024 22:00:00 GMT</pubDate></item><item><title>06-22 UFCFightNight (TBD VS TBD) 级别：Middleweight Bout 举办地:Riyadh,Saudi Arabia</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>MontserratRendon<strong>姓名:</strong> Dariya Zheleznykova</p>
-                  <p>Mexico<strong>国籍:</strong>None</p>
-                  <p>🇲🇽<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Mohammed Usman VS Mick Parkin) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Mohammed Usman<strong>姓名:</strong> Mick Parkin</p>
-                  <p>Nigeria<strong>国籍:</strong>England</p>
-                  <p>🇳🇬<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>+140<strong>赔率:</strong>-166 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/PARKIN_MICK_R_07-22.png?itok=NlSaUh5B" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Tai Tuivasa VS Marcin Tybura) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Tai Tuivasa<strong>姓名:</strong> Marcin Tybura</p>
-                  <p>Australia<strong>国籍:</strong>Poland</p>
-                  <p>🇦🇺<strong>国旗:</strong>🇵🇱</p>
-                  <p>#9<strong>排名:</strong>#10</p>
-                  <p>-125<strong>赔率:</strong>+105 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/TUIVASA_TAI_L_09-09.png?itok=sq4zfwfK" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/TYBURA_MARCIN_R_07-22.png?itok=8W25Wj7C" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Bryan Battle VS Ange Loosa) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Bryan Battle<strong>姓名:</strong> Ange Loosa</p>
-                  <p>United States<strong>国籍:</strong>None</p>
-                  <p>🇺🇸<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BATTLE_BRYAN_L_05-13.png?itok=2gvn1YMC" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/1fb810cf-df10-4619-8bc6-e864e660815e%252FLOOSA_ANGE_R_04-16.png?itok=FqKQ46ve" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Ovince Saint Preux VS Kennedy Nzechukwu) 级别：Light Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Ovince Saint Preux<strong>姓名:</strong> Kennedy Nzechukwu</p>
-                  <p>Haiti<strong>国籍:</strong>Nigeria</p>
-                  <p>🇭🇹<strong>国旗:</strong>🇳🇬</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SAINT_PREUX_OVINCE_L_02-18.png?itok=deYH3GC2" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NZECHUKWU_KENNEDY_R_08-05.png?itok=W6cVIdRr" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (ThiagoMoisés VS BradRiddell) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>ThiagoMoisés<strong>姓名:</strong> BradRiddell</p>
-                  <p>Brazil<strong>国籍:</strong>New Zealand</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇳🇿</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/MOISES_THIAGO_L_01-19.png?itok=_lFe9WBz" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/bb770f50-42b5-4df8-8169-d17230919a9a%252FRIDDELL_BRAD_R_07-02.png?itok=bSbNrQ7R" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Pannie Kianzad VS Macy Chiasson) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Pannie Kianzad<strong>姓名:</strong> Macy Chiasson</p>
-                  <p>Sweden<strong>国籍:</strong>United States</p>
-                  <p>🇸🇪<strong>国旗:</strong>🇺🇸</p>
-                  <p>#6<strong>排名:</strong>#10</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/KIANZAD_PANNIE_L_07-22.png?itok=NI2ck85n" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/CHIASSON_MACY_R_09-10.png?itok=cESbau9q" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Gerald Meerschaert VS Bryan Barberena) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Gerald Meerschaert<strong>姓名:</strong> Bryan Barberena</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MEERSCHAERT_GERALD_L_04-08.png?itok=IMgPrj8I" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/BARBERENA_BRYAN_R_07-22.png?itok=fsF_kX4G" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (NatanLevy VS Mike Davis) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>NatanLevy<strong>姓名:</strong> Mike Davis</p>
-                  <p>Israel<strong>国籍:</strong>United States</p>
-                  <p>🇮🇱<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/ec33ffaf-1ad4-428c-b4ea-2548c4fe74f1-LEVY_NATAN_L_11-20.png?itok=ZaaWcu_a" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/DAVIS_MIKE_R_10-01.png?itok=tw0Vqpbs" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Josiane Nunes VS Chelsea Chandler) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Josiane Nunes<strong>姓名:</strong> Chelsea Chandler</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>#13<strong>排名:</strong>#14</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/NUNES_JOSIANE_L.png?itok=awVLzYv1" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/CHANDLER_CHELSEA_R_07-15.png?itok=wYW2rjiH" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Christian Rodriguez VS Isaac Dulgarian) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Christian Rodriguez<strong>姓名:</strong> Isaac Dulgarian</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/RODRIGUEZ_CHRISTIAN_L_10-14.png?itok=WGwKV1x7" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/DULGARIAN_ISAAC_R_08-12.png?itok=2Md3mByg" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Jafel Filho VS Ode' Osbourne) 级别：Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Jafel Filho<strong>姓名:</strong> Ode' Osbourne</p>
-                  <p>Brazil<strong>国籍:</strong>Jamaica</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇯🇲</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/FILHO_JAFEL_L_07-22.png?itok=KXUFFAHK" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/OSBOURNE_ODE_R_08-13.png?itok=y94DWG7K" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Josh Culibao VS Danny Silva) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Josh Culibao<strong>姓名:</strong> Danny Silva</p>
-                  <p>Australia<strong>国籍:</strong>None</p>
-                  <p>🇦🇺<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CULIBAO_JOSH_L_02-11.png?itok=-bDupgpt" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Jaqueline Amorim VS Cory McKenna) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Jaqueline Amorim<strong>姓名:</strong> Cory McKenna</p>
-                  <p>Brazil<strong>国籍:</strong>Wales</p>
-                  <p>🇧🇷<strong>国旗:</strong>🏳</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/AMORIM_JAQUELINE_L_04-08.png?itok=DlEk3fCa" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/MCKENNA_CORY_R_03-19.png?itok=laKgpm8F" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Charalampos Grigoriou VS Chad Anheliger) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Charalampos Grigoriou<strong>姓名:</strong> Chad Anheliger</p>
-                  <p>None<strong>国籍:</strong>Canada</p>
-                  <p>🏳<strong>国旗:</strong>🇨🇦</p>
+                  <p>TBD<strong>姓名:</strong> TBD</p>
+                  <p>None<strong>国籍:</strong>None</p>
+                  <p>🏳<strong>国旗:</strong>🏳</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-02/a33c33f5-029d-453b-81ad-8ba2a6c5db7f%252FANHELIGER_CHAD_R_02-19.png?itok=6f_3K-2n" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (Alex Pereira VS JamahalHill) 级别：Light Heavyweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Alex Pereira<strong>姓名:</strong> JamahalHill</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>C<strong>排名:</strong>#1</p>
-                  <p>-162<strong>赔率:</strong>+136 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PEREIRA_ALEX_L_BELT_04-08.png?itok=anD_XOxa" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/HILL_JAMAHAL_R_01-19.png?itok=pO3TpQqW" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Erin Blanchfield VS Manon Fiorot) 级别：Women's Flyweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Erin Blanchfield<strong>姓名:</strong> Manon Fiorot</p>
-                  <p>United States<strong>国籍:</strong>France</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇫🇷</p>
-                  <p>#2<strong>排名:</strong>#3</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BLANCHFIELD_ERIN_L.png?itok=Ipa2FhRl" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/FIOROT_MANON_R_10-22.png?itok=e78SGLzb" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Marvin Vettori VS BrendanAllen) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 22 Jun 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Marvin Vettori VS BrendanAllen) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Marvin Vettori<strong>姓名:</strong> BrendanAllen</p>
                   <p>Italy<strong>国籍:</strong>United States</p>
@@ -527,19 +47,79 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/ROCHA_LUCAS_R.png?itok=TkATK09d" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>05-04 UFC301 (TBD VS TBD) 级别：Middleweight Bout 举办地:Rio de Janeiro,Brazil</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (Alex Pereira VS JamahalHill) 级别：Light Heavyweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>TBD<strong>姓名:</strong> TBD</p>
-                  <p>None<strong>国籍:</strong>None</p>
-                  <p>🏳<strong>国旗:</strong>🏳</p>
+                  <p>Alex Pereira<strong>姓名:</strong> JamahalHill</p>
+                  <p>Brazil<strong>国籍:</strong>United States</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
+                  <p>C<strong>排名:</strong>#1</p>
+                  <p>-162<strong>赔率:</strong>+136 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PEREIRA_ALEX_L_BELT_04-08.png?itok=anD_XOxa" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/HILL_JAMAHAL_R_01-19.png?itok=pO3TpQqW" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Trevor Peek VS Charlie Campbell) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Trevor Peek<strong>姓名:</strong> Charlie Campbell</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PEEK_TREVOR_L_06-24.png?itok=vScndsaW" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/CAMPBELL_CHARLIE_R_09-16.png?itok=DmMQBKH2" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Alexander Hernandez VS Damon Jackson) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Alexander Hernandez<strong>姓名:</strong> Damon Jackson</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/HERNANDEZ_ALEXANDER_L_02-18.png?itok=KWOd1rQf" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/JACKSON_DAMON_R_08-05.png?itok=JYj1p-WP" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Alatengheili VS Victor Hugo) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Alatengheili<strong>姓名:</strong> Victor Hugo</p>
+                  <p>China<strong>国籍:</strong>Brazil</p>
+                  <p>🇨🇳<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/HEILI_ALATENG_L_09-18.png?itok=Gy4KAczf" alt="Image Red"/>
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 04 May 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (ZhangWeili VS YanXiaonan) 级别：Women's Strawweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Josh Fremd VS Cesar Almeida) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Josh Fremd<strong>姓名:</strong> Cesar Almeida</p>
+                  <p>United States<strong>国籍:</strong>Brazil</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/FREMD_JOSH_L_08-12.png?itok=OgYWEWVK" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Piera Rodriguez VS Cynthia Calvillo) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Piera Rodriguez<strong>姓名:</strong> Cynthia Calvillo</p>
+                  <p>Venezuela<strong>国籍:</strong>United States</p>
+                  <p>🇻🇪<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/d24bbf1e-86f7-4b24-a438-4a4938dc6833%252FRODRIGUEZ_PIERA_L_04-09.png?itok=UVYeWtFR" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/CALVILLO_CYNTHIA_R_04-08.png?itok=4FnJsDYO" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (ZhangWeili VS YanXiaonan) 级别：Women's Strawweight Title Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>ZhangWeili<strong>姓名:</strong> YanXiaonan</p>
                   <p>China<strong>国籍:</strong>China</p>
@@ -599,124 +179,64 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/ufc-fighter-container/67275/profile-galery/fullbodyright-picture/STERLING_ALJAMAIN_R.png?VersionId=ZlL7a88HeP6iYw0gK0J91NDATc_2Aw.w&itok=5bRA6h99" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Vicente Luque VS Joaquin Buckley) 级别：Welterweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Court McGee VS AlexMorono) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Vicente Luque<strong>姓名:</strong> Joaquin Buckley</p>
-                  <p>Brazil<strong>国籍:</strong>United States</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
-                  <p>#10<strong>排名:</strong>#10</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/LUQUE_VICENTE_L_08-12.png?itok=ZQLA-4oq" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BUCKLEY_JOAQUIN_R_05-20.png?itok=7sd3mVPL" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Chris Weidman VS Bruno Silva) 级别：Middleweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Chris Weidman<strong>姓名:</strong> Bruno Silva</p>
-                  <p>United States<strong>国籍:</strong>Brazil</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
+                  <p>Court McGee<strong>姓名:</strong> AlexMorono</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/WEIDMAN_CHRIS_L_08-19.png?itok=glMemug7" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/SILVA_BRUNO_R_06-24.png?itok=WeRhjeMI" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MCGEE_COURT_L_05-13.png?itok=fYAyzjXf" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/MORONO_ALEX_R_05-13.png?itok=0Nw9LoCB" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (NursultonRuziboev VS Sedriques Dumas) 级别：Middleweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Valter Walker VS Lukasz Brzeski) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>NursultonRuziboev<strong>姓名:</strong> Sedriques Dumas</p>
-                  <p>Uzbekistan<strong>国籍:</strong>United States</p>
-                  <p>🇺🇿<strong>国旗:</strong>🇺🇸</p>
+                  <p>Valter Walker<strong>姓名:</strong> Lukasz Brzeski</p>
+                  <p>None<strong>国籍:</strong>Poland</p>
+                  <p>🏳<strong>国旗:</strong>🇵🇱</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/DUMAS_SEDRIQUES_R_06-24.png?itok=DloyOAir" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BRZESKI_LUKASZ_R.png?itok=iSqv8gJG" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Bill Algeo VS Kyle Nelson) 级别：Featherweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (DanArgueta VS ) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Bill Algeo<strong>姓名:</strong> Kyle Nelson</p>
-                  <p>United States<strong>国籍:</strong>Canada</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇨🇦</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ALGEO_BILL_L_04-15.png?itok=9BRzuXY8" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/NELSON_KYLE_R_09-16.png?itok=T567SKC5" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Chidi Njokuani VS Rhys McKee) 级别：Welterweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Chidi Njokuani<strong>姓名:</strong> Rhys McKee</p>
+                  <p>DanArgueta<strong>姓名:</strong> </p>
                   <p>United States<strong>国籍:</strong>None</p>
                   <p>🇺🇸<strong>国旗:</strong>🏳</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NJOKUANI_CHIDI_L.png?itok=dnXWQUOj" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/MCKEE_RHYS_R_09-02.png?itok=x5ZXotFC" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Trevor Peek VS Charlie Campbell) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Trevor Peek<strong>姓名:</strong> Charlie Campbell</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PEEK_TREVOR_L_06-24.png?itok=vScndsaW" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/CAMPBELL_CHARLIE_R_09-16.png?itok=DmMQBKH2" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Alexander Hernandez VS Damon Jackson) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Alexander Hernandez<strong>姓名:</strong> Damon Jackson</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/HERNANDEZ_ALEXANDER_L_02-18.png?itok=KWOd1rQf" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/JACKSON_DAMON_R_08-05.png?itok=JYj1p-WP" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Alatengheili VS Victor Hugo) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Alatengheili<strong>姓名:</strong> Victor Hugo</p>
-                  <p>China<strong>国籍:</strong>Brazil</p>
-                  <p>🇨🇳<strong>国旗:</strong>🇧🇷</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/HEILI_ALATENG_L_09-18.png?itok=Gy4KAczf" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-12/ARGUETA_DAN_L_09-23.png?itok=44qb6R8c" alt="Image Red"/>
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Josh Fremd VS Cesar Almeida) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Norma Dumont VS Germaine de Randamie) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Josh Fremd<strong>姓名:</strong> Cesar Almeida</p>
-                  <p>United States<strong>国籍:</strong>Brazil</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
-                  <p>None<strong>排名:</strong>None</p>
+                  <p>Norma Dumont<strong>姓名:</strong> Germaine de Randamie</p>
+                  <p>Brazil<strong>国籍:</strong>None</p>
+                  <p>🇧🇷<strong>国旗:</strong>🏳</p>
+                  <p>#11<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/FREMD_JOSH_L_08-12.png?itok=OgYWEWVK" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/DUMONT_NORMA_L_07-15.png?itok=Tnses2gA" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-12/DE_RANDAMIE_GERMAINE_R.png?VersionId=VjBGzsokIBgUKhTLDP9sdnSSgWr0Z56T&itok=8rt9Gnq_" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Piera Rodriguez VS Cynthia Calvillo) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Morgan Charriere VS Seungwoo Choi) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Piera Rodriguez<strong>姓名:</strong> Cynthia Calvillo</p>
-                  <p>Venezuela<strong>国籍:</strong>United States</p>
-                  <p>🇻🇪<strong>国旗:</strong>🇺🇸</p>
+                  <p>Morgan Charriere<strong>姓名:</strong> Seungwoo Choi</p>
+                  <p>France<strong>国籍:</strong>South Korea</p>
+                  <p>🇫🇷<strong>国旗:</strong>🇰🇷</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/d24bbf1e-86f7-4b24-a438-4a4938dc6833%252FRODRIGUEZ_PIERA_L_04-09.png?itok=UVYeWtFR" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/CALVILLO_CYNTHIA_R_04-08.png?itok=4FnJsDYO" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CHARRIERE_MORGAN_L_09-02.png?itok=4WMaLSIs" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/4572b956-dfb6-4259-9ba5-5cf45eb2f6fb%252FCHOI_SEUNGWOO_R_06-11.png?itok=y8UU6T5_" alt="Image Blue"/>
                   </div>                  
 	        </div>
             </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (Bo Nickal VS Cody Brundage) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
@@ -779,7 +299,139 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-10/68706%252Fprofile-galery%252Ffullbodyright-picture%252FRODRIGUEZ_MARINA_R_10-09.png?itok=3sbk3lZL" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (PatSabatini VS Nate Landwehr) 级别：Featherweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Erin Blanchfield VS Manon Fiorot) 级别：Women's Flyweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Erin Blanchfield<strong>姓名:</strong> Manon Fiorot</p>
+                  <p>United States<strong>国籍:</strong>France</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇫🇷</p>
+                  <p>#2<strong>排名:</strong>#3</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BLANCHFIELD_ERIN_L.png?itok=Ipa2FhRl" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/FIOROT_MANON_R_10-22.png?itok=e78SGLzb" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Nora Cornolle VS Melissa Dixon) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Nora Cornolle<strong>姓名:</strong> Melissa Dixon</p>
+                  <p>France<strong>国籍:</strong>United Kingdom</p>
+                  <p>🇫🇷<strong>国旗:</strong>🇬🇧</p>
+                  <p>None<strong>排名:</strong>#15</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CORNOLLE_NORA_L_09-02.png?itok=54AIgsb6" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-10/DIXON_MELISSA_R_10-14.png?itok=1LL8DAbx" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Ignacio Bahamondes VS Christos Giagos) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Ignacio Bahamondes<strong>姓名:</strong> Christos Giagos</p>
+                  <p>Chile<strong>国籍:</strong>United States</p>
+                  <p>🇨🇱<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BAHAMONDES_IGNACIO_L_08-05.png?itok=lxu_1kJ6" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/GIAGOS_CHRISTOS_R_09-16.png?itok=wZnqxhFK" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (Bobby Green VS Jim Miller) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Bobby Green<strong>姓名:</strong> Jim Miller</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
+                  <p>#14<strong>排名:</strong>None</p>
+                  <p>-218<strong>赔率:</strong>+180 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GREEN_BOBBY_L_04-22.png?itok=yaKgqBHW" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/MILLER_JIM_R_01-13.png?itok=T-iLhFAE" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Vicente Luque VS Joaquin Buckley) 级别：Welterweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Vicente Luque<strong>姓名:</strong> Joaquin Buckley</p>
+                  <p>Brazil<strong>国籍:</strong>United States</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
+                  <p>#10<strong>排名:</strong>#10</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/LUQUE_VICENTE_L_08-12.png?itok=ZQLA-4oq" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BUCKLEY_JOAQUIN_R_05-20.png?itok=7sd3mVPL" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Chris Weidman VS Bruno Silva) 级别：Middleweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Chris Weidman<strong>姓名:</strong> Bruno Silva</p>
+                  <p>United States<strong>国籍:</strong>Brazil</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/WEIDMAN_CHRIS_L_08-19.png?itok=glMemug7" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/SILVA_BRUNO_R_06-24.png?itok=WeRhjeMI" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (NursultonRuziboev VS Sedriques Dumas) 级别：Middleweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>NursultonRuziboev<strong>姓名:</strong> Sedriques Dumas</p>
+                  <p>Uzbekistan<strong>国籍:</strong>United States</p>
+                  <p>🇺🇿<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/DUMAS_SEDRIQUES_R_06-24.png?itok=DloyOAir" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Bill Algeo VS Kyle Nelson) 级别：Featherweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Bill Algeo<strong>姓名:</strong> Kyle Nelson</p>
+                  <p>United States<strong>国籍:</strong>Canada</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇨🇦</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/ALGEO_BILL_L_04-15.png?itok=9BRzuXY8" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/NELSON_KYLE_R_09-16.png?itok=T567SKC5" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Chidi Njokuani VS Rhys McKee) 级别：Welterweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Chidi Njokuani<strong>姓名:</strong> Rhys McKee</p>
+                  <p>United States<strong>国籍:</strong>None</p>
+                  <p>🇺🇸<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NJOKUANI_CHIDI_L.png?itok=dnXWQUOj" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/MCKEE_RHYS_R_09-02.png?itok=x5ZXotFC" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Tai Tuivasa VS Marcin Tybura) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Tai Tuivasa<strong>姓名:</strong> Marcin Tybura</p>
+                  <p>Australia<strong>国籍:</strong>Poland</p>
+                  <p>🇦🇺<strong>国旗:</strong>🇵🇱</p>
+                  <p>#9<strong>排名:</strong>#10</p>
+                  <p>-125<strong>赔率:</strong>+105 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/TUIVASA_TAI_L_09-09.png?itok=sq4zfwfK" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/TYBURA_MARCIN_R_07-22.png?itok=8W25Wj7C" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Amanda Ribas VS Rose Namajunas) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Amanda Ribas<strong>姓名:</strong> Rose Namajunas</p>
+                  <p>Brazil<strong>国籍:</strong>United States</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
+                  <p>#8<strong>排名:</strong>None</p>
+                  <p>+136<strong>赔率:</strong>-162 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/RIBAS_AMANDA_L_06-24.png?itok=lL75F3nj" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NAMAJUNAS_ROSE_R_09-02.png?itok=gHxmp9rq" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (PatSabatini VS Nate Landwehr) 级别：Featherweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>PatSabatini<strong>姓名:</strong> Nate Landwehr</p>
                   <p>United States<strong>国籍:</strong>United States</p>
@@ -839,91 +491,127 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/TURKALJ_ANTON_R_09-09.png?itok=U-ACm--w" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Court McGee VS AlexMorono) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Bryan Battle VS Ange Loosa) 级别：Welterweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Court McGee<strong>姓名:</strong> AlexMorono</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MCGEE_COURT_L_05-13.png?itok=fYAyzjXf" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/MORONO_ALEX_R_05-13.png?itok=0Nw9LoCB" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Valter Walker VS Lukasz Brzeski) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Valter Walker<strong>姓名:</strong> Lukasz Brzeski</p>
-                  <p>None<strong>国籍:</strong>Poland</p>
-                  <p>🏳<strong>国旗:</strong>🇵🇱</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BRZESKI_LUKASZ_R.png?itok=iSqv8gJG" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (DanArgueta VS ) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>DanArgueta<strong>姓名:</strong> </p>
+                  <p>Bryan Battle<strong>姓名:</strong> Ange Loosa</p>
                   <p>United States<strong>国籍:</strong>None</p>
                   <p>🇺🇸<strong>国旗:</strong>🏳</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-12/ARGUETA_DAN_L_09-23.png?itok=44qb6R8c" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/BATTLE_BRYAN_L_05-13.png?itok=2gvn1YMC" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/1fb810cf-df10-4619-8bc6-e864e660815e%252FLOOSA_ANGE_R_04-16.png?itok=FqKQ46ve" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Norma Dumont VS Germaine de Randamie) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Ovince Saint Preux VS Kennedy Nzechukwu) 级别：Light Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Norma Dumont<strong>姓名:</strong> Germaine de Randamie</p>
-                  <p>Brazil<strong>国籍:</strong>None</p>
-                  <p>🇧🇷<strong>国旗:</strong>🏳</p>
-                  <p>#11<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/DUMONT_NORMA_L_07-15.png?itok=Tnses2gA" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2019-12/DE_RANDAMIE_GERMAINE_R.png?VersionId=VjBGzsokIBgUKhTLDP9sdnSSgWr0Z56T&itok=8rt9Gnq_" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Morgan Charriere VS Seungwoo Choi) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Morgan Charriere<strong>姓名:</strong> Seungwoo Choi</p>
-                  <p>France<strong>国籍:</strong>South Korea</p>
-                  <p>🇫🇷<strong>国旗:</strong>🇰🇷</p>
+                  <p>Ovince Saint Preux<strong>姓名:</strong> Kennedy Nzechukwu</p>
+                  <p>Haiti<strong>国籍:</strong>Nigeria</p>
+                  <p>🇭🇹<strong>国旗:</strong>🇳🇬</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CHARRIERE_MORGAN_L_09-02.png?itok=4WMaLSIs" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/4572b956-dfb6-4259-9ba5-5cf45eb2f6fb%252FCHOI_SEUNGWOO_R_06-11.png?itok=y8UU6T5_" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/SAINT_PREUX_OVINCE_L_02-18.png?itok=deYH3GC2" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/NZECHUKWU_KENNEDY_R_08-05.png?itok=W6cVIdRr" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>06-22 UFCFightNight (TBD VS TBD) 级别：Middleweight Bout 举办地:Riyadh,Saudi Arabia</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (ThiagoMoisés VS BradRiddell) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>TBD<strong>姓名:</strong> TBD</p>
-                  <p>None<strong>国籍:</strong>None</p>
-                  <p>🏳<strong>国旗:</strong>🏳</p>
+                  <p>ThiagoMoisés<strong>姓名:</strong> BradRiddell</p>
+                  <p>Brazil<strong>国籍:</strong>New Zealand</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇳🇿</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/MOISES_THIAGO_L_01-19.png?itok=_lFe9WBz" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-07/bb770f50-42b5-4df8-8169-d17230919a9a%252FRIDDELL_BRAD_R_07-02.png?itok=bSbNrQ7R" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 22 Jun 2024 22:00:00 GMT</pubDate></item><item><title>04-14 UFC300 (Bobby Green VS Jim Miller) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Pannie Kianzad VS Macy Chiasson) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Bobby Green<strong>姓名:</strong> Jim Miller</p>
+                  <p>Pannie Kianzad<strong>姓名:</strong> Macy Chiasson</p>
+                  <p>Sweden<strong>国籍:</strong>United States</p>
+                  <p>🇸🇪<strong>国旗:</strong>🇺🇸</p>
+                  <p>#6<strong>排名:</strong>#10</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/KIANZAD_PANNIE_L_07-22.png?itok=NI2ck85n" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/CHIASSON_MACY_R_09-10.png?itok=cESbau9q" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Gerald Meerschaert VS Bryan Barberena) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Gerald Meerschaert<strong>姓名:</strong> Bryan Barberena</p>
                   <p>United States<strong>国籍:</strong>United States</p>
                   <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>#14<strong>排名:</strong>None</p>
-                  <p>-218<strong>赔率:</strong>+180 </p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/GREEN_BOBBY_L_04-22.png?itok=yaKgqBHW" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/MILLER_JIM_R_01-13.png?itok=T-iLhFAE" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/MEERSCHAERT_GERALD_L_04-08.png?itok=IMgPrj8I" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/BARBERENA_BRYAN_R_07-22.png?itok=fsF_kX4G" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 14 Apr 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Viktoriia Dudakova VS Melissa Gatto) 级别：Women's Flyweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Karl Williams VS Junior Tafa) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Karl Williams<strong>姓名:</strong> Junior Tafa</p>
+                  <p>United States<strong>国籍:</strong>Australia</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇦🇺</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-198<strong>赔率:</strong>+164 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/WILLIAMS_KARL_L_05-13.png?itok=R52nPebO" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/TAFA_JUINIOR_R_04-22.png?itok=Bt5MwZlP" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Edmen Shahbazyan VS DuškoTodorović) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Edmen Shahbazyan<strong>姓名:</strong> DuškoTodorović</p>
+                  <p>United States<strong>国籍:</strong>Serbia</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇷🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-05/SHAHBAZYAN_EDMEN_L_05-20.png?itok=n9KI7LUc" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/TODOROVIC_DUSKO_R_03-18.png?itok=IyJG7C3x" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Payton Talbott VS Cameron Saaiman) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Payton Talbott<strong>姓名:</strong> Cameron Saaiman</p>
+                  <p>United States<strong>国籍:</strong>South Africa</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇿🇦</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>+100<strong>赔率:</strong>-120 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-11/TALBOTT_PAYTON_L_11-18.png?itok=HT9daebw" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/SAAIMAN_CAMERON_R_03-05.png?itok=aWwGKqK3" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Billy Quarantillo VS Gabriel Miranda) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Billy Quarantillo<strong>姓名:</strong> Gabriel Miranda</p>
+                  <p>United States<strong>国籍:</strong>Brazil</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-218<strong>赔率:</strong>+180 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/QUARANTILLO_BILLY_L_08-05.png?itok=xyC9v73c" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/MIRANDA_GABRIEL_R_09-03.png?itok=8pDCm5PQ" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Fernando Padilla VS Luis Pajuelo) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Fernando Padilla<strong>姓名:</strong> Luis Pajuelo</p>
+                  <p>Mexico<strong>国籍:</strong>Peru</p>
+                  <p>🇲🇽<strong>国旗:</strong>🇵🇪</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/PADILLA_FERNANDO_L_04-29.png?itok=eCm0SzfE" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-31 UFCFightNight (Viktoriia Dudakova VS Melissa Gatto) 级别：Women's Flyweight Bout 举办地:Atlantic City,NJ,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Viktoriia Dudakova<strong>姓名:</strong> Melissa Gatto</p>
                   <p>Russia<strong>国籍:</strong>Brazil</p>
@@ -959,28 +647,232 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/LOUGHRAN_CAOLAN_R_09-02.png?itok=pFgkHywx" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Nora Cornolle VS Melissa Dixon) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 31 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (NatanLevy VS Mike Davis) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
-                  <p>Nora Cornolle<strong>姓名:</strong> Melissa Dixon</p>
-                  <p>France<strong>国籍:</strong>United Kingdom</p>
-                  <p>🇫🇷<strong>国旗:</strong>🇬🇧</p>
-                  <p>None<strong>排名:</strong>#15</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/CORNOLLE_NORA_L_09-02.png?itok=54AIgsb6" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-10/DIXON_MELISSA_R_10-14.png?itok=1LL8DAbx" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item><item><title>04-06 UFCFightNight (Ignacio Bahamondes VS Christos Giagos) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Ignacio Bahamondes<strong>姓名:</strong> Christos Giagos</p>
-                  <p>Chile<strong>国籍:</strong>United States</p>
-                  <p>🇨🇱<strong>国旗:</strong>🇺🇸</p>
+                  <p>NatanLevy<strong>姓名:</strong> Mike Davis</p>
+                  <p>Israel<strong>国籍:</strong>United States</p>
+                  <p>🇮🇱<strong>国旗:</strong>🇺🇸</p>
                   <p>None<strong>排名:</strong>None</p>
                   <p>-<strong>赔率:</strong>- </p>
                   <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/BAHAMONDES_IGNACIO_L_08-05.png?itok=lxu_1kJ6" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-09/GIAGOS_CHRISTOS_R_09-16.png?itok=wZnqxhFK" alt="Image Blue"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-04/ec33ffaf-1ad4-428c-b4ea-2548c4fe74f1-LEVY_NATAN_L_11-20.png?itok=ZaaWcu_a" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-10/DAVIS_MIKE_R_10-01.png?itok=tw0Vqpbs" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sat, 06 Apr 2024 22:00:00 GMT</pubDate></item></channel></rss>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Josiane Nunes VS Chelsea Chandler) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Josiane Nunes<strong>姓名:</strong> Chelsea Chandler</p>
+                  <p>Brazil<strong>国籍:</strong>United States</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
+                  <p>#13<strong>排名:</strong>#14</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-01/NUNES_JOSIANE_L.png?itok=awVLzYv1" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/CHANDLER_CHELSEA_R_07-15.png?itok=wYW2rjiH" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Christian Rodriguez VS Isaac Dulgarian) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Christian Rodriguez<strong>姓名:</strong> Isaac Dulgarian</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-01/RODRIGUEZ_CHRISTIAN_L_10-14.png?itok=WGwKV1x7" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/DULGARIAN_ISAAC_R_08-12.png?itok=2Md3mByg" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Jafel Filho VS Ode' Osbourne) 级别：Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Jafel Filho<strong>姓名:</strong> Ode' Osbourne</p>
+                  <p>Brazil<strong>国籍:</strong>Jamaica</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇯🇲</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/FILHO_JAFEL_L_07-22.png?itok=KXUFFAHK" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-08/OSBOURNE_ODE_R_08-13.png?itok=y94DWG7K" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Kurt Holobaugh VS Trey Ogden) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Kurt Holobaugh<strong>姓名:</strong> Trey Ogden</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/HOLOBAUGH_KURT_L_08-19.png?itok=E2wSouM7" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OGDEN_TREY_R_04-08.png?itok=2O0xZAYe" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Ricardo Ramos VS Julian Erosa) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Ricardo Ramos<strong>姓名:</strong> Julian Erosa</p>
+                  <p>Brazil<strong>国籍:</strong>United States</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RAMOS_RICARDO_L_03-11.png?itok=jJ2epRB_" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-12/EROSA_JULIAN_R_12-17.png?itok=fAQpZ9yW" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Davey Grant VS Cody Gibson) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Davey Grant<strong>姓名:</strong> Cody Gibson</p>
+                  <p>United Kingdom<strong>国籍:</strong>United States</p>
+                  <p>🇬🇧<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-148<strong>赔率:</strong>+124 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/GRANT_DAVEY_L_07-22.png?itok=4oRTC5tM" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/GIBSON_CODY_R_08-19.png?itok=u7DHGLH-" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Stephanie Bruna VS Julia Polastri) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Stephanie Bruna<strong>姓名:</strong> Julia Polastri</p>
+                  <p>None<strong>国籍:</strong>None</p>
+                  <p>🏳<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-09/71763%252Fprofile-galery%252Ffullbodyright-picture%252FPOLASTRI_JULIA_R.png?itok=4-kPiEIZ" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Jarno Errens VS Steven Nguyen) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Jarno Errens<strong>姓名:</strong> Steven Nguyen</p>
+                  <p>Netherlands<strong>国籍:</strong>None</p>
+                  <p>🇳🇱<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/ERRENS_JARNO_L_09-03.png?itok=SISodCPF" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Josh Culibao VS Danny Silva) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Josh Culibao<strong>姓名:</strong> Danny Silva</p>
+                  <p>Australia<strong>国籍:</strong>None</p>
+                  <p>🇦🇺<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-02/CULIBAO_JOSH_L_02-11.png?itok=-bDupgpt" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Jaqueline Amorim VS Cory McKenna) 级别：Women's Strawweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Jaqueline Amorim<strong>姓名:</strong> Cory McKenna</p>
+                  <p>Brazil<strong>国籍:</strong>Wales</p>
+                  <p>🇧🇷<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/AMORIM_JAQUELINE_L_04-08.png?itok=DlEk3fCa" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-06/MCKENNA_CORY_R_03-19.png?itok=laKgpm8F" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-16 UFCFightNight (Charalampos Grigoriou VS Chad Anheliger) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Charalampos Grigoriou<strong>姓名:</strong> Chad Anheliger</p>
+                  <p>None<strong>国籍:</strong>Canada</p>
+                  <p>🏳<strong>国旗:</strong>🇨🇦</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-02/a33c33f5-029d-453b-81ad-8ba2a6c5db7f%252FANHELIGER_CHAD_R_02-19.png?itok=6f_3K-2n" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sat, 16 Mar 2024 23:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (MontserratRendon VS Dariya Zheleznykova) 级别：Women's Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>MontserratRendon<strong>姓名:</strong> Dariya Zheleznykova</p>
+                  <p>Mexico<strong>国籍:</strong>None</p>
+                  <p>🇲🇽<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-24 UFCFightNight (Mohammed Usman VS Mick Parkin) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Mohammed Usman<strong>姓名:</strong> Mick Parkin</p>
+                  <p>Nigeria<strong>国籍:</strong>England</p>
+                  <p>🇳🇬<strong>国旗:</strong>🏳</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>+140<strong>赔率:</strong>-166 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/PARKIN_MICK_R_07-22.png?itok=NlSaUh5B" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 24 Mar 2024 02:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Sean O'Malley VS Marlon Vera) 级别：Bantamweight Title Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Sean O'Malley<strong>姓名:</strong> Marlon Vera</p>
+                  <p>United States<strong>国籍:</strong>Ecuador</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇪🇨</p>
+                  <p>C<strong>排名:</strong>#5</p>
+                  <p>-218<strong>赔率:</strong>+180 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/OMALLEY_SEAN_BELT_L_03-09.png?itok=sVbvi1Kh" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/VERA_MARLON_R_03-09.png?itok=hNzJ-E2M" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Petr Yan VS SongYadong) 级别：Bantamweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Petr Yan<strong>姓名:</strong> SongYadong</p>
+                  <p>Russia<strong>国籍:</strong>China</p>
+                  <p>🇷🇺<strong>国旗:</strong>🇨🇳</p>
+                  <p>#4<strong>排名:</strong>#7</p>
+                  <p>-135<strong>赔率:</strong>+114 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/YAN_PETR_L_03-09.png?itok=vZ4BRgSJ" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/YADONG_SONG_R_03-09.png?itok=2tXPkkjM" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Gilbert Burns VS JackDellaMaddalena) 级别：Welterweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Gilbert Burns<strong>姓名:</strong> JackDellaMaddalena</p>
+                  <p>Brazil<strong>国籍:</strong>Australia</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇦🇺</p>
+                  <p>#4<strong>排名:</strong>#11</p>
+                  <p>+100<strong>赔率:</strong>-120 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/BURNS_GILBERT_L_03-09.png?itok=CNnn3HK7" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/DELLA_MADDALENA_JACK_R_03-09.png?itok=srx1NkQg" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (MichelPereira VS Michal Oleksiejczuk) 级别：Middleweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>MichelPereira<strong>姓名:</strong> Michal Oleksiejczuk</p>
+                  <p>Brazil<strong>国籍:</strong>Poland</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇵🇱</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-148<strong>赔率:</strong>+124 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/PEREIRA_MICHEL_L_03-09.png?itok=Yr4oKR44" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OLEKSIEJCZUK_MICHAL_R_04_28.png?itok=XzpN4Xlw" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item><item><title>03-10 UFC299 (Ion Cutelaba VS PhilipeLins) 级别：Light Heavyweight Bout 举办地:Miami,FL,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Ion Cutelaba<strong>姓名:</strong> PhilipeLins</p>
+                  <p>Moldova<strong>国籍:</strong>Brazil</p>
+                  <p>🇲🇩<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/CUTELABA_ION_L_03-09.png?itok=CpV_pW39" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2022-09/LINS_PHILIPE_R_10-01.png?itok=6wHYbwrt" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 10 Mar 2024 03:00:00 GMT</pubDate></item></channel></rss>
