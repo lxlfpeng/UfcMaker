@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Sat, 06 Jul 2024 05:51:45 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>07-14 UFCFightNight (Rose Namajunas VS Tracy Cortez) 级别：Women's Flyweight Bout 举办地:Denver,CO,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+<rss version="2.0"><channel><title>UFC赛程</title><link>https://www.ufc.com/events#events-list-upcoming</link><description>新的UFC赛程</description><lastBuildDate>Sun, 07 Jul 2024 05:51:32 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>07-14 UFCFightNight (Rose Namajunas VS Tracy Cortez) 级别：Women's Flyweight Bout 举办地:Denver,CO,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Rose Namajunas<strong>姓名:</strong> Tracy Cortez</p>
                   <p>United States<strong>国籍:</strong>United States</p>
@@ -179,19 +179,7 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-04/JANDIROBA_VIRNA_R_3-30.png?itok=bRwV4ok2" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Leon Edwards VS Belal Muhammad) 级别：Welterweight Title Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Leon Edwards<strong>姓名:</strong> Belal Muhammad</p>
-                  <p>England<strong>国籍:</strong>None</p>
-                  <p>🏳<strong>国旗:</strong>🏳</p>
-                  <p>C<strong>排名:</strong>#2</p>
-                  <p>-192<strong>赔率:</strong>+160 </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-12/EDWARDS_LEON_BELT_L_12-16.png?itok=dZtM6vv_" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MUHAMMAD_BELAL_R_05-06.png?itok=QeDQ8BDG" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 28 Jul 2024 02:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Brad Tavares VS JunyongPark) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Brad Tavares VS JunyongPark) 级别：Middleweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Brad Tavares<strong>姓名:</strong> JunyongPark</p>
                   <p>United States<strong>国籍:</strong>South Korea</p>
@@ -249,6 +237,90 @@
                   <div style="height: 200px;overflow: hidden;display: flex;">
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/DURDEN_CODY_L_08-05.png?itok=c9RqBA0-" alt="Image Red"/>
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/SILVA_BRUNO_R_03-11.png?itok=fYGCBbWT" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (JeongYeong Lee VS Hyder Amil) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>JeongYeong Lee<strong>姓名:</strong> Hyder Amil</p>
+                  <p>South Korea<strong>国籍:</strong>Philippines</p>
+                  <p>🇰🇷<strong>国旗:</strong>🇵🇭</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/LEE_JEONGYEONG_L_02-03.png?itok=JODwxhGl" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/AMIL_HYDER_R_02-10.png?itok=2OCD1HS5" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Leon Edwards VS Belal Muhammad) 级别：Welterweight Title Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Leon Edwards<strong>姓名:</strong> Belal Muhammad</p>
+                  <p>England<strong>国籍:</strong>None</p>
+                  <p>🏳<strong>国旗:</strong>🏳</p>
+                  <p>C<strong>排名:</strong>#2</p>
+                  <p>-192<strong>赔率:</strong>+160 </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-12/EDWARDS_LEON_BELT_L_12-16.png?itok=dZtM6vv_" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-06/MUHAMMAD_BELAL_R_05-06.png?itok=QeDQ8BDG" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 28 Jul 2024 02:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Brian Kelleher VS Cody Gibson) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Brian Kelleher<strong>姓名:</strong> Cody Gibson</p>
+                  <p>United States<strong>国籍:</strong>United States</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/67515%252Fprofile-galery%252Ffullbodyleft-picture%252FKELLEHER_BRIAN_L_08-21.png?itok=xWH1ROMl" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/GIBSON_CODY_R_08-19.png?itok=u7DHGLH-" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Miranda Maverick VS Dione Barbosa) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Miranda Maverick<strong>姓名:</strong> Dione Barbosa</p>
+                  <p>United States<strong>国籍:</strong>Brazil</p>
+                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/MAVERICK_MIRANDA_L_07-29.png?itok=TqGT_7BN" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/BARBOSA_DIONE_R_09-05.png?itok=rupvaSw7" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Loik Radzhabov VS Trey Ogden) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Loik Radzhabov<strong>姓名:</strong> Trey Ogden</p>
+                  <p>Tajikistan<strong>国籍:</strong>United States</p>
+                  <p>🇹🇯<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RADZHABOV_LOIK_L_03-05.png?itok=YwK31FB2" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OGDEN_TREY_R_04-08.png?itok=2O0xZAYe" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Luana Carolina VS Lucie Pudilova) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Luana Carolina<strong>姓名:</strong> Lucie Pudilova</p>
+                  <p>Brazil<strong>国籍:</strong>Czechia</p>
+                  <p>🇧🇷<strong>国旗:</strong>🇨🇿</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/CAROLINA_LUANA_L_02-03.png?itok=6WjEi-ex" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PUDILOVA_LUCIE_R_04-15.png?itok=F8U-Rwdk" alt="Image Blue"/>
+                  </div>                  
+	        </div>
+            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Mohammed Usman VS Thomas Petersen) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
+	        <div style="height: auto;">
+                  <p>Mohammed Usman<strong>姓名:</strong> Thomas Petersen</p>
+                  <p>Nigeria<strong>国籍:</strong>United States</p>
+                  <p>🇳🇬<strong>国旗:</strong>🇺🇸</p>
+                  <p>None<strong>排名:</strong>None</p>
+                  <p>-<strong>赔率:</strong>- </p>
+                  <div style="height: 200px;overflow: hidden;display: flex;">
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
+                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-04/PETERSON_THOMAS_R_02-03.png?itok=x2rhE9YZ" alt="Image Blue"/>
                   </div>                  
 	        </div>
             </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Tom Aspinall VS Curtis Blaydes) 级别：Heavyweight Interim Title Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
@@ -347,67 +419,7 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/ROZENSTRUIK_JAIRZINHO_R_03-02.png?itok=qiQDLJPG" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 18 Aug 2024 02:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (JeongYeong Lee VS Hyder Amil) 级别：Featherweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>JeongYeong Lee<strong>姓名:</strong> Hyder Amil</p>
-                  <p>South Korea<strong>国籍:</strong>Philippines</p>
-                  <p>🇰🇷<strong>国旗:</strong>🇵🇭</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/LEE_JEONGYEONG_L_02-03.png?itok=JODwxhGl" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/AMIL_HYDER_R_02-10.png?itok=2OCD1HS5" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Brian Kelleher VS Cody Gibson) 级别：Bantamweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Brian Kelleher<strong>姓名:</strong> Cody Gibson</p>
-                  <p>United States<strong>国籍:</strong>United States</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2021-08/67515%252Fprofile-galery%252Ffullbodyleft-picture%252FKELLEHER_BRIAN_L_08-21.png?itok=xWH1ROMl" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-08/GIBSON_CODY_R_08-19.png?itok=u7DHGLH-" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Miranda Maverick VS Dione Barbosa) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Miranda Maverick<strong>姓名:</strong> Dione Barbosa</p>
-                  <p>United States<strong>国籍:</strong>Brazil</p>
-                  <p>🇺🇸<strong>国旗:</strong>🇧🇷</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-07/MAVERICK_MIRANDA_L_07-29.png?itok=TqGT_7BN" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-03/BARBOSA_DIONE_R_09-05.png?itok=rupvaSw7" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Loik Radzhabov VS Trey Ogden) 级别：Lightweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Loik Radzhabov<strong>姓名:</strong> Trey Ogden</p>
-                  <p>Tajikistan<strong>国籍:</strong>United States</p>
-                  <p>🇹🇯<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-03/RADZHABOV_LOIK_L_03-05.png?itok=YwK31FB2" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/OGDEN_TREY_R_04-08.png?itok=2O0xZAYe" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Luana Carolina VS Lucie Pudilova) 级别：Women's Flyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Luana Carolina<strong>姓名:</strong> Lucie Pudilova</p>
-                  <p>Brazil<strong>国籍:</strong>Czechia</p>
-                  <p>🇧🇷<strong>国旗:</strong>🇨🇿</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-02/CAROLINA_LUANA_L_02-03.png?itok=6WjEi-ex" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/PUDILOVA_LUCIE_R_04-15.png?itok=F8U-Rwdk" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Molly McCann VS Bruna Brasil) 级别：Women's Strawweight Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 18 Aug 2024 02:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Molly McCann VS Bruna Brasil) 级别：Women's Strawweight Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Molly McCann<strong>姓名:</strong> Bruna Brasil</p>
                   <p>England<strong>国籍:</strong>Brazil</p>
@@ -527,19 +539,7 @@
                     <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/ufc-fighter-container/67226/profile-galery/fullbodyright-picture/alex-reyes_639377_RightFullBodyImage.png?VersionId=WJcTtKoRsSn1xfA346_Z65gpDESR9A3I&itok=Rtw-5FQf" alt="Image Blue"/>
                   </div>                  
 	        </div>
-            </div>]]></description><pubDate>Sun, 18 Aug 2024 02:00:00 GMT</pubDate></item><item><title>07-21 UFCFightNight (Mohammed Usman VS Thomas Petersen) 级别：Heavyweight Bout 举办地:Las Vegas,NV,United States</title><link></link><description><![CDATA[<div style="display: flex;">
-	        <div style="height: auto;">
-                  <p>Mohammed Usman<strong>姓名:</strong> Thomas Petersen</p>
-                  <p>Nigeria<strong>国籍:</strong>United States</p>
-                  <p>🇳🇬<strong>国旗:</strong>🇺🇸</p>
-                  <p>None<strong>排名:</strong>None</p>
-                  <p>-<strong>赔率:</strong>- </p>
-                  <div style="height: 200px;overflow: hidden;display: flex;">
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-04/USMAN_MOHAMMAD_L_04-22.png?itok=re8DiJyk" alt="Image Red"/>
-                    <img style="width: 50%; height: auto;" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2024-04/PETERSON_THOMAS_R_02-03.png?itok=x2rhE9YZ" alt="Image Blue"/>
-                  </div>                  
-	        </div>
-            </div>]]></description><pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Sam Patterson VS Kiefer Crosbie) 级别：Welterweight Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
+            </div>]]></description><pubDate>Sun, 18 Aug 2024 02:00:00 GMT</pubDate></item><item><title>07-28 UFC304 (Sam Patterson VS Kiefer Crosbie) 级别：Welterweight Bout 举办地:Manchester,United Kingdom</title><link></link><description><![CDATA[<div style="display: flex;">
 	        <div style="height: auto;">
                   <p>Sam Patterson<strong>姓名:</strong> Kiefer Crosbie</p>
                   <p>United Kingdom<strong>国籍:</strong>Ireland</p>
