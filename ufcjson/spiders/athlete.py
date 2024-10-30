@@ -5,29 +5,16 @@ import os
 import json
 class AthleteSpider(scrapy.Spider):
     name = "athlete"
-    allowed_domains = ["www.ufc.com"]
+    allowed_domains = ["www.ufc.com","dmxg5wxfqgb4u.cloudfront.net"]
     #start_urls = ["https://www.ufc.com/athletes/all?page=254"]
     start_urls = ["https://www.ufc.com/athletes/all"]
     def __init__(self):
         self.page=0
-        self.old_add={}
         # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-        self.conn = sqlite3.connect('example3.db')
+        self.conn = sqlite3.connect('ufc.db')
         # 2. 创建游标对象（用于执行SQL语句）
         self.cursor = self.conn.cursor()
-        # path='./json/ufc_athlete_data.json'
-        # if os.path.exists(path):
-        #     print("文件存在")
-        #     with open(path, encoding='utf-8') as a:
-        #         try:
-        #             data=json.load(a)['data']
-        #             self.old_add={ i['name']+i['record']: i for i in data }
-        #         except Exception:
-        #             print("数据读取错误")
-        #             #os.remove(path)
-        #             pass
-        # else:
-        #     print("文件不存在")
+
     def close_spider(self, spider):
         if self.conn:
             self.conn.close()
@@ -43,16 +30,10 @@ class AthleteSpider(scrapy.Spider):
             cursor = self.conn.cursor()
             cursor.execute("SELECT * FROM player WHERE name = ? AND record = ?", (player['name'], player['record']))
             results = cursor.fetchall()
-            # if len(results)>0:
-            #     print("已存在无需再请求数据1111")
-            #     continue
-            if player['name']+player['record'] in self.old_add.keys():
+            if len(results)>0:
                 print("已存在无需再请求数据")
-                old_player=self.old_add[player['name']+player['record']]
-                for key in old_player.keys():
-                    player[key]=old_player[key]
-                yield player
                 continue
+
             player['nick_name']=item.xpath('.//span[@class="c-listing-athlete__nickname"]//div[@class="field__item"]/text()').extract_first()
             player['weightClass']=item.xpath('.//span[@class="c-listing-athlete__title"]//div[@class="field__item"]/text()').extract_first()
             if player['nick_name'] is not None and '"' in player['nick_name']:

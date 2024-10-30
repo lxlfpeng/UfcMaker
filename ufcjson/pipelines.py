@@ -308,7 +308,7 @@ class JsonWriterTranslatorPipeline(object):
         if isinstance(spider, AthleteSpider):
             self.make_json_file('./json/zh/ufc_athlete_data.json',spider)
             # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-            self.conn = sqlite3.connect('example3.db')
+            self.conn = sqlite3.connect('ufc.db')
             # 2. 创建游标对象（用于执行SQL语句）
             self.cursor = self.conn.cursor()
             self.cursor.execute('''
@@ -340,7 +340,6 @@ class JsonWriterTranslatorPipeline(object):
                     flag TEXT,              -- 国旗
                     history_cn TEXT,         -- 历史(中文)
                     home_town_cn TEXT        -- 国家(中文)
-                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP                                
                 )
             ''')
             self.cursor.execute('''

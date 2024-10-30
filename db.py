@@ -1,7 +1,7 @@
 import sqlite3
 import json
 # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-conn = sqlite3.connect('example3.db')
+conn = sqlite3.connect('ufc.db')
 
 # 2. 创建游标对象（用于执行SQL语句）
 cursor = conn.cursor()
@@ -85,7 +85,7 @@ rows = cursor.fetchall()
 column_names = [description[0] for description in cursor.description]
 print(column_names)
 for row in rows:
-    #print(row)
+    print(row)
     data=json.dumps(row)
     print(data)
 
