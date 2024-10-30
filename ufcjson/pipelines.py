@@ -16,8 +16,8 @@ from scrapy.exporters import JsonItemExporter
 from scrapy.exporters import JsonLinesItemExporter
 
 import json
-from _io import BytesIO
-from ufcjson.items import UfcComingItem
+from io import BytesIO
+
 from .spiders.upcoming import UpcomingSpider
 from .spiders.eventpass import EventpassSpider
 from .spiders.ranking import RankingSpider
@@ -39,15 +39,9 @@ import os
 from googletrans import Translator
 import logging
 import datetime
-class UfcjsonPipeline:
-    def process_item(self, item, spider):
-       if isinstance(item,UfcPassItem):
-            pass
-       if isinstance(item,UfcComingCardItem):
-            pass
-       if isinstance(item,UfcRankingItem):
-            pass
-       return item     
+import sqlite3
+import pycountry
+import warnings
 
 # 用于设置头像和背景默认的管道
 class UfcDefaultPhotoPipeline:
@@ -56,26 +50,26 @@ class UfcDefaultPhotoPipeline:
           if not item['redPlayerCover'].startswith('http') :
             item['redPlayerCover']='https://www.ufc.com'+item['redPlayerCover']
           if not item['bluePlayerCover'].startswith('http') :
-            item['bluePlayerCover']='https://www.ufc.com'+item['bluePlayerCover']          
+            item['bluePlayerCover']='https://www.ufc.com'+item['bluePlayerCover']
 
        if isinstance(item,UfcComingCardItem):
             if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['redPlayerBack']:
-                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM"     
+                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM"
             if 'themes/custom/ufc/assets/img/standing-stance-right-silhouette.png' in item['redPlayerBack']:
-                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH"     
+                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH"
             if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['bluePlayerBack']:
-                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM" 
+                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM"
             if '/themes/custom/ufc/assets/img/standing-stance-left-silhouette.png' in item['bluePlayerBack']:
-                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc" 
-       
+                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc"
+
        if isinstance(item,UfcRankingPlayer):
             if 'cover' in item:
-                if item['cover']==None or not item['cover'].startswith('http'):
-                    item['cover']='https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png'       
-           
-            if item['back']==None or not item['back'].startswith('http'):
-               item['back']='https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH'  
-       return item     
+                if item['cover'] is None or not item['cover'].startswith('http'):
+                    item['cover']='https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png'
+
+            if item['back'] is None or not item['back'].startswith('http'):
+               item['back']='https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH'
+       return item
 
 # 用于将国籍code修改为Emoji表情的管道
 class UfcCountryCodePipeline:
@@ -91,7 +85,27 @@ class UfcCountryCodePipeline:
                 item['bluePlayerCountryEmoji']=country.get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
             except :
                 item['bluePlayerCountryEmoji']='🏳'
-       return item   
+
+       if isinstance(item, UfcRankingPlayer):
+          country=item.get('home_town','')
+          if ',' in country:
+              country = country.split(",")[1]
+          item['flag']=self.get_country_flag(country.strip())
+
+       return item
+
+    def get_country_flag(self,country_name):
+        if not country_name:
+            return '🏳'
+        try:
+            country = pycountry.countries.get(name=country_name)
+            if country is None:
+                country = pycountry.countries.search_fuzzy(country_name)
+                if len(country)>0:
+                    country=country[0]
+            return country.flag
+        except Exception as e:
+            return '🏳'
 
 class UfcRssMakerPipeline:
     def __init__(self):
@@ -108,7 +122,7 @@ class UfcRssMakerPipeline:
             'link':"",
             'time':dt_object,
             'description':self.rssMaker.get_html_str(item)})
-       return item   
+       return item
     def close_spider(self, spider):
         if isinstance(spider, UpcomingSpider):
             self.rssMaker.makeRss(self.rssList,'./rss/ufc_schedule.xml')
@@ -119,28 +133,28 @@ class ImagesDownloadPipeline(ImagesPipeline):
         # 根据不同的Item取出图片进行下载     
         if isinstance(item,UfcPassItem) or isinstance(item, UfcComingItem):
             if 'banner' in item and item['banner'] is not None:
-                yield Request(item['banner']) 
+                yield Request(item['banner'])
         if isinstance(item,UfcPassCardItem) or isinstance(item, UfcComingCardItem):
             if 'redPlayerBack' in item and item['redPlayerBack'] is not None:
-                yield Request(item['redPlayerBack']) 
+                yield Request(item['redPlayerBack'])
             if 'bluePlayerBack' in item and item['bluePlayerBack'] is not None:
-                yield Request(item['bluePlayerBack']) 
+                yield Request(item['bluePlayerBack'])
         if isinstance(item, UfcComingBannerItem):
             if 'redPlayerCover' in item and item['redPlayerCover'] is not None:
-                yield Request(item['redPlayerCover']) 
+                yield Request(item['redPlayerCover'])
             if 'bluePlayerCover' in item and item['bluePlayerCover'] is not None:
-                yield Request(item['bluePlayerCover']) 
+                yield Request(item['bluePlayerCover'])
         if isinstance(item, UfcRankingPlayer):
             if 'back' in item and item['back'] is not None:
-                yield Request(item['back']) 
+                yield Request(item['back'])
             if 'cover' in item and item['cover'] is not None:
-                yield Request(item['cover']) 
+                yield Request(item['cover'])
 
     def file_path(self, request, response=None, info=None, *, item=None):
         # 自定义下载图片名称  
         image_guid = hashlib.sha1(to_bytes(request.url)).hexdigest()
-        return f"full/{image_guid}.webp" 
-    
+        return f"full/{image_guid}.webp"
+
     def item_completed(self, results, item, info):
         images = {x['url']: x for ok, x in results if ok}
         #logging.warning("下载图片内容成功")
@@ -175,7 +189,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
                 item['backLocal'] = images[item['back']]['path']
             if 'cover' in item and item['cover'] in images.keys():
                 item['coverLocal'] = images[item['cover']]['path']
-        #logging.warning(item)        
+        #logging.warning(item)
         # image_paths = [x['path'] for ok, x in results if ok]
         # if len(image_paths)>0:
         #     if isinstance(item,UfcPassItem):
@@ -194,7 +208,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
         #     if isinstance(item, UfcRankingPlayer):
         #         item['backLocal']=image_paths[0]
         #         item['coverLocal']=image_paths[1]
- 
+
         return item
 
     # 由于ImagesPipeline默认返回jpg图片,如果要返回其他格式图片则需要重写该父类方法 
@@ -202,9 +216,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
         if response_body is None:
             warnings.warn(
                 f"{self.__class__.__name__}.convert_image() method called in a deprecated way, "
-                "method called without response_body argument.",
-                category=ScrapyDeprecationWarning,
-                stacklevel=2,
+                "method called without response_body argument."
             )
 
         if size:
@@ -247,11 +259,11 @@ class JsonWriterPipeline(object):
         # 构建 JsonItemExporter 对象，设定不使用 ASCII 编码，并指定编码格式为 'UTF-8'
         self.json_exporter = JsonObjectItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')
         if isinstance(spider, AthleteSpider):
-            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')    
+            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')
         if isinstance(spider, UpcomingSpider):
-            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')  
+            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')
         # 声明 exporting 过程 开始，这一句也可以放在 open_spider() 方法中执行。
-        self.json_exporter.start_exporting()  
+        self.json_exporter.start_exporting()
 
     # 爬虫 pipeline 接收到 Scrapy 引擎发来的 item 数据时，执行的方法
     def process_item(self, item, spider):
@@ -263,7 +275,7 @@ class JsonWriterPipeline(object):
         if isinstance(spider, RankingSpider) and isinstance(item,UfcRankingPlayer):
           self.json_exporter.export_item(item)
         if isinstance(spider, AthleteSpider) and isinstance(item,UfcRankingPlayer):
-          self.json_exporter.export_item(item)          
+          self.json_exporter.export_item(item)
         return item
 
     def close_spider(self, spider):
@@ -274,13 +286,13 @@ class JsonWriterPipeline(object):
             self.json_file.close()
         if isinstance(spider, AthleteSpider):
             shutil.copyfile('./json/ufc_athlete_data_temp.json','./json/ufc_athlete_data.json')
-            os.remove('./json/ufc_athlete_data_temp.json')           
+            os.remove('./json/ufc_athlete_data_temp.json')
 
 class JsonWriterTranslatorPipeline(object):
     # 构造方法（初始化对象时执行的方法）
     def __init__(self):
         pass
-    def open_spider(self,spider):    
+    def open_spider(self,spider):
         #读取所有的翻译
         self.translate_total={}
         self.translate_file_path='./json/ufc_translat.json'
@@ -295,16 +307,59 @@ class JsonWriterTranslatorPipeline(object):
             self.make_json_file('./json/zh/ufc_ranking_data.json',spider)
         if isinstance(spider, AthleteSpider):
             self.make_json_file('./json/zh/ufc_athlete_data.json',spider)
+            # 1. 连接到数据库（如果没有数据库文件，会自动创建）
+            self.conn = sqlite3.connect('example3.db')
+            # 2. 创建游标对象（用于执行SQL语句）
+            self.cursor = self.conn.cursor()
+            self.cursor.execute('''
+                CREATE TABLE IF NOT EXISTS player (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT NOT NULL UNIQUE,     -- 用户名
+                    name_cn TEXT,           -- 用户名(中文)
+                    nick_name TEXT,         -- 昵称
+                    nick_name_cn TEXT,      -- 昵称(中文)
+                    page TEXT,              -- 个人主页
+                    division TEXT,          -- 级别
+                    avatar TEXT,            -- 头像
+                    avatar_local TEXT,      -- 头像(本地)
+                    cover TEXT,             -- 封面
+                    cover_local TEXT,       -- 封面(本地)
+                    record TEXT,            -- 战绩
+                    age TEXT,               -- 年龄          
+                    status TEXT,            -- 状态
+                    home_town TEXT,         -- 国籍
+                    team TEXT,              -- 团队
+                    style TEXT,             -- 风格                          
+                    height TEXT,            -- 身高                          
+                    weight TEXT,            -- 体重                         
+                    reach TEXT,             -- 臂展                          
+                    leg_reach TEXT,         -- 腿长
+                    debut TEXT,             -- 首次亮像                           
+                    history TEXT,          -- 历史
+                    wins_stats TEXT,        -- 获胜方式
+                    flag TEXT,              -- 国旗
+                    history_cn TEXT,         -- 历史(中文)
+                    home_town_cn TEXT        -- 国家(中文)
+                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP                                
+                )
+            ''')
+            self.cursor.execute('''
+                CREATE TABLE IF NOT EXISTS translate (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    original TEXT NOT NULL,     -- 原文
+                    translation TEXT            -- 译文
+                )
+            ''')
 
     def make_json_file(self,file_name,spider):
         self.json_file = open(file_name, 'wb')
         self.json_exporter = JsonObjectItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')
         if isinstance(spider, AthleteSpider):
-            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')    
-        self.json_exporter.start_exporting()  
+            self.json_exporter =JsonObjectLinesItemExporter(self.json_file, ensure_ascii=False, encoding='UTF-8')
+        self.json_exporter.start_exporting()
 
     def process_item(self, item, spider):
-        
+
         if isinstance(item,UfcPassItem):
             self.translate(item,'address')
             for i in item['fightCards']:
@@ -313,9 +368,9 @@ class JsonWriterTranslatorPipeline(object):
                 self.translate(i,'bluePlayerName')
                 self.translate(i,'redPlayerName')
                 self.translate(i,'weightClass')
-                self.translate(i,'cardType')  
-            self.json_exporter.export_item(item)       
-        
+                self.translate(i,'cardType')
+            self.json_exporter.export_item(item)
+
         if isinstance(item,UfcComingItem):
             self.translate(item,'address')
             self.translate(item,'fightName')
@@ -325,22 +380,36 @@ class JsonWriterTranslatorPipeline(object):
                 self.translate(i,'bluePlayerName')
                 self.translate(i,'redPlayerName')
                 self.translate(i,'weightClass')
-                self.translate(i,'cardType')  
-            self.json_exporter.export_item(item)          
-        
+                self.translate(i,'cardType')
+            self.json_exporter.export_item(item)
+
         if isinstance(item,UfcRankingItem):
             self.translate(item,'rankName')
             for i in item['players']:
-                self.translate(i,'historys')
+                self.translate(i,'history')
                 self.translate(i,'name')
                 self.translate(i,'weightClass')
             self.json_exporter.export_item(item)
 
         if isinstance(item,UfcRankingPlayer):
-          self.translate(item,'historys')  
           self.translate(item,'name')
-          self.translate(item,'weightClass')
-          self.json_exporter.export_item(item)    
+          self.translate(item, 'nick_name')
+          self.translate(item, 'history')
+          self.translate(item, 'home_town')
+          self.cursor.execute(
+              '''
+              INSERT OR IGNORE INTO player (name, page,division,avatar,avatar_local,cover,cover_local,record,age,status,
+              home_town,team,style,height,weight,reach,leg_reach,debut,nick_name,wins_stats,history,name_cn,flag,nick_name_cn,
+              history_cn,home_town_cn) 
+              VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+              ''', (item['name'], item['playerPage'], item['weightClass'], item['cover'], item.get('coverLocal', ''),
+                    item['back'], item.get('backLocal', ''), item.get('record',''),item.get('age',''),item.get('status',''),item.get('home_town',''),
+                    item.get('team',''),item.get('style',''),item.get('height',''),item.get('weight',''),item.get('reach',''),item.get('leg_reach','')
+                                  ,item.get('debut',''),item.get('nick_name',''),str(json.dumps(item.get('winsStats'))),
+                    str(json.dumps(item.get('history'))),item.get('name_cn',''),item.get('flag',''),item.get('nick_name_cn',''),
+                    str(json.dumps(item.get('history_cn',[]))),item.get('home_town_cn',''))
+          )
+          self.json_exporter.export_item(item)
         return item
 
     def close_spider(self, spider):
@@ -351,35 +420,49 @@ class JsonWriterTranslatorPipeline(object):
             self.json_file.close()
             with open(self.translate_file_path, "w", encoding='utf-8') as file:
                 file.write(str(json.dumps(self.translate_total)))
+        if isinstance(spider, AthleteSpider):
+            # # 5. 提交更改
+            self.conn.commit()
+            # 7. 关闭连接
+            self.conn.close()
+
+    def translate_real(self,value):
+        print("翻译原文:",value)
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT * FROM translate WHERE original = ?", (value,))
+        result = cursor.fetchone()
+        if result is not None:
+            print("已存在不需要翻译:", result[1])
+            return result[2]
+        else:
+            tr_result=""
+            translator = Translator(service_urls=['translate.google.com', ])
+            try:
+                tr_result=translator.translate(value, "zh-CN", "en").text
+                print("翻译译文:" + tr_result)
+            except Exception as e:
+                print(f"翻译发生异常: {e}")
+            if len(tr_result)>0:
+                self.cursor.execute(
+                    '''
+                    INSERT OR IGNORE INTO translate (original,translation) 
+                    VALUES (?,?)
+                    ''', (value, tr_result)
+                )
+            return tr_result
 
     def translate(self,item,key):
-        if key in item and item[key] is not None and len(item[key])>0:
-            # 判断类型是否是列表类型
-            if type(item[key]) is list:
-               tr_list=[] 
+        tr_key=key+"_cn"
+        value=item.get(key,None)
+        if key in item and value is not None and len(value)>0:
+            if type(value) is list:
+               # 判断类型是否是列表类型
+               tr_list=[]
                for i in item[key]:
-                 valueHash=hashlib.sha1(to_bytes(i)).hexdigest()
-                 if valueHash in self.translate_total:
-                    logging.debug("无需进行翻译:"+i) 
-                    tr_list.append(self.translate_total[valueHash])
-                 else:
-                    #logging.debug("需要进行翻译:",i)
-                    if len(i.strip())>0 :
-                        translator = Translator(service_urls=['translate.google.com',])
-                        tr_result=translator.translate(i, "zh-CN", "en").text
-                        tr_list.append(tr_result)
-                        self.translate_total[valueHash]=tr_result
-               item[key]=tr_list
-               return     
-            # 是字符串类型   
-            valueHash=hashlib.sha1(to_bytes(item[key])).hexdigest()
-            #print("计算出来的hash值:",valueHash)
-            if valueHash in self.translate_total:
-               logging.debug("无需进行翻译:"+item[key]) 
-               item[key]=self.translate_total[valueHash]     
-               return     
-            logging.debug("需要进行翻译:")
-            translator = Translator(service_urls=['translate.google.com',])
-            item[key]=translator.translate(item[key], "zh-CN", "en").text
-            self.translate_total[valueHash]=item[key]
-            #print("翻译完毕:",item[key])
+                 if i.strip():
+                    tr_list.append(self.translate_real(i))
+               item[tr_key]=tr_list
+            else:
+                # 是字符串类型
+               item[tr_key]=self.translate_real(value)
+

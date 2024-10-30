@@ -63,7 +63,6 @@ SPIDER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "ufcjson.pipelines.UfcjsonPipeline": 300,
    'ufcjson.pipelines.UfcCountryCodePipeline':1,
    'ufcjson.pipelines.UfcDefaultPhotoPipeline':2,
    'ufcjson.pipelines.ImagesDownloadPipeline': 3,
