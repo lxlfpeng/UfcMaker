@@ -23,7 +23,6 @@ from .spiders.eventpass import EventpassSpider
 from .spiders.ranking import RankingSpider
 from .spiders.athlete import AthleteSpider
 
-from ufcjson.items import UfcComingBannerItem
 from ufcjson.items import UfcComingCardItem
 from ufcjson.items import UfcComingItem
 

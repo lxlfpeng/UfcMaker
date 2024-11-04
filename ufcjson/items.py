@@ -93,14 +93,6 @@ class UfcComingItem(scrapy.Item):
     bannerItem = scrapy.Field()
 
 
-class UfcComingBannerItem(scrapy.Item):
-    redPlayerCover = scrapy.Field()
-    redPlayerCoverLocal = scrapy.Field()
-    bluePlayerCover = scrapy.Field()
-    bluePlayerCoverLocal = scrapy.Field()
-    fightLable = scrapy.Field()  # 对战名称
-
-
 class UfcComingCardItem(scrapy.Item):
     # 战卡级别
     card_type = scrapy.Field()
@@ -126,24 +118,6 @@ class UfcComingCardItem(scrapy.Item):
     red_rank = scrapy.Field()
     #蓝方排名
     blue_rank = scrapy.Field()
-
-    # redPlayerName = scrapy.Field()
-    # redPlayerCountry = scrapy.Field()
-    # redPlayerBack = scrapy.Field()
-    # redPlayerBackLocal = scrapy.Field()
-    # redPlayerCountryCode = scrapy.Field()
-    #
-    #
-    # bluePlayerName = scrapy.Field()
-    # bluePlayerPage = scrapy.Field()
-    #
-    # bluePlayerCountry = scrapy.Field()
-    # bluePlayerCountryCode = scrapy.Field()
-    # bluePlayerBack = scrapy.Field()
-    # bluePlayerBackLocal = scrapy.Field()
-    # bluePlayerRank = scrapy.Field()
-    # redPlayerCountryEmoji = scrapy.Field()
-    # bluePlayerCountryEmoji = scrapy.Field()
 
     fightId = scrapy.Field()
 
