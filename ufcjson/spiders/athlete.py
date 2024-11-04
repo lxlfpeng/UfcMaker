@@ -1,5 +1,5 @@
 import scrapy
-from ..items import UfcRankingPlayer
+from ..items import UfcPlayerItem
 import sqlite3
 import os
 import json
@@ -24,7 +24,7 @@ class AthleteSpider(scrapy.Spider):
         print("本页请求地址:",response.url)
         print("本页个数:",str(len(items)))
         for item in items:
-            player=UfcRankingPlayer()
+            player=UfcPlayerItem()
             player['name']=item.xpath('.//span[@class="c-listing-athlete__name"]/text()').extract_first().strip()
             player['record']=item.xpath('.//span[@class="c-listing-athlete__record"]/text()').extract_first()
             cursor = self.conn.cursor()

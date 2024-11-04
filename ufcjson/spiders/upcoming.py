@@ -5,14 +5,20 @@ from ..items import UfcComingBannerItem
 import json
 class UpcomingSpider(scrapy.Spider):
     name = "upcoming"
-    allowed_domains = ["www.ufc.com"]
+    allowed_domains = ["www.ufc.com","dmxg5wxfqgb4u.cloudfront.net"]
     start_urls = ["https://www.ufc.com/events#events-list-upcoming"]
 
     def parse(self, response):
-        info = response.xpath('//*[@id="events-list-upcoming"]//li[@class="l-listing__item"]')
+        info = response.xpath('//*[@id="events-list-upcoming"]//div[@class="l-listing__item views-row"]')
+        # events-list-upcoming > div > div > div.l-container > div > div
+        #/html/body/div[2]/div/main/div[1]/div/div/div/div/div/div/div/div/div[5]/div/div/details[1]/div/div/div[2]/div/div
+        #info = response.xpath('//*[@id="events-list-upcoming"]/div/div/div[2]/div/div')
+        #info = response.xpath('//*[@id="events-list-upcoming"]')
+        #print('dapeng',len(info))
         #截取第一个战卡
         #info=info[0:1]
         for i in info:
+            print("info",i)
             item =UfcComingItem()
             item['title']=i.xpath('.//h3[@class="c-card-event--result__headline"]/a/text()').extract_first()
             item['url']='https://www.ufc.com'+ i.xpath('.//h3[@class="c-card-event--result__headline"]/a/@href').extract_first()
@@ -30,14 +36,17 @@ class UpcomingSpider(scrapy.Spider):
                 bannerItem['fightLable']=cover.xpath('.//div[@class="fight-card-tickets"]/@data-fight-label').extract_first()
                 bannerItem['redPlayerCover']=cover.xpath('.//img/@src').extract()[0]
                 bannerItem['bluePlayerCover']=cover.xpath('.//img/@src').extract()[1]
-                yield bannerItem 
+                yield bannerItem
             # 将请求传递给调度器，重新请求
-            yield scrapy.Request(url=item['url'], callback=self.parse_detail,meta={'item': item}) 
+            yield scrapy.Request(url=item['url'], callback=self.parse_detail,meta={'item': item})
             
     def parse_detail(self, response):
         # 接收结构化数据
         item = response.meta['item']
         item['banner']=response.xpath('//*[@class="c-hero__image"]//img/@src').extract_first()
+        if item['banner'] is not None and not item['banner'].startswith("http"):
+            item['banner']=None
+        print("横幅合集:", response.xpath('//*[@class="c-hero__image"]//picture/source/@srcset').extract_first())
         item['fightName']=response.xpath('//*[@class="c-hero__headline-prefix"]//h1/text()').extract_first().replace('\n','').replace(' ','')
         item['matchupID']=response.xpath('.//div[@class="c-listing-ticker--footer"]/@data-fmid').extract_first()
         #print('matchupID==>',item['matchupID'])
@@ -66,7 +75,7 @@ class UpcomingSpider(scrapy.Spider):
                     redPlayerName=" ".join(map(str,redPlayerName))
                 itemd['redPlayerName']=redPlayerName
                 itemd['redPlayerCountry']=d.xpath('.//div[@class="c-listing-fight__country c-listing-fight__country--red"]//div[@class="c-listing-fight__country-text"]/text()').extract_first()
-                itemd['redPlayerBack']=d.xpath('.//div[@class="c-listing-fight__corner--red"]//img/@src').extract_first()
+                #itemd['redPlayerBack']=d.xpath('.//div[@class="c-listing-fight__corner--red"]//img/@src').extract_first()
                 itemd['redPlayerCountryCode']=d.xpath('.//div[@class="c-listing-fight__country c-listing-fight__country--red"]/img/@src').extract_first()
 
                 itemd['bluePlayerPage']=d.xpath('.//div[@class="c-listing-fight__corner-name c-listing-fight__corner-name--blue"]//a/@href').extract_first()
@@ -76,7 +85,7 @@ class UpcomingSpider(scrapy.Spider):
                     bluePlayerName=" ".join(map(str,bluePlayerName))
                 itemd['bluePlayerName']=bluePlayerName
                 itemd['bluePlayerCountry']=d.xpath('.//div[@class="c-listing-fight__country c-listing-fight__country--blue"]//div[@class="c-listing-fight__country-text"]/text()').extract_first()
-                itemd['bluePlayerBack']=d.xpath('.//div[@class="c-listing-fight__corner--blue"]//img/@src').extract_first()
+                #itemd['bluePlayerBack']=d.xpath('.//div[@class="c-listing-fight__corner--blue"]//img/@src').extract_first()
                 itemd['bluePlayerCountryCode']=d.xpath('.//div[@class="c-listing-fight__country c-listing-fight__country--blue"]/img/@src').extract_first()
 
                 odds=d.xpath('.//div[@class="c-listing-fight__odds-wrapper"]//span[@class="c-listing-fight__odds-amount"]/text()').extract()
@@ -89,7 +98,7 @@ class UpcomingSpider(scrapy.Spider):
                     itemd['bluePlayerRank']=rank[1].xpath('./span/text()').extract_first()
 
                 itemd['fightId']=d.xpath('.//div[@class="c-listing-fight"]/@data-fmid').extract_first()
-                print('fightId:',itemd['fightId'])               
+                #print('fightId:',itemd['fightId'])
                 yield itemd    
         matchup_url='https://d29dxerjsp82wz.cloudfront.net/api/v3/event/live/'+item['matchupID']+'.json'
         yield scrapy.Request(url=matchup_url, callback=self.parse_matchup,errback=lambda failure, item=item: self.on_error(failure, item),meta={'item': item},dont_filter=True)
@@ -99,7 +108,7 @@ class UpcomingSpider(scrapy.Spider):
         rs =  json.loads(response.text)
         cards={str(i['FightId']): i for i in rs['LiveEventDetail']['FightCard']}
         for i in item['fightCards']:
-            print('fightId:',i['fightId'])
+            #print('fightId:',i['fightId'])
             if i['fightId'] is not None and i['fightId'] in cards:
                 i['matchupStats']=cards[i['fightId']]
         yield item

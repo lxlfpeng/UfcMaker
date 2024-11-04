@@ -26,11 +26,11 @@ from .spiders.athlete import AthleteSpider
 from ufcjson.items import UfcComingBannerItem
 from ufcjson.items import UfcComingCardItem
 from ufcjson.items import UfcComingItem
-from . import country
+
 from ufcjson.rss import RssMaker
 
 from ufcjson.items import UfcRankingItem
-from ufcjson.items import UfcRankingPlayer
+from ufcjson.items import UfcPlayerItem
 
 from .export import JsonObjectItemExporter
 from .export import JsonObjectLinesItemExporter
@@ -42,6 +42,8 @@ import datetime
 import sqlite3
 import pycountry
 import warnings
+from .country import get_country_flag_emoji
+
 
 # 用于设置头像和背景默认的管道
 class UfcDefaultPhotoPipeline:
@@ -52,17 +54,17 @@ class UfcDefaultPhotoPipeline:
           if not item['bluePlayerCover'].startswith('http') :
             item['bluePlayerCover']='https://www.ufc.com'+item['bluePlayerCover']
 
-       if isinstance(item,UfcComingCardItem):
-            if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['redPlayerBack']:
-                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM"
-            if 'themes/custom/ufc/assets/img/standing-stance-right-silhouette.png' in item['redPlayerBack']:
-                item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH"
-            if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['bluePlayerBack']:
-                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM"
-            if '/themes/custom/ufc/assets/img/standing-stance-left-silhouette.png' in item['bluePlayerBack']:
-                item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc"
+       # if isinstance(item,UfcComingCardItem):
+       #      if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['redPlayerBack']:
+       #          item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM"
+       #      if 'themes/custom/ufc/assets/img/standing-stance-right-silhouette.png' in item['redPlayerBack']:
+       #          item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH"
+       #      if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['bluePlayerBack']:
+       #          item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM"
+       #      if '/themes/custom/ufc/assets/img/standing-stance-left-silhouette.png' in item['bluePlayerBack']:
+       #          item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc"
 
-       if isinstance(item,UfcRankingPlayer):
+       if isinstance(item, UfcPlayerItem):
             if 'cover' in item:
                 if item['cover'] is None or not item['cover'].startswith('http'):
                     item['cover']='https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png'
@@ -74,19 +76,20 @@ class UfcDefaultPhotoPipeline:
 # 用于将国籍code修改为Emoji表情的管道
 class UfcCountryCodePipeline:
     def process_item(self, item, spider):
-       if isinstance(item,UfcPassCardItem) or isinstance(item,UfcComingCardItem):
+       #if isinstance(item,UfcPassCardItem) or isinstance(item,UfcComingCardItem):
+       if isinstance(item,UfcComingCardItem):
             try:
                 red_images=item['redPlayerCountryCode'].split('/')
-                item['redPlayerCountryEmoji']=country.get_country_flag_emoji(red_images[len(red_images)-1].replace('.PNG',''))
+                item['redPlayerCountryEmoji']=get_country_flag_emoji(red_images[len(red_images)-1].replace('.PNG',''))
             except :
                 item['redPlayerCountryEmoji']='🏳'
             try:
                 blue_images=item['bluePlayerCountryCode'].split('/')
-                item['bluePlayerCountryEmoji']=country.get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
+                item['bluePlayerCountryEmoji']=get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
             except :
                 item['bluePlayerCountryEmoji']='🏳'
 
-       if isinstance(item, UfcRankingPlayer):
+       if isinstance(item, UfcPlayerItem):
           country=item.get('home_town','')
           if ',' in country:
               country = country.split(",")[1]
@@ -134,7 +137,8 @@ class ImagesDownloadPipeline(ImagesPipeline):
         if isinstance(item,UfcPassItem) or isinstance(item, UfcComingItem):
             if 'banner' in item and item['banner'] is not None:
                 yield Request(item['banner'])
-        if isinstance(item,UfcPassCardItem) or isinstance(item, UfcComingCardItem):
+        #if isinstance(item,UfcPassCardItem) or isinstance(item, UfcComingCardItem):
+        if  isinstance(item, UfcComingCardItem):
             if 'redPlayerBack' in item and item['redPlayerBack'] is not None:
                 yield Request(item['redPlayerBack'])
             if 'bluePlayerBack' in item and item['bluePlayerBack'] is not None:
@@ -144,7 +148,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
                 yield Request(item['redPlayerCover'])
             if 'bluePlayerCover' in item and item['bluePlayerCover'] is not None:
                 yield Request(item['bluePlayerCover'])
-        if isinstance(item, UfcRankingPlayer):
+        if isinstance(item, UfcPlayerItem):
             if 'back' in item and item['back'] is not None:
                 yield Request(item['back'])
             if 'cover' in item and item['cover'] is not None:
@@ -163,12 +167,12 @@ class ImagesDownloadPipeline(ImagesPipeline):
             return item
         if isinstance(item, UfcPassItem):
             if item['banner'] in images.keys():
-                item['bannerLocal'] = images[item['banner']]['path']
-        if isinstance(item, UfcPassCardItem):
-            if item['redPlayerBack'] in images.keys():
-                item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
-            if item['bluePlayerBack'] in images.keys():
-                item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
+                item['banner_local'] = images[item['banner']]['path']
+        # if isinstance(item, UfcPassCardItem):
+        #     if item['redPlayerBack'] in images.keys():
+        #         item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
+        #     if item['bluePlayerBack'] in images.keys():
+        #         item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
         if isinstance(item, UfcComingItem):
             if item['banner'] in images.keys():
                 item['bannerLocal'] = images[item['banner']]['path']
@@ -183,7 +187,7 @@ class ImagesDownloadPipeline(ImagesPipeline):
             if item['bluePlayerBack'] in images.keys():
                 item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
 
-        if isinstance(item, UfcRankingPlayer):
+        if isinstance(item, UfcPlayerItem):
             #print("图片下载完毕:",images.keys())
             if item['back'] in images.keys():
                 item['backLocal'] = images[item['back']]['path']
@@ -272,9 +276,9 @@ class JsonWriterPipeline(object):
           self.json_exporter.export_item(item)
         if isinstance(item,UfcComingItem):
           self.json_exporter.export_item(item)
-        if isinstance(spider, RankingSpider) and isinstance(item,UfcRankingPlayer):
+        if isinstance(spider, RankingSpider) and isinstance(item, UfcPlayerItem):
           self.json_exporter.export_item(item)
-        if isinstance(spider, AthleteSpider) and isinstance(item,UfcRankingPlayer):
+        if isinstance(spider, AthleteSpider) and isinstance(item, UfcPlayerItem):
           self.json_exporter.export_item(item)
         return item
 
@@ -295,30 +299,82 @@ class JsonWriterTranslatorPipeline(object):
     def open_spider(self,spider):
         #读取所有的翻译
         self.translate_total={}
+        # 1. 连接到数据库（如果没有数据库文件，会自动创建）
+        self.conn = sqlite3.connect('ufc.db')
+        # 2. 创建游标对象（用于执行SQL语句）
+        self.cursor = self.conn.cursor()
         self.translate_file_path='./json/ufc_translat.json'
         if os.path.exists(self.translate_file_path):
             with open(self.translate_file_path,'r', encoding="utf-8") as file:
                 self.translate_total = json.load(file)
         if isinstance(spider, UpcomingSpider):
+            self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS session (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,  -- 主键
+             name TEXT,                             -- 名称
+             title TEXT,                            -- 头条主赛
+             banner TEXT,                           -- 横幅
+             address TEXT,                          -- 地点
+             page TEXT,                             -- 主页
+             main_time TEXT,                        -- 主卡时间
+             prelims_time TEXT,                     -- 副卡时间
+             data_early_time TEXT                   -- 早卡时间
+            )
+            ''')
             self.make_json_file('./json/zh/ufc_coming_data.json',spider)
         if isinstance(spider, EventpassSpider):
+            self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS pass_event (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,  -- 主键
+             name TEXT,                             -- 名称
+             title TEXT,                            -- 头条主赛
+             banner TEXT,                           -- 横幅
+             address TEXT,                          -- 地点
+             page TEXT UNIQUE,                      -- 主页
+             main_time TEXT,                        -- 主卡时间
+             prelims_time TEXT,                     -- 副卡时间
+             data_early_time TEXT                   -- 早卡时间
+            )
+            ''')
+            self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS pass_card (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,  -- 主键
+             fight_page TEXT,                       -- 主页
+             blue_page TEXT,                        -- 蓝方主页
+             red_page TEXT,                         -- 红方主页
+             blue_result TEXT,                      -- 蓝方结果
+             red_result TEXT,                       -- 红方结果
+             blue_odds TEXT,                        -- 蓝方odds
+             red_odds TEXT,                         -- 红方odds      
+             end_method TEXT,                       -- 结束方式   
+             end_round TEXT,                        -- 结束回合
+             end_time TEXT,                         -- 结束时间  
+             card_type TEXT,                        -- 类型(主赛复赛)
+             card_division  TEXT                    -- 级别
+            )
+            ''')
             self.make_json_file('./json/zh/ufc_pass_data.json',spider)
         if isinstance(spider, RankingSpider):
             self.make_json_file('./json/zh/ufc_ranking_data.json',spider)
+            self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS rank (
+             id INTEGER PRIMARY KEY AUTOINCREMENT, -- 主键
+             name TEXT NOT NULL,                   -- 用户名
+             page TEXT,                            -- 个人主页
+             rank_name TEXT,                       -- 排名类型
+             rank TEXT                            -- 排名
+            )
+            ''')
         if isinstance(spider, AthleteSpider):
             self.make_json_file('./json/zh/ufc_athlete_data.json',spider)
-            # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-            self.conn = sqlite3.connect('ufc.db')
-            # 2. 创建游标对象（用于执行SQL语句）
-            self.cursor = self.conn.cursor()
             self.cursor.execute('''
                 CREATE TABLE IF NOT EXISTS player (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    name TEXT NOT NULL UNIQUE,     -- 用户名
+                    name TEXT NOT NULL,     -- 用户名
                     name_cn TEXT,           -- 用户名(中文)
                     nick_name TEXT,         -- 昵称
                     nick_name_cn TEXT,      -- 昵称(中文)
-                    page TEXT,              -- 个人主页
+                    page TEXT UNIQUE,       -- 个人主页
                     division TEXT,          -- 级别
                     avatar TEXT,            -- 头像
                     avatar_local TEXT,      -- 头像(本地)
@@ -360,44 +416,83 @@ class JsonWriterTranslatorPipeline(object):
     def process_item(self, item, spider):
 
         if isinstance(item,UfcPassItem):
-            self.translate(item,'address')
-            for i in item['fightCards']:
-                self.translate(i,'bluePlayerCountry')
-                self.translate(i,'redPlayerCountry')
-                self.translate(i,'bluePlayerName')
-                self.translate(i,'redPlayerName')
-                self.translate(i,'weightClass')
-                self.translate(i,'cardType')
+            # self.translate(item,'address')
+            # for i in item['fightCards']:
+            #     self.translate(i,'bluePlayerCountry')
+            #     self.translate(i,'redPlayerCountry')
+            #     self.translate(i,'bluePlayerName')
+            #     self.translate(i,'redPlayerName')
+            #     self.translate(i,'weightClass')
+            #     self.translate(i,'cardType')
+            # print("已经过去的数据",item)
+            self.cursor.execute('''
+                     INSERT INTO pass_event (name,title,banner,address,page,main_time,prelims_time,data_early_time)
+                           VALUES (?,?,?,?,?,?,?,?)
+                   ''', (item.get('name', ''), item.get('title', ''), item.get('banner', ''),
+                         item.get('address', ''), item.get('url', ''), item.get('main_time', ''),
+                         item.get('prelims_time', ''), item.get('data_early_time', '')
+                         ))
+            # # 5. 提交更改
+            self.conn.commit()
             self.json_exporter.export_item(item)
-
+        if isinstance(item, UfcPassCardItem):
+            self.cursor.execute('''
+                       INSERT INTO pass_card (fight_page,blue_page,red_page,blue_result,red_result,blue_odds,red_odds,
+                       end_method,end_round,end_time,card_type,card_division)
+                             VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                     ''', (item.get('fight_page', ''), item.get('bluePlayerPage', ''), item.get('redPlayerPage', ''),
+                           item.get('bluePlayerResult', ''), item.get('redPlayerResult', ''), item.get('bluePlayerOdds', ''),
+                           item.get('redPlayerOdds', ''), item.get('endMethod', ''), item.get('endRound', ''), item.get('endTime', '')
+                           , item.get('cardType', ''), item.get('weightClass', '')
+                           ))
+            # # 5. 提交更改
+            self.conn.commit()
+            print("已经对战过的数据",item.get('fight_page', ''))
         if isinstance(item,UfcComingItem):
-            self.translate(item,'address')
-            self.translate(item,'fightName')
-            for i in item['fightCards']:
-                self.translate(i,'bluePlayerCountry')
-                self.translate(i,'redPlayerCountry')
-                self.translate(i,'bluePlayerName')
-                self.translate(i,'redPlayerName')
-                self.translate(i,'weightClass')
-                self.translate(i,'cardType')
+            # self.translate(item,'address')
+            # self.translate(item,'fightName')
+            # for i in item['fightCards']:
+            #     self.translate(i,'bluePlayerCountry')
+            #     self.translate(i,'redPlayerCountry')
+            #     self.translate(i,'bluePlayerName')
+            #     self.translate(i,'redPlayerName')
+            #     self.translate(i,'weightClass')
+            #     self.translate(i,'cardType')
+            self.cursor.execute('''
+              INSERT INTO session (name,title,banner,address,page,main_time,prelims_time,data_early_time)
+                    VALUES (?,?,?,?,?,?,?,?)
+            ''', (item.get('fightName',''), item.get('title',''),item.get('banner',''),
+                  item.get('address', ''),item.get('url',''),item.get('mainCardTimestamp',''),
+                  item.get('prelimsCardTimestamp', ''),item.get('dataEarlyCardTimestamp','')
+                  ))
+            # # 5. 提交更改
+            self.conn.commit()
             self.json_exporter.export_item(item)
 
+        if isinstance(item, UfcComingCardItem):
+            print("对战信息",item)
         if isinstance(item,UfcRankingItem):
-            self.translate(item,'rankName')
-            for i in item['players']:
-                self.translate(i,'history')
-                self.translate(i,'name')
-                self.translate(i,'weightClass')
-            self.json_exporter.export_item(item)
+            # self.translate(item,'rankName')
+            # for i in item['players']:
+            #     self.translate(i,'history')
+            #     self.translate(i,'name')
+            #     self.translate(i,'weightClass')
+            self.cursor.execute('''
+              INSERT OR IGNORE INTO rank (name,page,rank_name,rank)
+                    VALUES (?,?,?,?)
+            ''', (item.get('name',''), item.get('page',''),item.get('rank_name',''),str(item['rank'])))
+            # # 5. 提交更改
+            self.conn.commit()
+            # self.json_exporter.export_item(item)
 
-        if isinstance(item,UfcRankingPlayer):
-          self.translate(item,'name')
-          self.translate(item, 'nick_name')
-          self.translate(item, 'history')
-          self.translate(item, 'home_town')
+        if isinstance(item, UfcPlayerItem):
+          # self.translate(item,'name')
+          # self.translate(item, 'nick_name')
+          # self.translate(item, 'history')
+          # self.translate(item, 'home_town')
           self.cursor.execute(
               '''
-              INSERT OR IGNORE INTO player (name, page,division,avatar,avatar_local,cover,cover_local,record,age,status,
+              INSERT OR REPLACE INTO player (name, page,division,avatar,avatar_local,cover,cover_local,record,age,status,
               home_town,team,style,height,weight,reach,leg_reach,debut,nick_name,wins_stats,history,name_cn,flag,nick_name_cn,
               history_cn,home_town_cn) 
               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
@@ -408,10 +503,15 @@ class JsonWriterTranslatorPipeline(object):
                     str(json.dumps(item.get('history'))),item.get('name_cn',''),item.get('flag',''),item.get('nick_name_cn',''),
                     str(json.dumps(item.get('history_cn',[]))),item.get('home_town_cn',''))
           )
+          # # 5. 提交更改
+          self.conn.commit()
           self.json_exporter.export_item(item)
         return item
 
     def close_spider(self, spider):
+
+        # 7. 关闭连接
+        self.conn.close()
         if isinstance(spider, UpcomingSpider) or isinstance(spider, EventpassSpider) or isinstance(spider, RankingSpider)or isinstance(spider, AthleteSpider):
             # 声明 exporting 过程 结束，结束后，JsonItemExporter 会将收集存放在内存中的所有数据统一写入文件中
             self.json_exporter.finish_exporting()
@@ -419,11 +519,7 @@ class JsonWriterTranslatorPipeline(object):
             self.json_file.close()
             with open(self.translate_file_path, "w", encoding='utf-8') as file:
                 file.write(str(json.dumps(self.translate_total)))
-        if isinstance(spider, AthleteSpider):
-            # # 5. 提交更改
-            self.conn.commit()
-            # 7. 关闭连接
-            self.conn.close()
+
 
     def translate_real(self,value):
         print("翻译原文:",value)

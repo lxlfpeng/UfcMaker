@@ -38,6 +38,8 @@ class UfcjsonSpiderMiddleware:
 
     def process_spider_exception(self, response, exception, spider):
         email_pwd=os.environ.get('email_pwd','')
+        print("爬虫发生错误",exception)
+        print("爬虫发生错误2",response)
         if email_pwd is not None:
             EmilTools().send_email(email_pwd,'UFC.Com数据抓取',str(spider)+str(exception))
         return []

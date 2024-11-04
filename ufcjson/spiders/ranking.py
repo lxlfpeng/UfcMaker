@@ -1,7 +1,7 @@
 import scrapy
 # from ..inline_requests import inline_requests
 # from ..items import UfcRankingItem
-from ..items import UfcRankingPlayer
+from ..items import UfcRankingItem
 from copy import deepcopy
 import os
 import json
@@ -37,22 +37,23 @@ class RankingSpider(scrapy.Spider):
             # players=[]
             # item['players']=players
             for index,p in enumerate(playeras):
-                player=UfcRankingPlayer()
+                player=UfcRankingItem()
                 #players.append(player)
                 player['weight']=weight
-                player['rankName']=rankName
+                player['rank_name']=rankName
                 player['name']=p.xpath('./text()').extract_first()
-                player['ranking']=index
-                flag_key=rankName+str(player['ranking'])+player['name']
+                player['rank']=index
+                flag_key=rankName+str(player['rank'])+player['name']
                 if flag_key in self.old:
                     for key in self.old[flag_key].keys():
                         player[key]=self.old[flag_key][key]
                     yield player
                     print("数据已存在!")    
                     continue
-                player['playerPage']='https://www.ufc.com'+p.xpath('./@href').extract_first()
-                print("个人主页:",player['playerPage'])
-                yield scrapy.Request(url=player['playerPage'], callback=self.parse_detail,meta={'item': player},dont_filter=True)
+                player['page']='https://www.ufc.com'+p.xpath('./@href').extract_first()
+                print("个人主页:",player['page'])
+                yield player
+                #yield scrapy.Request(url=player['playerPage'], callback=self.parse_detail,meta={'item': player},dont_filter=True)
                 # try: 
                 #     next_resp = yield scrapy.Request(url=player['playerPage'],dont_filter=True)
                

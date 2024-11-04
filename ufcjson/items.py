@@ -7,17 +7,30 @@ import scrapy
 
 
 class UfcPassItem(scrapy.Item):
-    title = scrapy.Field()  # 标题
-    url = scrapy.Field()  # 链接
-    mainCardTimestamp = scrapy.Field()  # 主卡开始时间戳
-    prelimsCardTimestamp = scrapy.Field()  # 副卡开始时间戳
-    dataEarlyCardTimestamp = scrapy.Field()  # 早卡开始时间戳
-    address = scrapy.Field()  # 举办地
-    fightCards = scrapy.Field()  # 战卡
-    banner = scrapy.Field()  # 封面
-    bannerLocal = scrapy.Field()  # 封面本地地址
-    redPlayerCover = scrapy.Field()  # 红方封面地址
-    bluePlayerCover = scrapy.Field()  # 蓝方封面地址
+    # 标题
+    title = scrapy.Field()
+    # 名称
+    name = scrapy.Field()
+    # 链接
+    url = scrapy.Field()
+    # 主卡开始时间戳
+    main_time = scrapy.Field()
+    # 副卡开始时间戳
+    prelims_time = scrapy.Field()
+    # 早卡开始时间戳
+    data_early_time = scrapy.Field()
+    # 举办地
+    address = scrapy.Field()
+    # 封面
+    banner = scrapy.Field()
+    # 封面本地地址
+    banner_local = scrapy.Field()
+    # 战卡
+    fightCards = scrapy.Field()
+    # 红方封面地址
+    redPlayerCover = scrapy.Field()
+    # 蓝方封面地址
+    bluePlayerCover = scrapy.Field()
 
 
 class UfcPassCardItem(scrapy.Item):
@@ -46,6 +59,7 @@ class UfcPassCardItem(scrapy.Item):
     bluePlayerResult = scrapy.Field()
     redPlayerCountryEmoji = scrapy.Field()
     bluePlayerCountryEmoji = scrapy.Field()
+    fight_page = scrapy.Field()
 
 
 class UfcComingItem(scrapy.Item):
@@ -104,11 +118,14 @@ class UfcComingCardItem(scrapy.Item):
 
 
 class UfcRankingItem(scrapy.Item):
-    rankName = scrapy.Field()
-    players = scrapy.Field()
+    name = scrapy.Field()
+    page = scrapy.Field()
+    rank_name = scrapy.Field()
+    rank = scrapy.Field()
+    weight = scrapy.Field()
 
 
-class UfcRankingPlayer(scrapy.Item):
+class UfcPlayerItem(scrapy.Item):
     # 名字
     name = scrapy.Field()
     # 昵称

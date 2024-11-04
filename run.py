@@ -1,15 +1,22 @@
 import os
-from scrapy import cmdline
+# from scrapy import cmdline
 import argparse
 #通过启动附加参数获取到email的密码
-parser = argparse.ArgumentParser(description='manual to this script')
-parser.add_argument("--email_pass", type=str,default="", help='input email_pass')
-os.environ['email_pwd']=parser.parse_args().email_pass
+# parser = argparse.ArgumentParser(description='manual to this script')
+# parser.add_argument("--email_pass", type=str,default="", help='input email_pass')
+# os.environ['email_pwd']=parser.parse_args().email_pass
+from googletrans import Translator
 
 #启动爬虫
-os.system("scrapy crawl upcoming")
+# os.system("scrapy crawl athlete")
+
+# translator = Translator(service_urls=['translate.google.com', ])
+# tr_result = translator.translate("love", "zh-CN", "en").text
+# print(tr_result)
+
+# os.system("scrapy crawl upcoming")
 os.system("scrapy crawl eventpass")
-os.system("scrapy crawl ranking")
+#os.system("scrapy crawl ranking")
 
 # should=True
 # path='./ufc_athlete_data.json'

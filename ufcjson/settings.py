@@ -66,9 +66,9 @@ ITEM_PIPELINES = {
    'ufcjson.pipelines.UfcCountryCodePipeline':1,
    'ufcjson.pipelines.UfcDefaultPhotoPipeline':2,
    'ufcjson.pipelines.ImagesDownloadPipeline': 3,
-   'ufcjson.pipelines.JsonWriterPipeline': 4,
+   # 'ufcjson.pipelines.JsonWriterPipeline': 4,
    'ufcjson.pipelines.JsonWriterTranslatorPipeline': 300,
-   'ufcjson.pipelines.UfcRssMakerPipeline': 300
+   # 'ufcjson.pipelines.UfcRssMakerPipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

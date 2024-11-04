@@ -1,10 +1,10 @@
 import sqlite3
 import json
 # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-conn = sqlite3.connect('ufc.db')
-
-# 2. 创建游标对象（用于执行SQL语句）
-cursor = conn.cursor()
+# conn = sqlite3.connect('ufc.db')
+#
+# # 2. 创建游标对象（用于执行SQL语句）
+# cursor = conn.cursor()
 # # 3. 创建表
 # cursor.execute('''
 #     CREATE TABLE IF NOT EXISTS player (
@@ -78,16 +78,53 @@ cursor = conn.cursor()
 # # 5. 提交更改
 # conn.commit()
 
-#6. 查询数据
-cursor.execute('SELECT * FROM player')
-rows = cursor.fetchall()
-# 获取字段名
-column_names = [description[0] for description in cursor.description]
-print(column_names)
-for row in rows:
-    print(row)
-    data=json.dumps(row)
-    print(data)
+# #6. 查询数据
+# cursor.execute('''SELECT *
+# FROM player
+# WHERE name IN (
+#     SELECT name
+#     FROM player
+#     GROUP BY name
+#     HAVING COUNT(name) > 1
+# )''')
+# rows = cursor.fetchall()
+# # 获取字段名
+# # column_names = [description[0] for description in cursor.description]
+# # print(column_names)
+# for row in rows:
+#     print(row)
+#     data=json.dumps(row)
+#     print(data)
+
+
+import sqlite3
+
+# 连接到 ufc_total.db 数据库
+conn = sqlite3.connect('ufc_total.db')
+cursor = conn.cursor()
+cursor.execute('''
+            CREATE TABLE IF NOT EXISTS rank (
+             id INTEGER PRIMARY KEY AUTOINCREMENT, -- 主键
+             name TEXT NOT NULL,                   -- 用户名
+             page TEXT,                            -- 个人主页
+             rank_name TEXT,                       -- 排名类型
+             rank TEXT                            -- 排名
+            )
+            ''')
+# 将 ufc.db 附加为一个附加数据库，别名为 `ufc_db`
+cursor.execute("ATTACH DATABASE 'ufc.db' AS ufc_db")
+
+# 将 ufc.db 中的 rank 表内容复制到 ufc_total.db 的 rank 表
+# 假设两个数据库的 rank 表结构相同
+cursor.execute("INSERT INTO rank SELECT * FROM ufc_db.rank")
+
+# 提交更改并解除附加的数据库
+conn.commit()
+cursor.execute("DETACH DATABASE ufc_db")
+conn.close()
+
+print("Data copied successfully from ufc.db to ufc_total.db.")
+
 
 # 7. 关闭连接
 conn.close()
