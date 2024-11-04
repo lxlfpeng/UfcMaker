@@ -14,9 +14,9 @@ from googletrans import Translator
 # tr_result = translator.translate("love", "zh-CN", "en").text
 # print(tr_result)
 
-# os.system("scrapy crawl upcoming")
-os.system("scrapy crawl eventpass")
-#os.system("scrapy crawl ranking")
+os.system("scrapy crawl upcoming")
+# os.system("scrapy crawl eventpass")
+os.system("scrapy crawl ranking")
 
 # should=True
 # path='./ufc_athlete_data.json'
