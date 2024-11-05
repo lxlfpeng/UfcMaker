@@ -61,6 +61,6 @@ class UpcomingSpider(scrapy.Spider):
                     itemd['red_rank']=rank[0].xpath('./span/text()').extract_first()
                     itemd['blue_rank']=rank[1].xpath('./span/text()').extract_first()
 
-                itemd['fightId']=d.xpath('.//div[@class="c-listing-fight"]/@data-fmid').extract_first()
+                itemd['fight_id']=d.xpath('.//div[@class="c-listing-fight"]/@data-fmid').extract_first()
                 yield itemd
         yield item

@@ -64,12 +64,12 @@ class UfcDefaultPhotoPipeline:
        #          item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc"
 
        if isinstance(item, UfcPlayerItem):
-            if 'cover' in item:
-                if item['cover'] is None or not item['cover'].startswith('http'):
-                    item['cover']='https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png'
+            if 'avatar' in item:
+                if item['avatar'] is None or not item['avatar'].startswith('http'):
+                    item['avatar']='https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png'
 
-            if item['back'] is None or not item['back'].startswith('http'):
-               item['back']='https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH'
+            if item['cover'] is None or not item['cover'].startswith('http'):
+               item['cover']='https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH'
        return item
 
 # 用于将国籍code修改为Emoji表情的管道
@@ -167,18 +167,18 @@ class ImagesDownloadPipeline(ImagesPipeline):
         #         item['redPlayerCoverLocal'] = images[item['redPlayerCover']]['path']
         #     if item['bluePlayerCover'] in images.keys():
         #         item['bluePlayerCoverLocal'] = images[item['bluePlayerCover']]['path']
-        if isinstance(item, UfcComingCardItem):
-            if item['redPlayerBack'] in images.keys():
-                item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
-            if item['bluePlayerBack'] in images.keys():
-                item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
+        # if isinstance(item, UfcComingCardItem):
+        #     if item['redPlayerBack'] in images.keys():
+        #         item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
+        #     if item['bluePlayerBack'] in images.keys():
+        #         item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
 
         if isinstance(item, UfcPlayerItem):
             #print("图片下载完毕:",images.keys())
-            if item['back'] in images.keys():
-                item['backLocal'] = images[item['back']]['path']
-            if 'cover' in item and item['cover'] in images.keys():
-                item['coverLocal'] = images[item['cover']]['path']
+            if item['cover'] in images.keys():
+                item['cover_local'] = images[item['cover']]['path']
+            if 'avatar' in item and item['avatar'] in images.keys():
+                item['avatar_local'] = images[item['avatar']]['path']
         #logging.warning(item)
         # image_paths = [x['path'] for ok, x in results if ok]
         # if len(image_paths)>0:
@@ -372,7 +372,7 @@ class JsonWriterPipeline(object):
         return item
 
     def close_spider(self, spider):
-        if isinstance(spider, UpcomingSpider) or isinstance(spider, EventpassSpider) or isinstance(spider, RankingSpider)or isinstance(spider, AthleteSpider):
+        if isinstance(spider, UpcomingSpider) or isinstance(spider, EventpassSpider) or isinstance(spider, RankingSpider):
             # 声明 exporting 过程 结束，结束后，JsonItemExporter 会将收集存放在内存中的所有数据统一写入文件中
             self.json_exporter.finish_exporting()
             # 关闭文件
@@ -502,10 +502,10 @@ class SqliteDbPipeline(object):
                        INSERT INTO pass_card (fight_page,blue_page,red_page,blue_result,red_result,blue_odds,red_odds,
                        end_method,end_round,end_time,card_type,card_division)
                              VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
-                     ''', (item.get('fight_page', ''), item.get('bluePlayerPage', ''), item.get('redPlayerPage', ''),
-                           item.get('bluePlayerResult', ''), item.get('redPlayerResult', ''), item.get('bluePlayerOdds', ''),
-                           item.get('redPlayerOdds', ''), item.get('endMethod', ''), item.get('endRound', ''), item.get('endTime', '')
-                           , item.get('cardType', ''), item.get('weightClass', '')
+                     ''', (item.get('fight_page', ''), item.get('blue_page', ''), item.get('red_page', ''),
+                           item.get('blue_result', ''), item.get('red_result', ''), item.get('blue_odds', ''),
+                           item.get('red_odds', ''), item.get('end_method', ''), item.get('end_round', ''), item.get('end_time', '')
+                           , item.get('card_type', ''), item.get('card_division', '')
                            ))
             # # 5. 提交更改
             self.conn.commit()
@@ -536,10 +536,10 @@ class SqliteDbPipeline(object):
               home_town,team,style,height,weight,reach,leg_reach,debut,nick_name,wins_stats,history,name_cn,flag,nick_name_cn,
               history_cn,home_town_cn) 
               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-              ''', (item['name'], item['playerPage'], item['weightClass'], item['cover'], item.get('coverLocal', ''),
-                    item['back'], item.get('backLocal', ''), item.get('record',''),item.get('age',''),item.get('status',''),item.get('home_town',''),
+              ''', (item['name'], item['page'], item['division'], item['avatar'], item.get('avatar_local', ''),
+                    item['cover'], item.get('cover_local', ''), item.get('record',''),item.get('age',''),item.get('status',''),item.get('home_town',''),
                     item.get('team',''),item.get('style',''),item.get('height',''),item.get('weight',''),item.get('reach',''),item.get('leg_reach','')
-                                  ,item.get('debut',''),item.get('nick_name',''),str(json.dumps(item.get('winsStats'))),
+                                  ,item.get('debut',''),item.get('nick_name',''),str(json.dumps(item.get('wins_stats'))),
                     str(json.dumps(item.get('history'))),item.get('name_cn',''),item.get('flag',''),item.get('nick_name_cn',''),
                     str(json.dumps(item.get('history_cn',[]))),item.get('home_town_cn',''))
           )

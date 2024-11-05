@@ -5,7 +5,6 @@
 
 import scrapy
 
-
 class UfcPassItem(scrapy.Item):
     # 标题
     title = scrapy.Field()
@@ -26,43 +25,33 @@ class UfcPassItem(scrapy.Item):
     # 封面本地地址
     banner_local = scrapy.Field()
     # 战卡
-    fightCards = scrapy.Field()
-    # 红方封面地址
-    redPlayerCover = scrapy.Field()
-    # 蓝方封面地址
-    bluePlayerCover = scrapy.Field()
+    fight_cards = scrapy.Field()
 
 
 class UfcPassCardItem(scrapy.Item):
     # 级别
-    weightClass = scrapy.Field()
+    card_division = scrapy.Field()
     # 战卡类型
-    cardType = scrapy.Field()
+    card_type = scrapy.Field()
     # 结束回合
-    endRound = scrapy.Field()
+    end_round = scrapy.Field()
     # 结束时间
-    endTime = scrapy.Field()
+    end_time = scrapy.Field()
     # 结束方式
-    endMethod = scrapy.Field()
-    redPlayerName = scrapy.Field()
-    redPlayerPage = scrapy.Field()
-    redPlayerOdds = scrapy.Field()
-    redPlayerCountry = scrapy.Field()
-    redPlayerBack = scrapy.Field()
-    redPlayerBackLocal = scrapy.Field()
-    redPlayerResult = scrapy.Field()
-    redPlayerCountryCode = scrapy.Field()
-
-    bluePlayerName = scrapy.Field()
-    bluePlayerPage = scrapy.Field()
-    bluePlayerOdds = scrapy.Field()
-    bluePlayerCountry = scrapy.Field()
-    bluePlayerCountryCode = scrapy.Field()
-    bluePlayerBack = scrapy.Field()
-    bluePlayerBackLocal = scrapy.Field()
-    bluePlayerResult = scrapy.Field()
-    redPlayerCountryEmoji = scrapy.Field()
-    bluePlayerCountryEmoji = scrapy.Field()
+    end_method = scrapy.Field()
+    # 红方主页
+    red_page = scrapy.Field()
+    # 蓝方主页
+    blue_page = scrapy.Field()
+    # 红方结果
+    red_result = scrapy.Field()
+    # 蓝方结果
+    blue_result = scrapy.Field()
+    # 红方odds
+    red_odds = scrapy.Field()
+    # 蓝方odds
+    blue_odds = scrapy.Field()
+    # 主页
     fight_page = scrapy.Field()
 
 
@@ -98,8 +87,6 @@ class UfcComingCardItem(scrapy.Item):
     card_type = scrapy.Field()
     # 级别
     card_division = scrapy.Field()
-    # # 扩展信息
-    # matchupStats = scrapy.Field()
     # 主卡开始时间戳
     main_time = scrapy.Field()
     # 举办地
@@ -108,57 +95,57 @@ class UfcComingCardItem(scrapy.Item):
     fight_name = scrapy.Field()
     # 红方主页
     red_page = scrapy.Field()
-    #蓝方主页
+    # 蓝方主页
     blue_page = scrapy.Field()
-    #红方赔率
+    # 红方赔率
     red_odds = scrapy.Field()
-    #蓝方赔率
+    # 蓝方赔率
     blue_odds = scrapy.Field()
-    #红方排名
+    # 红方排名
     red_rank = scrapy.Field()
-    #蓝方排名
+    # 蓝方排名
     blue_rank = scrapy.Field()
-
-    fightId = scrapy.Field()
+    #id
+    fight_id = scrapy.Field()
 
 
 class UfcRankingItem(scrapy.Item):
-    #名字
+    # 名字
     name = scrapy.Field()
-    #主页
+    # 主页
     page = scrapy.Field()
-    #榜单名称
+    # 榜单名称
     rank_name = scrapy.Field()
-    #排名
+    # 排名
     rank = scrapy.Field()
     # 排名(中文)
     rank_name_cn = scrapy.Field()
+
 
 class UfcPlayerItem(scrapy.Item):
     # 名字
     name = scrapy.Field()
     # 昵称
     nick_name = scrapy.Field()
+    # 头像
+    avatar = scrapy.Field()
+    # 本地头像
+    avatar_local = scrapy.Field()
+    # 标签
+    player_tags = scrapy.Field()
+    # 体重级别
+    division = scrapy.Field()
+    # 个人主页
+    page = scrapy.Field()
+    #获胜方式
+    wins_stats = scrapy.Field()
+    # 战绩
+    record = scrapy.Field()
     # 封面
     cover = scrapy.Field()
     # 本地封面
-    coverLocal = scrapy.Field()
-    # 体重级别
-    weightClass = scrapy.Field()
-    # 个人主页
-    playerPage = scrapy.Field()
+    cover_local = scrapy.Field()
 
-    biosInfos = scrapy.Field()
-    playerTags = scrapy.Field()
-    winsStats = scrapy.Field()
-    # 战绩
-    record = scrapy.Field()
-    # 背景图片
-    back = scrapy.Field()
-    ranking = scrapy.Field()
-    # 背景图片(本地)
-    backLocal = scrapy.Field()
-    rankName = scrapy.Field()
     # 历史
     history = scrapy.Field()
     # 历史中文
@@ -193,3 +180,6 @@ class UfcPlayerItem(scrapy.Item):
     flag = scrapy.Field()
     # 中文昵称
     nick_name_cn = scrapy.Field()
+
+    # ranking = scrapy.Field()
+    # rankName = scrapy.Field()
