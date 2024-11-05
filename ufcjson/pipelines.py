@@ -75,25 +75,11 @@ class UfcDefaultPhotoPipeline:
 # 用于将国籍code修改为Emoji表情的管道
 class UfcCountryCodePipeline:
     def process_item(self, item, spider):
-       #if isinstance(item,UfcPassCardItem) or isinstance(item,UfcComingCardItem):
-       # if isinstance(item,UfcComingCardItem):
-       #      try:
-       #          red_images=item['redPlayerCountryCode'].split('/')
-       #          item['redPlayerCountryEmoji']=get_country_flag_emoji(red_images[len(red_images)-1].replace('.PNG',''))
-       #      except :
-       #          item['redPlayerCountryEmoji']='🏳'
-       #      try:
-       #          blue_images=item['bluePlayerCountryCode'].split('/')
-       #          item['bluePlayerCountryEmoji']=get_country_flag_emoji(blue_images[len(blue_images)-1].replace('.PNG',''))
-       #      except :
-       #          item['bluePlayerCountryEmoji']='🏳'
-
        if isinstance(item, UfcPlayerItem):
           country=item.get('home_town','')
           if ',' in country:
               country = country.split(",")[1]
           item['flag']=self.get_country_flag(country.strip())
-
        return item
 
     def get_country_flag(self,country_name):
