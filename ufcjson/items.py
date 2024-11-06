@@ -20,6 +20,8 @@ class UfcPassItem(scrapy.Item):
     data_early_time = scrapy.Field()
     # 举办地
     address = scrapy.Field()
+    # 举办地(CN)
+    address_cn = scrapy.Field()
     # 封面
     banner = scrapy.Field()
     # 封面本地地址

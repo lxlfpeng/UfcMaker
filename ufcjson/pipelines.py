@@ -179,7 +179,7 @@ class TranslatorPipeline(object):
 
     def process_item(self, item, spider):
         if isinstance(item,UfcPassItem):
-            pass
+            self.translate(item, 'address')
             # self.translate(item,'address')
             # for i in item['fightCards']:
             #     self.translate(i,'bluePlayerCountry')
@@ -200,7 +200,7 @@ class TranslatorPipeline(object):
             #     self.translate(i,'redPlayerName')
             #     self.translate(i,'weightClass')
             #     self.translate(i,'cardType')
-            pass
+            #pass
         if isinstance(item, UfcComingCardItem):
             pass
         if isinstance(item,UfcRankingItem):
@@ -220,9 +220,8 @@ class TranslatorPipeline(object):
 
     def translate_real(self,value):
         print("翻译原文:",value)
-        cursor = self.conn.cursor()
-        cursor.execute("SELECT * FROM translate WHERE original = ?", (value,))
-        result = cursor.fetchone()
+        self.cursor.execute("SELECT * FROM translate WHERE original = ?", (value,))
+        result = self.cursor.fetchone()
         if result is not None:
             print("已存在不需要翻译:", result[1])
             return result[2]
@@ -350,6 +349,7 @@ class SqliteDbPipeline(object):
              title TEXT,                            -- 头条主赛
              banner TEXT,                           -- 横幅
              address TEXT,                          -- 地点
+             address_cn TEXT,                       -- 地点(cn)
              page TEXT UNIQUE,                      -- 主页
              main_time TEXT,                        -- 主卡时间
              prelims_time TEXT,                     -- 副卡时间
@@ -426,10 +426,10 @@ class SqliteDbPipeline(object):
     def process_item(self, item, spider):
         if isinstance(item,UfcPassItem):
             self.cursor.execute('''
-                     INSERT INTO pass_event (name,title,banner,address,page,main_time,prelims_time,data_early_time)
-                           VALUES (?,?,?,?,?,?,?,?)
+                     INSERT INTO pass_event (name,title,banner,address,address_cn,page,main_time,prelims_time,data_early_time)
+                           VALUES (?,?,?,?,?,?,?,?,?)
                    ''', (item.get('name', ''), item.get('title', ''), item.get('banner', ''),
-                         item.get('address', ''), item.get('url', ''), item.get('main_time', ''),
+                         item.get('address', ''),item.get('address_cn', '') ,item.get('url', ''), item.get('main_time', ''),
                          item.get('prelims_time', ''), item.get('data_early_time', '')
                          ))
             # # 5. 提交更改
