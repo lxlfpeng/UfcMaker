@@ -5,16 +5,14 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
 from ufcjson.items import UfcPassItem
 from ufcjson.items import UfcPassCardItem
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
 import hashlib
-from scrapy.utils.python import get_func_args, to_bytes
-from scrapy.exporters import JsonItemExporter
-from scrapy.exporters import JsonLinesItemExporter
+from scrapy.utils.python import to_bytes
 
+import re
 import json
 from io import BytesIO
 
@@ -33,36 +31,16 @@ from ufcjson.items import UfcPlayerItem
 
 from .export import JsonObjectItemExporter
 from .export import JsonObjectLinesItemExporter
-import shutil
-import os
 from googletrans import Translator
-import logging
 import datetime
 import sqlite3
 import pycountry
 import warnings
-from .country import get_country_flag_emoji
 
 
 # 用于设置头像和背景默认的管道
 class UfcDefaultPhotoPipeline:
     def process_item(self, item, spider):
-       # if isinstance(item,UfcComingBannerItem):
-       #    if not item['redPlayerCover'].startswith('http') :
-       #      item['redPlayerCover']='https://www.ufc.com'+item['redPlayerCover']
-       #    if not item['bluePlayerCover'].startswith('http') :
-       #      item['bluePlayerCover']='https://www.ufc.com'+item['bluePlayerCover']
-
-       # if isinstance(item,UfcComingCardItem):
-       #      if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['redPlayerBack']:
-       #          item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-RED-corner.png?itok=bYCcdQLM"
-       #      if 'themes/custom/ufc/assets/img/standing-stance-right-silhouette.png' in item['redPlayerBack']:
-       #          item['redPlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_RED.png?VersionId=0NwYm4ow5ym9PWjgcpd05ObDBIC5pBtX&itok=woJQm5ZH"
-       #      if 'themes/custom/ufc/assets/img/silhouette-headshot-female.png' in item['bluePlayerBack']:
-       #          item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/2022-02/womens-silhouette-BLUE-corner.png?itok=bYCcdQLM"
-       #      if '/themes/custom/ufc/assets/img/standing-stance-left-silhouette.png' in item['bluePlayerBack']:
-       #          item['bluePlayerBack']="https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/image/fighter_images/SHADOW_Fighter_fullLength_BLUE.png?VersionId=1Jeml9w1QwZqmMUJDg8qTrTk7fFhqUra&itok=fiyOmUkc"
-
        if isinstance(item, UfcPlayerItem):
             if 'avatar' in item:
                 if item['avatar'] is None or not item['avatar'].startswith('http'):
@@ -123,17 +101,6 @@ class ImagesDownloadPipeline(ImagesPipeline):
         if isinstance(item,UfcPassItem) or isinstance(item, UfcComingItem):
             if 'banner' in item and item['banner'] is not None:
                 yield Request(item['banner'])
-        #if isinstance(item,UfcPassCardItem) or isinstance(item, UfcComingCardItem):
-        if  isinstance(item, UfcComingCardItem):
-            if 'redPlayerBack' in item and item['redPlayerBack'] is not None:
-                yield Request(item['redPlayerBack'])
-            if 'bluePlayerBack' in item and item['bluePlayerBack'] is not None:
-                yield Request(item['bluePlayerBack'])
-        # if isinstance(item, UfcComingBannerItem):
-        #     if 'redPlayerCover' in item and item['redPlayerCover'] is not None:
-        #         yield Request(item['redPlayerCover'])
-        #     if 'bluePlayerCover' in item and item['bluePlayerCover'] is not None:
-        #         yield Request(item['bluePlayerCover'])
         if isinstance(item, UfcPlayerItem):
             if 'back' in item and item['back'] is not None:
                 yield Request(item['back'])
@@ -154,51 +121,15 @@ class ImagesDownloadPipeline(ImagesPipeline):
         if isinstance(item, UfcPassItem):
             if item['banner'] in images.keys():
                 item['banner_local'] = images[item['banner']]['path']
-        # if isinstance(item, UfcPassCardItem):
-        #     if item['redPlayerBack'] in images.keys():
-        #         item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
-        #     if item['bluePlayerBack'] in images.keys():
-        #         item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
         if isinstance(item, UfcComingItem):
             if item['banner'] in images.keys():
                 item['banner_local'] = images[item['banner']]['path']
-        # if isinstance(item, UfcComingBannerItem):
-        #     if item['redPlayerCover'] in images.keys():
-        #         item['redPlayerCoverLocal'] = images[item['redPlayerCover']]['path']
-        #     if item['bluePlayerCover'] in images.keys():
-        #         item['bluePlayerCoverLocal'] = images[item['bluePlayerCover']]['path']
-        # if isinstance(item, UfcComingCardItem):
-        #     if item['redPlayerBack'] in images.keys():
-        #         item['redPlayerBackLocal'] = images[item['redPlayerBack']]['path']
-        #     if item['bluePlayerBack'] in images.keys():
-        #         item['bluePlayerBackLocal'] = images[item['bluePlayerBack']]['path']
-
         if isinstance(item, UfcPlayerItem):
             #print("图片下载完毕:",images.keys())
             if item['cover'] in images.keys():
                 item['cover_local'] = images[item['cover']]['path']
             if 'avatar' in item and item['avatar'] in images.keys():
                 item['avatar_local'] = images[item['avatar']]['path']
-        #logging.warning(item)
-        # image_paths = [x['path'] for ok, x in results if ok]
-        # if len(image_paths)>0:
-        #     if isinstance(item,UfcPassItem):
-        #         item['bannerLocal']=image_paths[0]
-        #     if isinstance(item,UfcPassCardItem):
-        #         item['redPlayerBackLocal'] =image_paths[0]
-        #         item['bluePlayerBackLocal']=image_paths[1]  
-        #     if isinstance(item,UfcComingItem):
-        #         item['bannerLocal']=image_paths[0]
-        #     if isinstance(item,UfcComingBannerItem):
-        #         item['redPlayerCoverLocal'] =image_paths[0]
-        #         item['bluePlayerCoverLocal']=image_paths[1] 
-        #     if isinstance(item,UfcComingCardItem):
-        #         item['redPlayerBackLocal'] =image_paths[0]
-        #         item['bluePlayerBackLocal']=image_paths[1] 
-        #     if isinstance(item, UfcRankingPlayer):
-        #         item['backLocal']=image_paths[0]
-        #         item['coverLocal']=image_paths[1]
-
         return item
 
     # 由于ImagesPipeline默认返回jpg图片,如果要返回其他格式图片则需要重写该父类方法 
@@ -234,7 +165,7 @@ class TranslatorPipeline(object):
         pass
     def open_spider(self,spider):
         # 1. 连接到数据库（如果没有数据库文件，会自动创建）
-        self.conn = sqlite3.connect('ufc.db')
+        self.conn = sqlite3.connect('ufc_translate.db')
         # 2. 创建游标对象（用于执行SQL语句）
         self.cursor = self.conn.cursor()
         # 3. 创建翻译表
@@ -276,11 +207,11 @@ class TranslatorPipeline(object):
             # self.translate(item,'rank_name')
             pass
         if isinstance(item, UfcPlayerItem):
-          # self.translate(item,'name')
-          # self.translate(item, 'nick_name')
-          # self.translate(item, 'history')
-          # self.translate(item, 'home_town')
-           pass
+            self.translate(item,'name')
+            self.translate(item, 'nick_name')
+            self.translate(item, 'history')
+            self.translate(item, 'home_town')
+            pass
         return item
 
     def close_spider(self, spider):
@@ -299,7 +230,13 @@ class TranslatorPipeline(object):
             tr_result=""
             translator = Translator(service_urls=['translate.google.com', ])
             try:
+                contents = re.findall(r'\(.*?\)', value)
+                prefix = ''
+                if len(contents) > 0:
+                    prefix = contents[0]
+                    value = value.replace(prefix, '').strip()
                 tr_result=translator.translate(value, "zh-CN", "en").text
+                tr_result=prefix + ' ' + tr_result
                 print("翻译译文:" + tr_result)
             except Exception as e:
                 print(f"翻译发生异常: {e}")

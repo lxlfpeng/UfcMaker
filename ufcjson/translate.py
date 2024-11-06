@@ -2,12 +2,12 @@ import hashlib
 import os
 import json
 
-translate_total = {}
-translate_file_path = r'C:\Users\WIN10\Desktop\python\ScrapyDemo\ufcjson/ufc_translat.json'
-
-if os.path.exists(translate_file_path):
-   with open(translate_file_path, 'r', encoding="utf-8") as file:
-       translate_total = json.load(file)
+# translate_total = {}
+# translate_file_path = r'C:\Users\WIN10\Desktop\python\ScrapyDemo\ufcjson/ufc_translat.json'
+#
+# if os.path.exists(translate_file_path):
+#    with open(translate_file_path, 'r', encoding="utf-8") as file:
+#        translate_total = json.load(file)
 
 #检验是否含有中文字符
 # def is_contains_chinese(strs):
@@ -966,15 +966,60 @@ not_tr={"da'mon blackshear":"达蒙-布莱克希尔",
 "Zhalgas Zhumagulov":"扎尔加斯朱马古洛夫",
 "Yi Zha":"益扎",
 "Tiequan Zhang":"张铁拳"}
+import sqlite3
 
-for key in translate_total.keys():
-    if translate_total[key] in not_tr.keys():
-        value=not_tr[translate_total[key]]
-        translate_total[key]=value
+# 1. 连接到数据库（如果没有数据库文件，会自动创建）
+conn = sqlite3.connect('../ufc_translate.db')
+# 2. 创建游标对象（用于执行SQL语句）
+cursor = conn.cursor()
 
 
 
+for key in not_tr.keys():
+    print("获取的",key)
+    cursor.execute("SELECT * FROM translate WHERE original = ?", (key,))
+    result = cursor.fetchone()
+    if result is not None:
+        print("已存在不需要翻译:", result[1])
+    else:
+        cursor.execute(
+            '''
+            INSERT OR IGNORE INTO translate (original,translation) 
+            VALUES (?,?)
+            ''', (key, not_tr[key])
+        )
+        # 提交更改
+        conn.commit()
+conn.close()
+    #print(key)
+    # if translate_total[key] in not_tr.keys():
+    #     value=not_tr[translate_total[key]]
+    #     translate_total[key]=value
 
+
+from googletrans import Translator
+#
+
+# print("翻译译文:" + tr_result)
+
+import re
+
+# def extract_with_parentheses(text):
+#     return re.findall(r'\(.*?\)', text)
+
+# 示例使用：
+# text = "Abdurakhimov was stopped by Jailton Almeida via strikes at 2:56 of the second round "
+# contents=re.findall(r'\(.*?\)', text)
+# prefix=''
+# if len(contents)>0:
+#     prefix=contents[0]
+#     text=text.replace(contents[0],'')
+# translator = Translator(service_urls=['translate.google.com', ])
+# tr_result = translator.translate(text, "zh-CN", "en").text
+# print(prefix+tr_result)
+
+# contents = extract_with_parentheses(text)
+# print(contents)  # 输出: ['(内容1)', '(内容2)']
     
 
 
@@ -1011,8 +1056,8 @@ for key in translate_total.keys():
 #     #     translate_total[hash_key]=need_repair[key]
 #     #     print(translate_total[hash_key])
 # #print(json.dumps(translate_total))
-with open(translate_file_path, "w", encoding='utf-8') as file:
-    file.write(str(json.dumps(translate_total)))
+# with open(translate_file_path, "w", encoding='utf-8') as file:
+#     file.write(str(json.dumps(translate_total)))
 
 # from googletrans import Translator
 

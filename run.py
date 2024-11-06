@@ -1,39 +1,32 @@
 import os
-# from scrapy import cmdline
+from datetime import datetime
 import argparse
-#通过启动附加参数获取到email的密码
-# parser = argparse.ArgumentParser(description='manual to this script')
-# parser.add_argument("--email_pass", type=str,default="", help='input email_pass')
-# os.environ['email_pwd']=parser.parse_args().email_pass
-from googletrans import Translator
 
-#启动爬虫
+# 通过启动附加参数获取到email的密码
+parser = argparse.ArgumentParser(description='manual to this script')
+parser.add_argument("--email_pass", type=str, default="", help='input email_pass')
+os.environ['email_pwd'] = parser.parse_args().email_pass
 
 
-# translator = Translator(service_urls=['translate.google.com', ])
-# tr_result = translator.translate("love", "zh-CN", "en").text
-# print(tr_result)
+# # 周三爬取排行榜和选手数据
+# if datetime.now().weekday() == 2:
+#     os.system("scrapy crawl ranking")
+#     os.system("scrapy crawl athlete")
 #
+# # 周三爬取已进行比赛的数据
+# if datetime.now().weekday() == 6:
+#     os.system("scrapy crawl eventpass")
+#
+# # 每日爬取赛程
+# os.system("scrapy crawl upcoming")
+
 # os.system("scrapy crawl upcoming")
 # os.system("scrapy crawl eventpass")
-# # os.system("scrapy crawl eventpass -a category=全量")
 # os.system("scrapy crawl ranking")
 os.system("scrapy crawl athlete")
+# # os.system("scrapy crawl eventpass -a category=全量")
 
-# should=True
-# path='./ufc_athlete_data.json'
-# if os.path.exists(path):
-#     with open(path, 'r',encoding='utf-8') as file:
-#         try:
-#             diff=stamp=int(round(time.time() * 1000))-json.load(file)['timeStamp']
-#             if diff<30*24*60*60*1000:
-#                 should=False
-#         except Exception:
-#             pass
-# if should:
-#    os.system("scrapy crawl athlete") 
-
-#取出所有日志,组成字符串
+# 取出所有日志,组成字符串
 # out_str=''
 # for file_name in os.listdir('./log'):
 #     with open('./log/'+file_name,'r', encoding='utf-8') as file:
