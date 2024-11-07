@@ -277,8 +277,8 @@ class JsonWriterPipeline(object):
             self.make_json_file('./json/ufc_pass_data.json',spider)
         if isinstance(spider, RankingSpider):
             self.make_json_file('./json/ufc_ranking_data.json',spider)
-        # if isinstance(spider, AthleteSpider):
-        #     self.make_json_file('./json/ufc_athlete_data_temp.json',spider)
+        if isinstance(spider, AthleteSpider):
+            self.make_json_file('./json/ufc_athlete_data.json',spider)
         # else:
         #    self.make_json_file('未命名.json')
 
@@ -303,12 +303,12 @@ class JsonWriterPipeline(object):
           self.json_exporter.export_item(item)
         if isinstance(spider, RankingSpider) :
           self.json_exporter.export_item(item)
-        # if isinstance(spider, AthleteSpider) and isinstance(item, UfcPlayerItem):
-        #   self.json_exporter.export_item(item)
+        if isinstance(spider, AthleteSpider):
+          self.json_exporter.export_item(item)
         return item
 
     def close_spider(self, spider):
-        if isinstance(spider, UpcomingSpider) or isinstance(spider, EventpassSpider) or isinstance(spider, RankingSpider):
+        if isinstance(spider, UpcomingSpider) or isinstance(spider, EventpassSpider) or isinstance(spider, RankingSpider)or isinstance(spider, AthleteSpider):
             # 声明 exporting 过程 结束，结束后，JsonItemExporter 会将收集存放在内存中的所有数据统一写入文件中
             self.json_exporter.finish_exporting()
             # 关闭文件

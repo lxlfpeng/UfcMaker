@@ -21,9 +21,9 @@ os.environ['email_pwd'] = parser.parse_args().email_pass
 # os.system("scrapy crawl upcoming")
 
 # os.system("scrapy crawl upcoming")
-os.system("scrapy crawl eventpass")
+# os.system("scrapy crawl eventpass")
 # os.system("scrapy crawl ranking")
-# os.system("scrapy crawl athlete")
+os.system("scrapy crawl athlete")
 # # os.system("scrapy crawl eventpass -a category=全量")
 
 # 取出所有日志,组成字符串
