@@ -24,10 +24,10 @@ jobs:
     - name: checkout actions
       uses: actions/checkout@v3 # Checking out the repo
     #配置python环境这里用的是3.7的环境
-    - name: Set up Python 3.7
+    - name: Set up Python 3.9
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7
+        python-version: 3.9
     #通过命令安装项目工程的Python依赖
     - name: install dependencies
       run: |
