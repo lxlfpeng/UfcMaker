@@ -2,6 +2,9 @@ import os
 from datetime import datetime
 import argparse
 
+if os.path.exists('./log/scrapy_log.log'):
+   os.remove('./log/scrapy_log.log')
+
 # 通过启动附加参数获取到email的密码
 parser = argparse.ArgumentParser(description='manual to this script')
 parser.add_argument("--email_pass", type=str, default="", help='input email_pass')
@@ -18,12 +21,13 @@ if datetime.now().weekday() == 6:
     os.system("scrapy crawl eventpass")
 
 # 每日爬取赛程
-os.system("scrapy crawl upcoming")
-
 # os.system("scrapy crawl upcoming")
-# os.system("scrapy crawl eventpass")
+
+os.system("scrapy crawl upcoming")
+os.system("scrapy crawl eventpass")
 # os.system("scrapy crawl ranking")
-# os.system("scrapy crawl athlete")
+os.system("scrapy crawl athlete")
+#全量爬取所有比赛记录的日志
 # # os.system("scrapy crawl eventpass -a category=全量")
 
 # 取出所有日志,组成字符串

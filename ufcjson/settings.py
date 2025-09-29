@@ -107,9 +107,7 @@ IMAGES_STORE = os.path.join(project_dir, 'images')
 
 #设置日志级别
 LOG_LEVEL ='INFO'
-# if os.path.exists('./log.log'):
-#    os.remove('./log.log')
-# LOG_FILE = './log.log'
+LOG_FILE = './log/scrapy_log.log'
 
 #添加自定义的数据统计功能的信息收集器
 STATS_CLASS = 'ufcjson.status.SaveStatsCollector'

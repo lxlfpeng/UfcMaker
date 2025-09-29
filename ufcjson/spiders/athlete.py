@@ -21,24 +21,24 @@ class AthleteSpider(scrapy.Spider):
 
     def parse(self, response):
         items=response.xpath('//div[@class="node node--type-athlete node--view-mode-all-athletes-result ds-1col clearfix"]')
-        print("本页请求地址:",response.url)
-        print("本页个数:",str(len(items)))
+        self.logger.info(f"本页请求地址: {response.url} 本页获取到选手个数: {len(items)}")
         for item in items:
             player=UfcPlayerItem()
-            player['name']=item.xpath('.//span[@class="c-listing-athlete__name"]/text()').extract_first().strip()
-            player['record']=item.xpath('.//span[@class="c-listing-athlete__record"]/text()').extract_first()
+            player['name']=item.xpath('.//span[@class="c-listing-athlete__name"]/text()').get(default='').strip()
+            player['record']=item.xpath('.//span[@class="c-listing-athlete__record"]/text()').get(default='').strip()
             self.cursor.execute("SELECT * FROM player WHERE name = ? AND record = ?", (player['name'], player['record']))
             results = self.cursor.fetchall()
             if len(results)>0:
-                print("已存在无需再请求数据")
+                print(f"{player['name']} 已存在数据库，跳过")
                 continue
-            player['nick_name']=item.xpath('.//span[@class="c-listing-athlete__nickname"]//div[@class="field__item"]/text()').extract_first()
-            player['division']=item.xpath('.//span[@class="c-listing-athlete__title"]//div[@class="field__item"]/text()').extract_first()
+            player['nick_name']=item.xpath('.//span[@class="c-listing-athlete__nickname"]//div[@class="field__item"]/text()').get(default='').strip()
+            player['division']=item.xpath('.//span[@class="c-listing-athlete__title"]//div[@class="field__item"]/text()').get(default='').strip()
             if player['nick_name'] is not None and '"' in player['nick_name']:
                player['nick_name']=player['nick_name'].strip('"').strip()
-            player['avatar']=item.xpath('.//div[@class="c-listing-athlete__thumbnail"]//img/@src').extract_first()
-            player['cover']=item.xpath('.//div[@class="c-listing-athlete-flipcard__back"]//img/@src').extract_first()
-            player['page']='https://www.ufc.com'+item.xpath('.//a[@class="e-button--black "]/@href').extract_first()
+            player['avatar']=item.xpath('.//div[@class="c-listing-athlete__thumbnail"]//img/@src').get(default='').strip()
+            player['cover']=item.xpath('.//div[@class="c-listing-athlete-flipcard__back"]//img/@src').get(default='').strip()
+            player['page']='https://www.ufc.com'+item.xpath('.//a[@class="e-button--black "]/@href').get(default='').strip()
+            self.logger.info(f"准备抓取选手详情: {player['name']} - {player['page']}")
             yield scrapy.Request(url=player['page'], callback=self.parse_detail,meta={'item': player})
         if len(items)>0:
             self.page+=1
@@ -46,8 +46,8 @@ class AthleteSpider(scrapy.Spider):
         else:
             print("停止爬取")
     def parse_detail(self, response):
-        print("选手详情:",response.url)
         player = response.meta['item']
+        self.logger.info(f"抓取选手详情页面: {response.url}")
         # 接收结构化数据//field field--name-qna-ufc field--type-text-long field--label-hidden field__item
         #//*[@id="tab-panel-3"]/div/div
         player['history'] = response.xpath('//*[@id="tab-panel-3"]/div/div//p/text()').extract()
@@ -73,8 +73,8 @@ class AthleteSpider(scrapy.Spider):
             self.make_filed(player, info['lable'], info['value'], 'Octagon Debut', 'debut')
             self.make_filed(player, info['lable'], info['value'], 'Weight', 'weight')
             # biosInfo.append(info)
-        player['division']=response.xpath('//p[@class="hero-profile__division-title"]/text()').extract_first()
-        player['record']=response.xpath('//p[@class="hero-profile__division-body"]/text()').extract_first()
+        player['division']=response.xpath('//p[@class="hero-profile__division-title"]/text()').get(default='').strip()
+        player['record']=response.xpath('//p[@class="hero-profile__division-body"]/text()').get(default='').strip()
         player['player_tags']=response.xpath('//div[@class="hero-profile__tags"]/p/text()').extract()
         player['player_tags']=[ i.strip() for i in player['player_tags'] ]
         stats_list=response.xpath('//div[@class="hero-profile__stat"]')
@@ -82,10 +82,11 @@ class AthleteSpider(scrapy.Spider):
         player['wins_stats']=wins_stats
         for stat in stats_list:
             s={}
-            s['way']=stat.xpath('.//p[@class="hero-profile__stat-text"]/text()').extract_first()
-            s['times']=stat.xpath('.//p[@class="hero-profile__stat-numb"]/text()').extract_first()
+            s['way']=stat.xpath('.//p[@class="hero-profile__stat-text"]/text()').get(default='').strip()
+            s['times']=stat.xpath('.//p[@class="hero-profile__stat-numb"]/text()').get(default='').strip()
             wins_stats.append(s)
-        player['cover']=response.xpath('//img[@class="hero-profile__image"]/@src').extract_first()
+        player['cover']=response.xpath('//img[@class="hero-profile__image"]/@src').get(default='').strip()
+        self.logger.info(f"抓取完成选手: {player['name']}，共 {len(player['history'])} 条历史记录，{len(wins_stats)} 条胜场统计")
         yield player
     def make_filed(self,player,label,value,key,filed):
         if label == key:

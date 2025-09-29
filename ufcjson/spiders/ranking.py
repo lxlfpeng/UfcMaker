@@ -13,13 +13,13 @@ class RankingSpider(scrapy.Spider):
         info = response.xpath('//div[@class="view-grouping"]')
         # info=info[0:1]
         for weight, i in enumerate(info):
-            rankName = i.xpath('.//div[@class="view-grouping-header"]/text()').extract_first()
+            rankName = i.xpath('.//div[@class="view-grouping-header"]/text()').get(default='').strip()
             playeras = i.xpath('.//a')
             for index, p in enumerate(playeras):
                 player = UfcRankingItem()
                 player['rank_name'] = rankName
-                player['name'] = p.xpath('./text()').extract_first()
+                player['name'] = p.xpath('./text()').get(default='').strip()
                 player['rank'] = index
-                player['page'] = 'https://www.ufc.com' + p.xpath('./@href').extract_first()
+                player['page'] = 'https://www.ufc.com' + p.xpath('./@href').get(default='').strip()
                 print("个人主页:", player['page'])
                 yield player
