@@ -9,7 +9,7 @@ import sqlite3
 class EventpassSpider(scrapy.Spider):
     name = "eventpass"
     allowed_domains = ["www.ufc.com","dmxg5wxfqgb4u.cloudfront.net"]
-    start_urls = ["https://www.ufc.com/views/ajax?view_name=events_upcoming_past&view_display_id=past&view_args=&view_path=%2Fevents&view_base_path=&view_dom_id=b02e3f39797a47a6c0fc51ed4c374e76674ea6419ce0018d933c1aec5146d291&pager_element=0&page=0&ajax_page_state%5Btheme%5D=ufc&ajax_page_state%5Btheme_token%5D=&ajax_page_state%5Blibraries%5D=eJx1kQFyhCAMRS8Ey0V6ByZCVLZZ4pDg1p6-FHS6005nHP3_RfEngRiVIR8OTnGbC2c1E4R3r9yuzb1of5d_S4ofauKObk8R2cwJKfqlcN0cEj4w623lkj7b8UBeYRKzMC-EHjLQoSmI-w0MwcFVfUwSeMdyOM4YmMzGRC6WugHdvrWllN_FyCGKjxZL0NQ5uKmqcpauA5RoQ_t7S2JnZsXyw3Fv9LJcBambOVF7zTaLYZQX4gnIBpFXex9uxcJD8NMq2ydoWF_O_ottH1AvpmwhaOLcXe_HxsJb5OdAbYTVPiANt8EyepQ27gmKnVMRPYnia4fdrwjx9H32TfgeQdx4vKXxuZ_TsuoGIg6q9pXBFcsTB6ATuILLxY-2fCcIJay-hTF7wqe4fr89OFbCgTzc4cMvqO4SJ095Trnl9BLK9247tRe1g34BunMJCA"]
+    start_urls = ["https://www.ufc.com/events#events-list-past"]
     def __init__(self, category=None):
         self.page=0
         self.category=category
@@ -26,15 +26,7 @@ class EventpassSpider(scrapy.Spider):
             self.conn.close()
     def parse(self, response):
         self.logger.info(f"请求地址: {response.url}")
-        #response.body 是 JSON 格式的数据
-        json_data = json.loads(response.xpath('//textarea/text()').get())  # 将 response.body 转换为字典
-        # 获取 data 字段
-        data_field = json_data[2].get('data',None)
-        if len(data_field)==0:
-            data_field = json_data[1].get('data')
-        #创建 HtmlResponse 对象
-        response = HtmlResponse(url=response.url, body=data_field.encode('utf-8'), encoding='utf-8')
-        info = response.xpath('//article[@class="c-card-event--result"]')
+        info = response.xpath('//*[@id="events-list-past"]/div/div/div[2]/div/div/div')
         self.logger.info(f"获取到 {len(info)} 个比赛事件")
         for i in info:
             item = UfcPassItem()
