@@ -27,7 +27,7 @@ jobs:
     - name: Set up Python 3.9
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.13.12
     #通过命令安装项目工程的Python依赖
     - name: install dependencies
       run: |
