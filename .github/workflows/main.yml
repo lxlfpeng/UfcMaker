@@ -35,7 +35,7 @@ jobs:
         pip install Scrapy==2.8.0
         pip install Twisted==22.10.0 
         pip install PyRSS2Gen==1.1
-        pip install Pillow==8.4.0
+        pip install Pillow==10.1.0
         pip install googletrans==4.0.0-rc1
         pip install pycountry==24.6.1
     #执行Python文件
