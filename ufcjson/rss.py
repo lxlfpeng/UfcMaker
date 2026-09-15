@@ -61,11 +61,11 @@ def _fmt_height(value):
 
 
 def _fmt_weight(value):
-    """磅 -> '170.5 lbs'"""
+    """磅 -> '170.5 磅'"""
     s = _clean(value)
     if not s or s == _PLACEHOLDER:
         return _PLACEHOLDER
-    if 'lb' in s.lower():
+    if '磅' in s or 'kg' in s.lower():
         return s
     try:
         lbs = float(s)
@@ -73,7 +73,7 @@ def _fmt_weight(value):
         return s
     if lbs <= 0:
         return _PLACEHOLDER
-    return "%g lbs" % lbs
+    return "%g 磅" % lbs
 
 
 def _fmt_reach(value):
@@ -100,40 +100,151 @@ def _fmt_record(value):
     return s.split('(')[0].strip() or s
 
 
-# 行定义：(标签, 红方字段, 蓝方字段, 格式化函数, 数值单元格附加样式)
-# 顺序对齐官方战卡：身高 / 体重 / 年龄 / 臂展 / 风格 / 战绩
+def _parse_rank(value):
+    """把各式写法的名次归一成整数，冠军 = 0；认不出返回 None。
+
+    名次有两个来源、写法不统一：
+      - `upcoming` 爬虫直接抄战卡页面上的文案，形如 '#5' 或 'C'
+      - 每周三的榜单快照（`ufc_ranking_data.json`）给的是裸整数，冠军存 0
+
+    int 要在 _clean 之前判：`_clean` 是 `(value or '')`，整数 0 是 falsy，
+    先过 _clean 会把冠军悄悄变成空值。
+    """
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    s = _clean(value).lstrip('#').strip()
+    if not s:
+        return None
+    if s.isdigit():
+        return int(s)
+    if s.lower() in ('c', 'champion', 'champ', '冠军'):
+        return 0
+    return None
+
+
+def _fmt_rank(value):
+    """名次展示：冠军 / #5，取不到才走占位符。
+
+    认不出的**非空**值原样透出（页面偶尔写 `NR` = not ranked），那是有信息量的
+    值，比当成「取不到」直接抹成 — 更诚实。
+    """
+    n = _parse_rank(value)
+    if n is not None:
+        return '冠军' if n == 0 else '#%d' % n
+    return _clean(value) or _PLACEHOLDER
+
+
+def _stat(fmt, key_suffix):
+    """把「值 -> 文本」的格式化器适配成行的统一签名 fn(item, side) -> 文本。
+
+    key 只写后缀（'Height'），前缀由 side 补上（'redHeight' / 'blueHeight'），
+    省掉每行都把 red* / blue* 写两遍的重复。
+
+    统一签名是为了让「国籍」这种要拼第二个字段（国旗）的行不必在渲染循环里
+    开特殊分支 —— 它只是另一个同样签名的函数。
+    """
+    return lambda item, side: fmt(item.get(side + key_suffix))
+
+
+def _country_value(item, side):
+    """国籍取值：把国旗拼到国名「朝标签」的一侧，两面国旗正好夹住「国籍」标签。
+
+    左列写「巴西 🇧🇷」、右列写「🇺🇸 美国」，镜像对称。此前国旗挂在照片下方，
+    离标签隔着一整个选手名，要做对比还得先把视线从中间挪到两侧再挪回来。
+
+    国旗缺失时退化为纯国名 —— pipeline 的兜底值是 🏳，与「查不到」同义，
+    单独显示出来只会变成噪声；国家本身也缺失时才交给占位符。
+    """
+    country = _fmt_text(item.get(side + 'PlayerCountry'))
+    flag = _clean(item.get(side + 'PlayerCountryEmoji'))
+    if country == _PLACEHOLDER or not flag or flag == '🏳':
+        return country
+    return '%s %s' % (country, flag) if side == 'red' else '%s %s' % (flag, country)
+
+
+# 行定义：(标签, 渲染函数)。渲染函数统一签名 fn(item, side) -> 文本。
+# 顺序对齐官方战卡：身高 / 体重 / 年龄 / 臂展 / 腿展 / 风格 / 战绩，然后国籍、排名收尾。
+# 后两行放最后而不是最前，是为了让「并排可比」：前面几行保持身体指标的固定次序，
+# 换赛事时眼睛不用重新找位置；国籍与排名才是这张卡区别于其他卡的信息。
+# 标签用中文：订阅端整体是中文内容，夹一组英文标签会显得割裂。
 _STAT_ROWS = (
-    ('HEIGHT', 'redHeight', 'blueHeight', _fmt_height,
-     'font-size:16px;font-weight:bold;white-space:nowrap;'),
-    ('WEIGHT', 'redWeight', 'blueWeight', _fmt_weight,
-     'font-size:16px;font-weight:bold;white-space:normal;word-break:break-word;'),
-    ('AGE', 'redAge', 'blueAge', _fmt_text,
-     'font-size:16px;font-weight:bold;white-space:nowrap;'),
-    ('REACH', 'redReach', 'blueReach', _fmt_reach,
-     'font-size:16px;font-weight:bold;white-space:nowrap;'),
-    ('STYLE', 'redStyle', 'blueStyle', _fmt_text,
-     'font-size:13px;white-space:normal;word-break:break-word;'),
-    ('RECORD', 'redRecord', 'blueRecord', _fmt_record,
-     'font-size:15px;font-weight:bold;white-space:nowrap;'),
+    ('身高', _stat(_fmt_height, 'Height')),
+    ('体重', _stat(_fmt_weight, 'Weight')),
+    ('年龄', _stat(_fmt_text, 'Age')),
+    ('臂展', _stat(_fmt_reach, 'Reach')),
+    ('腿展', _stat(_fmt_reach, 'LegReach')),
+    ('风格', _stat(_fmt_text, 'Style')),
+    ('战绩', _stat(_fmt_record, 'Record')),
+    ('国籍', _country_value),
+    ('排名', _stat(_fmt_rank, 'PlayerRank')),
 )
 
-_LABEL_CELL_STYLE = ('padding:7px 4px;text-align:center;font-size:11px;'
-                     'letter-spacing:0.5px;color:#9a9a9a;text-transform:uppercase;'
-                     'white-space:nowrap;')
+# 版式完全由 HTML 属性承载，不使用任何内联 CSS。
+#
+# 起因：手机端 RSS 阅读器普遍会剥掉 style 属性（实测某个 iOS 阅读器渲染出来是
+# 白底黑字，而模板里写的是深色底），一旦被剥：
+#   - flex 布局退化成竖排的三块
+#   - table-layout:fixed 与 width:22% 失效，「数值 | 标签 | 数值」挤成一团
+#   - img 的 width:100% 失效，全身照会以原始像素撑爆整张卡片
+# width / align / valign / border / cellpadding 这些老式 HTML 属性的存活率高得多，
+# 而且就算全被剥掉，退化结果也只是「值 标签 值」依次排列，仍然读得懂。
+_PHOTO_WIDTH = 60          # 全身照固定像素宽，避免依赖 width:100%
+_CELL_PADDING = 3
+_VALUE_WIDTH = 26          # 左右数值列各占 26%，中间标签列 14%
+_LABEL_WIDTH = 14
+_PHOTO_COL_WIDTH = (100 - 2 * _VALUE_WIDTH - _LABEL_WIDTH) // 2   # 两侧照片列各 17%
 
 
-def _photo_cell(url, name, rowspan, side):
+def _photo_caption(name):
+    """照片下方的选手名。
+
+    加这一块的原因：改版后选手名只剩 img 的 alt，图片一旦加载失败（或被客户端
+    忽略 alt），整张卡就没人名了。
+
+    字号用 <small> 而不是 font-size 内联样式，理由同 _STAT_ROWS 上方 —— 客户端会
+    剥 style，但语义标签能活下来，且被剥了也只是回到正常字号，不影响可读性。
+
+    这里只放名字，不放国旗/国籍：国籍另有对比行，国旗跟着它走（见 _country_value）。
+    照片列只占 17%（360px 屏约 61px），中文名本身已经要折行，再挂一行「🇧🇷 巴西」
+    会把单元格撑得比九行数据还高。
+    """
+    name = _clean(name)
+    if not name:
+        return ''
+    return '<br/><b>%s</b>' % html_lib.escape(name, quote=False)
+
+
+def _photo_cell(item, side, rowspan):
     """左右两侧的选手全身照单元格，纵向跨满整张表。
 
+    宽度写死在 img 的 width 属性上：一旦 width:100% 被客户端剥掉，
+    照片会以原始像素渲染并把整张卡片撑爆，固定像素宽没有这个风险。
     不使用 max-height / overflow:hidden —— 那会把选手的脚裁掉。
     """
-    padding = 'padding:8px 6px 8px 8px;' if side == 'left' else 'padding:8px 8px 8px 6px;'
+    url = item.get(side + 'PlayerBack') or ''
+    name = item.get(side + 'PlayerName') or ''
     return (
-        f'<td rowspan="{rowspan}" width="20%" valign="middle" '
-        f'style="width:20%;{padding}vertical-align:middle;">'
+        f'<td width="{_PHOTO_COL_WIDTH}%" align="center" valign="middle" rowspan="{rowspan}">'
         f'<img src="{html_lib.escape(url, quote=True)}" '
-        f'alt="{html_lib.escape(name, quote=True)}" '
-        f'style="display:block;width:100%;height:auto;border:0;"/></td>'
+        f'width="{_PHOTO_WIDTH}" border="0" '
+        f'alt="{html_lib.escape(name, quote=True)}"/>'
+        f'{_photo_caption(name)}</td>'
+    )
+
+
+def _value_cells(left, label, right):
+    """一行三个单元格：右对齐数值 · 居中标签 · 左对齐数值。
+
+    数值贴近标签的一侧补两个 &nbsp;，即使列宽属性全被剥掉也不会和标签黏成一片。
+    """
+    return (
+        f'<td width="{_VALUE_WIDTH}%" align="right" valign="middle">'
+        f'{left}&nbsp;&nbsp;</td>'
+        f'<td width="{_LABEL_WIDTH}%" align="center" valign="middle">{label}</td>'
+        f'<td width="{_VALUE_WIDTH}%" align="left" valign="middle">'
+        f'&nbsp;&nbsp;{right}</td>'
     )
 
 
@@ -173,37 +284,37 @@ class RssMaker:
     def get_html_str(self, item):
         """生成战卡对比表（tale of the tape）。
 
-        版式：左右两张选手全身照（纵向跨满整张表），中间一列数据行，
-        每行是「右对齐数值 | 居中标签 | 左对齐数值」。
+        版式：左右两张选手全身照（纵向跨满整张表，下方只带姓名），
+        中间一列数据行，每行是「右对齐数值 | 居中标签 | 左对齐数值」。
 
-        用单个 <table> + rowspan 而不是 flex：定宽三列只有表格能保证行行对齐，
-        而且表格在邮件 / RSS 客户端里的渲染兼容性远好于 flex。
+        全部布局都走 HTML 属性（width / align / valign / border / cellpadding），
+        不写一个内联 style —— 原因见 _STAT_ROWS 上方的注释。数值用 <b> 加粗
+        拉开与标签的层次，<b> 是语义标签，清洗器一般不剥。
         """
         rowspan = len(_STAT_ROWS)
-        photo_red = _photo_cell(item['redPlayerBack'], item['redPlayerName'], rowspan, 'left')
-        photo_blue = _photo_cell(item['bluePlayerBack'], item['bluePlayerName'], rowspan, 'right')
+        photo_red = _photo_cell(item, 'red', rowspan)
+        photo_blue = _photo_cell(item, 'blue', rowspan)
 
         trs = []
-        for idx, (label, red_key, blue_key, fmt, value_style) in enumerate(_STAT_ROWS):
-            left = html_lib.escape(fmt(item.get(red_key)))
-            right = html_lib.escape(fmt(item.get(blue_key)))
-            cells = (
-                f'<td width="22%" valign="middle" style="width:22%;padding:7px 6px 7px 0;'
-                f'text-align:right;color:#ffffff;{value_style}">{left}</td>'
-                f'<td width="16%" valign="middle" style="{_LABEL_CELL_STYLE}">{label}</td>'
-                f'<td width="22%" valign="middle" style="width:22%;padding:7px 0 7px 6px;'
-                f'text-align:left;color:#ffffff;{value_style}">{right}</td>'
+        for idx, (label, render) in enumerate(_STAT_ROWS):
+            # 文本节点只需转义 < > &，再转义引号会白白产出 &quot; / &#x27; 这种实体，
+            # 在 description 的 CDATA 里没有任何必要
+            cells = _value_cells(
+                f'<b>{html_lib.escape(render(item, "red"), quote=False)}</b>',
+                label,
+                f'<b>{html_lib.escape(render(item, "blue"), quote=False)}</b>',
             )
             if idx == 0:
                 trs.append(f'<tr>{photo_red}{cells}{photo_blue}</tr>')
             else:
                 trs.append(f'<tr>{cells}</tr>')
 
-        return f"""<div style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; background: #0d0d0d; color: #ffffff;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-        {"".join(trs)}
-    </table>
-</div>"""
+        return (
+            '<div style="max-width:600px;margin:0 auto;">'
+            f'<table width="100%" border="0" cellpadding="{_CELL_PADDING}" cellspacing="0">'
+            f'{"".join(trs)}</table>'
+            '</div>'
+        )
 
     def get_news_html_str(self, item):
         """生成新闻条目的 RSS description。
