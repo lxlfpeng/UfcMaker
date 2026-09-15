@@ -1,0 +1,290 @@
+2026-09-15 10:25:58 [scrapy.utils.log] INFO: Scrapy 2.19.0 started (bot: ufcjson)
+2026-09-15 10:25:58 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.14.6',
+ 'cssselect': '1.5.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.1',
+ 'Twisted': '26.4.0',
+ 'Python': '3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.2 25 Aug 2026)',
+ 'cryptography': '50.0.1',
+ 'Platform': 'Linux-6.17.0-1022-azure-x86_64-with-glibc2.39'}
+2026-09-15 10:25:58 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-09-15 10:25:58 [scrapy.extensions.telnet] INFO: Telnet Password: ac1c7a1ff85e50e5
+2026-09-15 10:25:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.remote_control.RemoteControl']
+2026-09-15 10:25:59 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ufcjson',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'IMAGES_STORE': '/home/runner/work/UfcMaker/UfcMaker/ufcjson/../output/images',
+ 'LOG_FILE': './log/scrapy_log.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ufcjson.spiders',
+ 'SPIDER_MODULES': ['ufcjson.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 '
+               'Safari/537.36'}
+2026-09-15 10:25:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-09-15 10:25:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ufcjson.middlewares.UfcjsonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-09-15 10:25:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['ufcjson.pipelines.UfcCountryCodePipeline',
+ 'ufcjson.pipelines.UfcDefaultPhotoPipeline',
+ 'ufcjson.pipelines.ImagesDownloadPipeline',
+ 'ufcjson.pipelines.TranslatorPipeline',
+ 'ufcjson.pipelines.JsonWriterPipeline',
+ 'ufcjson.pipelines.SqliteDbPipeline',
+ 'ufcjson.pipelines.UfcRssMakerPipeline']
+2026-09-15 10:25:59 [scrapy.core.engine] INFO: Spider opened
+2026-09-15 10:25:59 [upcoming] WARNING: [RSS] 读取旧 coming JSON 失败: Expecting value: line 1 column 1 (char 0)
+2026-09-15 10:25:59 [upcoming] INFO: [RSS] 从 published_ids 加载 62 个已发布战卡 ID
+2026-09-15 10:25:59 [upcoming] INFO: [RSS] 预加载选手数据 3240 条
+2026-09-15 10:25:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-09-15 10:25:59 [upcoming] INFO: Spider opened: upcoming
+2026-09-15 10:25:59 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-09-15 10:25:59 [scrapy.extensions.remote_control] INFO: Remote control HTTP server listening on port 41191 (job 2346-74ae96322ea54622a28c338374463515)
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到 8 个即将发生的比赛事件
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Van vs Pantoja 2
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Van vs Pantoja 2 - Los Angeles, CA, United States - https://www.ufc.com/event/cryptocom-ufc-331
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Rosas Jr. vs Barcelos
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Rosas Jr. vs Barcelos - Las Vegas, NV, United States - https://www.ufc.com/event/ufc-fight-night-september-26-2026
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Silva vs Wang
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Silva vs Wang - Salt Lake City, UT, United States - https://www.ufc.com/event/ufc-332
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Allen vs Duncan
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Allen vs Duncan - Las Vegas, NV, United States - https://www.ufc.com/event/ufc-fight-night-october-10-2026
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Buckley vs Malott
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Buckley vs Malott - Edmonton, AB, Canada - https://www.ufc.com/event/ufc-fight-night-october-17-2026
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Volkanovski vs Evloev
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Volkanovski vs Evloev - Abu Dhabi, United Arab Emirates - https://www.ufc.com/event/ufc-333
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: TBD vs TBD
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: TBD vs TBD - Las Vegas, NV, United States - https://www.ufc.com/event/ufc-fight-night-october-31-2026
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到比赛标题: Bonfim vs Brady
+2026-09-15 10:26:00 [upcoming] INFO: 准备抓取比赛详情: Bonfim vs Brady - Las Vegas, NV, United States - https://www.ufc.com/event/ufc-fight-night-november-07-2026
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/gabriel-bonfim VS https://www.ufc.com/athlete/sean-brady - Main - Welterweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFCFightNight，共 1 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/raul-rosas-jr VS https://www.ufc.com/athlete/raoni-barcelos - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/rodolfo-vieira VS https://www.ufc.com/athlete/robert-bryczek - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/brady-hiestand VS https://www.ufc.com/athlete/rinya-nakamura - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/mehemmedeli-osmanli VS https://www.ufc.com/athlete/ilimbek-akylbek - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/melissa-amaya VS https://www.ufc.com/athlete/valesca-machado - Main - Women's Strawweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/josiah-harrell VS https://www.ufc.com/athlete/elves-brener - Main - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/rodolfo-bellato VS https://www.ufc.com/athlete/christian-edwards - Prelims - Light Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/montel-jackson VS https://www.ufc.com/athlete/ricky-simon - Prelims - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/john-castaneda VS https://www.ufc.com/athlete/heili-alateng - Prelims - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/norma-dumont VS https://www.ufc.com/athlete/ailin-perez - Prelims - Women's Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/vanessa-demopoulos VS https://www.ufc.com/athlete/yazmin-jauregui - Prelims - Women's Strawweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFCFightNight，共 11 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/alexander-volkanovski VS https://www.ufc.com/athlete/movsar-evloev - Main - Featherweight Title Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/petr-yan VS https://www.ufc.com/athlete/merab-dvalishvili - Main - Bantamweight Title Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/arnold-allen VS https://www.ufc.com/athlete/aaron-pico - Main - Featherweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/azamat-murzakanov VS https://www.ufc.com/athlete/dominick-reyes - Main - Light Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/loneer-kavanagh VS https://www.ufc.com/athlete/ramazan-temirov - Main - Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/nikita-krylov VS https://www.ufc.com/athlete/abdulrakhman-yakhyaev - Main - Light Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/alexander-volkov VS https://www.ufc.com/athlete/rizvan-kuniev - Main - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/abus-magomedov VS https://www.ufc.com/athlete/cameron-rowston - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC333 https://www.ufc.com/athlete/grant-dawson VS https://www.ufc.com/athlete/nurullo-aliev - Main - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFC333，共 9 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/joaquin-buckley VS https://www.ufc.com/athlete/mike-malott - Main - Welterweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/cody-chovancek VS https://www.ufc.com/athlete/suyoung-you - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/erin-blanchfield VS https://www.ufc.com/athlete/jasmine-jasudavicius - Main - Women's Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/javad-mahjoub VS https://www.ufc.com/athlete/louie-sutherland - Main - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/chad-anheliger VS https://www.ufc.com/athlete/steven-koslow - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/marc-andre-barriault VS https://www.ufc.com/athlete/kyle-daukaus - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/jamey-lyn-horth VS https://www.ufc.com/athlete/katlyn-cerminara - Main - Women's Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/tanner-boser VS https://www.ufc.com/athlete/jhonata-diniz - Main - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/mandel-nallo VS https://www.ufc.com/athlete/nate-landwehr - Main - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/melissa-croden VS https://www.ufc.com/athlete/chelsea-chandler - Main - Women's Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/louis-jourdain VS https://www.ufc.com/athlete/timothy-cuamba - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/julien-leblanc VS https://www.ufc.com/athlete/gilbert-urbina - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFCFightNight，共 12 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/brendan-allen VS https://www.ufc.com/athlete/christian-leroy-duncan - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFCFightNight，共 1 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/lucia-szabova VS https://www.ufc.com/athlete/tainara-lisboa - Main - Women's Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFCFightNight https://www.ufc.com/athlete/nick-klein VS https://www.ufc.com/athlete/joseph-kropschot - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFCFightNight，共 2 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/joshua-van VS https://www.ufc.com/athlete/alexandre-pantoja - Main - Flyweight Title Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/arman-tsarukyan VS https://www.ufc.com/athlete/mauricio-ruffy - Main - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/patricio-freire VS https://www.ufc.com/athlete/dooho-choi - Main - Featherweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/alonzo-menifield VS https://www.ufc.com/athlete/iwo-baraniewski - Main - Light Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/gable-steveson VS https://www.ufc.com/athlete/sean-sharaf - Main - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/marlon-vera VS https://www.ufc.com/athlete/charles-jourdain - Prelims - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/tai-tuivasa VS https://www.ufc.com/athlete/robelis-despaigne - Prelims - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/michael-aswell VS https://www.ufc.com/athlete/joosang-yoo - Prelims - Featherweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/ryan-gandra VS https://www.ufc.com/athlete/ozzy-diaz - Prelims - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/edmen-shahbazyan VS https://www.ufc.com/athlete/brunno-ferreira - EarlyPrelims - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/casey-oneill VS https://www.ufc.com/athlete/eduarda-moura - EarlyPrelims - Women's Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: Crypto.comUFC331 https://www.ufc.com/athlete/giga-chikadze VS https://www.ufc.com/athlete/joanderson-brito - EarlyPrelims - Featherweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: Crypto.comUFC331，共 12 个战卡分组
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/natalia-silva VS https://www.ufc.com/athlete/wang-cong - Main - Women's Flyweight Title Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/deiveson-figueiredo VS https://www.ufc.com/athlete/payton-talbott - Main - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/bobby-green VS https://www.ufc.com/athlete/esteban-ribovics - Main - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/roberto-soldic VS https://www.ufc.com/athlete/khaos-williams - Main - Welterweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/ateba-gautier VS https://www.ufc.com/athlete/roman-kopylov - Main - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/imanol-rodriguez VS https://www.ufc.com/athlete/alden-coria - Prelims - Flyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/damian-pinas VS https://www.ufc.com/athlete/andrey-pulyaev - Prelims - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/marcus-mcghee VS https://www.ufc.com/athlete/benardo-sopaj - Prelims - Bantamweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/johnny-walker VS https://www.ufc.com/athlete/mick-parkin - EarlyPrelims - Heavyweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/rafael-dos-anjos VS https://www.ufc.com/athlete/alexander-hernandez - EarlyPrelims - Lightweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/marvin-vettori VS https://www.ufc.com/athlete/ismail-naurdiev - EarlyPrelims - Middleweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 抓取到的战卡: UFC332 https://www.ufc.com/athlete/court-mcgee VS https://www.ufc.com/athlete/eric-nolan - EarlyPrelims - Welterweight Bout
+2026-09-15 10:26:00 [upcoming] INFO: 完成抓取比赛: UFC332，共 12 个战卡分组
+2026-09-15 10:26:00 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-09-15 10:26:00 [upcoming] INFO: [RSS] 本次爬取 60 张战卡，新增 0 张
+2026-09-15 10:26:00 [upcoming] INFO: [RSS] 无新增战卡，跳过 RSS 生成
+2026-09-15 10:26:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 7,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 7,
+ 'downloader/request_bytes': 3611,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 286514,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'elapsed_time_seconds': 0.6548492590000023,
+ 'file_count': 1,
+ 'file_status_count/uptodate': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 9, 15, 10, 26, 0, 237755, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 1529762,
+ 'httpcompression/response_count': 9,
+ 'item_scraped_count': 68,
+ 'items_per_minute': None,
+ 'log_count/INFO': 92,
+ 'memusage/max': 100757504,
+ 'memusage/startup': 100757504,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 9,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2026, 9, 15, 10, 25, 59, 582905, tzinfo=datetime.timezone.utc)}
+2026-09-15 10:26:00 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-09-15 10:26:00 [scrapy.utils.log] INFO: Scrapy 2.19.0 started (bot: ufcjson)
+2026-09-15 10:26:00 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.14.6',
+ 'cssselect': '1.5.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.1',
+ 'Twisted': '26.4.0',
+ 'Python': '3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.2 25 Aug 2026)',
+ 'cryptography': '50.0.1',
+ 'Platform': 'Linux-6.17.0-1022-azure-x86_64-with-glibc2.39'}
+2026-09-15 10:26:00 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-09-15 10:26:00 [scrapy.extensions.telnet] INFO: Telnet Password: 380287b177bfd102
+2026-09-15 10:26:00 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.remote_control.RemoteControl']
+2026-09-15 10:26:00 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ufcjson',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'IMAGES_STORE': '/home/runner/work/UfcMaker/UfcMaker/ufcjson/../output/images',
+ 'LOG_FILE': './log/scrapy_log.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ufcjson.spiders',
+ 'SPIDER_MODULES': ['ufcjson.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 '
+               'Safari/537.36'}
+2026-09-15 10:26:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-09-15 10:26:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ufcjson.middlewares.UfcjsonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-09-15 10:26:01 [scrapy.middleware] INFO: Enabled item pipelines:
+['ufcjson.pipelines.UfcCountryCodePipeline',
+ 'ufcjson.pipelines.UfcDefaultPhotoPipeline',
+ 'ufcjson.pipelines.ImagesDownloadPipeline',
+ 'ufcjson.pipelines.TranslatorPipeline',
+ 'ufcjson.pipelines.JsonWriterPipeline',
+ 'ufcjson.pipelines.SqliteDbPipeline',
+ 'ufcjson.pipelines.UfcRssMakerPipeline']
+2026-09-15 10:26:01 [scrapy.core.engine] INFO: Spider opened
+2026-09-15 10:26:01 [ufccn_news] INFO: [RSS] 从 published_ids 加载 60 条已发布新闻 ID
+2026-09-15 10:26:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-09-15 10:26:01 [ufccn_news] INFO: Spider opened: ufccn_news
+2026-09-15 10:26:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-09-15 10:26:01 [scrapy.extensions.remote_control] INFO: Remote control HTTP server listening on port 36007 (job 2350-2835b047882f42b6b05207f1b4d8916a)
+2026-09-15 10:26:03 [ufccn_news] INFO: 抓取到 1000 条 UFC 中文新闻
+2026-09-15 10:26:03 [ufccn_news] WARNING: [新闻] 详情请求已达单轮上限 60 条，剩余新增条目顺延到下一轮
+2026-09-15 10:26:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-09-15 10:26:04 [ufccn_news] INFO: [RSS-新闻] 本次爬取 120 条新闻，新增 60 条
+2026-09-15 10:26:04 [ufccn_news] INFO: [RSS-新闻] RSS 更新完成，共 100 条（新增新闻 60 条）
+2026-09-15 10:26:04 [ufccn_news] INFO: [RSS-新闻] 已更新 published_ids.json，共 182 个 ID
+2026-09-15 10:26:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27148,
+ 'downloader/request_count': 62,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 61,
+ 'downloader/response_bytes': 732488,
+ 'downloader/response_count': 62,
+ 'downloader/response_status_count/200': 62,
+ 'elapsed_time_seconds': 3.517842564999995,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 9, 15, 10, 26, 4, 622316, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 120,
+ 'items_per_minute': 2400.0,
+ 'log_count/INFO': 9,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 92971008,
+ 'memusage/startup': 92971008,
+ 'request_depth_max': 2,
+ 'response_received_count': 62,
+ 'responses_per_minute': 1240.0,
+ 'scheduler/dequeued': 62,
+ 'scheduler/dequeued/memory': 62,
+ 'scheduler/enqueued': 62,
+ 'scheduler/enqueued/memory': 62,
+ 'start_time': datetime.datetime(2026, 9, 15, 10, 26, 1, 104472, tzinfo=datetime.timezone.utc)}
+2026-09-15 10:26:04 [scrapy.core.engine] INFO: Spider closed (finished)

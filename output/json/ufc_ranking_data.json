@@ -1,0 +1,207 @@
+{"code":0,"msg":"success","data":[{"name": "Islam Makhachev", "page": "https://www.ufc.com/athlete/islam-makhachev", "rank_name": "Men's Pound-for-Pound", "rank": 1}
+,{"name": "Alexander Volkanovski", "page": "https://www.ufc.com/athlete/alexander-volkanovski", "rank_name": "Men's Pound-for-Pound", "rank": 2}
+,{"name": "Petr Yan", "page": "https://www.ufc.com/athlete/petr-yan", "rank_name": "Men's Pound-for-Pound", "rank": 3}
+,{"name": "Justin Gaethje", "page": "https://www.ufc.com/athlete/justin-gaethje", "rank_name": "Men's Pound-for-Pound", "rank": 4}
+,{"name": "Ilia Topuria", "page": "https://www.ufc.com/athlete/ilia-topuria", "rank_name": "Men's Pound-for-Pound", "rank": 5}
+,{"name": "Tom Aspinall", "page": "https://www.ufc.com/athlete/tom-aspinall", "rank_name": "Men's Pound-for-Pound", "rank": 6}
+,{"name": "Sean Strickland", "page": "https://www.ufc.com/athlete/sean-strickland", "rank_name": "Men's Pound-for-Pound", "rank": 7}
+,{"name": "Merab Dvalishvili", "page": "https://www.ufc.com/athlete/merab-dvalishvili", "rank_name": "Men's Pound-for-Pound", "rank": 8}
+,{"name": "Alex Pereira", "page": "https://www.ufc.com/athlete/alex-pereira", "rank_name": "Men's Pound-for-Pound", "rank": 9}
+,{"name": "Ciryl Gane", "page": "https://www.ufc.com/athlete/ciryl-gane", "rank_name": "Men's Pound-for-Pound", "rank": 10}
+,{"name": "Joshua Van", "page": "https://www.ufc.com/athlete/joshua-van", "rank_name": "Men's Pound-for-Pound", "rank": 10}
+,{"name": "Khamzat Chimaev", "page": "https://www.ufc.com/athlete/khamzat-chimaev", "rank_name": "Men's Pound-for-Pound", "rank": 12}
+,{"name": "Alexandre Pantoja", "page": "https://www.ufc.com/athlete/alexandre-pantoja", "rank_name": "Men's Pound-for-Pound", "rank": 13}
+,{"name": "Arman Tsarukyan", "page": "https://www.ufc.com/athlete/arman-tsarukyan", "rank_name": "Men's Pound-for-Pound", "rank": 14}
+,{"name": "Charles Oliveira", "page": "https://www.ufc.com/athlete/charles-oliveira", "rank_name": "Men's Pound-for-Pound", "rank": 15}
+,{"name": "Joshua Van", "page": "https://www.ufc.com/athlete/joshua-van", "rank_name": "Flyweight", "rank": 0}
+,{"name": "Alexandre Pantoja", "page": "https://www.ufc.com/athlete/alexandre-pantoja", "rank_name": "Flyweight", "rank": 1}
+,{"name": "Manel Kape", "page": "https://www.ufc.com/athlete/manel-kape", "rank_name": "Flyweight", "rank": 2}
+,{"name": "Brandon Royval", "page": "https://www.ufc.com/athlete/brandon-royval", "rank_name": "Flyweight", "rank": 3}
+,{"name": "Tatsuro Taira", "page": "https://www.ufc.com/athlete/tatsuro-taira", "rank_name": "Flyweight", "rank": 4}
+,{"name": "Kyoji Horiguchi", "page": "https://www.ufc.com/athlete/kyoji-horiguchi", "rank_name": "Flyweight", "rank": 5}
+,{"name": "Lone’er Kavanagh", "page": "https://www.ufc.com/athlete/loneer-kavanagh", "rank_name": "Flyweight", "rank": 6}
+,{"name": "Asu Almabayev", "page": "https://www.ufc.com/athlete/asu-almabayev", "rank_name": "Flyweight", "rank": 7}
+,{"name": "Brandon Moreno", "page": "https://www.ufc.com/athlete/brandon-moreno", "rank_name": "Flyweight", "rank": 8}
+,{"name": "Amir Albazi", "page": "https://www.ufc.com/athlete/amir-albazi", "rank_name": "Flyweight", "rank": 9}
+,{"name": "Ramazan Temirov", "page": "https://www.ufc.com/athlete/ramazan-temirov", "rank_name": "Flyweight", "rank": 10}
+,{"name": "Steve Erceg", "page": "https://www.ufc.com/athlete/steve-erceg", "rank_name": "Flyweight", "rank": 11}
+,{"name": "Tim Elliott", "page": "https://www.ufc.com/athlete/tim-elliott", "rank_name": "Flyweight", "rank": 12}
+,{"name": "Sumudaerji", "page": "https://www.ufc.com/athlete/su-mudaerji", "rank_name": "Flyweight", "rank": 13}
+,{"name": "Tagir Ulanbekov", "page": "https://www.ufc.com/athlete/tagir-ulanbekov", "rank_name": "Flyweight", "rank": 14}
+,{"name": "Alex Perez", "page": "https://www.ufc.com/athlete/alex-perez", "rank_name": "Flyweight", "rank": 15}
+,{"name": "Petr Yan", "page": "https://www.ufc.com/athlete/petr-yan", "rank_name": "Bantamweight", "rank": 0}
+,{"name": "Merab Dvalishvili", "page": "https://www.ufc.com/athlete/merab-dvalishvili", "rank_name": "Bantamweight", "rank": 1}
+,{"name": "Sean O'Malley", "page": "https://www.ufc.com/athlete/sean-omalley", "rank_name": "Bantamweight", "rank": 2}
+,{"name": "Song Yadong", "page": "https://www.ufc.com/athlete/song-yadong", "rank_name": "Bantamweight", "rank": 3}
+,{"name": "Umar Nurmagomedov", "page": "https://www.ufc.com/athlete/umar-nurmagomedov", "rank_name": "Bantamweight", "rank": 4}
+,{"name": "Mario Bautista", "page": "https://www.ufc.com/athlete/mario-bautista", "rank_name": "Bantamweight", "rank": 5}
+,{"name": "Cory Sandhagen", "page": "https://www.ufc.com/athlete/cory-sandhagen", "rank_name": "Bantamweight", "rank": 6}
+,{"name": "Aiemann Zahabi", "page": "https://www.ufc.com/athlete/aiemann-zahabi", "rank_name": "Bantamweight", "rank": 7}
+,{"name": "David Martinez", "page": "https://www.ufc.com/athlete/david-martinez", "rank_name": "Bantamweight", "rank": 8}
+,{"name": "Deiveson Figueiredo", "page": "https://www.ufc.com/athlete/deiveson-figueiredo", "rank_name": "Bantamweight", "rank": 9}
+,{"name": "Marlon Vera", "page": "https://www.ufc.com/athlete/marlon-vera", "rank_name": "Bantamweight", "rank": 10}
+,{"name": "Payton Talbott", "page": "https://www.ufc.com/athlete/payton-talbott", "rank_name": "Bantamweight", "rank": 11}
+,{"name": "Raul Rosas Jr.", "page": "https://www.ufc.com/athlete/raul-rosas-jr", "rank_name": "Bantamweight", "rank": 12}
+,{"name": "Raoni Barcelos", "page": "https://www.ufc.com/athlete/raoni-barcelos", "rank_name": "Bantamweight", "rank": 13}
+,{"name": "Farid Basharat", "page": "https://www.ufc.com/athlete/farid-basharat", "rank_name": "Bantamweight", "rank": 14}
+,{"name": "Marcus McGhee", "page": "https://www.ufc.com/athlete/marcus-mcghee", "rank_name": "Bantamweight", "rank": 15}
+,{"name": "Alexander Volkanovski", "page": "https://www.ufc.com/athlete/alexander-volkanovski", "rank_name": "Featherweight", "rank": 0}
+,{"name": "Movsar Evloev", "page": "https://www.ufc.com/athlete/movsar-evloev", "rank_name": "Featherweight", "rank": 1}
+,{"name": "Diego Lopes", "page": "https://www.ufc.com/athlete/diego-lopes", "rank_name": "Featherweight", "rank": 2}
+,{"name": "Lerone Murphy", "page": "https://www.ufc.com/athlete/lerone-murphy", "rank_name": "Featherweight", "rank": 3}
+,{"name": "Aljamain Sterling", "page": "https://www.ufc.com/athlete/aljamain-sterling", "rank_name": "Featherweight", "rank": 4}
+,{"name": "Yair Rodriguez", "page": "https://www.ufc.com/athlete/yair-rodriguez", "rank_name": "Featherweight", "rank": 5}
+,{"name": "Jean Silva", "page": "https://www.ufc.com/athlete/jean-silva", "rank_name": "Featherweight", "rank": 6}
+,{"name": "Arnold Allen", "page": "https://www.ufc.com/athlete/arnold-allen", "rank_name": "Featherweight", "rank": 7}
+,{"name": "Youssef Zalal", "page": "https://www.ufc.com/athlete/youssef-zalal", "rank_name": "Featherweight", "rank": 8}
+,{"name": "Kevin Vallejos", "page": "https://www.ufc.com/athlete/kevin-vallejos", "rank_name": "Featherweight", "rank": 9}
+,{"name": "Steve Garcia", "page": "https://www.ufc.com/athlete/steve-garcia", "rank_name": "Featherweight", "rank": 10}
+,{"name": "Brian Ortega", "page": "https://www.ufc.com/athlete/brian-ortega", "rank_name": "Featherweight", "rank": 11}
+,{"name": "Aaron Pico", "page": "https://www.ufc.com/athlete/aaron-pico", "rank_name": "Featherweight", "rank": 12}
+,{"name": "Melquizael Costa", "page": "https://www.ufc.com/athlete/melquizael-costa", "rank_name": "Featherweight", "rank": 13}
+,{"name": "David Onama", "page": "https://www.ufc.com/athlete/david-onama", "rank_name": "Featherweight", "rank": 14}
+,{"name": "Patricio Pitbull", "page": "https://www.ufc.com/athlete/patricio-freire", "rank_name": "Featherweight", "rank": 15}
+,{"name": "Justin Gaethje", "page": "https://www.ufc.com/athlete/justin-gaethje", "rank_name": "Lightweight", "rank": 0}
+,{"name": "Ilia Topuria", "page": "https://www.ufc.com/athlete/ilia-topuria", "rank_name": "Lightweight", "rank": 1}
+,{"name": "Arman Tsarukyan", "page": "https://www.ufc.com/athlete/arman-tsarukyan", "rank_name": "Lightweight", "rank": 2}
+,{"name": "Charles Oliveira", "page": "https://www.ufc.com/athlete/charles-oliveira", "rank_name": "Lightweight", "rank": 3}
+,{"name": "Max Holloway", "page": "https://www.ufc.com/athlete/max-holloway", "rank_name": "Lightweight", "rank": 4}
+,{"name": "Paddy Pimblett", "page": "https://www.ufc.com/athlete/paddy-pimblett", "rank_name": "Lightweight", "rank": 5}
+,{"name": "Benoît Saint Denis", "page": "https://www.ufc.com/athlete/benoit-saint-denis", "rank_name": "Lightweight", "rank": 6}
+,{"name": "Mauricio Ruffy", "page": "https://www.ufc.com/athlete/mauricio-ruffy", "rank_name": "Lightweight", "rank": 7}
+,{"name": "Quillan Salkilld", "page": "https://www.ufc.com/athlete/quillan-salkilld", "rank_name": "Lightweight", "rank": 8}
+,{"name": "Salahdine Parnasse", "page": "https://www.ufc.com/athlete/salahdine-parnasse", "rank_name": "Lightweight", "rank": 9}
+,{"name": "Rafael Fiziev", "page": "https://www.ufc.com/athlete/rafael-fiziev", "rank_name": "Lightweight", "rank": 10}
+,{"name": "Renato Moicano", "page": "https://www.ufc.com/athlete/renato-moicano", "rank_name": "Lightweight", "rank": 11}
+,{"name": "Mateusz Gamrot", "page": "https://www.ufc.com/athlete/mateusz-gamrot", "rank_name": "Lightweight", "rank": 11}
+,{"name": "Dan Hooker", "page": "https://www.ufc.com/athlete/dan-hooker", "rank_name": "Lightweight", "rank": 13}
+,{"name": "Tom Nolan", "page": "https://www.ufc.com/athlete/tom-nolan", "rank_name": "Lightweight", "rank": 14}
+,{"name": "Beneil Dariush", "page": "https://www.ufc.com/athlete/beneil-dariush", "rank_name": "Lightweight", "rank": 15}
+,{"name": "Islam Makhachev", "page": "https://www.ufc.com/athlete/islam-makhachev", "rank_name": "Welterweight", "rank": 0}
+,{"name": "Ian Machado Garry", "page": "https://www.ufc.com/athlete/ian-machado-garry", "rank_name": "Welterweight", "rank": 1}
+,{"name": "Carlos Prates", "page": "https://www.ufc.com/athlete/carlos-prates", "rank_name": "Welterweight", "rank": 2}
+,{"name": "Michael Morales", "page": "https://www.ufc.com/athlete/michael-morales", "rank_name": "Welterweight", "rank": 3}
+,{"name": "Jack Della Maddalena", "page": "https://www.ufc.com/athlete/jack-della-maddalena", "rank_name": "Welterweight", "rank": 4}
+,{"name": "Gabriel Bonfim", "page": "https://www.ufc.com/athlete/gabriel-bonfim", "rank_name": "Welterweight", "rank": 5}
+,{"name": "Sean Brady", "page": "https://www.ufc.com/athlete/sean-brady", "rank_name": "Welterweight", "rank": 6}
+,{"name": "Belal Muhammad", "page": "https://www.ufc.com/athlete/belal-muhammad", "rank_name": "Welterweight", "rank": 7}
+,{"name": "Leon Edwards", "page": "https://www.ufc.com/athlete/leon-edwards", "rank_name": "Welterweight", "rank": 8}
+,{"name": "Kamaru Usman", "page": "https://www.ufc.com/athlete/kamaru-usman", "rank_name": "Welterweight", "rank": 9}
+,{"name": "Joaquin Buckley", "page": "https://www.ufc.com/athlete/joaquin-buckley", "rank_name": "Welterweight", "rank": 10}
+,{"name": "Yaroslav Amosov", "page": "https://www.ufc.com/athlete/yaroslav-amosov", "rank_name": "Welterweight", "rank": 11}
+,{"name": "Uroš Medić", "page": "https://www.ufc.com/athlete/uros-medic", "rank_name": "Welterweight", "rank": 12}
+,{"name": "Mike Malott", "page": "https://www.ufc.com/athlete/mike-malott", "rank_name": "Welterweight", "rank": 13}
+,{"name": "Daniel Rodriguez", "page": "https://www.ufc.com/athlete/daniel-rodriguez", "rank_name": "Welterweight", "rank": 14}
+,{"name": "Neil Magny", "page": "https://www.ufc.com/athlete/neil-magny", "rank_name": "Welterweight", "rank": 15}
+,{"name": "Sean Strickland", "page": "https://www.ufc.com/athlete/sean-strickland", "rank_name": "Middleweight", "rank": 0}
+,{"name": "Khamzat Chimaev", "page": "https://www.ufc.com/athlete/khamzat-chimaev", "rank_name": "Middleweight", "rank": 1}
+,{"name": "Dricus Du Plessis", "page": "https://www.ufc.com/athlete/dricus-du-plessis", "rank_name": "Middleweight", "rank": 2}
+,{"name": "Nassourdine Imavov", "page": "https://www.ufc.com/athlete/nassourdine-imavov", "rank_name": "Middleweight", "rank": 3}
+,{"name": "Brendan Allen", "page": "https://www.ufc.com/athlete/brendan-allen", "rank_name": "Middleweight", "rank": 4}
+,{"name": "Caio Borralho", "page": "https://www.ufc.com/athlete/caio-borralho", "rank_name": "Middleweight", "rank": 5}
+,{"name": "Joe Pyfer", "page": "https://www.ufc.com/athlete/joe-pyfer", "rank_name": "Middleweight", "rank": 6}
+,{"name": "Gregory Rodrigues", "page": "https://www.ufc.com/athlete/gregory-rodrigues", "rank_name": "Middleweight", "rank": 7}
+,{"name": "Anthony Hernandez", "page": "https://www.ufc.com/athlete/anthony-hernandez", "rank_name": "Middleweight", "rank": 8}
+,{"name": "Israel Adesanya", "page": "https://www.ufc.com/athlete/israel-adesanya", "rank_name": "Middleweight", "rank": 9}
+,{"name": "Christian Leroy Duncan", "page": "https://www.ufc.com/athlete/christian-leroy-duncan", "rank_name": "Middleweight", "rank": 10}
+,{"name": "Jared Cannonier", "page": "https://www.ufc.com/athlete/jared-cannonier", "rank_name": "Middleweight", "rank": 11}
+,{"name": "Abus Magomedov", "page": "https://www.ufc.com/athlete/abus-magomedov", "rank_name": "Middleweight", "rank": 12}
+,{"name": "Ikram Aliskerov", "page": "https://www.ufc.com/athlete/ikram-aliskerov", "rank_name": "Middleweight", "rank": 13}
+,{"name": "Bo Nickal", "page": "https://www.ufc.com/athlete/bo-nickal", "rank_name": "Middleweight", "rank": 14}
+,{"name": "Shara Magomedov", "page": "https://www.ufc.com/athlete/shara-magomedov", "rank_name": "Middleweight", "rank": 15}
+,{"name": "Carlos Ulberg", "page": "https://www.ufc.com/athlete/carlos-ulberg", "rank_name": "Light Heavyweight", "rank": 0}
+,{"name": "Magomed Ankalaev", "page": "https://www.ufc.com/athlete/magomed-ankalaev", "rank_name": "Light Heavyweight", "rank": 1}
+,{"name": "Jiří Procházka", "page": "https://www.ufc.com/athlete/jiri-prochazka", "rank_name": "Light Heavyweight", "rank": 2}
+,{"name": "Alex Pereira", "page": "https://www.ufc.com/athlete/alex-pereira", "rank_name": "Light Heavyweight", "rank": 3}
+,{"name": "Khalil Rountree Jr.", "page": "https://www.ufc.com/athlete/khalil-rountree-jr", "rank_name": "Light Heavyweight", "rank": 4}
+,{"name": "Navajo Stirling", "page": "https://www.ufc.com/athlete/navajo-stirling", "rank_name": "Light Heavyweight", "rank": 5}
+,{"name": "Paulo Costa", "page": "https://www.ufc.com/athlete/paulo-costa", "rank_name": "Light Heavyweight", "rank": 6}
+,{"name": "Jamahal Hill", "page": "https://www.ufc.com/athlete/jamahal-hill", "rank_name": "Light Heavyweight", "rank": 7}
+,{"name": "Azamat Murzakanov", "page": "https://www.ufc.com/athlete/azamat-murzakanov", "rank_name": "Light Heavyweight", "rank": 8}
+,{"name": "Jan Błachowicz", "page": "https://www.ufc.com/athlete/jan-blachowicz", "rank_name": "Light Heavyweight", "rank": 9}
+,{"name": "Dominick Reyes", "page": "https://www.ufc.com/athlete/dominick-reyes", "rank_name": "Light Heavyweight", "rank": 10}
+,{"name": "Bogdan Guskov", "page": "https://www.ufc.com/athlete/bogdan-guskov", "rank_name": "Light Heavyweight", "rank": 11}
+,{"name": "Robert Whittaker", "page": "https://www.ufc.com/athlete/robert-whittaker", "rank_name": "Light Heavyweight", "rank": 12}
+,{"name": "Johnny Walker", "page": "https://www.ufc.com/athlete/johnny-walker", "rank_name": "Light Heavyweight", "rank": 13}
+,{"name": "Alonzo Menifield", "page": "https://www.ufc.com/athlete/alonzo-menifield", "rank_name": "Light Heavyweight", "rank": 14}
+,{"name": "Nikita Krylov", "page": "https://www.ufc.com/athlete/nikita-krylov", "rank_name": "Light Heavyweight", "rank": 15}
+,{"name": "Tom Aspinall", "page": "https://www.ufc.com/athlete/tom-aspinall", "rank_name": "Heavyweight", "rank": 0}
+,{"name": "Ciryl Gane", "page": "https://www.ufc.com/athlete/ciryl-gane", "rank_name": "Heavyweight", "rank": 1}
+,{"name": "Alexander Volkov", "page": "https://www.ufc.com/athlete/alexander-volkov", "rank_name": "Heavyweight", "rank": 2}
+,{"name": "Sergei Pavlovich", "page": "https://www.ufc.com/athlete/sergei-pavlovich", "rank_name": "Heavyweight", "rank": 3}
+,{"name": "Josh Hokit", "page": "https://www.ufc.com/athlete/josh-hokit", "rank_name": "Heavyweight", "rank": 4}
+,{"name": "Waldo Cortes Acosta", "page": "https://www.ufc.com/athlete/waldo-cortes-acosta", "rank_name": "Heavyweight", "rank": 5}
+,{"name": "Curtis Blaydes", "page": "https://www.ufc.com/athlete/curtis-blaydes", "rank_name": "Heavyweight", "rank": 6}
+,{"name": "Rizvan Kuniev", "page": "https://www.ufc.com/athlete/rizvan-kuniev", "rank_name": "Heavyweight", "rank": 7}
+,{"name": "Vitor Petrino", "page": "https://www.ufc.com/athlete/vitor-petrino", "rank_name": "Heavyweight", "rank": 8}
+,{"name": "Serghei Spivac", "page": "https://www.ufc.com/athlete/serghei-spivac", "rank_name": "Heavyweight", "rank": 9}
+,{"name": "Ante Delija", "page": "https://www.ufc.com/athlete/ante-delija", "rank_name": "Heavyweight", "rank": 10}
+,{"name": "Valter Walker", "page": "https://www.ufc.com/athlete/valter-walker", "rank_name": "Heavyweight", "rank": 11}
+,{"name": "Tyrell Fortune", "page": "https://www.ufc.com/athlete/tyrell-fortune", "rank_name": "Heavyweight", "rank": 12}
+,{"name": "Derrick Lewis", "page": "https://www.ufc.com/athlete/derrick-lewis", "rank_name": "Heavyweight", "rank": 13}
+,{"name": "Mario Pinto", "page": "https://www.ufc.com/athlete/mario-pinto", "rank_name": "Heavyweight", "rank": 14}
+,{"name": "Aleksandar Rakić", "page": "https://www.ufc.com/athlete/aleksandar-rakic", "rank_name": "Heavyweight", "rank": 15}
+,{"name": "Valentina Shevchenko", "page": "https://www.ufc.com/athlete/valentina-shevchenko", "rank_name": "Women's Pound-for-Pound", "rank": 1}
+,{"name": "Kayla Harrison", "page": "https://www.ufc.com/athlete/kayla-harrison", "rank_name": "Women's Pound-for-Pound", "rank": 2}
+,{"name": "Zhang Weili", "page": "https://www.ufc.com/athlete/zhang-weili", "rank_name": "Women's Pound-for-Pound", "rank": 3}
+,{"name": "Natalia Silva", "page": "https://www.ufc.com/athlete/natalia-silva", "rank_name": "Women's Pound-for-Pound", "rank": 4}
+,{"name": "Mackenzie Dern", "page": "https://www.ufc.com/athlete/mackenzie-dern", "rank_name": "Women's Pound-for-Pound", "rank": 5}
+,{"name": "Manon Fiorot", "page": "https://www.ufc.com/athlete/manon-fiorot", "rank_name": "Women's Pound-for-Pound", "rank": 6}
+,{"name": "Alexa Grasso", "page": "https://www.ufc.com/athlete/alexa-grasso", "rank_name": "Women's Pound-for-Pound", "rank": 7}
+,{"name": "Erin Blanchfield", "page": "https://www.ufc.com/athlete/erin-blanchfield", "rank_name": "Women's Pound-for-Pound", "rank": 8}
+,{"name": "Tatiana Suarez", "page": "https://www.ufc.com/athlete/tatiana-suarez", "rank_name": "Women's Pound-for-Pound", "rank": 9}
+,{"name": "Julianna Peña", "page": "https://www.ufc.com/athlete/julianna-pena", "rank_name": "Women's Pound-for-Pound", "rank": 10}
+,{"name": "Virna Jandiroba", "page": "https://www.ufc.com/athlete/virna-jandiroba", "rank_name": "Women's Pound-for-Pound", "rank": 11}
+,{"name": "Rose Namajunas", "page": "https://www.ufc.com/athlete/rose-namajunas", "rank_name": "Women's Pound-for-Pound", "rank": 12}
+,{"name": "Raquel Pennington", "page": "https://www.ufc.com/athlete/raquel-pennington", "rank_name": "Women's Pound-for-Pound", "rank": 13}
+,{"name": "Denise Gomes", "page": "https://www.ufc.com/athlete/denise-gomes", "rank_name": "Women's Pound-for-Pound", "rank": 14}
+,{"name": "Maycee Barber", "page": "https://www.ufc.com/athlete/maycee-barber", "rank_name": "Women's Pound-for-Pound", "rank": 15}
+,{"name": "Mackenzie Dern", "page": "https://www.ufc.com/athlete/mackenzie-dern", "rank_name": "Women's Strawweight", "rank": 0}
+,{"name": "Zhang Weili", "page": "https://www.ufc.com/athlete/zhang-weili", "rank_name": "Women's Strawweight", "rank": 1}
+,{"name": "Tatiana Suarez", "page": "https://www.ufc.com/athlete/tatiana-suarez", "rank_name": "Women's Strawweight", "rank": 2}
+,{"name": "Virna Jandiroba", "page": "https://www.ufc.com/athlete/virna-jandiroba", "rank_name": "Women's Strawweight", "rank": 3}
+,{"name": "Denise Gomes", "page": "https://www.ufc.com/athlete/denise-gomes", "rank_name": "Women's Strawweight", "rank": 4}
+,{"name": "Gillian Robertson", "page": "https://www.ufc.com/athlete/gillian-robertson", "rank_name": "Women's Strawweight", "rank": 5}
+,{"name": "Yan Xiaonan", "page": "https://www.ufc.com/athlete/yan-xiaonan", "rank_name": "Women's Strawweight", "rank": 6}
+,{"name": "Fatima Kline", "page": "https://www.ufc.com/athlete/fatima-kline", "rank_name": "Women's Strawweight", "rank": 7}
+,{"name": "Loopy Godinez", "page": "https://www.ufc.com/athlete/loopy-godinez", "rank_name": "Women's Strawweight", "rank": 8}
+,{"name": "Alexia Thainara", "page": "https://www.ufc.com/athlete/alexia-thainara", "rank_name": "Women's Strawweight", "rank": 9}
+,{"name": "Jéssica Andrade", "page": "https://www.ufc.com/athlete/jessica-andrade", "rank_name": "Women's Strawweight", "rank": 10}
+,{"name": "Tabatha Ricci", "page": "https://www.ufc.com/athlete/tabatha-ricci", "rank_name": "Women's Strawweight", "rank": 11}
+,{"name": "Amanda Lemos", "page": "https://www.ufc.com/athlete/amanda-lemos", "rank_name": "Women's Strawweight", "rank": 12}
+,{"name": "Amanda Ribas", "page": "https://www.ufc.com/athlete/amanda-ribas", "rank_name": "Women's Strawweight", "rank": 13}
+,{"name": "Angela Hill", "page": "https://www.ufc.com/athlete/angela-hill", "rank_name": "Women's Strawweight", "rank": 14}
+,{"name": "Mizuki", "page": "https://www.ufc.com/athlete/mizuki-inoue", "rank_name": "Women's Strawweight", "rank": 15}
+,{"name": "Valentina Shevchenko", "page": "https://www.ufc.com/athlete/valentina-shevchenko", "rank_name": "Women's Flyweight", "rank": 0}
+,{"name": "Natalia Silva", "page": "https://www.ufc.com/athlete/natalia-silva", "rank_name": "Women's Flyweight", "rank": 1}
+,{"name": "Manon Fiorot", "page": "https://www.ufc.com/athlete/manon-fiorot", "rank_name": "Women's Flyweight", "rank": 2}
+,{"name": "Alexa Grasso", "page": "https://www.ufc.com/athlete/alexa-grasso", "rank_name": "Women's Flyweight", "rank": 3}
+,{"name": "Erin Blanchfield", "page": "https://www.ufc.com/athlete/erin-blanchfield", "rank_name": "Women's Flyweight", "rank": 4}
+,{"name": "Rose Namajunas", "page": "https://www.ufc.com/athlete/rose-namajunas", "rank_name": "Women's Flyweight", "rank": 5}
+,{"name": "Maycee Barber", "page": "https://www.ufc.com/athlete/maycee-barber", "rank_name": "Women's Flyweight", "rank": 6}
+,{"name": "Jasmine Jasudavicius", "page": "https://www.ufc.com/athlete/jasmine-jasudavicius", "rank_name": "Women's Flyweight", "rank": 7}
+,{"name": "Wang Cong", "page": "https://www.ufc.com/athlete/wang-cong", "rank_name": "Women's Flyweight", "rank": 8}
+,{"name": "Tracy Cortez", "page": "https://www.ufc.com/athlete/tracy-cortez", "rank_name": "Women's Flyweight", "rank": 9}
+,{"name": "Miranda Maverick", "page": "https://www.ufc.com/athlete/miranda-maverick", "rank_name": "Women's Flyweight", "rank": 10}
+,{"name": "Karine Silva", "page": "https://www.ufc.com/athlete/karine-silva", "rank_name": "Women's Flyweight", "rank": 11}
+,{"name": "Casey O'Neill", "page": "https://www.ufc.com/athlete/casey-oneill", "rank_name": "Women's Flyweight", "rank": 12}
+,{"name": "Eduarda Moura", "page": "https://www.ufc.com/athlete/eduarda-moura", "rank_name": "Women's Flyweight", "rank": 13}
+,{"name": "Gabriella Fernandes", "page": "https://www.ufc.com/athlete/gabriella-fernandes", "rank_name": "Women's Flyweight", "rank": 14}
+,{"name": "JJ Aldrich", "page": "https://www.ufc.com/athlete/jj-aldrich", "rank_name": "Women's Flyweight", "rank": 15}
+,{"name": "Kayla Harrison", "page": "https://www.ufc.com/athlete/kayla-harrison", "rank_name": "Women's Bantamweight", "rank": 0}
+,{"name": "Julianna Peña", "page": "https://www.ufc.com/athlete/julianna-pena", "rank_name": "Women's Bantamweight", "rank": 1}
+,{"name": "Raquel Pennington", "page": "https://www.ufc.com/athlete/raquel-pennington", "rank_name": "Women's Bantamweight", "rank": 2}
+,{"name": "Joselyne Edwards", "page": "https://www.ufc.com/athlete/joselyne-edwards", "rank_name": "Women's Bantamweight", "rank": 3}
+,{"name": "Norma Dumont", "page": "https://www.ufc.com/athlete/norma-dumont", "rank_name": "Women's Bantamweight", "rank": 4}
+,{"name": "Ailin Perez", "page": "https://www.ufc.com/athlete/ailin-perez", "rank_name": "Women's Bantamweight", "rank": 5}
+,{"name": "Yana Santos", "page": "https://www.ufc.com/athlete/yana-santos", "rank_name": "Women's Bantamweight", "rank": 6}
+,{"name": "Luana Santos", "page": "https://www.ufc.com/athlete/luana-santos", "rank_name": "Women's Bantamweight", "rank": 7}
+,{"name": "Macy Chiasson", "page": "https://www.ufc.com/athlete/macy-chiasson", "rank_name": "Women's Bantamweight", "rank": 8}
+,{"name": "Jacqueline Cavalcanti", "page": "https://www.ufc.com/athlete/jacqueline-cavalcanti", "rank_name": "Women's Bantamweight", "rank": 9}
+,{"name": "Karol Rosa", "page": "https://www.ufc.com/athlete/karol-rosa", "rank_name": "Women's Bantamweight", "rank": 10}
+,{"name": "Bia Mesquita", "page": "https://www.ufc.com/athlete/bia-mesquita", "rank_name": "Women's Bantamweight", "rank": 11}
+,{"name": "Michelle Montague", "page": "https://www.ufc.com/athlete/michelle-montague", "rank_name": "Women's Bantamweight", "rank": 12}
+,{"name": "Nora Cornolle", "page": "https://www.ufc.com/athlete/nora-cornolle", "rank_name": "Women's Bantamweight", "rank": 13}
+,{"name": "Miesha Tate", "page": "https://www.ufc.com/athlete/miesha-tate", "rank_name": "Women's Bantamweight", "rank": 14}
+,{"name": "Melissa Croden", "page": "https://www.ufc.com/athlete/melissa-croden", "rank_name": "Women's Bantamweight", "rank": 15}
+],"timestamp":1789291603954}
