@@ -181,70 +181,134 @@ _STAT_ROWS = (
     ('排名', _stat(_fmt_rank, 'PlayerRank')),
 )
 
-# 版式完全由 HTML 属性承载，不使用任何内联 CSS。
+# 版式只靠「内容本身的最小宽度」，不依赖列宽属性。
 #
-# 起因：手机端 RSS 阅读器普遍会剥掉 style 属性（实测某个 iOS 阅读器渲染出来是
-# 白底黑字，而模板里写的是深色底），一旦被剥：
-#   - flex 布局退化成竖排的三块
-#   - table-layout:fixed 与 width:22% 失效，「数值 | 标签 | 数值」挤成一团
-#   - img 的 width:100% 失效，全身照会以原始像素撑爆整张卡片
-# width / align / valign / border / cellpadding 这些老式 HTML 属性的存活率高得多，
-# 而且就算全被剥掉，退化结果也只是「值 标签 值」依次排列，仍然读得懂。
-_PHOTO_WIDTH = 60          # 全身照固定像素宽，避免依赖 width:100%
+# 两轮踩坑的结论：
+#   1. 手机端阅读器会剥掉内联 style（实测某个 iOS 阅读器渲染成白底黑字），
+#      于是 flex / table-layout:fixed / width:100% 全失效 —— 所以改用
+#      width / align / valign / border / cellpadding 这些老式 HTML 属性。
+#   2. 但**连 td 上的 width 百分比也未必认**（同一阅读器，实测降级成自动布局）。
+#      自动布局按「最小内容宽度」定列：中文可以在任意两字之间断行，
+#      2 个字的标签最小能压到 1 个字，9 行标签就全部竖排成「身 / 高」，
+#      整张卡被拉成一长条；照片列里的中文名（最大内容宽度 = 整个名字）
+#      又会把数值列的宽度抢走，让数值也跟着折行。
+#
+# 因此现在的版式对「列宽属性全被忽略」是免疫的：
+#   - 标签用 NBSP 连字（见 _label_html），最小宽度 = 整个标签，压不下去
+#   - 名字移到数值列上方，不再挤占；表头格有半屏宽，长名最多折两次
+#   - 整张表只剩 3 个数据列，各列最大内容宽度之和远小于视口宽，
+#     自动布局即使按最大内容宽度分配也放得下，谁都不用折行
+# width 属性仍然保留：在不剥属性的桌面阅读器里能拿到更均衡的比例。
 _CELL_PADDING = 3
-_VALUE_WIDTH = 26          # 左右数值列各占 26%，中间标签列 14%
-_LABEL_WIDTH = 14
-_PHOTO_COL_WIDTH = (100 - 2 * _VALUE_WIDTH - _LABEL_WIDTH) // 2   # 两侧照片列各 17%
+_VALUE_WIDTH = 38          # 左右数值列各占 38%，中间标签列 24%
+_LABEL_WIDTH = 24
+
+# 照片显示尺寸。原图比例是实测出来的（Range 取 PNG 头读 IHDR）：
+# athlete_bio_full_body 这个版式，无论真人照还是占位剪影，一律 460×700；
+# 只有 event_fight_card_upper_body_of_standing_athlete 的剪影是 185×624。
+# 按 460×700 等比缩到 72 宽，高度是 72×700/460≈109.6，取整 110。
+#
+# 为什么写死宽高、而不是只给 width（或依赖 CSS 的 width:100%）：
+#   - 「两个头像在同一条水平线上」不能靠 valign 碰运气。同一行里两个单元格的
+#     内容高度一旦不等（比如一侧名字折了行、或某张图缺图），valign="middle"
+#     会把两张照片各自垂直居中，高矮一错开就是上下不对齐。
+#   - 只要两个 <img> 占据**完全相同**的矩形，再配合 valign="top"，无论阅读器
+#     怎么算行高，两张照片的上下边都必然重合 —— 这是结构保证，不依赖任何样式。
+#   - width 属性单独出现时，height 由原图比例推出来；比例不同的那张（185×624）
+#     会被压变形，所以它按比例单独给一组宽高（110/624×185≈32.6）。
+_PHOTO_SIZES = {
+    'event_fight_card_upper_body_of_standing_athlete': (33, 110),
+}
+_PHOTO_SIZE_DEFAULT = (72, 110)
+
+# 右（蓝方）照片做水平镜像，与左侧成轴对称。
+#
+# 只能走 CSS：UFC 的图片 CDN 上同一张图确实存在 _L_ / _R_ 两个朝向的变体
+# （例如 BONFIM_GABRIEL_L_11-08.png 与 ..._R_...），但 URL 里的 ?itok= 是
+# Drupal 按路径签发的，换掉路径里的 _L/_R 直接 403，所以换源图这条路走不通。
+#
+# 注意：这条内联 style 在不认内联样式的阅读器里会被丢掉，表现是「照片没镜像」
+# 而不是版式崩坏 —— 属于可接受的降级。镜像不能挂在 td 上，那会连名字一起翻。
+_PHOTO_MIRROR_STYLE = '-webkit-transform:scaleX(-1);transform:scaleX(-1);'
 
 
-def _photo_caption(name):
-    """照片下方的选手名。
+def _label_html(label):
+    """标签列内容：字符之间插入 U+00A0，让最小内容宽度 = 整个标签。
 
-    加这一块的原因：改版后选手名只剩 img 的 alt，图片一旦加载失败（或被客户端
-    忽略 alt），整张卡就没人名了。
+    中文没有词边界，浏览器认为「身」「高」之间可以断行，于是列宽不够时就把
+    标签折成两行。NBSP 是不可断行的空格，插进去以后这一格的最小宽度就是两个字，
+    自动布局再怎么样也压不到一个字宽。
 
-    字号用 <small> 而不是 font-size 内联样式，理由同 _STAT_ROWS 上方 —— 客户端会
-    剥 style，但语义标签能活下来，且被剥了也只是回到正常字号，不影响可读性。
-
-    这里只放名字，不放国旗/国籍：国籍另有对比行，国旗跟着它走（见 _country_value）。
-    照片列只占 17%（360px 屏约 61px），中文名本身已经要折行，再挂一行「🇧🇷 巴西」
-    会把单元格撑得比九行数据还高。
+    零宽的连字 U+2060 更干净（不留空格），但兼容性不如 NBSP —— 遇到不支持的
+    渲染器等于没写，所以选了 NBSP，代价只是两个字之间多了半个字宽。
     """
-    name = _clean(name)
-    if not name:
-        return ''
-    return '<br/><b>%s</b>' % html_lib.escape(name, quote=False)
+    return '\u00a0'.join(_clean(label))
 
 
-def _photo_cell(item, side, rowspan):
-    """左右两侧的选手全身照单元格，纵向跨满整张表。
+def _photo_size(url):
+    """按 URL 里的 image style 名取该图的显示宽高，未知版式走默认值。"""
+    m = re.search(r'/styles/([^/]+)/', url)
+    return _PHOTO_SIZES.get(m.group(1) if m else '', _PHOTO_SIZE_DEFAULT)
 
-    宽度写死在 img 的 width 属性上：一旦 width:100% 被客户端剥掉，
-    照片会以原始像素渲染并把整张卡片撑爆，固定像素宽没有这个风险。
-    不使用 max-height / overflow:hidden —— 那会把选手的脚裁掉。
+
+def _photo_cells(item):
+    """表头行的两个选手格：全身照 + 名字，分别占满本侧的数值列。
+
+    名字从照片列挪到了数值列上方。原因有两个：
+      - 照片列只有 60~70px，中文名要折四五行的竖条，把整张卡撑得比九行数据还高
+      - 它在自动布局里是最能抢宽度的一列（最大内容宽度 = 整个名字），
+        数值列被挤窄之后连「31-12-0」都会折行
+    挪到数值列上方之后名字有半屏可用，长名最多折两次，而且它天然成了
+    本侧数值的列标题 —— 谁的名字在哪一侧一眼就能对上。
+
+    img 的宽高都写死在属性上：一旦 width:100% 被剥掉，照片会以原始像素渲染并
+    把整张卡片撑爆，固定像素尺寸没有这个风险；两侧尺寸一致再配合 valign="top"，
+    两张照片就落在同一条水平线上（见 _PHOTO_SIZES 上方注释）。不使用
+    max-height / overflow:hidden —— 那会把选手的脚裁掉。
+
+    蓝方（右侧）照片额外加一条水平镜像的内联样式，与左侧成轴对称。镜像只加在
+    img 上、不加在 td 上：加在 td 上会把名字文字一起翻过来。理由与降级见
+    _PHOTO_MIRROR_STYLE 上方注释。
     """
-    url = item.get(side + 'PlayerBack') or ''
-    name = item.get(side + 'PlayerName') or ''
+    cells = []
+    for side in ('red', 'blue'):
+        url = item.get(side + 'PlayerBack') or ''
+        name = _clean(item.get(side + 'PlayerName'))
+        parts = []
+        if url:
+            width, height = _photo_size(url)
+            attrs = [f'src="{html_lib.escape(url, quote=True)}"',
+                     f'width="{width}"',
+                     f'height="{height}"',
+                     'border="0"']
+            if side == 'blue':
+                attrs.append(f'style="{_PHOTO_MIRROR_STYLE}"')
+            attrs.append(f'alt="{html_lib.escape(name, quote=True)}"')
+            parts.append('<img %s/>' % ' '.join(attrs))
+        if name:
+            if parts:
+                parts.append('<br/>')
+            parts.append('<b>%s</b>' % html_lib.escape(name, quote=False))
+        cells.append(''.join(parts) or '&nbsp;')
     return (
-        f'<td width="{_PHOTO_COL_WIDTH}%" align="center" valign="middle" rowspan="{rowspan}">'
-        f'<img src="{html_lib.escape(url, quote=True)}" '
-        f'width="{_PHOTO_WIDTH}" border="0" '
-        f'alt="{html_lib.escape(name, quote=True)}"/>'
-        f'{_photo_caption(name)}</td>'
+        f'<td width="{_VALUE_WIDTH}%" align="center" valign="top">{cells[0]}</td>'
+        f'<td width="{_LABEL_WIDTH}%" align="center" valign="top">&nbsp;</td>'
+        f'<td width="{_VALUE_WIDTH}%" align="center" valign="top">{cells[1]}</td>'
     )
 
 
 def _value_cells(left, label, right):
     """一行三个单元格：右对齐数值 · 居中标签 · 左对齐数值。
 
-    数值贴近标签的一侧补两个 &nbsp;，即使列宽属性全被剥掉也不会和标签黏成一片。
+    数值贴近标签的一侧补一个 &nbsp;：列宽属性被剥掉时 cellpadding 也可能一起没，
+    留一个不可断行的空格至少保证数值和标签不会黏成一片。
     """
     return (
         f'<td width="{_VALUE_WIDTH}%" align="right" valign="middle">'
-        f'{left}&nbsp;&nbsp;</td>'
+        f'{left}&nbsp;</td>'
         f'<td width="{_LABEL_WIDTH}%" align="center" valign="middle">{label}</td>'
         f'<td width="{_VALUE_WIDTH}%" align="left" valign="middle">'
-        f'&nbsp;&nbsp;{right}</td>'
+        f'&nbsp;{right}</td>'
     )
 
 
@@ -284,30 +348,23 @@ class RssMaker:
     def get_html_str(self, item):
         """生成战卡对比表（tale of the tape）。
 
-        版式：左右两张选手全身照（纵向跨满整张表，下方只带姓名），
-        中间一列数据行，每行是「右对齐数值 | 居中标签 | 左对齐数值」。
+        版式：首行是两位选手的全身照 + 姓名（各占本侧数值列，充当列标题），
+        其后九行数据，每行是「右对齐数值 | 居中标签 | 左对齐数值」。
 
         全部布局都走 HTML 属性（width / align / valign / border / cellpadding），
         不写一个内联 style —— 原因见 _STAT_ROWS 上方的注释。数值用 <b> 加粗
         拉开与标签的层次，<b> 是语义标签，清洗器一般不剥。
         """
-        rowspan = len(_STAT_ROWS)
-        photo_red = _photo_cell(item, 'red', rowspan)
-        photo_blue = _photo_cell(item, 'blue', rowspan)
-
-        trs = []
-        for idx, (label, render) in enumerate(_STAT_ROWS):
+        trs = [f'<tr>{_photo_cells(item)}</tr>']
+        for label, render in _STAT_ROWS:
             # 文本节点只需转义 < > &，再转义引号会白白产出 &quot; / &#x27; 这种实体，
             # 在 description 的 CDATA 里没有任何必要
             cells = _value_cells(
                 f'<b>{html_lib.escape(render(item, "red"), quote=False)}</b>',
-                label,
+                _label_html(label),
                 f'<b>{html_lib.escape(render(item, "blue"), quote=False)}</b>',
             )
-            if idx == 0:
-                trs.append(f'<tr>{photo_red}{cells}{photo_blue}</tr>')
-            else:
-                trs.append(f'<tr>{cells}</tr>')
+            trs.append(f'<tr>{cells}</tr>')
 
         return (
             '<div style="max-width:600px;margin:0 auto;">'
