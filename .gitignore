@@ -1,0 +1,8 @@
+*/__pycache__
+__pycache__
+/.idea
+/.conda
+/.venv
+
+# 系统文件
+.DS_Store
