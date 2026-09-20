@@ -1,0 +1,18 @@
+{
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "latest_version": "1.0.0",
+    "latest_version_code": 1,
+    "minimum_version": "1.0.0",
+    "minimum_version_code": 1,
+    "force_update": false,
+    "release_date": "2026-09-13",
+    "download_url": "",
+    "changelog": {
+      "zh": "首次发布",
+      "en": "Initial release"
+    }
+  },
+  "timestamp": 0
+}
