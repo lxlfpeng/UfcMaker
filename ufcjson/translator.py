@@ -47,6 +47,10 @@ TRANSLATE_FIELDS = {
         ("name", "name_cn"),
         ("title", "title_cn"),
         ("address", "address_cn"),
+        # 地点中文跟 player 走同一套翻译管线；别再单独搞词典查——
+        # 那套例外要依赖 player 表先填好、还得塞在 spider 里，是错的。
+        ("city", "city_cn"),
+        ("country", "country_cn"),
     ],
     "pass_card": [
         ("end_method", "end_method_cn"),

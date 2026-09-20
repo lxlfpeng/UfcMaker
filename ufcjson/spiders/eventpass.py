@@ -32,6 +32,8 @@ class EventpassSpider(scrapy.Spider):
         self._url_pages = None
         self._url_alias = None
         self._url_probe = None
+        # 地点中文字典缓存（懒加载，见 place_cn_dicts）
+        self._place_cn_cache = None
         # 统计信息
         self.total_new = 0
         self.total_skipped = 0
@@ -108,6 +110,7 @@ class EventpassSpider(scrapy.Spider):
             item['data_early_time']=i.xpath('.//div[@class="c-card-event--result__date tz-change-data"]/@data-early-card-timestamp').get(default='').strip()
             address=i.xpath('.//p[@class="address"]/span/text()').extract()
             item['address']=",".join(map(str,address))
+            item['city'], item['country'] = self.parse_address(item['address'])
             self.logger.info(f"准备抓取详情: {item['title']} - {item['url']}")
             new_count += 1
             yield scrapy.Request(url=item['url'], callback=self.parse_detail, meta={'item': item})
@@ -132,6 +135,29 @@ class EventpassSpider(scrapy.Spider):
                 url=self.PAGE_URL_TEMPLATE.format(page=next_page),
                 callback=self.parse,
             )
+
+    @staticmethod
+    def parse_address(address):
+        """把 ufc.com 的地点串拆成 (city, country)。
+        形态：City,Country / City,State,Country / 场馆,City,State,Country（巴西页）
+             / 'Macao' / 'Macao SAR China' / 只有国家（如 'Brazil'）。"""
+        a = (address or '').strip()
+        if not a:
+            return '', ''
+        if a == 'Macao':
+            return 'Macao', 'Macao'
+        if a == 'Macao SAR China':
+            return 'Macao', 'Macao SAR China'
+        segs = [s.strip() for s in a.split(',') if s.strip()]
+        if len(segs) == 1:
+            return '', segs[0]
+        if len(segs) == 2:
+            return segs[0], segs[1]
+        if len(segs) == 3:
+            return segs[0], segs[2]
+        if len(segs) == 4:
+            return segs[1], segs[3]
+        return segs[0], segs[-1]
 
     def parse_detail(self, response):
         # 接收结构化数据

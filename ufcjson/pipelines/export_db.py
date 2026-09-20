@@ -42,17 +42,21 @@ class SqliteDbPipeline(object):
             CREATE TABLE IF NOT EXISTS pass_event (
              id INTEGER PRIMARY KEY AUTOINCREMENT,  -- 主键
              name TEXT,                             -- 名称
-             name_cn TEXT,                          -- 名称(中文)
              title TEXT,                            -- 头条主赛
-             title_cn TEXT,                         -- 头条主赛(中文)
              banner TEXT,                           -- 横幅
-             banner_local TEXT,                     -- 横幅(本地)
              address TEXT,                          -- 地点
              address_cn TEXT,                       -- 地点(cn)
              page TEXT UNIQUE,                      -- 主页
              main_time TEXT,                        -- 主卡时间
              prelims_time TEXT,                     -- 副卡时间
-             data_early_time TEXT                   -- 早卡时间
+             data_early_time TEXT,                  -- 早卡时间
+             banner_local TEXT,                     -- 横幅(本地)
+             name_cn TEXT,                          -- 名称(中文)
+             title_cn TEXT,                         -- 头条主赛(中文)
+             city TEXT,                             -- 举办城市（从 address 拆出）
+             country TEXT,                          -- 举办国家（从 address 拆出）
+             city_cn TEXT,                          -- 举办城市(中文)
+             country_cn TEXT                        -- 举办国家(中文)
             )
             ''')
             self.cursor.execute('''
@@ -66,11 +70,11 @@ class SqliteDbPipeline(object):
              blue_odds TEXT,                        -- 蓝方odds
              red_odds TEXT,                         -- 红方odds
              end_method TEXT,                       -- 结束方式
-             end_method_cn TEXT,                    -- 结束方式(中文)
              end_round TEXT,                        -- 结束回合
              end_time TEXT,                         -- 结束时间
              card_type TEXT,                        -- 类型(主赛复赛)
              card_division  TEXT,                   -- 级别
+             end_method_cn TEXT,                    -- 结束方式(中文)
              card_division_cn TEXT                  -- 级别(中文)
             )
             ''')
@@ -84,7 +88,6 @@ class SqliteDbPipeline(object):
                     nick_name_cn TEXT,      -- 昵称(中文)
                     page TEXT UNIQUE,       -- 个人主页
                     division TEXT,          -- 级别
-                    division_cn TEXT,       -- 级别(中文)
                     avatar TEXT,            -- 头像
                     avatar_local TEXT,      -- 头像(本地)
                     cover TEXT,             -- 封面
@@ -92,26 +95,28 @@ class SqliteDbPipeline(object):
                     record TEXT,            -- 战绩
                     age TEXT,               -- 年龄
                     status TEXT,            -- 状态
-                    status_cn TEXT,         -- 状态(中文)
                     home_town TEXT,         -- 出生地(城市, 国家)
-                    city TEXT,              -- 城市
-                    city_cn TEXT,           -- 城市(中文)
-                    country TEXT,           -- 国家
-                    country_cn TEXT,        -- 国家(中文)
                     team TEXT,              -- 团队
-                    team_cn TEXT,           -- 团队(中文)
                     style TEXT,             -- 风格
-                    style_cn TEXT,          -- 风格(中文)
                     height TEXT,            -- 身高
                     weight TEXT,            -- 体重
                     reach TEXT,             -- 臂展
                     leg_reach TEXT,         -- 腿长
                     debut TEXT,             -- 首次亮像
-                    history TEXT,          -- 历史
+                    history TEXT,           -- 历史
                     wins_stats TEXT,        -- 获胜方式
-                    wins_stats_cn TEXT,     -- 获胜方式(中文)
                     flag TEXT,              -- 国旗
-                    history_cn TEXT         -- 历史(中文)
+                    history_cn TEXT,        -- 历史(中文)
+                    city TEXT,              -- 城市
+                    city_cn TEXT,           -- 城市(中文)
+                    country TEXT,           -- 国家
+                    country_cn TEXT,        -- 国家(中文)
+                    division_cn TEXT,       -- 级别(中文)
+                    status_cn TEXT,         -- 状态(中文)
+                    team_cn TEXT,           -- 团队(中文)
+                    style_cn TEXT,          -- 风格(中文)
+                    wins_stats_cn TEXT,     -- 获胜方式(中文)
+                    birthdate TEXT          -- 出生日期(YYYY-MM-DD 精确 / YYYY 只知年)
                 )
             ''')
 

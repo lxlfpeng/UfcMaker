@@ -26,6 +26,14 @@ class UfcPassItem(scrapy.Item):
     address = scrapy.Field()
     # 举办地(CN)
     address_cn = scrapy.Field()
+    # 举办城市（从 address 拆出，如 Las Vegas）
+    city = scrapy.Field()
+    # 举办国家（从 address 拆出，如 United States）
+    country = scrapy.Field()
+    # 举办城市(中文)，如 拉斯维加斯
+    city_cn = scrapy.Field()
+    # 举办国家(中文)，如 美国
+    country_cn = scrapy.Field()
     # 封面
     banner = scrapy.Field()
     # 封面本地地址
@@ -82,6 +90,14 @@ class UfcComingItem(scrapy.Item):
     address = scrapy.Field()
     # 举办地(CN)
     address_cn = scrapy.Field()
+    # 举办城市（从 address 拆出，如 Las Vegas）
+    city = scrapy.Field()
+    # 举办国家（从 address 拆出，如 United States）
+    country = scrapy.Field()
+    # 举办城市(中文)，如 拉斯维加斯
+    city_cn = scrapy.Field()
+    # 举办国家(中文)，如 美国
+    country_cn = scrapy.Field()
     # 封面
     banner = scrapy.Field()
     # 封面本地地址
@@ -170,6 +186,8 @@ class UfcPlayerItem(scrapy.Item):
     status_cn = scrapy.Field()
     # 年龄
     age = scrapy.Field()
+    # 出生日期(YYYY-MM-DD，来自 Sherdog)
+    birthdate = scrapy.Field()
     # 出生地(城市, 国家)
     home_town = scrapy.Field()
     # 城市
