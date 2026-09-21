@@ -64,6 +64,31 @@ def _norm_key(value):
     return re.sub(r'\s+', '', (value or '')).lower()
 
 
+def _age_from_birthdate(birthdate, today=None):
+    """由 birthdate 现算年龄，算不出返回空串（渲染层回落成占位符 —）。
+
+    为什么现算：player.age 是抓取当天的页面快照，实测 3148 条可比行里 61% 与真实
+    年龄差 2 岁以上（差值众数 +3，即约三年前的快照）—— 生日不变、年龄每年过期，
+    所以年龄一律现算，页面上那个 Age 也已不再抓（见 spiders/athlete.py）。
+
+    只认完整的 YYYY-MM-DD。库里另有 135 条「只知道出生年份」，按年相减会有 ±1 岁
+    误差，宁可留空也不给一个可能是错的值。
+    """
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})$', (birthdate or '').strip())
+    if not m:
+        return ''
+    y, mo, d = (int(g) for g in m.groups())
+    try:
+        born = datetime.date(y, mo, d)
+    except ValueError:
+        return ''
+    today = today or datetime.date.today()
+    if born > today:
+        return ''
+    age = today.year - born.year - ((today.month, today.day) < (born.month, born.day))
+    return str(age)
+
+
 def _get_flag(country_name):
     """国家名转国旗 emoji（轻量实现，避免在 pipeline 里再依赖 pycountry 的调用开销）。
     先尝试从 player 表自带的 flag 字段取；这里仅作为兜底。"""
@@ -356,7 +381,7 @@ class UfcRssMakerPipeline:
             cursor = conn.cursor()
             cursor.execute(
                 "SELECT page, name, name_cn, country, country_cn, style, style_cn, "
-                "flag, cover, record, age, height, weight, reach, leg_reach FROM player")
+                "flag, cover, record, birthdate, height, weight, reach, leg_reach FROM player")
             count = 0
             for row in cursor.fetchall():
                 info = {
@@ -367,7 +392,8 @@ class UfcRssMakerPipeline:
                     'flag': row['flag'] or '',
                     'cover': row['cover'] or '',
                     'record': row['record'] or '',
-                    'age': row['age'] or '',
+                    # 年龄由 birthdate 现算（player.age 已废弃，见 _age_from_birthdate）
+                    'age': _age_from_birthdate(row['birthdate']),
                     'style': row['style_cn'] or row['style'] or '',
                     'height': row['height'] or '',
                     'weight': row['weight'] or '',

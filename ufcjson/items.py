@@ -184,9 +184,7 @@ class UfcPlayerItem(scrapy.Item):
     status = scrapy.Field()
     # 状态(中文)
     status_cn = scrapy.Field()
-    # 年龄
-    age = scrapy.Field()
-    # 出生日期(YYYY-MM-DD，来自 Sherdog)
+    # 出生日期(YYYY-MM-DD 精确 / YYYY 只知年份)
     birthdate = scrapy.Field()
     # 出生地(城市, 国家)
     home_town = scrapy.Field()

@@ -9,7 +9,6 @@ import json
 import re
 
 LABEL_FIELD_MAP = {
-    'Age': 'age',
     'Status': 'status',
     'Reach': 'reach',
     'Height': 'height',
@@ -95,11 +94,10 @@ class AthleteSpider(scrapy.Spider):
                 self.logger.warning(f"bio 项文本节点不足，跳过: {text_nodes}")
                 continue
             label = text_nodes[0]
-            # Age 项的 value 在第 3 个文本节点（中间是生日）
-            if label == 'Age' and len(text_nodes) >= 3:
-                value = text_nodes[2]
-            else:
-                value = text_nodes[1]
+            # age 字段已废弃：页面上的 Age 是抓取当天的快照，实测 61% 的行与真实年龄
+            if label == 'Age':
+                continue
+            value = text_nodes[1]
             field = LABEL_FIELD_MAP.get(label)
             if field:
                 player[field] = value

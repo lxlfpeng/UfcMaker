@@ -93,7 +93,6 @@ class SqliteDbPipeline(object):
                     cover TEXT,             -- 封面
                     cover_local TEXT,       -- 封面(本地)
                     record TEXT,            -- 战绩
-                    age TEXT,               -- 年龄
                     status TEXT,            -- 状态
                     home_town TEXT,         -- 出生地(城市, 国家)
                     team TEXT,              -- 团队
@@ -170,15 +169,24 @@ class SqliteDbPipeline(object):
             # # 5. 提交更改
             self.conn.commit()
         if isinstance(item, UfcPlayerItem):
+            # birthdate 不来自爬虫（选手页 bio 区已无 DOB），是外部一次性补齐的。
+            # INSERT OR REPLACE 会把「未列入的列」清空（实测：新行该列变 NULL），
+            # 所以必须把旧值读出来带回去 —— 否则选手一打比赛战绩变化就会触发重抓，
+            # 生日被无声抹掉，补一次白补一次。
+            birthdate = item.get('birthdate', '')
+            if not birthdate:
+                row = self.cursor.execute(
+                    'SELECT birthdate FROM player WHERE page = ?', (item['page'],)).fetchone()
+                birthdate = (row[0] or '') if row else ''
             self.cursor.execute(
                 '''
-                INSERT OR REPLACE INTO player (name, page,division,division_cn,avatar,avatar_local,cover,cover_local,record,age,status,status_cn,
+                INSERT OR REPLACE INTO player (name, page,division,division_cn,avatar,avatar_local,cover,cover_local,record,birthdate,status,status_cn,
                 home_town,city,city_cn,country,country_cn,team,team_cn,style,style_cn,height,weight,reach,leg_reach,debut,nick_name,wins_stats,wins_stats_cn,
                 history,name_cn,flag,nick_name_cn,history_cn)
                 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 ''', (item['name'], item['page'], item['division'], item.get('division_cn', ''), item['avatar'],
                       item.get('avatar_local', ''),
-                      item['cover'], item.get('cover_local', ''), item.get('record', ''), item.get('age', ''),
+                      item['cover'], item.get('cover_local', ''), item.get('record', ''), birthdate,
                       item.get('status', ''), item.get('status_cn', ''), item.get('home_town', ''),
                       item.get('city', ''), item.get('city_cn', ''), item.get('country', ''), item.get('country_cn', ''),
                       item.get('team', ''), item.get('team_cn', ''), item.get('style', ''), item.get('style_cn', ''),

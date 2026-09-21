@@ -5,12 +5,12 @@ name: CrawlingUFCJson2Gitee
 #   schedule:
 #     - cron: '45 05 * * *'
 
-on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '45 05 * * *'
+# on:
+#   push:
+#     branches:
+#       - master
+#   schedule:
+#     - cron: '45 05 * * *'
 
 # 一个workflow由执行的一项或多项job
 jobs:
