@@ -35,6 +35,7 @@ class SqliteDbPipeline(object):
         spider = self.crawler.spider
         # 1. 连接到数据库（如果没有数据库文件，会自动创建）
         self.conn = sqlite3.connect('output/db/ufc.db')
+        self.conn.row_factory = sqlite3.Row   # 让 fetchone 返回可按列名访问的 Row（process_item 里 row['history'] 等依赖它）
         # 2. 创建游标对象（用于执行SQL语句）
         self.cursor = self.conn.cursor()
         if isinstance(spider, EventpassSpider):
@@ -169,35 +170,73 @@ class SqliteDbPipeline(object):
             # # 5. 提交更改
             self.conn.commit()
         if isinstance(item, UfcPlayerItem):
-            # birthdate 不来自爬虫（选手页 bio 区已无 DOB），是外部一次性补齐的。
-            # INSERT OR REPLACE 会把「未列入的列」清空（实测：新行该列变 NULL），
-            # 所以必须把旧值读出来带回去 —— 否则选手一打比赛战绩变化就会触发重抓，
-            # 生日被无声抹掉，补一次白补一次。
-            birthdate = item.get('birthdate', '')
-            if not birthdate:
-                row = self.cursor.execute(
-                    'SELECT birthdate FROM player WHERE page = ?', (item['page'],)).fetchone()
-                birthdate = (row[0] or '') if row else ''
-            self.cursor.execute(
-                '''
-                INSERT OR REPLACE INTO player (name, page,division,division_cn,avatar,avatar_local,cover,cover_local,record,birthdate,status,status_cn,
-                home_town,city,city_cn,country,country_cn,team,team_cn,style,style_cn,height,weight,reach,leg_reach,debut,nick_name,wins_stats,wins_stats_cn,
-                history,name_cn,flag,nick_name_cn,history_cn)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-                ''', (item['name'], item['page'], item['division'], item.get('division_cn', ''), item['avatar'],
-                      item.get('avatar_local', ''),
-                      item['cover'], item.get('cover_local', ''), item.get('record', ''), birthdate,
-                      item.get('status', ''), item.get('status_cn', ''), item.get('home_town', ''),
-                      item.get('city', ''), item.get('city_cn', ''), item.get('country', ''), item.get('country_cn', ''),
-                      item.get('team', ''), item.get('team_cn', ''), item.get('style', ''), item.get('style_cn', ''),
-                      item.get('height', ''), item.get('weight', ''),
-                      item.get('reach', ''), item.get('leg_reach', '')
-                      , item.get('debut', ''), item.get('nick_name', ''), str(json.dumps(item.get('wins_stats'))),
-                      dump_cn_field(item.get('wins_stats_cn')),
-                      str(json.dumps(item.get('history'))), item.get('name_cn', ''), item.get('flag', ''),
-                      item.get('nick_name_cn', ''),
-                      dump_cn_field(item.get('history_cn')))
-            )
+            history = item.get('history') or []
+            wins_stats = item.get('wins_stats') or []
+
+            # 判断选手是否已存在
+            row = self.cursor.execute(
+                'SELECT * FROM player WHERE page = ?', (item['page'],)).fetchone()
+
+            if row:
+                # ══ 已存在：老值打底，只用「本次抓到的可信非空值」覆盖 ══
+                # birthdate、译文列（name_cn 等）不在这批字段里 → 永不覆盖
+                final = dict(row)
+                for col in ('name', 'division', 'avatar', 'avatar_local', 'cover', 'cover_local',
+                            'record', 'status', 'home_town', 'city', 'country', 'team', 'style',
+                            'height', 'weight', 'reach', 'leg_reach', 'debut', 'nick_name', 'flag'):
+                    new = (item.get(col) or '').strip()
+                    if new:                              # 本次抓空的字段，保留老值
+                        final[col] = new
+                # history/wins_stats：页面结构变化时会抓成空列表，
+                # '[]' 会把真实战绩清掉 → 空的不覆盖；源真变了译文才作废
+                if history:
+                    new_history = json.dumps(history)
+                    if new_history != (row['history'] or ''):
+                        final['history'] = new_history
+                        final['history_cn'] = ''         # 战绩变了，译文作废，translator 重译
+                if wins_stats:
+                    new_wins = json.dumps(wins_stats)
+                    if new_wins != (row['wins_stats'] or ''):
+                        final['wins_stats'] = new_wins
+                        final['wins_stats_cn'] = ''
+
+                self.cursor.execute(
+                    '''
+                    UPDATE player SET
+                        name=?, division=?, avatar=?, avatar_local=?, cover=?, cover_local=?,
+                        record=?, status=?, home_town=?, city=?, country=?, team=?, style=?,
+                        height=?, weight=?, reach=?, leg_reach=?, debut=?, nick_name=?, flag=?,
+                        wins_stats=?, history=?, wins_stats_cn=?, history_cn=?
+                    WHERE id=?
+                    ''', (final['name'], final['division'], final['avatar'], final['avatar_local'],
+                          final['cover'], final['cover_local'], final['record'], final['status'],
+                          final['home_town'], final['city'], final['country'], final['team'], final['style'],
+                          final['height'], final['weight'], final['reach'], final['leg_reach'],
+                          final['debut'], final['nick_name'], final['flag'],
+                          final['wins_stats'], final['history'], final['wins_stats_cn'], final['history_cn'],
+                          row['id']))
+            else:
+                # ══ 不存在：全新选手，全量插入 ══
+                self.cursor.execute(
+                    '''
+                    INSERT INTO player (name, page,division,division_cn,avatar,avatar_local,cover,cover_local,record,birthdate,status,status_cn,
+                    home_town,city,city_cn,country,country_cn,team,team_cn,style,style_cn,height,weight,reach,leg_reach,debut,nick_name,wins_stats,wins_stats_cn,
+                    history,name_cn,flag,nick_name_cn,history_cn)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    ''', (item['name'], item['page'], item['division'], item.get('division_cn', ''), item['avatar'],
+                          item.get('avatar_local', ''),
+                          item['cover'], item.get('cover_local', ''), item.get('record', ''), item.get('birthdate', ''),
+                          item.get('status', ''), item.get('status_cn', ''), item.get('home_town', ''),
+                          item.get('city', ''), item.get('city_cn', ''), item.get('country', ''), item.get('country_cn', ''),
+                          item.get('team', ''), item.get('team_cn', ''), item.get('style', ''), item.get('style_cn', ''),
+                          item.get('height', ''), item.get('weight', ''),
+                          item.get('reach', ''), item.get('leg_reach', '')
+                          , item.get('debut', ''), item.get('nick_name', ''), str(json.dumps(item.get('wins_stats'))),
+                          dump_cn_field(item.get('wins_stats_cn')),
+                          str(json.dumps(history)), item.get('name_cn', ''), item.get('flag', ''),
+                          item.get('nick_name_cn', ''),
+                          dump_cn_field(item.get('history_cn')))
+                )
             # # 5. 提交更改
             self.conn.commit()
         return item
