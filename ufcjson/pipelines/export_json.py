@@ -1,4 +1,5 @@
 import json
+import os
 import sqlite3
 import time
 
@@ -62,38 +63,50 @@ class JsonWriterPipeline(object):
             self.json_file.close()
 
     def _generate_pass_json_from_db(self, file_name):
-        """从数据库读取最新的 8 场过往赛事，生成 ufc_pass_data.json"""
+        """从数据库读取最新的 8 场过往赛事，生成 ufc_pass_data.json
+
+        ⚠️ 排序必须按数值而不是字符串：`main_time` 是 TEXT 列，存的是 Unix 时间戳；
+        库里 1970 ~ 2001-09-09 的赛事只有 9 位数字、之后都是 10 位，而 SQLite 对 TEXT
+        是逐字符比较（'9…' > '1…'）⇒ 直接 `ORDER BY main_time DESC` 会让
+        1999–2001 那批排到最前，LIMIT 8 取到的全是二十多年前的比赛。
+        """
+        events = []
+        cards_by_page = {}
         conn = sqlite3.connect('output/db/ufc.db')
         conn.row_factory = sqlite3.Row
-        cursor = conn.cursor()
+        try:
+            events = conn.execute('''
+                SELECT name, name_cn, title, title_cn, banner, banner_local,
+                       address, address_cn, page as url,
+                       main_time, prelims_time, data_early_time
+                FROM pass_event
+                ORDER BY CAST(main_time AS INTEGER) DESC
+                LIMIT 8
+            ''').fetchall()
 
-        # 按 main_time 倒序取最新的 8 场赛事
-        cursor.execute('''
-            SELECT name, name_cn, title, title_cn, banner, address, address_cn, page as url,
-                   main_time, prelims_time, data_early_time
-            FROM pass_event
-            ORDER BY main_time DESC
-            LIMIT 8
-        ''')
-        events = cursor.fetchall()
+            # 战卡一次性取回再按赛事分组，避免每场赛事发一条子查询
+            if events:
+                pages = [event['url'] for event in events]
+                placeholders = ','.join('?' * len(pages))
+                for row in conn.execute(f'''
+                        SELECT fight_page, card_type, card_division, card_division_cn,
+                               end_round, end_time, end_method, end_method_cn,
+                               red_page, blue_page, red_result, blue_result,
+                               red_odds, blue_odds
+                        FROM pass_card
+                        WHERE fight_page IN ({placeholders})
+                        ORDER BY rowid ASC
+                        ''', pages):
+                    card = dict(row)
+                    cards_by_page.setdefault(card['fight_page'], []).append(card)
+        finally:
+            conn.close()
 
         data = []
         for event in events:
             event_dict = dict(event)
-            # 查询该赛事的所有战卡
-            cursor.execute('''
-                SELECT fight_page, card_type, card_division, card_division_cn, end_round, end_time,
-                       end_method, end_method_cn, red_page, blue_page, red_result, blue_result,
-                       red_odds, blue_odds
-                FROM pass_card
-                WHERE fight_page = ?
-                ORDER BY rowid ASC
-            ''', (event_dict['url'],))
-            fight_cards = [dict(row) for row in cursor.fetchall()]
-            event_dict['fight_cards'] = fight_cards
+            event_dict['fight_cards'] = cards_by_page.get(event_dict['url'], [])
             data.append(event_dict)
-
-        conn.close()
 
         # 写入 JSON 文件（保持标准 API 响应格式）
         output = {
@@ -102,5 +115,9 @@ class JsonWriterPipeline(object):
             'data': data,
             'timestamp': int(time.time() * 1000),
         }
-        with open(file_name, 'w', encoding='utf-8') as f:
+        # 先写临时文件再原子替换：客户端随时会来拉这个文件，
+        # 直接覆盖原文件时若进程中途挂掉，会留下半截 JSON。
+        tmp_path = f'{file_name}.tmp'
+        with open(tmp_path, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False)
+        os.replace(tmp_path, file_name)
