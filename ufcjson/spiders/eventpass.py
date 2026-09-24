@@ -4,13 +4,16 @@ from ..items import UfcPassItem
 from ..items import UfcPassCardItem
 from ..athlete_url import load_alias_map, load_player_pages, load_probe_map
 from ..athlete_url import normalize_url as normalize_athlete_page_url
+import re
 import sqlite3
-
+from ..items import UfcPlayerItem
+from urllib.parse import urlparse
+from ..birth_place import split_birth_place
+from ..textutil import is_blank_text
 class EventpassSpider(scrapy.Spider):
     name = "eventpass"
     allowed_domains = ["www.ufc.com","dmxg5wxfqgb4u.cloudfront.net","ufc.com"]
     start_urls = ["https://www.ufc.com/events#events-list-past"]
-
     # 分页请求 URL：ufc.com 的 Events 列表走普通 URL 分页（页面上的翻页控件就是
     # <a href="?page=N" rel="next">）。实测 past 区块每页 8 条、连续无重叠，
     # page=99 是最后一页，page>=100 起 past 区块取到 0 条 ⇒ 天然的结束信号。
@@ -38,6 +41,8 @@ class EventpassSpider(scrapy.Spider):
         self.total_new = 0
         self.total_skipped = 0
         self.total_pages = 0
+        # 收集选手页未匹配的 bio label，用于感知页面结构变化（同 AthleteSpider）
+        self.unmatched_bio_labels = set()
         # 1. 连接到数据库（如果没有数据库文件，会自动创建）
         self.conn = sqlite3.connect('output/db/ufc.db')
         # 2. 创建游标对象（用于执行SQL语句）
@@ -67,7 +72,49 @@ class EventpassSpider(scrapy.Spider):
         self._url_cache[url] = result
         return result
 
+    def extract_avatar(self, response):
+        """从选手详情页取「本人」的头像 URL；取不到返回空串，并打 warning。
+
+        为什么要判别式：`event_results_athlete_headshot` 这个 class 在页面上同时挂着
+        「本人」和「历史对手」的头像（实测 Joshua Van 页 8 张 = Van×4 + Pantoja×2
+        + Taira×2），而且红/蓝角不代表本人（Van 在自己页是红角，Taira 在 Van 页是
+        蓝角），所以不能直接取第一张。
+
+        主判据用 href 而不是姓名：实测每个头像的最近 <a href> 都是
+        `https://www.ufc.com/athlete/<slug>`（绝对、无尾斜杠、无 query）；而按姓名匹配
+        不牢靠——库里有 13 个名字带 `Jr.`/`III`（h1 与 alt 逐字不一致就 0 命中）、
+        另有 10 组完全同名（会静默取到错人的图）。
+        ⚠️ 刻意写成「href 以 /athlete/<slug> 结尾」而不是 contains —— 库里有 20 对
+        slug 互为前缀（`lance-gibson`/`lance-gibson-jr`、`joey-gomez`/`joey-gomez-0`…），
+        contains 会命中别人的页。
+
+        取不到时**必须留痕**：空值会被 `UfcDefaultPhotoPipeline` 换成
+        `no-profile-image.png` 剪影占位图，事后无法区分「这人确实没头像」和
+        「选择器被站点改版打挂了」。
+        """
+        slug = urlparse(response.url).path.rstrip('/').rsplit('/', 1)[-1]
+        avatar = response.xpath(
+            '//a[substring(@href, string-length(@href) - string-length($s) + 1) = $s]'
+            '//img[contains(@class, "athlete-headshot")]/@src',
+            s=f'/athlete/{slug}').get(default='')
+        if not avatar:                        # 兜底：按 h1 姓名匹配 alt
+            name = response.xpath(
+                '//h1[@class="hero-profile__name"]/text()').get(default='').strip()
+            if name:
+                avatar = response.xpath(
+                    '//img[@class="image-style-event-results-athlete-headshot"]'
+                    '[@alt=$n]/@src', n=name).get(default='')
+        if not avatar:
+            self.logger.warning(f"[avatar] 未取到头像: {response.url}")
+        return avatar
+
     def closed(self, reason):
+        # 未匹配的 bio label 是选手页结构变化的唯一信号，收集了必须打出来，否则没人看
+        if self.unmatched_bio_labels:
+            self.logger.warning(
+                f"发现 {len(self.unmatched_bio_labels)} 个未匹配的 bio label: "
+                f"{sorted(self.unmatched_bio_labels)}"
+            )
         if self.conn:
             self.conn.close()
         self.logger.info(
@@ -183,7 +230,7 @@ class EventpassSpider(scrapy.Spider):
                 if red_href and red_href == blue_href:
                     self.logger.info(f"跳过空壳战卡（两侧同一链接）: {red_href}")
                     continue
-
+ 
                 card_item = UfcPassCardItem()
                 fight_cards.append(card_item)
                 card_item['fight_page']=response.url
@@ -205,6 +252,81 @@ class EventpassSpider(scrapy.Spider):
                 odds = d.xpath('.//div[@class="c-listing-fight__odds-wrapper"]//span[@class="c-listing-fight__odds-amount"]/text()').getall()
                 card_item['red_odds'], card_item['blue_odds'] = (odds + ["", ""])[:2]
                 yield card_item
+                # 空串/None 不能直接交给 scrapy.Request（抛 ValueError: Missing scheme）：
+                # 上面那句空壳过滤只挡「两侧 href 相等」，漏掉「只有一侧没有 <a>」的卡。
+                # 更麻烦的是生成器会整体中断 ⇒ item 不 yield ⇒ pass_event 写不进去
+                # ⇒ 下次把这场当新赛事重抓、再崩，单场赛事永久卡死。
+                # 这里只决定「要不要抓选手详情」，卡本身照常入库。
+                for page in (card_item['red_page'], card_item['blue_page']):
+                    if page:
+                        yield scrapy.Request(url=page, callback=self.parse_fighter)
         item['fight_cards']=fight_cards
         yield item
 
+    def parse_fighter(self, response):
+        player=UfcPlayerItem()
+        self.logger.info(f"抓取选手详情页面: {response.url}")
+        # 选手名取自详情页 h1（与 extract_avatar 兜底分支用的是同一个 class）
+        player['name'] = response.xpath(
+            '//h1[@class="hero-profile__name"]/text()').get(default='').strip()
+        # 昵称：页面上是 <p class="hero-profile__nickname">"The Fearless"</p>，原文自带引号
+        nick = response.xpath(
+            '//p[@class="hero-profile__nickname"]/text()').get(default='').strip()
+        # 剥离首尾各类引号（英文双引号、中文双引号、英文单引号、中文单引号）
+        player['nick_name'] = re.sub(r'^[\'\"""]+|[\'\"""]+$', '', nick).strip()
+        player['avatar'] = self.extract_avatar(response)
+        # 接收结构化数据//field field--name-qna-ufc field--type-text-long field--label-hidden field__item
+        #//*[@id="tab-panel-3"]/div/div
+        player['page']=response.url
+        # 取所有文本节点，避免 <li>、<strong> 等标签内容丢失
+        player['history'] = [t.strip() for t in response.xpath('//*[@id="tab-panel-3"]/div/div//text()').getall() if not is_blank_text(t)]
+        bios_list = response.xpath('//div[@class="c-bio__info-details"]/div/div')
+        for b in bios_list:
+            text_nodes = [t.strip() for t in b.xpath('.//div/text()').getall() if t.strip()]
+            if len(text_nodes) < 2:
+                self.logger.warning(f"bio 项文本节点不足，跳过: {text_nodes}")
+                continue
+            label = text_nodes[0]
+            # age 字段已废弃：页面上的 Age 是抓取当天的快照，实测 61% 的行与真实年龄
+            if label == 'Age':
+                continue
+            value = text_nodes[1]
+            field = {
+                    'Status': 'status',
+                    'Reach': 'reach',
+                    'Height': 'height',
+                    'Place of Birth': 'home_town',
+                    'Trains at': 'team',
+                    'Fighting style': 'style',
+                    'Leg reach': 'leg_reach',
+                    'Octagon Debut': 'debut',
+                    'Weight': 'weight',
+                }.get(label)
+            if field:
+                player[field] = value
+            else:
+                self.unmatched_bio_labels.add(label)
+        # 无条件赋值：本入口没有「列表页的值」可保护，而 SqliteDbPipeline 的 INSERT 分支
+        # 用的是硬下标 item['division']，不赋值就会 KeyError（只在新选手分支炸）。
+        # 「空值不覆盖老值」的逻辑在管道的 UPDATE 分支里（if new:），不在这里。
+        player['division'] = response.xpath(
+            '//p[@class="hero-profile__division-title"]/text()').get(default='').strip()
+        detail_record = response.xpath('//p[@class="hero-profile__division-body"]/text()').get(default='').strip()
+        if detail_record:
+            player['record'] = detail_record
+        player['player_tags']=response.xpath('//div[@class="hero-profile__tags"]/p/text()').extract()
+        player['player_tags']=[ i.strip() for i in player['player_tags'] ]
+        stats_list = response.xpath('//div[@class="hero-profile__stat"]')
+        player['wins_stats'] = []
+        for stat in stats_list:
+            player['wins_stats'].append({
+                'way': stat.xpath('.//p[@class="hero-profile__stat-text"]/text()').get(default='').strip(),
+                'times': stat.xpath('.//p[@class="hero-profile__stat-numb"]/text()').get(default='').strip(),
+            })
+        player['cover']=response.xpath('//img[@class="hero-profile__image"]/@src').get(default='').strip()
+        # 将出生地拆分为 城市/国家，供筛选、国旗和中文翻译使用（home_town 保留原始值）
+        player['city'], player['country'] = split_birth_place(player.get('home_town'))
+        self.logger.info(f"抓取完成选手: {player['name']}，共 {len(player['history'])} 条历史记录，{len(player['wins_stats'])} 条胜场统计")
+        yield player
+
+   

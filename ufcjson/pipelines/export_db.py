@@ -79,7 +79,7 @@ class SqliteDbPipeline(object):
              card_division_cn TEXT                  -- 级别(中文)
             )
             ''')
-        if isinstance(spider, AthleteSpider):
+        if isinstance(spider, (AthleteSpider, EventpassSpider)):
             self.cursor.execute('''
                 CREATE TABLE IF NOT EXISTS player (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
