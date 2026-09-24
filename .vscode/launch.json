@@ -1,0 +1,165 @@
+{
+  // ==========================================================================
+  // VSCode 调试配置 — UfcMaker 爬虫（Python 3.12 / Scrapy 2.19）
+  //
+  // ⚠️ 本文件假定【工作区根 = UfcMaker 仓库根】。若工作区开在 MMAProject 上层目录，
+  //    用的是那份未纳管的 .vscode（路径写的是 ${workspaceFolder}/UfcMaker/...），
+  //    两份不要混用。
+  //
+  // 解释器：MMAProject/.venv/bin/python（已装 Scrapy 2.19 与全部依赖）
+  //         相对本工作区就是 ../.venv
+  //
+  // ⚠️ cwd 必须锁死在仓库根（= 工作区根）。spider 里用的是相对路径：
+  //      · sqlite3.connect('output/db/ufc.db')
+  //      · LOG_FILE = './log/scrapy_log.log'
+  //    scrapy.cfg 也在这一层。cwd 错了 ⇒ 读不到项目设置 / 连不上库 / 日志写偏。
+  //
+  // ⚠️ 副作用（调试前先看清）
+  //      · athlete / eventpass 会【写】output/db/ufc.db
+  //      · run.py 跑完还会串一遍 归一化 → URL 对账 → 翻译 → 图片清理 → 重建 zip 和 meta
+  //    只想看爬取逻辑，就用单个 spider 那几条；「run.py 全流程」只在确实要重跑流水线时用。
+  // ==========================================================================
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // 每天跑、不写库，最适合用来练断点
+      "name": "Scrapy: upcoming（赛程，只读）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "upcoming"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // ⚠️ 会写 output/db/ufc.db
+      "name": "Scrapy: eventpass（已打完赛事；写库）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "eventpass"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Scrapy: ranking（排行榜）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "ranking"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // ⚠️ 会写 output/db/ufc.db。pagination 默认 False ⇒ 只抓第 1 页
+      "name": "Scrapy: athlete（选手详情，单页）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "athlete"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // 等价于 run.py 里的 scrapy crawl athlete -a pagination=true（耗时最长）
+      "name": "Scrapy: athlete 全量（-a pagination=true）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "athlete", "-a", "pagination=true"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Scrapy: ufccn_news（中文新闻 / RSS）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "ufccn_news"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // 从下拉里挑一个 spider，其余与上面各条完全一致
+      "name": "Scrapy: 选择 spider…",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "module": "scrapy",
+      "args": ["crawl", "${input:spiderName}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // ⚠️ 会改库并重建 zip / meta。注意 run.py 用 subprocess 起 scrapy，
+      //    断点【不会】命中子进程里的 spider —— 那些要单独用上面的配置调。
+      "name": "run.py 全流程（⚠️ 会改库并重建 zip/meta）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "program": "${workspaceFolder}/run.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // UfcMaker/scripts/ 下的脚本（align_db_to_app_schema.py、backfill_event_results.py 等）
+      // 都按 UfcMaker 为根读写 output/，所以 cwd 固定仓库根
+      "name": "Python: 当前文件（cwd=UfcMaker）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // 上层 MMAProject/.workbuddy/scripts/ 下的体检类脚本
+      // （check_room_schema.py、data_audit*.py 等）——它们的 cwd 是项目根，即工作区的上一层
+      "name": "Python: 当前文件（cwd=项目根）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/../.venv/bin/python",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}/..",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // 调试手动起的进程。先在终端执行：
+      //   cd <本仓库根>
+      //   ../.venv/bin/python -m debugpy --listen 5678 --wait-for-client -m scrapy crawl upcoming
+      // 终端会挂住等调试器，这时再启动本配置即可接管。
+      "name": "附加: 等待中的进程（127.0.0.1:5678）",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "127.0.0.1",
+        "port": 5678
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "spiderName",
+      "type": "pickString",
+      "description": "选择要调试的 spider",
+      "options": ["upcoming", "eventpass", "ranking", "athlete", "ufccn_news"],
+      "default": "upcoming"
+    }
+  ]
+}
