@@ -8,7 +8,8 @@
     "minimum_version_code": 1,
     "force_update": false,
     "release_date": "2026-09-13",
-    "download_url": "",
+    "download_url": "output/apks/gedoutong-1.0.0.apk",
+    "size": 9190,
     "changelog": {
       "zh": "首次发布",
       "en": "Initial release"
