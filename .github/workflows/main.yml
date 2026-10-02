@@ -60,30 +60,30 @@ jobs:
         COMMIT_COUNT=$(git rev-list --count HEAD)
         echo "当前提交数: $COMMIT_COUNT"
 
-        # 重建最近 KEEP 个提交，全部用新对象，确保最老的是根节点（切断与旧历史的联系）
-        if [ "$COMMIT_COUNT" -ge "$KEEP" ]; then
-          # 取最近 KEEP 个提交，从旧到新
-          COMMITS=$(git rev-list HEAD | head -$KEEP | tac)
+        # # 重建最近 KEEP 个提交，全部用新对象，确保最老的是根节点（切断与旧历史的联系）
+        # if [ "$COMMIT_COUNT" -ge "$KEEP" ]; then
+        #   # 取最近 KEEP 个提交，从旧到新
+        #   COMMITS=$(git rev-list HEAD | head -$KEEP | tac)
 
-          PARENT=""
-          for sha in $COMMITS; do
-            export GIT_COMMITTER_DATE="$(git log -1 --format=%cI "$sha")"
-            TREE=$(git rev-parse "$sha^{tree}")
-            MSG=$(git log -1 --format=%s "$sha")
+        #   PARENT=""
+        #   for sha in $COMMITS; do
+        #     export GIT_COMMITTER_DATE="$(git log -1 --format=%cI "$sha")"
+        #     TREE=$(git rev-parse "$sha^{tree}")
+        #     MSG=$(git log -1 --format=%s "$sha")
 
-            if [ -z "$PARENT" ]; then
-              # 第一个（最老的）：根提交，无父节点
-              PARENT=$(git commit-tree "$TREE" -m "$MSG")
-            else
-              # 后续：有父节点
-              PARENT=$(git commit-tree "$TREE" -p "$PARENT" -m "$MSG")
-            fi
-          done
+        #     if [ -z "$PARENT" ]; then
+        #       # 第一个（最老的）：根提交，无父节点
+        #       PARENT=$(git commit-tree "$TREE" -m "$MSG")
+        #     else
+        #       # 后续：有父节点
+        #       PARENT=$(git commit-tree "$TREE" -p "$PARENT" -m "$MSG")
+        #     fi
+        #   done
 
-          # 把 master 指向新链的顶端
-          git update-ref refs/heads/master "$PARENT"
-          echo "历史重建完成，新提交数: $(git rev-list --count HEAD)"
-        fi
+        #   # 把 master 指向新链的顶端
+        #   git update-ref refs/heads/master "$PARENT"
+        #   echo "历史重建完成，新提交数: $(git rev-list --count HEAD)"
+        # fi
 
         git push --force origin master || echo "Nothing to push"
     #推送仓库到Gitee

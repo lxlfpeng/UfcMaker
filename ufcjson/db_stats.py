@@ -11,8 +11,9 @@
    只写 `<> ''` 会给出 100% 的假数据——这正是本模块存在的意义。
 
 2. **列可能不存在。** 建表用的是 `CREATE TABLE IF NOT EXISTS`，已存在的表不会被补列
-   （现状：`export_db.py` 给 pass_event 声明了 city / city_cn / country / country_cn 四列，
-   本地库实际一个都没有）。所有统计先 [_has_column] 探一下，缺列时该维度记 `None`
+   （沿革：pass_event 的 city / city_cn / country / country_cn 四列 2026-09-20 曾被摘除、
+   2026-10-02 恢复——历史旧库用 `scripts/backfill_event_place.py` 补列补数）。
+   所有统计先 [_has_column] 探一下，缺列时该维度记 `None`
    而不是抛异常——否则一次 schema 漂移会让整个 run.py 挂掉。
 
 3. **`main_time` 是字符串形式的 Unix 秒**（如 `'1233439200'`），不能直接排序比较，
@@ -284,9 +285,9 @@ def _fmt_date(ts):
 def _missing_dimensions(coverage):
     """汇总统计不到的维度（列不存在时该项为 None）——把 DDL 与真实库的漂移暴露出来。
 
-    现状会稳定出现 `pass_event.city_cn` / `pass_event.country_cn`：export_db.py 的建表语句
-    里有这两列（及 city / country），但库是早于这个 DDL 建的，`CREATE TABLE IF NOT EXISTS`
-    不会补列。看到它们不代表统计坏了，代表库需要一次重建或 ALTER。
+    漂移项（None）会在这里被点名。历史例子：`pass_event.city_cn` / `country_cn` 曾在
+    2026-09-20~10-02 期间缺列而稳定出现；2026-10-02 恢复四列后该项自动消失。
+    看到漂移项 = 库 / DDL 需要一次对齐（重建或 `scripts/backfill_event_place.py`）。
     """
     return [
         f"{table}.{name}"

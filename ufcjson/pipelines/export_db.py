@@ -123,14 +123,16 @@ class SqliteDbPipeline(object):
     def process_item(self, item):
         if isinstance(item, UfcPassItem):
             self.cursor.execute('''
-                     INSERT INTO pass_event (name,name_cn,title,title_cn,banner,banner_local,address,address_cn,page,main_time,prelims_time,data_early_time)
-                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                     INSERT INTO pass_event (name,name_cn,title,title_cn,banner,banner_local,address,address_cn,page,main_time,prelims_time,data_early_time,city,country,city_cn,country_cn)
+                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                    ''', (item.get('name', ''), item.get('name_cn', ''), item.get('title', ''), item.get('title_cn', ''),
                          item.get('banner', ''),
                          item.get('banner_local', ''),
                          item.get('address', ''), item.get('address_cn', ''), item.get('url', ''),
                          item.get('main_time', ''),
-                         item.get('prelims_time', ''), item.get('data_early_time', '')
+                         item.get('prelims_time', ''), item.get('data_early_time', ''),
+                         item.get('city', ''), item.get('country', ''),
+                         item.get('city_cn', ''), item.get('country_cn', '')
                          ))
             # # 5. 提交更改
             self.conn.commit()

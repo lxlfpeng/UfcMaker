@@ -524,7 +524,7 @@ python -m ufcjson.normalize --db /tmp/ufc.db --apply
 5. 按译文映射回填各表 `*_cn`。
 
 **翻译范围**：`player`（name / nick_name / city / country / division / status / team / style +
-`history`→`history_cn`、`wins_stats`→`wins_stats_cn` 的 `way`）；`pass_event`（name / title / address）；
+`history`→`history_cn`、`wins_stats`→`wins_stats_cn` 的 `way`）；`pass_event`（name / title / address / city / country）；
 `pass_card`（end_method / card_division）。JSON 列保持结构、只翻文本，**全部元素成功才写入**。
 
 **领域提示词**：内置 MMA/UFC 词典（量级、结束方式、人名音译、地点从大到小、日期 `YYYY年M月D日`），
