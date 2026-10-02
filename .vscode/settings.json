@@ -1,0 +1,24 @@
+{
+  // ========== Python 解释器 ==========
+  // 爬虫统一用项目自带 venv（Python 3.12，已装 Scrapy 2.19 / openai / Pillow 等）
+  // 本文件假定工作区根 = UfcMaker 仓库根，venv 在上一层
+  "python.defaultInterpreterPath": "${workspaceFolder}/../.venv/bin/python",
+
+  // ufcjson 包就在本工作区根下 ⇒ Pylance 需要把工作区根加进搜索路径，
+  // 否则 from ufcjson.xxx import ... 会一路报红线（调试本身不受影响）
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+
+  // ========== 搜索 / 浏览排除 ==========
+  // 这些目录很大（5000+ webp、db、日志），不排掉全局搜索会卡
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    "output/db": true,
+    "output/images": true,
+    "log": true,
+    "../UfcAndroid/build": true
+  }
+}

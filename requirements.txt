@@ -1,0 +1,6 @@
+Scrapy==2.19.0
+openai>=1.0.0
+itemadapter==0.13.1
+pycountry==26.2.16
+PyRSS2Gen==1.1
+Pillow==12.3.0

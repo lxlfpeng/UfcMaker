@@ -1,0 +1,8 @@
+{
+  // 调试 UfcMaker 爬虫所需（本机均已安装）
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.vscode-pylance"
+  ]
+}
