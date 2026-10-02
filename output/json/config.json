@@ -4,6 +4,7 @@
   "data": {
     "schema_version": 1,
     "hosts": [
+      "https://raw.githubusercontent.com",
       "https://gh-proxy.org/https://raw.githubusercontent.com",
       "https://v4.gh-proxy.org/https://raw.githubusercontent.com",
       "https://v6.gh-proxy.org/https://raw.githubusercontent.com",

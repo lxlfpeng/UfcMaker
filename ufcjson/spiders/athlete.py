@@ -1,7 +1,7 @@
 import scrapy
 from w3lib.url import url_query_parameter
 from ..items import UfcPlayerItem
-from ..birth_place import split_birth_place
+from ..birth_place import infer_birth_year, split_birth_place
 from ..textutil import is_blank_text
 import sqlite3
 import os
@@ -88,14 +88,17 @@ class AthleteSpider(scrapy.Spider):
         # 取所有文本节点，避免 <li>、<strong> 等标签内容丢失
         player['history'] = [t.strip() for t in response.xpath('//*[@id="tab-panel-3"]/div/div//text()').getall() if not is_blank_text(t)]
         bios_list = response.xpath('//div[@class="c-bio__info-details"]/div/div')
+        age_hint = ''                     # 页面 Age，仅用于推断出生年（见下方落值处）
         for b in bios_list:
             text_nodes = [t.strip() for t in b.xpath('.//div/text()').getall() if t.strip()]
             if len(text_nodes) < 2:
                 self.logger.warning(f"bio 项文本节点不足，跳过: {text_nodes}")
                 continue
             label = text_nodes[0]
-            # age 字段已废弃：页面上的 Age 是抓取当天的快照，实测 61% 的行与真实年龄
+            # Age 不再是字段：它是抓取当天的快照，会过期（实测 61% 的行与真实年龄差 2 岁以上），
+            # 只在「出生年推断」这一件事上还有用——见 bio 循环后的落值处。
             if label == 'Age':
+                age_hint = text_nodes[1]
                 continue
             value = text_nodes[1]
             field = LABEL_FIELD_MAP.get(label)
@@ -103,6 +106,12 @@ class AthleteSpider(scrapy.Spider):
                 player[field] = value
             else:
                 self.unmatched_bio_labels.add(label)
+        # 出生年近似兜底（只影响新选手：已有行的 UPDATE 永不写 birthdate，见 export_db.py）。
+        # 精度只有「年」（Age 是整数周岁），误差窗口最多一年；精确生日将来由 Sherdog 回填
+        # 覆盖——回填断点必须是 LENGTH(birthdate) < 10，否则近似值会把精确值挡在门外。
+        inferred_year = infer_birth_year(age_hint)
+        if inferred_year:
+            player['birthdate'] = inferred_year
         # 详情页值非空时才覆盖列表页的值，避免空字符串覆盖有效数据
         detail_division = response.xpath('//p[@class="hero-profile__division-title"]/text()').get(default='').strip()
         if detail_division:
