@@ -1,573 +1,629 @@
-# UfcMaker — UFC 赛事数据爬虫
+# UfcMaker — UFC 数据生产端（爬虫 + 数据包）
 
-基于 Scrapy 的 UFC（终极格斗冠军赛）官方网站数据爬虫，抓取赛程、战卡、选手排名、运动员档案等结构化数据，支持 JSON 导出、SQLite 持久化、图片下载、自动翻译、RSS 生成等功能。
+基于 Scrapy 的 UFC 数据爬虫：抓取赛程、历史战报、官方排名、选手档案与 UFC 中文新闻，产出
+**App 可直接消费的数据包**（JSON + RSS + SQLite 库 + 镜像图片），并打包成 `ufc.db.zip` 随
+`meta.json` 指纹一起下发。
 
-## 功能特性
+> 本文同时是**数据端契约说明**的落地文档。跨端的字段口径以 `Resources/contract/` 与
+> `Resources/prd/数据来源及图片地址.md` 为权威；本文只写「本仓怎么生产、怎么跑、有哪些坑」。
 
-- **赛程抓取** — 即将举行的 UFC 赛事（主卡/副卡/早卡时间、举办地、战卡对阵、赔率等）
-- **历史战报** — 已结束赛事的完整战卡数据（结束回合、结束方式、对阵结果等），支持全量分页爬取
-- **官方排名** — 各体重级别男子/女子排名及 P4P 榜单
-- **运动员档案** — 选手基本信息（身高、臂展、体重、年龄、国籍、团队、风格、战绩、历史对战等），支持全量分页爬取
-- **图片本地化** — 赛事封面、选手头像自动下载到本地
-- **自动翻译** — 爬虫管线只查翻译缓存，跑完后统一由大模型把英文姓名、国籍、级别、战队、历史战绩等字段翻译为中文
-- **选手归一化** — 选手主页 URL（slug）变更后自动合并 `player` 表里的多行，并把 `pass_card` 的旧 URL 改写为新 URL
-- **多格式导出** — JSON 文件 + SQLite 数据库双写
-- **RSS 订阅** — 可生成赛事 RSS Feed（在 `settings.py` 的 `ITEM_PIPELINES` 中开关）
-- **定时调度** — 内置按星期自动执行不同爬虫的调度逻辑
+---
 
-## 项目结构
+## 1. 方案路线（数据是怎么到 App 的）
+
+本仓 = App 的数据后端。GitHub 仓库（`lxlfpeng/UfcMaker`）本身就是「数据源」，App 通过
+**节点 + 数据源前缀 + 文件路径** 三段式拼接拉取，不经过任何自建服务器。
+
+```mermaid
+flowchart LR
+  subgraph SRC[上游数据源]
+    A1[ufc.com 官网<br/>赛程/战报/排名/选手页]
+    A2[ufc.cn API<br/>中文新闻]
+  end
+
+  subgraph MAKER[UfcMaker 本仓]
+    B1[5 个 Scrapy 爬虫] --> B2[Item 管道<br/>国家代码/占位图/图片/翻译缓存/导出]
+    B2 --> B3[(output/db/ufc.db)]
+    B2 --> B4[output/json/*.json]
+    B2 --> B5[output/images/full/*.webp]
+    B3 --> B6[run.py 收尾<br/>归一化/对账/翻译/图片维护]
+    B6 --> B7[ufc.db.zip + meta.json + db_stats_history.json]
+  end
+
+  subgraph CI[GitHub Actions]
+    C1[run.py 全流程] --> C2[git commit + force push<br/>只保留最近 5 个提交]
+  end
+
+  subgraph APP[格斗通 App]
+    D1[Splash 测速选节点] --> D2[config.json 取前缀]
+    D2 --> D3[拉 JSON / RSS / 图片]
+    D2 --> D4[meta.json → 下载 ufc.db.zip 并校验替换]
+  end
+
+  A1 --> B1
+  A2 --> B1
+  B7 --> C1
+  C2 --> D1
+```
+
+**产品定位与边界**
+
+| 项 | 说明 |
+|---|---|
+| 本项目负责 | 数据抓取、清洗、翻译、图片镜像、版本指纹、打包下发 |
+| 本项目不负责 | 任何服务端接口；App 直接读仓库文件（GitHub raw / gh-proxy 等节点） |
+| 第二数据源 | `DogMaker`（Sherdog 源）与本仓**路径与结构同构**：同名同路径的 7 个 JSON + `output/db/ufc.db.zip` + `output/images/` 同相对路径。App 设置里切数据源即切前缀，**连图片一起切** |
+| 手维护文件 | `output/json/config.json`、`output/json/app_version.json`、`output/apks/`、`output/images/asset/`（其余产物全部自动生成，**不要手改**） |
+
+### 三段式地址规则（端上按此拼接）
+
+```
+完整 URL = <当前节点> + <数据源前缀> + <文件路径>
+图片地址 = <当前节点> + <数据源前缀> + output/images/ + <*_local 相对路径>
+```
+
+- 节点、前缀、路径**原样相接**，不得补斜杠（节点不带尾斜杠、`prefix` 自带前后斜杠）；
+- 数据源前缀来自 `config.json.data_sources`（`default: true` 项为默认；`prefix` 为空的条目端上置灰）；
+- `download_url`（APK）固定使用**默认项**前缀，不随数据源切换。
+
+---
+
+## 2. 时序图
+
+### 2.1 调度总时序（CI / 本地 `run.py`）
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant CI as GitHub Actions / 本机
+  participant Run as run.py
+  participant Sp as 爬虫（按星期）
+  participant P as Item 管道
+  participant DB as ufc.db
+  participant Post as 收尾流水线
+  participant Out as output/（zip+json+rss）
+  participant App as 格斗通 App
+
+  CI->>Run: python run.py --email_pass "***"
+  Run->>Sp: 周三 ranking+athlete；周日 eventpass；每日 upcoming+ufccn_news
+  Sp->>P: yield item（赛事 / 对局 / 选手 / 排名 / 新闻）
+  P->>DB: 写入 pass_event / pass_card / player
+  P->>Out: ufc_coming_data.json / ufc_ranking_data.json / ufc_schedule.xml
+  Run->>Post: 归一化 → URL 对账 → 翻译 → 图片维护
+  Post->>DB: 合并多行 / 改写旧 URL / 回填译文
+  Post->>Out: 补下缺失图 + 清理孤儿图
+  Run->>Out: build_db_zip() → generate_meta_json()（含 db_stats_history）
+  CI->>Out: git commit + force push（保留最近 5 个提交）
+  App->>Out: 三段式拉取 JSON / RSS / 图片 / db.zip
+```
+
+### 2.2 单个 item 的管道流
+
+```mermaid
+flowchart LR
+  S[Spider 解析] --> P1[UfcCountryCodePipeline<br/>补国旗/国家代码]
+  P1 --> P2[UfcDefaultPhotoPipeline<br/>空头像/封面补占位图]
+  P2 --> P3[ImagesDownloadPipeline<br/>下载图片→webp→回填 *_local]
+  P3 --> P4[TranslatorPipeline<br/>只查翻译缓存，不发请求]
+  P4 --> P5[JsonWriterPipeline<br/>coming / ranking / pass JSON]
+  P4 --> P6[SqliteDbPipeline<br/>SQLite 落库]
+  P4 --> P7[UfcRssMakerPipeline<br/>upcoming / ufccn_news 时组装 RSS]
+```
+
+> 管道顺序定义在 `ufcjson/settings.py` 的 `ITEM_PIPELINES`。图片管道是**异步**的
+> （下载完成才继续往后走），所以从 yield 到落库之间隔着一次图片下载。
+
+### 2.3 选手主页 URL 的两道归一
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant EP as eventpass.parse_detail
+  participant AU as athlete_url.normalize_url
+  participant DB as ufc.db
+  participant Run as run.py 收尾
+  participant RC as reconcile_pass_card
+
+  EP->>AU: 角标 href 归一（写库前，入口断源）
+  AU->>DB: 查 player.page / player_url_alias（本地命中即返回）
+  alt 本地都没有
+    AU->>AU: urllib 跟随 301（8s 超时，仅 www.ufc.com/ufc.com 有效）
+    AU->>DB: 写 player_url_probe（7 天 TTL）+ player_url_alias
+  end
+  AU-->>EP: 规范 slug（失败则原样保留，绝不猜）
+  Run->>RC: 全库对账（补历史 + 兜漏网）
+  RC->>DB: 不在 player 的 pass_card 链接 → 归一后改写 blue_page/red_page
+```
+
+---
+
+## 3. 爬虫清单（5 个）
+
+| 爬虫 | 作用 | 落点 | 判重键 | 调度（run.py） |
+|---|---|---|---|---|
+| `upcoming` | 即将到来的赛事 + 对局（赔率 / 排名 / `fight_id`） | `ufc_coming_data.json`（**不落库**）+ RSS 对局条目 | — | 每日 |
+| `eventpass` | 已结束赛事战报；顺带抓参赛选手页 | `pass_event` / `pass_card` / `player` | 赛事 `page`；对局三维；头像老值 | 周日（增量） |
+| `ranking` | 各级别 + P4P 官方排名 | `ufc_ranking_data.json`（**不落库**） | — | 周三 |
+| `athlete` | 运动员档案（列表 + 详情） | `player` | `(page, record)` | 周三（全量分页） |
+| `ufccn_news` | UFC 中文站新闻（RSS 用） | `output/rss/`（经 RSS 管道合并） | 已发布 ID（`published_ids.json`） | 每日 |
+
+**各爬虫要点**
+
+- **upcoming**：`?page=N` 不翻页，只取 upcoming 列表全部条目；对局含红/蓝赔率与排名行
+  （`rank` 由页面 ranks 行给出，`C` 表示冠军位）；`fight_id` 用于 RSS 去重。
+- **eventpass**：
+  - 只认 `#events-list-past` 区块；列表按 `?page=N` 翻页（每页 8 条，`MAX_PAGES=300`）；
+  - **空壳对局过滤**：两侧 `<a href>` 指向同一链接的卡直接跳过（ufc.com 渲染缺陷，全库实测零误伤）；
+  - 对局写入按 `(fight_page, blue_page, red_page)` 兜底：命中则只覆盖非空值（防「赛前空结果」盖掉「赛后结果」）；
+  - 顺带抓参赛选手页（见 §8.4 头像策略、§8.5 生日推断）；
+  - ⚠️ `run.py` 里 eventpass **不带 `pagination`**，只翻第 1 页（最近 8 场）——漏跑需手动全量补（见 §9）。
+- **athlete**：默认只抓第 1 页；`-a pagination=true` 全量。列表页取头像缩略图与战绩，详情页
+  覆盖记录/量级/身体数据/历史/胜场统计；**详情页不取头像**。
+- **ufccn_news**：`start_urls` 是占位 GET，真实请求为 `POST http://www.ufc.cn/Api/Handler.ashx`；
+  产出经 RSS 管道与 upcoming 的对局条目合并后写出。
+- **ranking**：周三跑，排名 JSON 条目只有 `name / page / rank_name / rank` 四个字段
+  （**没有 `rank_name_cn`**，端上按数据出现顺序做档位）。
+
+**Item 一览**（定义见 `ufcjson/items.py`）：
+
+| Item 类 | 去向 |
+|---|---|
+| `UfcComingItem` / `UfcComingCardItem` | `ufc_coming_data.json` + RSS 对局条目 |
+| `UfcPassItem` / `UfcPassCardItem` | `pass_event` / `pass_card`（并由库生成 pass JSON） |
+| `UfcRankingItem` | `ufc_ranking_data.json` |
+| `UfcPlayerItem` | `player` 表（头像/封面经图片管道回填 `*_local`） |
+| `UfcCnNewsItem` | RSS 新闻条目 |
+
+---
+
+## 4. 使用方式
+
+### 4.1 仓库结构（速览）
 
 ```
 UfcMaker/
-├── run.py                    # 调度入口（按星期执行不同爬虫）
-├── scrapy.cfg                # Scrapy 项目配置
-├── requirements.txt          # Python 依赖
-├── ufcjson/                  # Scrapy 项目主目录
-│   ├── items.py              # 数据结构定义（6 种 Item）
-│   ├── settings.py           # 全局配置
-│   ├── middlewares.py        # 中间件
-│   ├── rss.py                # RSS 生成工具
-│   ├── export.py             # 导出工具
-│   ├── normalize.py          # 导出层归一化（合并同一选手的多行 + 改写旧 URL）
-│   ├── translator.py         # 翻译调度（扫描待翻译字段、回填译文）
-│   ├── llm_translator.py     # 大模型翻译后端（OpenAI 兼容接口）
-│   ├── inline_requests/      # 内联请求工具
-│   ├── spiders/              # 爬虫（共 5 个）
-│   │   ├── upcoming.py       # 即将到来的赛事
-│   │   ├── eventpass.py      # 历史赛事战报
-│   │   ├── ranking.py        # 官方排名
-│   │   ├── athlete.py        # 运动员档案
-│   │   └── ufccn_news.py     # UFC 中文新闻（供 RSS）
-│   └── pipelines/            # 数据管道
-│       ├── country_flag.py   # 国旗/国家代码处理
-│       ├── image.py          # 图片下载
-│       ├── translate.py      # 中文翻译
-│       ├── export_json.py    # JSON 导出
-│       ├── export_db.py      # SQLite 导出
-│       └── rss_export.py     # RSS 导出
-├── scripts/                  # 辅助脚本
-│   ├── image_maintenance.py  # 图片维护（下载缺失 / 清理未引用）
-│   ├── translate.py          # 翻译工具
-│   ├── send_email.py         # 邮件通知
-│   ├── country.py            # 国家代码映射
-│   └── db.py                 # 数据库操作
-├── output/                   # 输出目录
-│   ├── db/                   # SQLite 数据库
-│   ├── json/                 # JSON 导出文件
-│   ├── images/full/          # 下载的图片（webp 格式）
-│   └── log/                  # 运行日志
-└── log/                      # Scrapy 日志（运行时自动创建）
+├── run.py                     # 调度入口：按星期跑爬虫 + 收尾流水线 + zip/meta
+├── scrapy.cfg                 # Scrapy 项目配置
+├── requirements.txt
+├── ufcjson/                   # Scrapy 工程
+│   ├── items.py               # Item 定义（赛事 / 对局 / 排名 / 选手 / 新闻，共 7 类）
+│   ├── settings.py            # 管道顺序 / 图片 / 日志 / UA
+│   ├── middlewares.py         # 爬虫中间件：异常 → 邮件告警
+│   ├── spiders/               # 5 个爬虫（upcoming / eventpass / ranking / athlete / ufccn_news）
+│   ├── pipelines/             # 国旗 / 占位图 / 图片 / 翻译 / JSON / SQLite / RSS
+│   ├── athlete_url.py         # 别名 slug 归一 + 全库对账（见 §8.2）
+│   ├── normalize.py           # 选手多行合并（见 §8.1）
+│   ├── translator.py          # 翻译调度（阶段二）
+│   ├── llm_translator.py      # 大模型后端（OpenAI 兼容）
+│   ├── translate_cache.py     # 翻译缓存表统一出口
+│   ├── db_stats.py            # 库内容盘点账本
+│   ├── birth_place.py         # 出生地拆分 + 出生年推断（见 §8.5）
+│   ├── rss.py / export.py     # RSS 组装工具 / JSON 导出工具
+│   └── inline_requests/       # 内联请求辅助
+├── scripts/                   # 辅助脚本（下表）
+├── .github/workflows/main.yml # CI：run.py + 提交推送（见 §4.5）
+├── output/                    # 全部产物（结构见 §6）
+└── log/scrapy_log.log         # 运行日志（目录需先建，见 §9 第 2 条）
 ```
 
-## 数据结构
+| 脚本 | 用途 |
+|---|---|
+| `image_maintenance.py` | 补下缺失图 + 清孤儿图（`run.py` 收尾自动调用） |
+| `backfill_event_results.py` | 手动回填「两侧结果都空」的对局（幂等；`--apply` 后重建 zip/meta） |
+| `clear_translations.py` | ⚠️ 不可逆：清空库内全部 `*_cn` + 翻译缓存（换翻译链路时全量重翻用） |
+| `test_translation.py` | 翻译质量抽样 / 指定文本试翻 |
+| `send_email.py` | 异常告警邮件（`middlewares.py` 调用，163 SMTP） |
+| `country.py` / `db.py` | 国家 emoji 映射 / 建表语句参考（历史工具） |
 
-| Item 类 | 说明 | 主要字段 |
-|--------|------|---------|
-| `UfcComingItem` | 即将到来的赛事 | 标题、链接、主/副/早卡时间戳、举办地、封面、战卡列表 |
-| `UfcComingCardItem` | 即将到来的战卡 | 级别、对阵双方主页、赔率、排名 |
-| `UfcPassItem` | 已结束赛事 | 同上 + 战卡结果 |
-| `UfcPassCardItem` | 已结束战卡 | 结束回合、结束时间、结束方式、红/蓝方结果 |
-| `UfcRankingItem` | 排名条目 | 选手名、级别、排名、主页 |
-| `UfcPlayerItem` | 运动员档案 | 姓名、昵称、身高、臂展、体重、年龄、国籍、团队、风格、战绩、历史对战 |
-
-## 快速开始
-
-### 环境要求
-
-- Python 3.8+
-- Scrapy 2.19+
-
-### 安装依赖
+### 4.2 环境与安装
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt   # Python 3.12+（CI 实测 3.12 / 本机 3.13 可跑）
+
+mkdir -p log                                # ⚠️ 必须：LOG_FILE=./log/scrapy_log.log，目录缺失 Scrapy 直接报错
 ```
 
-### 单独运行某个爬虫
+依赖见 `requirements.txt`：Scrapy 2.19 / openai / itemadapter / pycountry / PyRSS2Gen / Pillow。
+
+### 4.3 单独跑某个爬虫
 
 ```bash
-# 抓取即将到来的赛事
-scrapy crawl upcoming
-
-# 抓取历史赛事（首页）
-scrapy crawl eventpass
-
-# 抓取历史赛事（全量分页）
-scrapy crawl eventpass -a pagination=true
-
-# 抓取官方排名
-scrapy crawl ranking
-
-# 抓取运动员（首页）
-scrapy crawl athlete
-
-# 抓取运动员（全量分页）
-scrapy crawl athlete -a pagination=true
+scrapy crawl upcoming                       # 即将到来的赛事（含 RSS 对局条目）
+scrapy crawl eventpass                      # 历史赛事（增量：第一页 8 场）
+scrapy crawl eventpass -a pagination=true   # 历史赛事（全量分页，回填用）
+scrapy crawl ranking                        # 官方排名
+scrapy crawl athlete                        # 选手（第一页）
+scrapy crawl athlete -a pagination=true     # 选手（全量）
+scrapy crawl ufccn_news                     # UFC 中文新闻（RSS）
 ```
 
-### 使用调度入口运行
+爬虫参数：
 
-`run.py` 会根据当前星期自动选择要执行的爬虫：
+| 参数 | 适用 | 默认 | 说明 |
+|---|---|---|---|
+| `-a pagination=true` | eventpass / athlete | false | 全量翻页；`"false"` 等字符串也按 false 处理 |
+| `-a normalize_urls=false` | eventpass | true | 关闭写库前的「别名 slug 在线探测」（见 §9 第 10 条） |
 
-| 星期 | 执行的爬虫 | 说明 |
-|-----|-----------|------|
-| 周三 | `ranking` + `athlete` (全量) | 周中更新排名和选手库 |
-| 周日 | `eventpass` | 周末更新比赛结果 |
-| 每天 | `upcoming` + `ufccn_news` | 每日更新赛程与 UFC 中文新闻 |
+> ⚠️ 只跑单个爬虫不会执行收尾流水线（翻译 / 元信息 / zip），产物可能不完整；完整一轮请走 `run.py`。
+
+### 4.4 调度入口 `run.py`
 
 ```bash
-python run.py
-
-# 带邮箱密码参数（用于日志邮件通知）
-python run.py --email_pwd your_password
+python run.py                       # 按当前星期自动执行
+python run.py --email_pass "***"    # 推荐带引号（token 未配置时避免 argparse 缺值报错）
 ```
 
-> **爬虫跑完后固定执行三步收尾**（顺序不可调换）：
-> 1. `normalize_db()` — 合并被 slug 变更拆开的选手行、改写 `pass_card` 里的旧 URL（见「选手主页 URL 变更与多行归一化」）；
-> 2. `translate_db_fields()` — 统一翻译未翻译字段（见「中文翻译」）；
-> 3. 图片维护 — 补下载缺失图片、清理未引用图片（见「图片维护」）。
->
-> 三步都排在 `generate_meta_json()` 之前，保证 `meta.json` 里的 `db_md5` 是**最终库**的指纹，客户端才能据此判断出需要下载新库。
-> 任一步骤抛异常只会打印警告，不中断整个流程。
+| 星期 | 执行的爬虫 |
+|---|---|
+| 周三 | `ranking` + `athlete`（全量分页） |
+| 周日 | `eventpass`（增量） |
+| 每天 | `upcoming` + `ufccn_news` |
 
-## 配置说明
+`run.py` 顶层即执行爬虫（`import run.py` 会直接开跑，脚本里别 import 它——见 §9 第 3 条）。
 
-核心配置在 `ufcjson/settings.py` 中：
+环境变量（翻译与告警）：
 
-```python
-# 管道执行顺序（数字越小优先级越高）
-ITEM_PIPELINES = {
-   'ufcjson.pipelines.UfcCountryCodePipeline': 1,    # 国家代码处理
-   'ufcjson.pipelines.UfcDefaultPhotoPipeline': 2,   # 默认图片填充
-   'ufcjson.pipelines.ImagesDownloadPipeline': 3,    # 图片下载
-   'ufcjson.pipelines.TranslatorPipeline': 4,        # 中文翻译
-   'ufcjson.pipelines.JsonWriterPipeline': 300,      # JSON 导出
-   'ufcjson.pipelines.SqliteDbPipeline': 300,        # SQLite 导出
-   # 'ufcjson.pipelines.UfcRssMakerPipeline': 300     # RSS 导出（按需开启）
-}
+| 变量 | 用途 | 必填 |
+|---|---|---|
+| `LLM_API_BASE` / `LLM_MODEL` / `LLM_API_KEY` | 大模型翻译（OpenAI 兼容） | 翻译必填，缺省则跳过翻译并打印提示 |
+| `LLM_BATCH_SIZE` / `LLM_TIMEOUT` / `LLM_MAX_RETRIES` | 翻译批大小（默认 50）/ 超时（120s）/ 重试（3） | 否 |
+| `email_pwd`（由 `--email_pass` 注入） | 抓取异常时发告警邮件（`smtp.163.com:25` → `lxlfpeng@163.com` → `565289282@qq.com`） | 否 |
 
-# 图片保存目录
-IMAGES_STORE = './output/images'
-# 图片过期天数（过期会被自动重新下载，默认 20000 天即永不过期）
-IMAGES_EXPIRES = 20000
+### 4.5 CI（GitHub Actions）
 
-# 日志
-LOG_LEVEL = 'INFO'
-LOG_FILE = './log/scrapy_log.log'
+`.github/workflows/main.yml`：
+
+1. `checkout`（浅克隆，`fetch-depth: 4`）→ 装依赖 → `python run.py --email_pass ${{ secrets.EMAIL_TOKEN }}`；
+2. `git add . && git commit` 后，用 `git commit-tree` **重建最近 5 个提交**再 `force push`
+   —— 远端历史被真正截断，仓库不会无限膨胀；
+3. 翻译用 `LLM_*` secrets，邮件用 `EMAIL_TOKEN` secret。
+
+> ⚠️ 当前 workflow 的 `on:` 触发段是**注释状态**（定时/推送均未开启），需要时手动启用或
+> 从 Actions 页面触发。
+
+---
+
+## 5. run.py 收尾流水线（顺序固定）
+
+```mermaid
+flowchart LR
+  N[1 normalize_db<br/>合并选手多行] --> U[2 reconcile_pass_card<br/>别名 URL 对账]
+  U --> T[3 translate_db_fields<br/>大模型补翻]
+  T --> I[4 图片维护<br/>补缺失 + 清孤儿]
+  I --> Z[5 build_db_zip<br/>确定性打包]
+  Z --> M[6 generate_meta_json<br/>指纹 + db_stats_history]
 ```
 
-## 输出产物
+| # | 步骤 | 做什么 | 失败策略 |
+|---|---|---|---|
+| 1 | `ufcjson/normalize.py` | 按「归一化姓名 + 首秀日」合并同人多行，改写 `pass_card` 旧 URL，写 `player_url_alias` | 警告，不中断 |
+| 2 | `ufcjson/athlete_url.py` | 全库对账 `pass_card` 里不在 `player` 的链接（别名 slug → 规范 slug） | 警告，不中断 |
+| 3 | `ufcjson/translator.py` | 扫描「原文非空、译文为空」字段，批量翻译并回填 `*_cn` | 失败批次不写缓存，下次重试 |
+| 4 | `scripts/image_maintenance.py` | `download_missing()` 补下缺失图 + `cleanup_unused()` 清孤儿图 | 警告，不中断 |
+| 5 | `build_db_zip()` | 确定性打包（固定时间戳/权限位/宿主系统），同一份库产出逐字节相同的 zip | 警告，不中断 |
+| 6 | `generate_meta_json()` | 生成 `meta.json`（含 zip 指纹），并**同批**追加 `db_stats_history.json` 一条盘点 | 失败仅打印 |
 
-所有数据文件输出到 `output/` 目录下：
+> 顺序不可调换：`db_md5 / db_zip_md5` 必须是**最终库**的指纹，客户端据此判断是否需要下载新库。
+
+---
+
+## 6. 输出产物与跨端契约
 
 ```
 output/
 ├── db/
-│   ├── ufc.db                 # 主数据库（赛事、战卡、运动员）
-│   └── ufc_translate.db       # 翻译缓存库
+│   ├── ufc.db                 # 主库（业务 3 表 + 辅助 2 表）
+│   ├── ufc.db.zip             # 下发用压缩包（确定性打包）
+│   └── ufc_translate.db       # 翻译缓存库（不下发）
 ├── json/
-│   ├── ufc_coming_data.json   # 即将到来的赛事
-│   ├── ufc_pass_data.json     # 历史赛事战报（最新 8 场）
-│   ├── ufc_ranking_data.json  # 官方排名
-│   ├── meta.json              # 数据版本元信息
-│   └── app_version.json       # App 版本 & 升级配置
-└── images/
-    └── full/                  # 下载的图片（webp 格式，文件名 = URL 的 SHA1）
+│   ├── config.json            # 手维护：节点 / 数据源 / 二维码
+│   ├── app_version.json       # 手维护：发版信息（版本/下载地址/大小/日志）
+│   ├── meta.json              # 自动：数据库版本指纹
+│   ├── db_stats_history.json  # 自动：库内容盘点账本（append-only）
+│   ├── ufc_coming_data.json   # 自动：即将到来的赛事
+│   ├── ufc_pass_data.json     # 自动：最新 8 场历史战报（端上本期未消费）
+│   └── ufc_ranking_data.json  # 自动：官方排名
+├── rss/
+│   ├── ufc_schedule.xml       # 自动：RSS 2.0（对局 + 中文新闻，最多 100 条）
+│   └── published_ids.json     # 自动：防重发台账（⚠️ 别删，删了会重发）
+├── images/
+│   ├── full/                  # 自动：镜像图片（webp，文件名 = URL 的 SHA1）
+│   └── asset/qr-code.png      # 手维护：关于页二维码
+└── apks/                      # 手维护：发布 APK（ASCII 名 + 版本号，如 gedoutong-1.0.0.apk）
 ```
 
-### ufc.db — 主数据库
+### 6.1 统一信封
 
-包含 4 张表：
+除 RSS（RSS 2.0 原文）外，所有 JSON 都是同一信封：
 
-#### pass_event — 历史赛事
-
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | INTEGER | 主键，自增 |
-| `name` | TEXT | 赛事名称 |
-| `name_cn` | TEXT | 赛事名称（中文） |
-| `title` | TEXT | 头条主赛标题 |
-| `title_cn` | TEXT | 头条主赛标题（中文） |
-| `banner` | TEXT | 赛事横幅图片 URL |
-| `banner_local` | TEXT | 赛事横幅本地路径 |
-| `address` | TEXT | 举办地 |
-| `address_cn` | TEXT | 举办地（中文） |
-| `page` | TEXT | 赛事详情页 URL（唯一） |
-| `main_time` | TEXT | 主卡开始时间戳 |
-| `prelims_time` | TEXT | 副卡开始时间戳 |
-| `data_early_time` | TEXT | 早卡开始时间戳 |
-
-#### pass_card — 历史战卡对阵
-
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | INTEGER | 主键，自增 |
-| `fight_page` | TEXT | 所属赛事详情页 URL |
-| `blue_page` | TEXT | 蓝方选手主页 URL |
-| `red_page` | TEXT | 红方选手主页 URL |
-| `blue_result` | TEXT | 蓝方结果 |
-| `red_result` | TEXT | 红方结果 |
-| `blue_odds` | TEXT | 蓝方赔率 |
-| `red_odds` | TEXT | 红方赔率 |
-| `end_method` | TEXT | 结束方式 |
-| `end_method_cn` | TEXT | 结束方式（中文） |
-| `end_round` | TEXT | 结束回合 |
-| `end_time` | TEXT | 结束时间 |
-| `card_type` | TEXT | 战卡类型（主赛/副赛等） |
-| `card_division` | TEXT | 体重级别 |
-| `card_division_cn` | TEXT | 体重级别（中文） |
-
-#### player — 运动员档案
-
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | INTEGER | 主键，自增 |
-| `name` | TEXT | 姓名 |
-| `name_cn` | TEXT | 姓名（中文） |
-| `nick_name` | TEXT | 昵称 |
-| `nick_name_cn` | TEXT | 昵称（中文） |
-| `page` | TEXT | 选手主页 URL（唯一） |
-| `division` | TEXT | 体重级别 |
-| `division_cn` | TEXT | 体重级别（中文） |
-| `avatar` | TEXT | 头像 URL |
-| `avatar_local` | TEXT | 头像本地路径 |
-| `cover` | TEXT | 封面图 URL |
-| `cover_local` | TEXT | 封面图本地路径 |
-| `record` | TEXT | 战绩（如 `20-3-0`） |
-| `age` | TEXT | 年龄 |
-| `status` | TEXT | 状态 |
-| `status_cn` | TEXT | 状态（中文） |
-| `home_town` | TEXT | 出生地原始值（如 `Huntington Beach, United States`） |
-| `city` | TEXT | 城市（拆分自 home_town，仅国家时为空） |
-| `city_cn` | TEXT | 城市（中文） |
-| `country` | TEXT | 国家（拆分自 home_town 最后一段） |
-| `country_cn` | TEXT | 国家（中文） |
-| `team` | TEXT | 所属团队 |
-| `team_cn` | TEXT | 所属团队（中文） |
-| `style` | TEXT | 格斗风格 |
-| `style_cn` | TEXT | 格斗风格（中文） |
-| `height` | TEXT | 身高 |
-| `weight` | TEXT | 体重 |
-| `reach` | TEXT | 臂展 |
-| `leg_reach` | TEXT | 腿长 |
-| `debut` | TEXT | UFC 首秀日期 |
-| `history` | TEXT | 历史对战记录（JSON 字符串） |
-| `history_cn` | TEXT | 历史对战记录（中文，JSON 字符串） |
-| `wins_stats` | TEXT | 获胜方式统计（JSON 字符串） |
-| `wins_stats_cn` | TEXT | 获胜方式统计（中文，JSON 字符串） |
-| `flag` | TEXT | 国旗代码 |
-
-#### player_url_alias — 选手旧 URL 对照表
-
-由 `ufcjson/normalize.py` 在导出层维护，记录「改版前的选手主页 URL → 合并后保留的 URL」。
-
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | INTEGER | 主键，自增 |
-| `old_page` | TEXT | 改版前的选手主页 URL（唯一） |
-| `new_page` | TEXT | 合并后保留的选手主页 URL |
-
-> App 端不声明这张表：Room 只校验 `@Database` 里声明过的实体，库中多出的表不影响启动。
-
-### ufc_translate.db — 翻译缓存库
-
-翻译流程使用的缓存库，避免重复翻译相同文本：
-
-- 爬虫管线（`TranslatorPipeline`）**只查缓存**：命中则带上译文，未命中留空，不发起网络请求；
-- 真正的翻译在爬虫落库后由 `run.py` 统一执行（`ufcjson/translator.py` 的 `translate_db_fields`），
-  通过大模型批量翻译，译文按原文写回本库。
-
-完整流程与配置见下方「[中文翻译](#中文翻译)」章节。
-
-#### translate — 翻译对照表
-
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `id` | INTEGER | 主键，自增 |
-| `original` | TEXT | 原文 |
-| `translation` | TEXT | 译文 |
-
-### ufc_coming_data.json — 即将到来的赛事
-
-外层结构：
 ```json
-{
-  "timeStamp": 1757759400000,
-  "data": [ ... ]
-}
+{ "code": 0, "msg": "success", "data": { }, "timestamp": 1790305255000 }
 ```
 
-`data` 为赛事数组，每场赛事包含以下字段：
+端上成功判定 = **完整返回 + 合法 JSON + `code == 0`** 三条件齐验（HTML 假成功判失败）。
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `name` | string | 赛事名称 |
-| `title` | string | 头条主赛标题 |
-| `page` | string | 赛事详情页 URL |
-| `main_time` | string | 主卡开始时间戳 |
-| `prelims_time` | string | 副卡开始时间戳 |
-| `data_early_time` | string | 早卡开始时间戳 |
-| `address` | string | 举办地 |
-| `address_cn` | string | 举办地（中文） |
-| `banner` | string | 赛事横幅图片 URL |
-| `fight_card` | array | 战卡对阵列表 |
+### 6.2 各文件字段（生产端口径）
 
-### ufc_pass_data.json — 历史赛事战报
+**config.json**（手维护）
 
-从数据库读取最新的 8 场已结束赛事生成，结构同 `ufc_coming_data.json`，区别在于：
-- 使用 `url` 字段而非 `page` 表示赛事链接
-- `fight_cards` 数组中包含比赛结果（结束回合、结束方式、红/蓝方结果、赔率等）
+| 字段 | 说明 |
+|---|---|
+| `schema_version` | 结构版本 |
+| `hosts[]` | 候选节点（**纯节点**形态，不带仓库段）。2026-10-02 起含官方源 `https://raw.githubusercontent.com` 共 6 条 |
+| `data_sources[]` | `{name, prefix, default}`；`prefix` 自带前后斜杠；`default: true` 为默认项（端上 `config` 与 APK 固定走它） |
+| `qrcode.image` | **相对 `output/images/`** 的路径（现为 `asset/qr-code.png`，端上拼三段式） |
 
-### ufc_ranking_data.json — 官方排名
+**app_version.json**（手维护，发版时更新）
 
-外层结构同上，`data` 为排名条目数组：
+| 字段 | 说明 |
+|---|---|
+| `latest_version` / `latest_version_code` | 最新版本（语义化 + 整数），端上用 **code 数值**比较 |
+| `minimum_version` / `minimum_version_code` | 保留字段（本期不参与强制判定） |
+| `force_update` | 唯一强制升级依据 |
+| `release_date` | 发布日 `YYYY-MM-DD` |
+| `download_url` | APK 相对路径（ASCII 文件名带版本号），端上拼**默认项前缀** |
+| `size` | APK **实际字节数**（端上弹窗「大小」段；缺失则整段隐藏） |
+| `changelog.zh` / `changelog.en` | 更新日志（进度条之外的唯一文案来源） |
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `name` | string | 选手姓名 |
-| `page` | string | 选手主页 URL |
-| `rank_name` | string | 榜单名称（如 `Flyweight`、`Pound-for-Pound`） |
-| `rank` | string | 排名位次 |
-| `rank_name_cn` | string | 榜单名称（中文） |
+**meta.json**（自动）
 
-### meta.json — 数据版本元信息
+| 字段 | 说明 |
+|---|---|
+| `schema_version` | 结构版本 |
+| `last_updated` / `last_updated_ts` | 内容最后变更时间（ISO 东八区 / Unix 秒）；数据没变则**沿用旧值** |
+| `generator` / `spiders_run` | 生成方 / 本轮跑了哪些爬虫 |
+| `athlete_count` / `pass_event_count` | 来自 `player` / `pass_event` |
+| `upcoming_event_count` / `ranking_count` | 来自 coming / ranking JSON 条目数 |
+| `db_md5` / `db_size` | **解压后**库文件指纹（客户端解压后校验） |
+| `db_zip_md5` / `db_zip_size` | **压缩包**指纹（客户端先校验包） |
+| `_db_data_version` / `_coming_hash` / `_ranking_hash` | 内部指纹（判断「是否有更新」用，契约未列） |
 
-每次通过 `run.py` 跑完爬虫后自动生成，用于判断数据是否有更新。
+**db_stats_history.json**（自动，append-only 账本）
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `schema_version` | int | 数据结构版本号，字段/表结构发生不兼容变更时 +1 |
-| `last_updated` | string | 内容最后变更时间（ISO 8601，东八区） |
-| `last_updated_ts` | int | 内容最后变更时间戳（Unix 秒） |
-| `generator` | string | 生成方标识，固定为 `UfcMaker` |
-| `spiders_run` | array | 本次执行了哪些爬虫 |
-| `athlete_count` | int | 运动员数量（来自数据库 player 表） |
-| `pass_event_count` | int | 历史赛事数量（来自数据库 pass_event 表） |
-| `upcoming_event_count` | int | 即将到来的赛事数量（来自 ufc_coming_data.json） |
-| `ranking_count` | int | 排名条目数量（来自 ufc_ranking_data.json） |
+- `entries[]`：`{ts, date, tables, coverage, quality, external}`，一次刷库一条，**数据没变则跳过**；
+- 记录总数 = `tables.player + pass_event + pass_card`（端上现算）；
+- `coverage` / `quality` 是趋势指标（如 `player.birthdate` 与 `birthdate_full` 成对，可区分「仅年份」）；
+- 消费方：App「数据库更新记录」（仅 debug 构建）+ 人工看趋势。
 
-> **判断是否有更新**：对比本地保存的 `last_updated_ts` 和远端的 `last_updated_ts`，远端更新则说明数据有变化。`last_updated` 只有在数据内容真的发生变化（数据库写入 / JSON 内容变更）时才会刷新，爬虫跑了但数据没变则保持原值。
+**ufc_coming_data.json**（自动，`data` 为赛事数组）
 
-### app_version.json — App 版本 & 升级配置
+| 字段 | 说明 |
+|---|---|
+| `name` / `title` | 赛事名（如 `UFC333`）/ 头条主赛标题 |
+| `page` | 赛事详情页完整 URL |
+| `main_time` / `prelims_time` / `data_early_time` | 主/副/早卡 Unix 秒（**字符串**，可能为空串） |
+| `address` | 举办地英文原文 |
+| `banner` / `banner_local` | 横幅原图（**端上禁用**）/ 镜像相对路径（端上必用） |
+| `fight_card[]` | `card_type`（Main/Prelims/EarlyPrelims）、`fight_name`、`card_division`、`red_page`/`blue_page`、`red_odds`/`blue_odds`（可能为 `-`）、`red_rank`/`blue_rank`（`#N`/`C`/空串）、`fight_id`、`main_time`、`address` |
 
-手动维护，App 启动时检查版本用。发版时更新此文件。
+**ufc_ranking_data.json**（自动）：`{name, page, rank_name, rank}`；`rank = 0` 为冠军，1..15 有名次并列。
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `latest_version` | string | 最新版本号（语义化版本，如 `1.2.0`） |
-| `latest_version_code` | int | 最新版本号（纯数字，用于程序比较） |
-| `minimum_version` | string | 最低兼容版本，低于此版本必须升级 |
-| `minimum_version_code` | int | 最低兼容版本号（纯数字） |
-| `force_update` | bool | 是否强制升级（`true` = 不升级无法使用） |
-| `release_date` | string | 发布日期（`YYYY-MM-DD`） |
-| `download_url` | string | 最新版下载地址 |
-| `changelog.zh` | string | 更新日志（中文） |
-| `changelog.en` | string | 更新日志（英文） |
+**ufc_pass_data.json**（自动）：从库中取 `CAST(main_time AS INTEGER) DESC` 的**最新 8 场**，字段为 coming 同构 + 战报结果（`red_result`/`blue_result`/`end_*`/`odds`）；用 `url` 字段表示赛事链接，对阵数组名为 `fight_cards`；写文件为**先临时文件再原子替换**。
 
-> **升级判断逻辑**：App 端用 `version_code`（数字）比较大小，避免字符串比较的坑。低于 `minimum_version_code` 必须升级；高于等于最低版本但低于最新版本时，根据 `force_update` 判断是强制还是可选升级。
+**ufc_schedule.xml**（自动，RSS 2.0）：对局与中文新闻合并，**最多 100 条**（`MAX_RSS_ITEMS`）；
+对局条目含对阵、级别、时间、双方照片（已按 §8.4 规则换成可直连/镜像地址）；新闻条目含正文 HTML。
 
-## 选手主页 URL 变更与多行归一化
+---
 
-### 问题从哪来
+## 7. 数据模型（ufc.db）
 
-`player.page`（ufc.com 选手主页 URL）本来只是**网址的一段**，但项目把它当成了**选手的唯一标识**：
+### 7.1 表清单
 
-- `player.page` 是 `UNIQUE`，写入用 `INSERT OR REPLACE`（见 `pipelines/export_db.py`）；
-- `pass_card.blue_page / red_page` 存的是选手主页 URL；
-- 排名页和战卡页跳转选手详情，用的也是这个 URL。
+| 表 | 说明 |
+|---|---|
+| `pass_event` | 历史赛事（`page` UNIQUE） |
+| `pass_card` | 历史对局（三维兜底：`fight_page + blue_page + red_page`） |
+| `player` | 选手档案（`page` UNIQUE） |
+| `player_url_alias` | 别名 slug 对照表（`old_page` UNIQUE → `new_page`） |
+| `player_url_probe` | URL 探测缓存（`url` PK / `final` / `checked_at`，7 天 TTL） |
 
-ufc.com 改过亚洲选手的拼音顺序（如 `yadong-song` → `song-yadong`），同一个人的记录于是在库里断成两行：**战绩挂在旧 URL 上，而榜单给的是新 URL**，App 点进选手详情只查得到新 URL 名下那几场。
+> 下发 zip 的 5 张表 = 业务 3 + 辅助 2；`sqlite_sequence` 是 SQLite 内建。App 端另有 8 张自建表，
+> 合计 13 张（见 `db-schema` 契约）。
 
-典型：宋亚东旧 URL 下 15 场、新 URL 下 4 场，用户在 App 里只看到 4 场。
+### 7.2 `player` 字段（35 列）
 
-### 怎么修
+| 字段 | 说明 |
+|---|---|
+| `id` / `name` / `name_cn` | 主键 / 英文名 / 中文名 |
+| `nick_name` / `nick_name_cn` | 昵称（页面原文含引号，入库前剥引号）/ 中文 |
+| `page` | 选手主页 URL（**UNIQUE**，端上精确等值匹配的键） |
+| `division` / `division_cn` | 量级（如 `Flyweight Division`）/ 中文 |
+| `avatar` / `avatar_local` | 头像 URL / 镜像相对路径（`full/<sha1>.webp`） |
+| `cover` / `cover_local` | 全身照 URL / 镜像相对路径 |
+| `record` | 战绩，形如 `17-2-0 (W-L-D)`（展示端自行剥括号段） |
+| `status` / `status_cn` | 职业状态 / 中文 |
+| `home_town` | 出生地原始值（`City, Country`） |
+| `city` / `city_cn` / `country` / `country_cn` | 出生地拆分（拆不出城市时 `city` 为空） |
+| `team` / `team_cn` / `style` / `style_cn` | 团队 / 风格 |
+| `height` / `weight` / `reach` / `leg_reach` | 英寸 / 磅 / 英寸 / 英寸（端上换算 cm / kg） |
+| `debut` | UFC 首秀日期 |
+| `history` / `history_cn` | 历史战绩（JSON 数组字符串） |
+| `wins_stats` / `wins_stats_cn` | 获胜方式统计（`[{"way","times"}]`） |
+| `flag` | 国旗（emoji） |
+| `birthdate` | 生日：`YYYY-MM-DD`（精确）或 `YYYY`（近似，见 §8.5）；**无 `age` 列**，年龄由端上现算 |
 
-由 `ufcjson/normalize.py` 在**导出层**收尾，不改任何爬虫的抓取逻辑：
+### 7.3 `pass_event` / `pass_card` 字段
 
-1. **分堆** — 按「归一化姓名 + 归一化首秀日」给 `player` 全表分堆，同一堆视为同一个人。
-   - 姓名：NFKD 去音标 → 只留 `[a-z0-9]` → 小写（`Muhammad-Naimov` 和 `muhammad naimov` 归一）；
-   - 首秀日：`Nov. 25, 2017` → `2017-11-25`。
-   - ⚠️ 只用姓名会被同名不同人误伤：`bruno silva`（`bruno-silva-blindado` / `bruno-silva`）和 `joey gomez` 都是**真实的两个人**，靠首秀日才分得开。所以首秀日是必需的，不是可选项。
-2. **选保留行** — 堆内 `record` 有效的行里，留 `id` 最大的那一行。
-   - 依据：`player.id` 是 `AUTOINCREMENT`（严格递增、号不复用），而 `player` 的唯一写入者用 `INSERT OR REPLACE` 写 `page UNIQUE` —— REPLACE 的语义是**删旧行、重插新行**，每刷新一次 `id` 就变大一次，而旧 slug 从站点消失后再也抓不到。
-   - 因此 **`id` 最大 = 最后被写入 = 站点当前 slug 行**。
-3. **改写与落盘** — 其余行删除，同时把「旧 URL → 保留 URL」写进 `player_url_alias`，并按这张表改写 `pass_card.blue_page / red_page`。
+`pass_event`：`id, name, name_cn, title, title_cn, banner, banner_local, address, address_cn, page(UNIQUE), main_time, prelims_time, data_early_time, city, city_cn, country, country_cn`。
 
-### 两道保护
+`pass_card`：`id, fight_page, blue_page, red_page, blue_result, red_result, blue_odds, red_odds, end_method, end_method_cn, end_round, end_time, card_type, card_division, card_division_cn`。
 
-**① 空壳行守卫**（自动，无需配置）
+> 时间列都是 **Unix 秒的字符串**（TEXT）；比较大小必须 `CAST(... AS INTEGER)`，字符串排序会把
+> 9 位时间戳（1970–2001）排到最前。
 
-只在 `record` 有效（总场次 > 0）的行里选 `id` 最大者；整堆都无效就整堆不动。防的是站点生成的空壳行 —— 例如 `casey-kenney-0` 的 `id` 比真行大得多，但没有战绩也没有任何 `pass_card` 引用，不挡就会反过来覆盖真数据。
+### 7.4 `ufc_translate.db`
 
-**② 白名单**（`MERGE_WHITELIST`，需人工核对）
+翻译缓存库（不下发）：`translate(id, original, translation)`（`original` 有唯一索引，写入用
+`INSERT OR IGNORE`）+ `translate_miss`（记录「问过大模型但没拿到译文」的原文与尝试次数）。
+建表/去重/索引统一走 `ufcjson/translate_cache.py`，别处不要再手写 DDL。
 
-自动规则按「姓名 + 首秀日」分堆，够不着「首秀日也被改过」的情况。目前只有一条：
+---
 
-| 归一化姓名 | 保留的 URL | 说明 |
-|---|---|---|
-| `sumudaerji` | `.../athlete/su-mudaerji` | 两行首秀日不同（`Aug. 27, 2025` vs `Sep. 11, 2026`），但同昵称 `The Tibetan Eagle`、同战队 `Team Alpha Male`、同身高体重、同出身地，且被删行 history 的 8 个日期全部包含在保留行的 12 个里 |
+## 8. 专题机制
 
-新白名单项必须**逐项核对过人属性**才能加，键是归一化姓名，值是要保留的 `page`（须与库里的值逐字一致）。
+### 8.1 选手主页 URL 变更与多行归一化（`normalize.py`）
 
-### 历史战绩取并集
+**问题从哪来**：`player.page` 被当作选手唯一标识（`UNIQUE` + 端上精确匹配 + `pass_card` 引用）。
+ufc.com 改过亚洲选手拼音顺序（如 `yadong-song` → `song-yadong`），同一个人的记录会断成两行：
+**战绩挂在旧 URL 上，而榜单/赛事页给的是新 URL**，端上只看到一半。
 
-保留行的 `history` 通常已覆盖被删行，但偶尔会差一两场。合并时取并集（同日只留保留行那条），避免静默丢数据；history 变长后会同时清空 `history_cn`，否则翻译环节会误认为「已翻译」而跳过。
+**怎么修**（导出层收尾，不改抓取逻辑）：
 
-### 怎么跑
+1. **分堆** — 按「归一化姓名 + 归一化首秀日」给 `player` 全表分堆。
+   - 姓名：NFKD 去音标 → 只留 `[a-z0-9]` → 小写；
+   - 首秀日：`Nov. 25, 2017` → `2017-11-25`；
+   - ⚠️ 只用姓名会被同名不同人误伤：`bruno silva`（`bruno-silva-blindado` / `bruno-silva`）与
+  `joey gomez` 都是真实的两个人，靠首秀日才分得开——首秀日是必需项，不是可选项。
+2. **选保留行** — 堆内 `record` 有效的行里留 **`id` 最大**者。
+   - 依据：`id` 严格递增，新 slug 必然后 INSERT；「id 最大 = 站点当前 slug 行」（前提：slug 单向变更）。
+   - ⚠️ 已知盲区（接受，暂不加防护）：slug **回退**（A→B→A 且两行共存）时可能保留过期的 B；
+     需双重巧合才触发，且下轮会以更大 `id` 重新 INSERT 后自愈。
+3. **改写与落盘** — 删其余行，把「旧 URL → 保留 URL」写进 `player_url_alias`，并按表改写
+   `pass_card.blue_page / red_page`。
+
+**两道保护**：
+
+- **空壳行守卫**（自动）：只在 `record` 有效（总场次 > 0）的行里选，整堆无效就不动；
+- **白名单 `MERGE_WHITELIST`**（人工核对）：处理「首秀日也被改过」的堆。新白名单必须逐项核对过人属性，
+  键 = 归一化姓名，值 = 保留的 `page`（须与库里逐字一致）。
+
+**历史战绩取并集**：保留行覆盖不到的一两场并入（同日只留保留行的），变长后清空 `history_cn` 触发重译。
+
+**怎么跑**：
 
 ```bash
-# 默认 dry-run：只打印将要合并的组、要删的行数、要改写的 pass_card 行数
-python -m ufcjson.normalize
-
-# 真正落盘（先 VACUUM INTO 备份，再单事务写完）
-python -m ufcjson.normalize --apply
-
-# 指定其他库（默认 output/db/ufc.db）
+python -m ufcjson.normalize                 # dry-run
+python -m ufcjson.normalize --apply         # 落盘（先 VACUUM INTO 备份，再单事务）
 python -m ufcjson.normalize --db /tmp/ufc.db --apply
 ```
 
-`run.py` 里已接入，每次跑完爬虫自动执行一次（在翻译和生成 `meta.json` **之前**）。
+`run.py` 已接入，每次爬完自动执行；**幂等**（合并过的库第二次跑报「0 组」）。
 
-**幂等**：合并过的库里同一人只剩一行，第二次跑会报「0 组」。
+### 8.2 别名 slug 对账（`athlete_url.py`）
 
-### 影响面（以 3248 行 `player` / 9010 行 `pass_card` 为样本实测）
+与 §8.1 的「多行合并」是两件事：这里是**同一行的 URL 写法不一致**（赛事页角标可能是别名 slug）。
 
-| 项目 | 数值 |
+- 归一顺序（逐级降级，本地命中不发请求）：① 已在 `player.page` → 原样返回；② 命中
+  `player_url_alias` → 返回映射；③ 在线 301 探测 → 登记别名表；④ 都不行 → 返回 `None`，**保持原值绝不猜**；
+- 探测有**域名守卫**：最终地址必须仍在 `www.ufc.com` / `ufc.com`，否则判失败（大陆 IP 会被整站
+  301 到 `ufc.cn`，不守会把 slug 写成 ufc.cn 地址）；
+- 失败/无变化的结果写 `player_url_probe`，7 天 TTL 内不重复探测；
+- `run.py` 收尾的 `reconcile_pass_card()` 对全库 `pass_card` 兜底（补历史 + 兜漏网）。
+
+### 8.3 中文翻译（两阶段）
+
+**阶段一（爬虫运行时，`TranslatorPipeline`）**：打开 `ufc_translate.db` 按原文查缓存；命中写 `*_cn`，
+未命中留空、**不发任何网络请求**；列表型字段只要有一个元素未命中，整列都不写（全交给阶段二）。
+
+**阶段二（跑完后，`translator.translate_db_fields()`）**：
+
+1. 收集各表「原文非空、译文为空」的字段，去重；
+2. 用缓存剔除已翻译文本；
+3. 剩余文本按批（默认 50 条）交 `llm_translator`（OpenAI 兼容 chat completions）；
+4. 每批成功即写缓存（中断不丢已完成部分）；
+5. 按译文映射回填各表 `*_cn`。
+
+**翻译范围**：`player`（name / nick_name / city / country / division / status / team / style +
+`history`→`history_cn`、`wins_stats`→`wins_stats_cn` 的 `way`）；`pass_event`（name / title / address）；
+`pass_card`（end_method / card_division）。JSON 列保持结构、只翻文本，**全部元素成功才写入**。
+
+**领域提示词**：内置 MMA/UFC 词典（量级、结束方式、人名音译、地点从大到小、日期 `YYYY年M月D日`），
+返回做容错解析（剥 ```json 围栏、截取首个 `[...]`、数量不足补空、多余截断）。
+
+### 8.4 图片：样式、清晰度与维护
+
+**命名与存储**：文件名 = 完整 URL 的 SHA1 + `.webp`，存 `output/images/full/`；
+库里的 `*_local` 存相对路径（`full/<sha1>.webp`）。URL 变 = 文件名变 = 旧图成孤儿（由清理步骤删除）。
+
+**样式与清晰度（2026-10-02 现状）**：
+
+| 来源 | 样式 | 尺寸 | 说明 |
+|---|---|---|---|
+| eventpass 抓到的选手头像 | `inline` | 520×325 | 由 `event_results_athlete_headshot`（256×160，同裁切）**样式段替换**而来，2.03× 放大 |
+| athlete 列表页头像 | `teaser` | 竖图缩略 | 新增选手的另一条写图路径 |
+| 全身照 / 横幅 | `athlete_bio_full_body` / `background_image_sm` 等 | — | 原样落库 |
+
+- **itok 不强制校验**：站点输出 `?itok=` 但不校验（换样式带旧 token → 200、不带 token → 200，
+  只有不存在的样式名/源文件才 403）。所以换样式段当前可用，**但这是站点一个开关就能收回的行为**
+  （真收紧时表现为下载 403 → `*_local` 为空 → 端上落占位图）。
+- **头像老值冻结**：`extract_avatar` 优先返回库内已存的真实头像（防止两种裁切风格互相覆盖）；
+  **占位剪影除外**——占位不算「老头像」，站点后来补了真头像会被升级回来。
+- 下载走 `ImagesDownloadPipeline`：`IMAGES_EXPIRES = 20000` 天（≈永不过期，本地有文件就跳过）；
+  `MEDIA_ALLOW_REDIRECTS = True`（`ufc.com → www.ufc.com` 的 301 必须放行）。
+
+**占位图（全库统一两类）**：
+
+| 场景 | 占位 |
 |---|---|
-| 多人组 | 23 组（自动 22 + 白名单 1） |
-| 删除 `player` 行 | 23 行（3248 → 3225） |
-| 改写 `pass_card` 行 | 129 行 |
-| 整堆跳过 | 1 组（两行都是 `0-0-0`） |
-| 战卡战绩对拍 | 严格匹配 7581 → 7631（新增的 50 场全部落进「一致」） |
+| 选手头像缺失 | `https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png` |
+| 选手全身照缺失 | `SHADOW_Fighter_fullLength_RED.png`（cloudfront） |
 
-### 与 Android 端的关系
-
-- 只改数据，**不动 Room 实体**，`UFC_DB_VERSION` 不需要 +1；
-- 新增的 `player_url_alias` 表 App 端不声明，Room 不会因为库里多表而报错；
-- 修完需要把 `output/db/ufc.db` 同步到 `UfcAndroid/app/src/main/assets/ufc.db`。
-
-> 局限：这套方案认定「`id` 最大 = 当前 slug」。若库被全量重建导致 `id` 重排，判据失效 —— 但那种情况下只要 `athlete.py` 的去重键是 `page`，同一人本来就不会留两行，多行问题也不会产生。
-
-## 中文翻译
-
-翻译采用**两阶段**设计：爬虫阶段不发起任何翻译请求，只查缓存；爬虫全部跑完后，由 `run.py` 统一用大模型补齐。这样既能复用历史译文、避免重复调用，也能把同一条文本在多个表/多行里的翻译合并成一次请求。
-
-### 阶段一：管线只查缓存
-
-`ufcjson/pipelines/translate.py`（`TranslatorPipeline`）在爬虫运行时执行：
-
-- 打开 `output/db/ufc_translate.db`，按原文查 `translate` 表；
-- **命中** → 写入对应的 `*_cn` 字段；
-- **未命中** → 留空，不发起网络请求；
-- 列表型字段（如 `history`）只要有一个元素未命中，整列都不写入，全部交给阶段二。
-
-### 阶段二：跑完后统一补翻
-
-`run.py` 在所有爬虫结束后调用 `ufcjson/translator.py` 的 `translate_db_fields()`：
-
-1. **收集** —— 扫描各表「原文非空、译文为空」的字段，去重后得到待翻译文本集合；
-2. **过滤** —— 用 `ufc_translate.db` 的缓存剔除已翻译的文本；
-3. **批量翻译** —— 剩余文本按批（默认 50 条/批）交给 `ufcjson/llm_translator.py`，使用 OpenAI 兼容的 chat completions 接口；
-4. **写缓存** —— 每批成功即写入缓存，中途中断不丢已完成的部分；
-5. **回填** —— 按译文映射更新各表的 `*_cn` 字段，提交事务。
-
-**幂等**：已翻译的行下次直接命中缓存跳过；翻译失败的批次不写缓存，下次自动重试。
-
-### 翻译范围
-
-| 表 | 字段（原文 → 译文） |
-|---|---|
-| `player` | `name` / `nick_name` / `city` / `country` / `division` / `status` / `team` / `style` |
-| `pass_event` | `name` / `title` / `address` |
-| `pass_card` | `end_method` / `card_division` |
-
-JSON 列单独处理（只翻译其中的文本，保持 JSON 结构）：
-
-| 表 | 字段 | 规则 |
-|---|---|---|
-| `player` | `history` → `history_cn` | 字符串列表，整列翻译；**全部元素都翻译成功才写入** |
-| `player` | `wins_stats` → `wins_stats_cn` | `[{"way", "times"}]`，只翻译 `way` |
-
-> 排名榜单名（如 `Welterweight`）目前**没有中文** —— `UfcRankingItem` 在管线里是 `pass`，`ufc.db` 也没有 ranking 表，排名数据只落在 `ufc_ranking_data.json` 里。
-
-### 配置
-
-翻译后端从环境变量读取配置，未配置（或未安装 `openai`）时打印提示并跳过，不阻塞主流程：
-
-| 环境变量 | 说明 | 默认值 |
-|---|---|---|
-| `LLM_API_BASE` | API 地址（如 `https://api.deepseek.com/v1`） | 空（必填） |
-| `LLM_MODEL` | 模型名（如 `deepseek-chat`） | 空（必填） |
-| `LLM_API_KEY` | API Key | 空（必填） |
-| `LLM_BATCH_SIZE` | 每批条数 | `50` |
-| `LLM_TIMEOUT` | 单次请求超时（秒） | `120` |
-| `LLM_MAX_RETRIES` | 失败重试次数 | `3` |
-
-### 领域提示词
-
-`llm_translator.py` 内置了 MMA/UFC 领域提示词，让模型按中国格斗界和拳迷的通行说法翻译，而不是字面直译：
-
-- **量级**：`Flyweight`=蝇量级、`Bantamweight`=雏量级、`Featherweight`=羽量级、`Welterweight`=次中量级……；
-- **结束方式**：`Decision - Split`=分歧判定、`KO/TKO`=击倒/技术性击倒、`Submission`=降服、`NC`=无结果……；
-- **人名**：按中国格斗媒体的常见音译；
-- **地点**：按中文习惯从大到小（`Las Vegas, Nevada, United States`=美国内华达州拉斯维加斯）；
-- **日期**：统一写成 `YYYY年M月D日`。
-
-模型返回的 JSON 数组做了容错解析（剥离 ```json 围栏、截取首个 `[...]`），数量不足时补空串、多余则截断。
-
-## 图片维护
-
-爬虫运行过程中图片可能出现两种不一致情况：
-1. **数据库有 URL 但本地没有图片** — 比如图片下载失败、旧版本 bug 导致漏下
-2. **磁盘有图片但数据库没有引用** — 比如选手/赛事被删除、URL 变化导致重复下载、历史遗留
-
-`scripts/image_maintenance.py` 提供两个命令来处理这些问题：
-
-### 下载缺失图片
-
-扫描数据库中所有图片 URL（`player.avatar`、`player.cover`、`pass_event.banner`），如果本地没有对应文件则下载，并补全 `*_local` 字段：
+**维护命令**（`scripts/image_maintenance.py`）：
 
 ```bash
-python -m scripts.image_maintenance --download
+python -m scripts.image_maintenance --download              # 补下缺失 + 回填 *_local
+python -m scripts.image_maintenance --cleanup --dry-run     # 预览孤儿图
+python -m scripts.image_maintenance --cleanup               # 删除孤儿图（有二次确认）
+python -m scripts.image_maintenance --all                   # 两者连做
 ```
 
-### 清理未引用图片
+> `run.py` 收尾会自动执行 `download_missing + cleanup_unused`（无人值守，自动确认）。
 
-对比磁盘上的图片和数据库中的 `*_local` 字段，删除没有任何引用的"孤儿"图片：
+### 8.5 生日与年龄（`birthdate`）
 
-```bash
-# 预览模式 — 只列出不删除
-python -m scripts.image_maintenance --cleanup --dry-run
+- ufc.com **不发布生日**（只有整数 `Age`，且退役/DWCS 页可能没有该字段）；
+- **精确生日**来自 Sherdog（`itemprop="birthDate"`，历史回填写入），UPDATE 分支**永不覆盖**该列；
+- **新选手自动化兜底**（2026-10-02 拍板）：新行入库时若页面有 `Age`，按 `出生年 = 今天年份 − Age`
+  写入 `YYYY`（近似值，误差窗口最多一年；非数字/越界不写）。实现见 `ufcjson/birth_place.py::infer_birth_year()`；
+- ⚠️ **精确回填断点必须是 `LENGTH(birthdate) < 10`**（完整日期正好 10 字符）——否则 `'1993'`
+  会被当成「已有值」跳过，近似值变永久死值（见 `.workbuddy/memory/DB-NOTES.md` §1.9.7）；
+- 跨产品口径：App 端支持 `YYYY`（按近似值展示年龄）；**RSS 输出仍只认 `YYYY-MM-DD`、近似值留空**
+  （有意的差异，不得「顺手统一」）。
 
-# 实际删除（删除前会有二次确认）
-python -m scripts.image_maintenance --cleanup
-```
+---
 
-### 一键执行全部
+## 9. 注意点与已知坑
 
-```bash
-python -m scripts.image_maintenance --all
-```
+1. **大陆网络访问不了 ufc.com**：整站 301 → `ufc.cn` → 404；图片只有
+   `dmxg5wxfqgb4u.cloudfront.net/styles/<样式>/s3/<路径>` 能直连（注意路径**不带** `/images/`）。
+   本地开发建议只读库/JSON，抓取交给 CI（海外 IP）。
+2. **`log/` 目录必须先存在**：`LOG_FILE=./log/scrapy_log.log`，目录缺失 Scrapy 直接
+   `FileNotFoundError`（CI 上踩过）。
+3. **`run.py` 顶层会直接跑爬虫**：任何脚本想复用它的打包/meta 逻辑，**照抄**而不是 `import`
+   （`backfill_event_results.py` 就是这么做的）。
+4. **`--email_pass` 记得加引号**：CI 里 `EMAIL_TOKEN` 未配置时，裸变量会让 argparse「缺值」直接退出。
+5. **zip 是确定性打包**：固定时间戳/权限位，别手工重打；否则每天提交一个新 blob，仓库无限膨胀。
+6. **手维护文件清单**：`config.json`、`app_version.json`（发版改版本/`size`=实际字节数/`download_url`，
+   APK 用 ASCII 名带版本号）、`output/apks/`、`output/images/asset/`——这些不自动生成，改完记得提交。
+7. **头像冻结策略**：已存的真实头像不会被后续抓取替换（防两种裁切风格互踩）；只有「占位 → 真头像」
+   允许升级。想让某个选手换图，得先清掉库里的 `avatar`。
+8. **`published_ids.json` 别删**：RSS 靠它 + 旧 coming JSON 防重发；删了会触发「首次运行」逻辑。
+9. **eventpass 增量只翻第 1 页**（最近 8 场）：盯一下调度是否正常；漏跑几天以上要手动
+   `scrapy crawl eventpass -a pagination=true` 补（否则旧赛事滚出首页后永不回补）。
+10. **别名探测是阻塞调用**：`normalize_urls` 的在线 301 探测（urllib，8s 超时）跑在 Scrapy
+    reactor 线程里，未命中本地缓存时会卡住整个爬虫。日常增量影响极小（探测结果 7 天缓存 +
+    老赛事跳过）；**大回填时建议 `-a normalize_urls=false`**，交给收尾的 `reconcile_pass_card` 兜底。
+11. **`meta.json` 与 `db_stats_history.json` 必须同批生成**：两者日期不同步会让 App「更新记录」页
+    恒走「暂无与当前版本匹配的记录」降级（历史问题，见 App 侧登记 C15）。
+12. **改字段 = 改跨端契约**：端上按 `Resources/contract/data-files.md` 与各 PRD 实现；
+    新增/更名/删字段前先对契约，别只改生产端。
+13. **超长列表的时间比较**：`main_time` 等是 TEXT，一切排序/筛选用 `CAST(... AS INTEGER)`。
+14. **翻译失败不阻塞**：未配置 `LLM_*` 时整段跳过（`*_cn` 保持空），下次跑自动重试；缓存库独立，
+    误清 `ufc_translate.db` 只会导致重翻，不丢主库数据。
 
-> **建议**：每次全量爬取后执行一次 `--all`，保持图片目录和数据库同步。
+---
 
-### 图片命名规则
+## 10. 数据来源与合规
 
-图片文件名 = 原始 URL 的 SHA1 哈希 + `.webp`，存储在 `output/images/full/` 目录下。
-数据库中的 `avatar_local`、`cover_local`、`banner_local` 字段存的是相对路径，如 `full/abc123...webp`。
+所有数据抓取自 [UFC 官网](https://www.ufc.com)（新闻来自 [UFC 中文站](http://www.ufc.cn)），
+仅供学习研究使用。请遵守网站使用条款，合理控制爬取频率。
 
-## 数据来源
-
-所有数据均抓取自 [UFC 官网](https://www.ufc.com)，仅供学习研究使用。请遵守网站使用条款，合理控制爬取频率。
-
-## 依赖
+## 11. 依赖
 
 见 `requirements.txt`：
 
-- **Scrapy** — 爬虫框架
+- **Scrapy** — 爬虫框架（2.19）
 - **openai** — 大模型翻译客户端（OpenAI 兼容接口）
 - **pycountry** — 国家代码查询
 - **PyRSS2Gen** — RSS Feed 生成
-- **Pillow** — 图片处理
-
-
+- **Pillow** — 图片处理（webp 转换）

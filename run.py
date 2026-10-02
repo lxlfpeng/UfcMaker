@@ -10,11 +10,13 @@ import argparse
 from ufcjson.normalize import normalize_db
 from ufcjson.athlete_url import reconcile_pass_card
 from ufcjson.translator import translate_db_fields
+from ufcjson.db_stats import write_stats_history
 
 # ========== meta.json 相关常量 ==========
 SCHEMA_VERSION = 1
 GENERATOR = "UfcMaker"
 META_JSON_PATH = "output/json/meta.json"
+DB_STATS_HISTORY_PATH = "output/json/db_stats_history.json"
 DB_PATH = "output/db/ufc.db"
 DB_ZIP_PATH = "output/db/ufc.db.zip"
 DB_ZIP_ENTRY_NAME = "ufc.db"
@@ -208,6 +210,32 @@ def _has_update(old_meta, db_version, coming_hash, ranking_hash, db_md5):
     return False
 
 
+def generate_db_stats_history(upcoming_event_count=None):
+    """往 db_stats_history.json 追加一条库内容盘点（append-only；数据未变则跳过）
+
+    ⚠️ 2026-09-26 起**不再产出覆盖式快照 `db_stats.json`**，这个文件是唯一产物 ——
+    消费方要「当前状态」就读最后一条（`data.entries[-1]`）。
+
+    「待更新赛事数」在库外（`ufc_coming_data.json`），由这里从 generate_meta_json() 传入，
+    ⚠️ 源文件不存在时传 `None`（写成 `null`）——**不要传 0**，
+    否则「真的是 0」和「源文件缺失」在趋势图上分不开。
+    （`ranking_count` 已于 v3 移除：画布旧版「五行」用过、现已弃用。）
+
+    统计口径写在 ufcjson/db_stats.py 的模块 docstring 里——重点是把「占位符」算作空
+    （如 odds 的 `-`）、缺列时不抛异常。失败不阻塞主流程。
+    """
+    try:
+        print("\n========== 库内容盘点 ==========")
+        write_stats_history(
+            DB_PATH,
+            DB_STATS_HISTORY_PATH,
+            extra={"upcoming_event_count": upcoming_event_count},
+        )
+        print("========== 盘点结束 ==========\n")
+    except Exception as e:
+        print(f"[WARN] 追加 db_stats_history.json 失败: {e}")
+
+
 def generate_meta_json(spiders_run):
     """生成 meta.json 数据版本元信息"""
     old_meta = _read_old_meta()
@@ -272,6 +300,13 @@ def generate_meta_json(spiders_run):
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"[meta] {META_JSON_PATH} 已更新 (last_updated: {last_updated})")
+
+    # 同一环节顺带追加库内容盘点：与 meta 同源同批，一起被 CI 提交、一起经同一通道下发
+    # ⚠️ 源 JSON 不存在时必须传 None 而不是 0 —— history 里「真的是 0」和「源文件缺失」
+    #    必须是两种可区分的状态（_get_json_count_and_hash 对缺失文件返回 0，不能直接用）
+    generate_db_stats_history(
+        coming_count if os.path.exists(COMING_JSON_PATH) else None
+    )
 
 
 # ========== 导出层归一化 ==========

@@ -8,7 +8,7 @@ import re
 import sqlite3
 from ..items import UfcPlayerItem
 from urllib.parse import urlparse
-from ..birth_place import split_birth_place
+from ..birth_place import infer_birth_year, split_birth_place
 from ..textutil import is_blank_text
 class EventpassSpider(scrapy.Spider):
     name = "eventpass"
@@ -93,6 +93,16 @@ class EventpassSpider(scrapy.Spider):
         「选择器被站点改版打挂了」。
         """
         slug = urlparse(response.url).path.rstrip('/').rsplit('/', 1)[-1]
+        # ⚠️ 占位剪影（no-profile-image.png）不算「老头像」：它是抓不到头像时管道补的，
+        # 若当老值冻结，站点后来补了真头像也永远取不回来（2026-10-02 修，库内 670 行）。
+        # 真实老头像照旧冻结，只放行「占位 → 真头像」这一种升级。
+        row =self.cursor.execute(
+            "SELECT avatar FROM player WHERE page = ? AND avatar <> '' "
+            "AND avatar NOT LIKE '%no-profile-image%'", (response.url,)).fetchone()
+        if row:
+            avatar=row[0]
+            self.logger.info(f"存在老的头像: {avatar}")
+            return avatar
         avatar = response.xpath(
             '//a[substring(@href, string-length(@href) - string-length($s) + 1) = $s]'
             '//img[contains(@class, "athlete-headshot")]/@src',
@@ -104,6 +114,14 @@ class EventpassSpider(scrapy.Spider):
                 avatar = response.xpath(
                     '//img[@class="image-style-event-results-athlete-headshot"]'
                     '[@alt=$n]/@src', n=name).get(default='')
+        # 样式升级：headshot(256×160) → inline(520×325)，同一裁切放大 2.03 倍（实测 2026-10-02）。
+        # itok 是 HMAC(样式名:图片URI)，换样式段后 token 必然对不上，但实测站点不校验
+        # （带旧 token → 200，不带 token 也 → 200，只有不存在的样式名/源文件才 403），
+        # 所以只替换样式段、token 原样保留。⚠️ 站点一个开关就能收回这个行为，
+        # 真收紧时表现为下载 403 → avatar_local 为空 → 端上回落占位图。
+        if avatar:
+            avatar = avatar.replace(
+                '/styles/event_results_athlete_headshot/', '/styles/inline/')
         if not avatar:
             self.logger.warning(f"[avatar] 未取到头像: {response.url}")
         return avatar
@@ -281,14 +299,17 @@ class EventpassSpider(scrapy.Spider):
         # 取所有文本节点，避免 <li>、<strong> 等标签内容丢失
         player['history'] = [t.strip() for t in response.xpath('//*[@id="tab-panel-3"]/div/div//text()').getall() if not is_blank_text(t)]
         bios_list = response.xpath('//div[@class="c-bio__info-details"]/div/div')
+        age_hint = ''                     # 页面 Age，仅用于推断出生年（见下方落值处）
         for b in bios_list:
             text_nodes = [t.strip() for t in b.xpath('.//div/text()').getall() if t.strip()]
             if len(text_nodes) < 2:
                 self.logger.warning(f"bio 项文本节点不足，跳过: {text_nodes}")
                 continue
             label = text_nodes[0]
-            # age 字段已废弃：页面上的 Age 是抓取当天的快照，实测 61% 的行与真实年龄
+            # Age 不再是字段：它是抓取当天的快照，会过期（实测 61% 的行与真实年龄差 2 岁以上），
+            # 只在「出生年推断」这一件事上还有用——见 bio 循环后的落值处。
             if label == 'Age':
+                age_hint = text_nodes[1]
                 continue
             value = text_nodes[1]
             field = {
@@ -306,6 +327,12 @@ class EventpassSpider(scrapy.Spider):
                 player[field] = value
             else:
                 self.unmatched_bio_labels.add(label)
+        # 出生年近似兜底（只影响新选手：已有行的 UPDATE 永不写 birthdate，见 export_db.py）。
+        # 精度只有「年」（Age 是整数周岁），误差窗口最多一年；精确生日将来由 Sherdog 回填
+        # 覆盖——回填断点必须是 LENGTH(birthdate) < 10，否则近似值会把精确值挡在门外。
+        inferred_year = infer_birth_year(age_hint)
+        if inferred_year:
+            player['birthdate'] = inferred_year
         # 无条件赋值：本入口没有「列表页的值」可保护，而 SqliteDbPipeline 的 INSERT 分支
         # 用的是硬下标 item['division']，不赋值就会 KeyError（只在新选手分支炸）。
         # 「空值不覆盖老值」的逻辑在管道的 UPDATE 分支里（if new:），不在这里。

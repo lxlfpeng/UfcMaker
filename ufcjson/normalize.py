@@ -12,9 +12,13 @@ ufc.com 一改拼音，同一名选手在库里就变成两行——战绩挂在
 
 1. 按「归一化姓名 + 归一化首秀日」给 `player` 全表分堆，同一堆 = 同一个人；
 2. 每堆只留一行：`record` 有效的行里 `id` 最大的那个。
-   依据：`id` 是 `AUTOINCREMENT`（严格递增、号不复用），`player` 的唯一写入者
-   `export_db.py` 用 `INSERT OR REPLACE` 写 `page UNIQUE`（REPLACE = 删旧行重插），
-   旧 slug 从站点消失后再也抓不到 ⇒ **id 最大 = 最后被写入 = 站点当前 slug 行**；
+   依据：`id` 是 `AUTOINCREMENT`（严格递增、号不复用），`export_db.py` 按 `page UNIQUE`
+   先查后写：新 slug 是新 page 值 → 必走 INSERT、`id` 大于旧 slug 行；旧 slug 从站点
+   消失后再也抓不到 ⇒ **id 最大 = 最后出现的 slug = 站点当前 slug**；
+   ⚠️ 已知盲区（接受，暂不加防护）：该结论以「slug 只单向变更」为前提。写入策略已从早期的
+   `INSERT OR REPLACE`（删旧重插）改为「存在即 UPDATE、id 不变」，因此 slug **回退**
+   （A→B→A 且两行共存）时会保留过期的 B、删掉当前行 A —— 触发需「回退 + 该轮合并被跳过或
+   失败」双重巧合，且下次爬到该选手时 A 会以更大的 `id` 重新 INSERT，下轮自动纠正；
 3. 删掉堆里其余行，同时把「旧 URL → 保留 URL」写进 `player_url_alias`；
 4. 按这张对照表改写 `pass_card.blue_page / red_page`。
 
