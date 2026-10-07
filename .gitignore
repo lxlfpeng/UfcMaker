@@ -1,0 +1,11 @@
+*/__pycache__
+__pycache__
+/.idea
+/.conda
+/.venv
+
+# CI 运行时在 workspace 里检出的制品库副本（只存在于 Actions 环境）
+/artifact/
+
+# 系统文件
+.DS_Store
