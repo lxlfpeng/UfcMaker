@@ -3,8 +3,8 @@
   "msg": "success",
   "data": {
     "schema_version": 1,
-    "last_updated": "2026-10-12T21:30:20+08:00",
-    "last_updated_ts": 1791811820,
+    "last_updated": "2026-10-13T20:56:47+08:00",
+    "last_updated_ts": 1791896207,
     "generator": "UfcMaker",
     "spiders_run": [
       "upcoming",
@@ -19,8 +19,8 @@
     "db_zip_md5": "3746d6a4e4ae5377522da632a666fd2e",
     "db_zip_size": 1862423,
     "_db_data_version": 1,
-    "_coming_hash": "b276cb4c57b2eefad57f97a6b6cc9310",
+    "_coming_hash": "383483d4f59c719267499a42d4256b91",
     "_ranking_hash": "0ba886f60ae3f82c38c8ac52d6768dec"
   },
-  "timestamp": 1791811820447
+  "timestamp": 1791896207038
 }
