@@ -3,10 +3,11 @@
   "msg": "success",
   "data": {
     "schema_version": 1,
-    "last_updated": "2026-10-31T19:12:21+08:00",
-    "last_updated_ts": 1793445141,
+    "last_updated": "2026-11-01T20:00:50+08:00",
+    "last_updated_ts": 1793534450,
     "generator": "UfcMaker",
     "spiders_run": [
+      "eventpass",
       "upcoming",
       "ufccn_news"
     ],
@@ -19,8 +20,8 @@
     "db_zip_md5": "6f21e58f2a4877219bc060c526fc7843",
     "db_zip_size": 1863590,
     "_db_data_version": 1,
-    "_coming_hash": "bb0454c7a3a53782cbcdc97646db3697",
+    "_coming_hash": "4ed716732f615d0663d8c961ba536966",
     "_ranking_hash": "65d5e9938c2af98329ac04798c20c4a5"
   },
-  "timestamp": 1793445141572
+  "timestamp": 1793534450666
 }
