@@ -2,8 +2,8 @@
   "code": 0,
   "msg": "success",
   "data": {
-    "latest_version": "1.0.0",
-    "latest_version_code": 1,
+    "latest_version": "1.0.1",
+    "latest_version_code": 2,
     "minimum_version": "1.0.0",
     "minimum_version_code": 1,
     "force_update": false,
