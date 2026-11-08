@@ -3,7 +3,7 @@
   "msg": "success",
   "data": {
     "schema_version": 3,
-    "entry_count": 17,
+    "entry_count": 18,
     "entries": [
       {
         "ts": 1790393247,
@@ -846,8 +846,57 @@
         "external": {
           "upcoming_event_count": 7
         }
+      },
+      {
+        "ts": 1794139887,
+        "date": "2026-11-08",
+        "tables": {
+          "player": 3294,
+          "pass_event": 803,
+          "pass_card": 9056
+        },
+        "coverage": {
+          "player": {
+            "birthdate": 3183,
+            "birthdate_full": 2988,
+            "country": 3220,
+            "status": 3229,
+            "history": 1069,
+            "history_cn": 845,
+            "wins_stats": 1436,
+            "wins_stats_cn": 1436
+          },
+          "pass_event": {
+            "banner": 481,
+            "prelims_time": 409,
+            "early_time": 196,
+            "all_times": 186
+          },
+          "pass_card": {
+            "both_results": 9056,
+            "odds": 3283,
+            "division": 8788
+          }
+        },
+        "quality": {
+          "shell_rows": 0,
+          "poison_end_time": 0,
+          "orphan_card_sides": 0,
+          "events_without_card": 0,
+          "cards_without_event": 0,
+          "referenced_players": 2807,
+          "distinct_fight_pages": 803,
+          "future_events": 0,
+          "earliest_event_ts": 753141600,
+          "latest_event_ts": 1794099600,
+          "duplicate_players": 4,
+          "missing_dimensions": []
+        },
+        "external": {
+          "upcoming_event_count": 6
+        }
       }
     ]
   },
-  "timestamp": 1793798390298
+  "timestamp": 1794139889068
 }
