@@ -3,8 +3,8 @@
   "msg": "success",
   "data": {
     "schema_version": 1,
-    "last_updated": "2026-11-09T22:19:43+08:00",
-    "last_updated_ts": 1794233983,
+    "last_updated": "2026-11-10T21:45:48+08:00",
+    "last_updated_ts": 1794318348,
     "generator": "UfcMaker",
     "spiders_run": [
       "upcoming",
@@ -14,15 +14,15 @@
     ],
     "athlete_count": 3294,
     "pass_event_count": 803,
-    "upcoming_event_count": 6,
+    "upcoming_event_count": 7,
     "ranking_count": 206,
     "db_md5": "62d781b688ff5aabae3cae130883d655",
     "db_size": 8216576,
     "db_zip_md5": "e2551f8a6f70474a5e0863c95dbff119",
     "db_zip_size": 1870360,
     "_db_data_version": 1,
-    "_coming_hash": "9d2e04ab8c4acc17ec6c1144de1ba4d2",
+    "_coming_hash": "2c18b2b9ef0740169cfeb877b22e85a5",
     "_ranking_hash": "7710c415dc8c079e26cd8d72d0d02166"
   },
-  "timestamp": 1794233983827
+  "timestamp": 1794318348171
 }
