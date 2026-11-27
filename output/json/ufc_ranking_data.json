@@ -46,8 +46,8 @@
 ,{"name": "Raoni Barcelos", "page": "https://www.ufc.com/athlete/raoni-barcelos", "rank_name": "Bantamweight", "rank": 14}
 ,{"name": "Bryce Mitchell", "page": "https://www.ufc.com/athlete/bryce-mitchell", "rank_name": "Bantamweight", "rank": 15}
 ,{"name": "Alexander Volkanovski", "page": "https://www.ufc.com/athlete/alexander-volkanovski", "rank_name": "Featherweight", "rank": 0}
-,{"name": "Diego Lopes", "page": "https://www.ufc.com/athlete/diego-lopes", "rank_name": "Featherweight", "rank": 1}
 ,{"name": "Movsar Evloev", "page": "https://www.ufc.com/athlete/movsar-evloev", "rank_name": "Featherweight", "rank": 1}
+,{"name": "Diego Lopes", "page": "https://www.ufc.com/athlete/diego-lopes", "rank_name": "Featherweight", "rank": 1}
 ,{"name": "Lerone Murphy", "page": "https://www.ufc.com/athlete/lerone-murphy", "rank_name": "Featherweight", "rank": 3}
 ,{"name": "Jean Silva", "page": "https://www.ufc.com/athlete/jean-silva", "rank_name": "Featherweight", "rank": 4}
 ,{"name": "Kevin Vallejos", "page": "https://www.ufc.com/athlete/kevin-vallejos", "rank_name": "Featherweight", "rank": 5}
@@ -190,8 +190,8 @@
 ,{"name": "Gabriella Fernandes", "page": "https://www.ufc.com/athlete/gabriella-fernandes", "rank_name": "Women's Flyweight", "rank": 15}
 ,{"name": "Kayla Harrison", "page": "https://www.ufc.com/athlete/kayla-harrison", "rank_name": "Women's Bantamweight", "rank": 0}
 ,{"name": "Amanda Nunes", "page": "https://www.ufc.com/athlete/amanda-nunes", "rank_name": "Women's Bantamweight", "rank": 1}
-,{"name": "Joselyne Edwards", "page": "https://www.ufc.com/athlete/joselyne-edwards", "rank_name": "Women's Bantamweight", "rank": 2}
 ,{"name": "Julianna Peña", "page": "https://www.ufc.com/athlete/julianna-pena", "rank_name": "Women's Bantamweight", "rank": 2}
+,{"name": "Joselyne Edwards", "page": "https://www.ufc.com/athlete/joselyne-edwards", "rank_name": "Women's Bantamweight", "rank": 2}
 ,{"name": "Ailin Perez", "page": "https://www.ufc.com/athlete/ailin-perez", "rank_name": "Women's Bantamweight", "rank": 4}
 ,{"name": "Luana Santos", "page": "https://www.ufc.com/athlete/luana-santos", "rank_name": "Women's Bantamweight", "rank": 5}
 ,{"name": "Yana Santos", "page": "https://www.ufc.com/athlete/yana-santos", "rank_name": "Women's Bantamweight", "rank": 6}
@@ -204,4 +204,4 @@
 ,{"name": "Nora Cornolle", "page": "https://www.ufc.com/athlete/nora-cornolle", "rank_name": "Women's Bantamweight", "rank": 13}
 ,{"name": "Alice Pereira", "page": "https://www.ufc.com/athlete/alice-pereira", "rank_name": "Women's Bantamweight", "rank": 14}
 ,{"name": "Chelsea Chandler", "page": "https://www.ufc.com/athlete/chelsea-chandler", "rank_name": "Women's Bantamweight", "rank": 15}
-],"timestamp":1795707944036}
+],"timestamp":1795793658042}
